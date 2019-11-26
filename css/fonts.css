@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KIA';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KIA Light'), local('KIA-Light'),
+    url(../fonts/KIA_LIGHT.ttf) format('truetype'),
+    url(../fonts/KIA_LIGHT.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'KIA';
+    font-style: normal;
+    font-weight: 400;
+    src: local('KIA Medium'), local('KIA-Medium'),
+    url(../fonts/KIA_MEDIUM.ttf) format('truetype'),
+    url(../fonts/KIA_MEDIUM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'KIA';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KIA Bold'), local('KIA-Bold'),
+    url(../fonts/KIA_BOLD.ttf) format('truetype'),
+    url(../fonts/KIA_BOLD.woff) format('woff');
+}
