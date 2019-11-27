@@ -43,7 +43,6 @@
 <!-- LNB -->
 <aside class="sidenav">
 <nav class="lnb"> 
-    <h2>System</h2>
     <ul class="nav-container">
         <li class="nav-item open">
             <span>Code Management</span>
@@ -87,12 +86,10 @@
 <!-- Content -->
 <section class="container">
     <div class="content">
-      <h3>Message Management</h3>
+      <h3>Message Management<span>Admin Management</span></h3>
       <div class="btn-area">
-        <button class="line-button" id="excelUp"><i class="excelUp"></i>Excel Upload</button>
-        <input id="btnUpload" name="btnUpload" type="file" accept=".xlsx" onchange="fnUpload(this);" hidden="true">
-        <!--button class="line-button" onclick="javascript:fnButtons('export');"><i class="excelDown"></i>Excel Download</button> 엑셀다운로드-->
-        <button class="line-button" id="excelDownBtn"><i class="excelDown"></i>Excel Download</button> <!--엑셀다운로드-->
+        <button class="line-button" id="excelDownBtn">
+Cancel</button>
         <button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
       </div>
     <!-- searchForm -->
