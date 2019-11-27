@@ -207,7 +207,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .btn-area:after {clear: both; display: table; content: "";}
 .search-button {background-color: #222e4f;  color: #fff;}
 .search-button .ion {margin-right: 3px;}
-.save-button {background-color: #bb162b; color: #fff;}
+.save-button {background-color: #00afd5; color: #fff;}
 .line-button {background: #fff; border: 1px solid #ddd; color: #333;}
 .line-button:hover {border: 1px solid #bb162b; color: #bb162b;}
 .excelUp, .excelDown {display: inline-block; width: 16px; height: 15px; margin-right: 5px; vertical-align: middle;}
