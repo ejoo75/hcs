@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 /* heading */
-h1,h2,h3,h4,h5,h6 {margin:0;font-weight:normal; font-family:'KIA', sans-serif;}
-
+h1,h2,h3{margin:0;font-weight:normal; font-family:"HeadMedium", sans-serif;}
+h4, h5,h6 {margin:0;font-weight:normal; font-family:"TextMedium", sans-serif;}
 h1 {float: left; width: 111px; height: 40px; margin:13px 0 13px 30px; background: url(../images/top_logo.png) no-repeat 0 0; background-size: 100% auto;}
 h1 a {display: block; width: 100%; height: 100%; font-size:0;text-indent:-9999px;}
 h1 a:hover, h1 a.active {background:none;}
 h2:before {content: ""; display: block; position: absolute; left: 50%; width: 40px; height: 3px; background-color: #222; margin:-5px 0 0 -20px; line-height: 1.2;}
 h2 {font-size: 24px; font-weight: bold; text-align: center; padding: 30px 25px 15px; color:#222; letter-spacing: -1px; border-bottom: 1px solid #e3e3e3; white-space:pre-wrap;}
 h3 {font-size:24px; color: #111; display: inline-block;}
-h3 span {display:block;font-size:18px;color: #ccc;}
-h4 {font-size:15px; display: inline-block; margin-right: 20px; color: #111; margin: 0 30px 10px 0; float: left;}
+h3 span {font-size:18px; color: #111;margin-left:20px}
+h3 div {font-size:14px;color: #aaa;}
+h4 {font-size:18px; display: inline-block; margin-right: 20px; color: #111; margin: 0 30px 10px 0; float: left;}
 h5 {font-size: 15px; color:#333;}
-h3,h4,h5,h6 {font-weight:500; letter-spacing: -1px;}
 
 
 /* form */
@@ -20,7 +20,10 @@ input[type=text], input[type=password], input[type=tel], input[type=email], inpu
 textarea {width: 100%; min-height: 60px;}
 input:focus, select:focus, textarea:focus {border:1px solid #e51937;}
 label {position: relative; display: inline-block; color: #000; font-size: 13px; font-weight: 500; vertical-align: middle;}
-
+.form-90 {width: 90%!important;}
+.form-75 {width: 75%!important;}
+.form-50 {width: 50%!important;}
+.form-25 {width: calc(25% - 5px)!important;margin-right:5px}
 
 /* login */
 .wrapper {position: relative; width: 100vw; height: 100vh; background-image: linear-gradient(45deg, #27aae2 0%, #84c44c 100%); background-size: 100%; background-position: right center; transition: all 600ms ease;}
@@ -133,7 +136,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 }
 .sidenav .lnb li.nav-item span.sn::after {display: none;}
 .sidenav .lnb li.nav-item span.sn:hover {background: #eee;}
-.sidenav .lnb li.nav-item span.sn.active {background-color: #bb162b; color: #fff;}
+.sidenav .lnb li.nav-item span.sn.active {background-color: #00afd5; color: #fff;}
 .sidenav .lnb li.nav-item span.sn.active a {color: #fff;}
 .sidenav .lnb li.nav-item.open span.sn {border-bottom: none; color: #333;}
 .sidenav .lnb li.nav-item:first-of-type span {border-top: none;}
@@ -153,7 +156,9 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .container {position: relative; width: calc(100vw - 240px); top: 60px; left: 240px; padding: 20px 30px 50px 30px;}
 .container:after {clear: both; display: table; content: "";}
 .sub-txt {margin-top: 10px;}
-
+.breadcrumb {color:#5f5e5e;font-family:"HeadRegular", sans-serif;background:#eeefef;border: 1px solid #ddd;margin:-20px -30px 20px -30px;padding:15px 30px; }
+.breadcrumb span {position: relative;padding-right:25px}
+.breadcrumb span:after {content: ""; position: absolute; right: 10px; top: 5px; border: solid #a5a5a5; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;transform: rotate(-45deg); -webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transition: -webkit-transform 0.25s ease;transition: -ms-transform 0.25s ease;transition: transform 0.25s ease;}
 
 /* search-form */
 .search-form {width: 100%; margin: 20px auto; padding: 10px; border: 1px solid #aaa;background:#f3f4f6;}
@@ -174,10 +179,10 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .table-area {position: relative; width: 100%; margin-bottom: 20px; border-bottom: 1px solid #eee;}
 .table-area:after {content: ""; display: table; clear: both;}
 .list-table {border-collapse: collapse; border-spacing: 0; width: 100%; border-top: 1px solid #9ca5b2;}
-.list-table th {text-align: center; padding: 8px 10px; border-bottom: 1px solid #e5e5e5; background: #f5f5f5; color: #000; font-weight: 500; white-space: nowrap;}
-.list-table td {text-align: center; padding: 8px 10px; border-bottom: 1px solid #e5e5e5;}
+.list-table th {text-align: left; padding: 8px 10px; border-bottom: 1px solid #dedede; background: #f3f4f6; color: #000; font-weight: 500; white-space: nowrap;}
+.list-table td {text-align: left; padding: 8px 10px; border-bottom: 1px solid #dedede;}
 .list-table tr:hover {background-color: rgba(236, 240, 246, 0.2);}
-.must:before {position: absolute; content: '*'; width: 10px; display: inline-block; color: #bb162b; font-size: 18px; font-weight: normal; vertical-align: middle; margin-left:-13px; margin-top: -3px;}
+.must:after {position: absolute;content: '*';width: 10px;display: inline-block;color: #bb162b;font-size: 18px;font-weight: normal;vertical-align: middle;margin-left: 3px;margin-top: 0;}
 .must2:before {position: relative; content: '*'; width: 10px; display: inline-block; color: #bb162b; font-size: 18px; font-weight: normal; vertical-align: middle; margin-right:5px; margin-top: -3px;}
 .list-table td .search-input {position: relative;}
 .list-table td .btn-search {position: absolute; top:0; right: 0; min-width: 20px !important; padding: 10px; color: #999; font-size: 18px; cursor: pointer;}
@@ -200,6 +205,43 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .list-table2 td.agreement .textArea .tit{display:block;font-size:14px;font-weight:700;color:#555;margin-bottom:10px;margin-top:30px}
 .list-table2 td.agreement .textArea .end{padding-bottom:20px}
 
+/* process */
+.process {padding:20px 0}
+.process {padding-left:13px}
+.process li {border-left:1px solid #00afd5;padding:10px 0;}
+.process li:first-child {padding:0 0 10px;}
+.process li:nth-child(10) {padding:10px 0 20px;}
+.process li:nth-child(11) {border-left: 1px solid #fff;padding:0}
+.process .num {display:inline-block;margin-left:-13px;height:24px;width:24px;color:#fff;font-family:arial;font-weight:bold;font-size:14px;text-align:center;line-height:22px;border-radius:15px;background:#00afd5;margin-right:10px;}
+.process h4 {float: inherit;color:#494949;margin:0}
+.process .row {width:100%;padding:20px 0 0 22px;}
+.process .row h5 {float:left;overflow:hidden;color:#00afd5;font-family:"Textbold";margin-bottom:10px;}
+.process .row .list-table {border-top:1px solid #00afd5;}
+.process .row .list-table th {background:none;}
+.process input[type=text], .process input[type=password], .process input[type=tel], .process input[type=email], .process input[type=date], .process select, .process textarea {width: calc(100% - 100px);} 
+.txt-num {width:55px;color:#0078d7;margin-left:10px}
+.process .row .list-table .list-table {border-top: 1px solid #9ca5b2}
+.process .row .list-table .list-table th {text-align:center;background: #f3f4f6;}
+.process .row .list-table .list-table td {text-align:center;background: #fff!important}
+.process .row .list-table .list-table th .checkmark, .process .row .list-table .list-table td .checkmark {left:50%}
+.process .row .list-table .btn-area {margin-top:5px}
+.process .row .list-table button {height: 22px;padding: 3px 7px;}
+.process + .btn-area {margin:20px 0 0 35px;float:left}
+h4 + .txt-1 {margin:10px 0 0 21px}
+.txt-1 {clear:both;color: #444;font-size:13px;margin-bottom:10px}
+.txt-red {color: #bb162b}
+.txt-blue {color:#0078d7}
+tr.lev th, tr.lev td {background:#f7f7f7!important}
+tr.lev th label, tr.lev td label {margin-left:20px}
+tr.lev2 th label {margin-left:40px}
+
+.option_hide .row {display:none}
+.option_hide .open {display:inline-block}
+.option_hide .close {display:none}
+.process_li .row {display:block}
+.process_li .open {display:none}
+.process_li .close {display:inline-block}
+
 /* button */
 button, .btn {display: inline-block; height: 26px; padding: 5px 15px; margin-left: 4px; font-size: 13px; line-height: 1; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; user-select: none;background-image: none; border: 1px solid transparent; -webkit-transition: all 0.25s; -ms-transition: all 0.25s; -moz-transition: all 0.25s; transition: all 0.325;}
 button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,0.2);}
@@ -209,7 +251,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .search-button .ion {margin-right: 3px;}
 .save-button {background-color: #00afd5; color: #fff;}
 .line-button {background: #fff; border: 1px solid #ddd; color: #333;}
-.line-button:hover {border: 1px solid #bb162b; color: #bb162b;}
+.line-button:hover {border: 1px solid #00afd5; color: #00afd5;}
 .excelUp, .excelDown {display: inline-block; width: 16px; height: 15px; margin-right: 5px; vertical-align: middle;}
 .excelUp {background: url(../images/icon_excel_upload.png) no-repeat 0 0; background-size: cover;}
 .excelDown {background: url(../images/icon_excel_download.png) no-repeat 0 0; background-size: cover;}
@@ -219,31 +261,37 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .btn-add, .btn-remove {position: absolute; left: 50%; width: 40px; min-width: 40px !important; height: 40px; display: block; border-radius: 40px; margin: 10px 0 0 -23px; padding:0; }
 .btn-add {background:#f0f0f0 url(../images/ico_arrow.png) no-repeat 0 0;}
 .btn-remove {background:#f0f0f0 url(../images/ico_arrow.png) no-repeat 0 -40px; top:50px;}
-.btn-add:hover {background:#bb162b url(../images/ico_arrow.png) no-repeat -40px 0;}
-.btn-remove:hover {background:#bb162b url(../images/ico_arrow.png) no-repeat -40px -40px;}
+.btn-add:hover {background:#00afd5 url(../images/ico_arrow.png) no-repeat -40px 0;}
+.btn-remove:hover {background:#00afd5 url(../images/ico_arrow.png) no-repeat -40px -40px;}
 .btn-topWarp {display: inline-block; float:right;}
 .btn-control {background: #949ba6; color: #fff;}
 .ion-logo-windows {font-size: 14px; color: #999; margin-right: 5px;}
-.winop:hover .ion-logo-windows {color: #bb162b;}
+.winop:hover .ion-logo-windows {color: #00afd5;}
 .btn-ico {float: right; min-width: 30px !important; width: 30px; height: 26px;  padding: 2px !important; margin: 4px;}
 .btn-ico .ion {color: #333; font-size: 16px;}
-.btn-ico:hover .ion {color: #bb162b;}
+.btn-ico:hover .ion {color: #00afd5;}
 .btn-copy {float: right; display:inline-block; height: 26px; background:#949ba6; color:#fff; font-weight: 500; text-align: center; border-radius: 3px; cursor:pointer; transition:background .3s ease, color .3s ease;}
 .btn-request {display:inline-block; width:60px !important; background:#949ba6; padding:0; color:#fff; font-weight: 500; text-align: center; border-radius: 3px; cursor:pointer; transition:background .3s ease, color .3s ease; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
-
+.btn-help {color:#e49100!important;font-size:18px;margin-left:10px;vertical-align:middle;}
+.btn-popup {color:#aaa!important;font-size:18px;margin-left:10px;vertical-align:middle;}
+.left-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:3px 0 0 3px;margin-left:0}
+.right-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:0 3px 3px 0;margin-left:0}
+.left-button.active, .right-button.active {border:none;background-color: #00afd5; color: #fff;}
+.center-button {background: #fff; border: 1px solid #ddd;border-left:none;border-right:none; color: #333;margin-left:0}
+.center-button.active {border:none;background-color: #00afd5; color: #fff;}
 
 /* check box*/
 .check-wrap { display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 .check-wrap .checkmark {top:2px;}
 .check-wrap:hover input ~ .checkmark {background-color: #bbb;}
-.check-wrap input:checked ~ .checkmark {background-color: #bb162b; border: 2px solid #bb162b;}
+.check-wrap input:checked ~ .checkmark {background-color: #00afd5; border: 2px solid #00afd5;}
 .check-wrap input:checked ~ .checkmark:after {display: block;}
 .check-wrap .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 
 .checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
   user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
-.checkmark {position: absolute; top: 50%; left:50%; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.checkmark {position: absolute; top: 50%; left:10px; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
 .checkLabel input:checked ~ .checkmark {background-color: #00afd5; border: 2px solid #00afd5;}
 .checkmark:after {content: ""; position: absolute; display: none;}
@@ -271,7 +319,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .modal {display: none; position: fixed; z-index: 899999; padding-top: 100px; left: 0; top: 0; right: 0;
     bottom: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.2); overflow: hidden;
     -webkit-overflow-scrolling: touch; outline: 0; animation-delay: 0.5s;}
-.modal-header {position: relative; padding: 10px 15px; border-bottom: 2px solid #bb162b;}
+.modal-header {position: relative; padding: 10px 15px; border-bottom: 2px solid #00afd5;}
 .modal-body {padding: 20px; position: relative; min-height: 90%; width: 100%;overflow:hidden;}
 .modal-body h3 {margin-top: 0;}
 .close {position: absolute; top: 0; right: 15px; color: #000; float: right; font-size: 26px; font-weight: bold; opacity: 0.3; z-index: 10;}
@@ -280,7 +328,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .modal .confir {width: 350px; min-height: 140px;  max-height: 300px;}
 .modal .confir-txt {color: #333; font-size: 16px; margin: 10px auto; text-align: center;}
 .ico-area {width: 80px; text-align: center; margin: 0 auto; display: block;}
-.confir .ico-area .ion {color: #bb162b; font-size: 100px;}
+.confir .ico-area .ion {color: #00afd5; font-size: 100px;}
 
 .modal .modal-tit {text-align: center; padding: 30px; border-bottom: 1px solid #e5e5e5;}
 .modal .modal-tit p {font-size: 16px; margin-top: 20px;}
@@ -292,7 +340,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 
 .modal .alert {width: 400px; max-height: 400px;}
 .ico-area {width: 80px; text-align: center; margin: 0 auto; display: block;}
-.alert .ico-area .ion {color: #bb162b; font-size: 100px;}
+.alert .ico-area .ion {color: #00afd5; font-size: 100px;}
 .alert-tit {color:#111; font-size: 32px; font-weight: 500; padding-top: 20px; text-align: center; border: none;}
 .alert-txt {width: 96%; color: #333; font-size: 16px; margin:15px auto; padding: 0 25px; text-align: center;}
 .alert-tit:before {display: none;}
@@ -302,7 +350,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .alert-content:after {clear: both; display: table; content: ""; height: 20px;}
 .alert-info {color: #666; margin: 20px 0 0;}
 
-.window-header {position: relative; padding: 15px 20px; border-bottom: 2px solid #bb162b;}
+.window-header {position: relative; padding: 15px 20px; border-bottom: 2px solid #00afd5;}
 .window-body {padding: 20px; position: relative; min-height: 85%; width: 100%;}
 .window-body h3 {margin-top: 0;}
 .window-content {position: fixed; background-color: #fff; z-index: 9999; width: 100%; height: 100%; overflow: auto; margin: 0 auto; padding: 0; top: 0; left: 0; bottom: 0; right: 0;}
@@ -472,7 +520,6 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 #copyOption .modal-body {min-height: 500px;}
 /*
 #copyOption .column {width: calc(50% - 27px) !important; margin-right: 10px;}
-
 #copyOption .modal-btnWrap {bottom: -26px;}
 */
 #copyOption .grid3 {max-height: 420px; overflow: auto; min-height: 100px;}
