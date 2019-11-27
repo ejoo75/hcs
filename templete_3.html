@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+
+<section class="container">
+
+        <!-- content -->
+        <div class="content">
+            <h3>Vehicle Detail Information</h3>
+            <div class="btn-area">
+                <button class="line-button" id="excelUp">
+                    <i class="excelUp"></i>Excel Upload</button>
+                    <input id="btnUpload" name="btnUpload" type="file" accept=".xlsx" onchange="fnUpload(this);" hidden="true">
+                <button class="line-button" id="excelDown" onclick="javascript:fnDownloadExcel();">
+                    <i class="excelDown"></i>Excel Download</button>
+                <button class="save-button" id="saveBtn">Save</button>
+            </div>
+
+            <!-- searchForm -->
+            <div id="searchForm" class="search-form">
+                <div class="search-input-area">
+                    <div class="col-4">
+                        <label for="dlrCd">Dealer</label>
+                        <div class="inputWrap">
+                            <select name="schDlrCd" id="schDlrCd" placeholder="Dealer">
+                                
+                                <option value="">- select -</option>
+                                
+                                    <option value="KMI02" selected="selected">
+                                                   BEAT360(Delhi)
+                                    </option>
+                                
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="schVehicle">Vehicle</label>
+                        <!-- 차종 -->
+                        <div class="inputWrap">
+                            <select name="schVehicle" id="schVehicle" placeholder="Vehicle">
+                                <option value="">- select -</option>
+                                
+                                    
+                                
+                            <option value="IA,TI,J,BS,20">[IATIJBS20] Seltos</option></select>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="typeCd">Class</label>
+                        <!-- 분류 -->
+                        <div class="inputWrap">
+                            <select name="schCodeType" id="schCodeType" placeholder="Class">
+                                <option value="">- select -</option>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            <option value="SACC">Accessories</option><option value="EXC">Exterior Color</option><option value="INC">Interior Color</option><option value="INM">Interior material</option><option value="PENG">Engine</option><option value="PMSN">Transmission</option><option value="MUHV">Must have features</option></select>
+                        </div>
+                    </div>
+
+                  <div class="col-4">
+                    <label for="schUseYn">Use</label>
+                    <div class="inputWrap">
+                      <select name="schUseYn" id="schUseYn">
+                        <option value="" selected="">- ALL -</option>
+          
+                <option value="Y">Use</option>
+          
+                <option value="N">Not Use</option>
+          
+                      </select>
+                    </div>
+                  </div>
+                <!--  line2 -->
+                <div class="col-4">
+                    <label for="schCodeCd">Code</label>
+                    <div class="inputWrap">
+                        <input name="schCodeCd" id="schCodeCd" type="text" maxlength="15">
+                    </div>
+                </div>
+    
+                <div class="col-4">
+                    <label for="schNameExl">Name</label>
+                    <div class="inputWrap">
+                    <input name="schNameExl" id="schNameExl" type="text" maxlength="100">
+                    </div>
+                </div>
+                
+                </div>
+                <!-- End of search-input-area -->
+
+                <div class="search-button-area">
+                    <button type="submit" class="search-button" id="searchBtn">Search</button>
+                </div>
+            </div>
+            <!-- //searchForm -->
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- w_50 -->
+                <div class="w_50">
+                    <h4>Class Code List</h4>
+                    <div class="btn-area">
+                        <button class="line-button btn-ico" id="gridRowDelBtn">
+                            <i class="ion ion-md-remove"></i>
+                        </button>
+                        <button class="line-button btn-ico" id="gridRowAddBtn">
+                            <i class="ion ion-md-add"></i>
+                        </button>
+                        <div class="summary">Total<span id="totalNum">0</span>
+                        </div>
+                    </div>
+                    <div id="grid" class="grid3 tui-grid-container" data-grid-id="1"><div class="tui-grid-content-area tui-grid-no-scroll-x tui-grid-show-lside-area"><div class="tui-grid-lside-area" style="display: block; width: 89px;"><div class="tui-grid-head-area" style="height: 35px;"><table class="tui-grid-table"><colgroup><col data-column-name="_number" style="width:37px"><col data-column-name="_button" style="width:51px"></colgroup><tbody><tr><th data-column-name="_number" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">No</th><th data-column-name="_button" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1"><div class="Checkbox_checkbox"><label class="checkLabel"><input class="Checkbox_input " type="checkbox" name="" disabled=""><span class="checkmark"></span></label></div></th></tr></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -36px; height: 36px;"><div data-column-index="0" data-column-name="_number" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 34px; display: block; left: 34px;"></div><div data-column-index="1" data-column-name="_button" class="tui-grid-column-resize-handle tui-grid-column-resize-handle-last" title="" style="width: 7px; height: 34px; display: block; left: 85px;"></div></div></div><div class="tui-grid-body-area" style="overflow-x: hidden; height: 620px;"><div class="tui-grid-body-container" style="height: 0px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup><col data-column-name="_number" style="width:37px"><col data-column-name="_button" style="width:51px"></colgroup>   <tbody></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div></div><div class="tui-grid-rside-area" style="display: block; width: 692px; margin-left: 88px;"><div class="tui-grid-head-area" style="height: 35px;"><table class="tui-grid-table"><colgroup><col data-column-name="codeCd" style="width:151px"><col data-column-name="codeNm" style="width: 452px;"><col data-column-name="useYn" style="width:71px"></colgroup><tbody><tr><th data-column-name="codeCd" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Code</th><th data-column-name="codeNm" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Name<a class="tui-grid-btn-sorting"></a></th><th data-column-name="useYn" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Use</th></tr></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -36px; height: 36px;"><div data-column-index="0" data-column-name="codeCd" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 34px; display: block; left: 148px;"></div><div data-column-index="1" data-column-name="codeNm" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 34px; display: block; left: 600px;"></div><div data-column-index="2" data-column-name="useYn" class="tui-grid-column-resize-handle tui-grid-column-resize-handle-last" title="" style="width: 7px; height: 34px; display: block; left: 671px;"></div></div></div><div class="tui-grid-body-area" style="overflow-x: hidden; height: 620px;"><div class="tui-grid-body-container" style="height: 0px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup><col data-column-name="codeCd" style="width:151px"><col data-column-name="codeNm" style="width: 452px;"><col data-column-name="useYn" style="width:71px"></colgroup>   <tbody></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div><div class="tui-grid-scrollbar-y-inner-border" style="top: 36px; height: 620px;"></div><div class="tui-grid-scrollbar-y-outer-border"></div><div class="tui-grid-scrollbar-right-top" style="height: 34px;"></div><div class="tui-grid-scrollbar-right-bottom" style="height: 0px;"></div></div><div class="tui-grid-border-line tui-grid-border-line-top"></div><div class="tui-grid-border-line tui-grid-border-line-left"></div><div class="tui-grid-border-line tui-grid-border-line-right"></div><div class="tui-grid-border-line tui-grid-border-line-bottom" style="bottom: 0px;"></div></div><div class="tui-grid-layer-state" style="top: 36px; height: 619px; left: 0px; right: 17px;"><div class="tui-grid-layer-state-content">    <p>No Data.</p>    </div></div><div class="tui-grid-layer-editing tui-grid-cell-content"></div><div contenteditable="true" class="tui-grid-clipboard"></div></div>
+                </div>
+                <!-- //w_50 -->
+                <div class="grid-line"></div>
+
+                <!-- w_50 -->
+                <div class="w_50 ">
+                    <h4>Class Code Detail</h4>
+                    <!-- table-area -->
+                    <div class="table-area">
+                        <table class="list-table">
+                            <colgroup>
+                                <col style="width: 15%;">
+                                <col style="width: 18%;">
+                                <col style="width: 15%;">
+                                <col style="width: 18%;">
+                                <col style="width: 15%;">
+                                <col style="width: 19%;">
+                            </colgroup>
+                            <tbody><tr>
+                                <th><label for="codeCd" class="must">Code</label></th>
+                                <td><input type="text" id="codeCd" name="codeCd" maxlength="15" value="" readonly="readonly" disabled=""></td>
+                                <th><label for="use">Use</label></th>
+                                <td colspan="3">
+                                    <div class="check-area">
+                                        <div class="Checkbox_checkbox">
+                                            <label class="checkLabel">
+                                                <input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="sortNo">Sort No</label></th>
+                                <td><input type="text" id="sortNo" name="sortNo"></td>
+                                <th><label for="price">Price</label></th>
+                                <td colspan="3"><input type="text" id="price" name="price" maxlength="11" style="text-align: right"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="param1">Link(1)</label></th>
+                                <td><input type="text" id="param1" name="param1" maxlength="100"></td>
+                                <th><label for="param2">Link(2)</label></th>
+                                <td><input type="text" id="param2" name="param2" maxlength="100"></td>
+                                <th><label for="param3">Link(3)</label></th>
+                                <td><input type="text" id="param3" name="param3" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td colspan="5" class="txt-l">
+                                    <!-- img-wrap -->
+                                    <div class="img-wrap">
+                                        <!-- images1 -->
+                                        <div class="img-area">
+                                            <div class="img-bg"></div>
+                                            <img src="" alt="" class="file-preview-image kv-preview-data preview-image" id="img1">
+                                            <div class="btn-file">
+                                                File <input id="btnFile1" name="btnFile1" type="file" accept=".jpg,.png,.gif" onchange="fnFileChanged(this, 1);">
+                                            </div>
+                                            <button class="line-button btn-delete" name="btnImgDel1" id="btnImgDel1">Delete</button>
+                                        </div>
+                                        <!-- //images1 -->
+                                        <!-- images2 -->
+                                        <div class="img-area">
+                                            <div class="img-bg"></div>
+                                            <img src="" alt="" class="file-preview-image kv-preview-data preview-image" id="img2">
+                                            <div class="btn-file">
+                                                File <input id="btnFile2" name="btnFile2" type="file" accept=".jpg,.png,.gif" onchange="fnFileChanged(this, 2);">
+                                            </div>
+                                            <button class="line-button btn-delete" name="btnImgDel2" id="btnImgDel2">Delete</button>
+                                        </div>
+                                        <!-- //images2 -->
+                                        <!-- images3 -->
+                                        <div class="img-area">
+                                            <div class="img-bg"></div>
+                                            <img src="" alt="" class="file-preview-image kv-preview-data preview-image" id="img3">
+                                            <div class="btn-file">
+                                                File <input id="btnFile3" name="btnFile3" type="file" accept=".jpg,.png,.gif" onchange="fnFileChanged(this, 3);">
+                                            </div>
+                                            <button class="line-button btn-delete" name="btnImgDel3" id="btnImgDel3">Delete</button>
+                                        </div>
+                                        <!-- //images3 -->
+                                    </div> <!-- //img-wrap --> <!-- 파일 선택 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="text-align:left">
+                                    <label id="rem"></label>
+                                </td>
+                            </tr>                        
+                        </tbody></table>
+                    </div>
+                    <!-- //table-area -->
+                    <div id="grid2" class="grid tui-grid-container" data-grid-id="2"><div class="tui-grid-content-area tui-grid-no-scroll-x tui-grid-no-scroll-y"><div class="tui-grid-lside-area" style="display: block; width: 0px;"><div class="tui-grid-head-area" style="height: 35px;"><table class="tui-grid-table"><colgroup></colgroup><tbody></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -36px; height: 36px;"></div></div><div class="tui-grid-body-area" style="overflow-x: hidden; height: 200px;"><div class="tui-grid-body-container" style="height: 0px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup></colgroup>   <tbody></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div></div><div class="tui-grid-rside-area" style="display: block; width: 763px; margin-left: 0px;"><div class="tui-grid-head-area" style="height: 35px;"><table class="tui-grid-table"><colgroup><col data-column-name="langNm" style="width:81px"><col data-column-name="nameExl" style="width:201px"><col data-column-name="detailExl" style="width: 480px;"></colgroup><tbody><tr><th data-column-name="langNm" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Language</th><th data-column-name="nameExl" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Name</th><th data-column-name="detailExl" class="tui-grid-cell tui-grid-cell-head" height="34" colspan="1" rowspan="1">Detail Info</th></tr></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -36px; height: 36px;"><div data-column-index="0" data-column-name="langNm" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 34px; display: block; left: 78px;"></div><div data-column-index="1" data-column-name="nameExl" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 34px; display: block; left: 279px;"></div><div data-column-index="2" data-column-name="detailExl" class="tui-grid-column-resize-handle tui-grid-column-resize-handle-last" title="" style="width: 7px; height: 34px; display: block; left: 759px;"></div></div></div><div class="tui-grid-body-area" style="overflow: hidden; height: 200px;"><div class="tui-grid-body-container" style="height: 0px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup><col data-column-name="langNm" style="width:81px"><col data-column-name="nameExl" style="width:201px"><col data-column-name="detailExl" style="width: 480px;"></colgroup>   <tbody></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div></div><div class="tui-grid-border-line tui-grid-border-line-top"></div><div class="tui-grid-border-line tui-grid-border-line-left"></div><div class="tui-grid-border-line tui-grid-border-line-right"></div><div class="tui-grid-border-line tui-grid-border-line-bottom" style="bottom: 0px;"></div></div><div class="tui-grid-layer-state" style="top: 36px; height: 199px; left: 0px; right: 0px;"><div class="tui-grid-layer-state-content">    <p>No Data.</p>    </div></div><div class="tui-grid-layer-editing tui-grid-cell-content"></div><div contenteditable="true" class="tui-grid-clipboard"></div></div>
+                </div>
+                <!-- //w_50 -->
+            </div>
+            <!-- //row -->
+        </div>
+        <!-- //content -->
+    </section>
+</body>
+</html>

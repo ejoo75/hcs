@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+<div id="confirmModal" class="modal animate">
+    <!-- Modal content -->
+    <div class="modal-content confir">
+      <!--<span class="close"><i class="ion ion-md-close"></i></span>-->
+      <div class="modal-body">
+          <span class="ico-area"><i class="ion ion-ios-checkmark-circle-outline"></i></span>
+          <br>
+        <p class="confir-txt" id="confirm_msg"></p>
+        <div class="modal-btnWrap">
+          <button type="submit" class="line-button" id="confirmCancel">Cancel</button>
+          <button type="submit" class="save-button" id="confirmOk">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- //modal -->
+
+  <!-- modal alert message box -->
+  <div id="alertModal" class="modal animate" style="z-index: 9999999 !important;">
+    <!-- Modal content -->
+    <div class="modal-content alert" id="modal_alert_content">
+      <!--<span class="close"><i class="ion ion-md-close"></i></span>-->
+      <div class="modal-body">
+          <span class="ico-area"><i class="ion ion-ios-information-circle-outline"></i></span>
+          <br>
+          <!--  h6 class="alert-tit"><span id="alert_errType"></span></h6 -->
+          <div id="modalBody">
+          <p class="alert-txt" id="alert_errMsg"></p>
+          </div>          
+          <div class="alert-content">
+            <p class="alert-info"><span id="alert_errDescript"></span>
+            </p>
+          </div>
+        <div class="modal-btnWrap">
+          <button type="button" class="save-button" id="alertOk">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- //modal 단순 메세지 박스 -->
+
+    <!-- modal -->
+    <div id="excelDownload" class="modal animate">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" id="closeBtnExcel"><i class="ion ion-md-close"></i></span>
+          <h5>Excel Download</h5>
+        </div>
+        
+        <!-- modal-body -->
+        <div class="modal-body">
+            <div class="search-form">
+            
+              <div class="search-input-area" style="width:100% !important;">
+                <div class="row">
+                    <label for="reasonCd">Download Reason</label>
+                    <div class="inputWrap">
+                        <input name="reasonCd" id="reasonCd" type="text" maxlength="33" size="100">
+                    </div>
+                </div>
+              </div>            
+                 
+            </div>
+          
+          <div class="modal-btnWrap">
+            <button class="line-button" id="modalCalcelExcelBtn">Cancel</button>
+            <button type="submit" class="save-button" id="modalSaveExcelBtn">Excel Download</button>
+          </div>
+        </div>
+        <!-- //modal-body -->
+      </div>
+      <!-- //Modal content -->
+    </div>
+    <!-- //modal -->    
+        
+    <div class="loading" style="display: none;"><i></i></div>    
+<script type="text/javascript">
+
+var grid = "";
+var rowCount = 0;
+var searchCon = [];
+var windowHeight = "";
+
+$(document).ready(function() {
+    init(); // 화면별로 초기함수가 정의되어 있어야 한다.
+    
+    $(window).resize(function(ev){
+        windowHeight = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+        grid.setHeight(windowHeight-160);
+    }); 
+    
+    $('#searchAllHistory').on('click', function(ev){
+        fnSearchAllHistory();
+    }); 
+    
+    $('#excelDownBtn').on('click', function(ev){
+        if(grid.getRows().length == 0) {
+            gfnAlert(300, "There is no data to downlad. Pleace check it again.");
+            return;
+        } else {
+            if (typeof excelModal != 'undefined') {
+                excelModal.style.display = "block";
+            }
+        }
+    });    
+});
+
+function init() {
+
+    var rowHeaders = [
+                      {
+                          type: 'rowNum',
+                          title: 'No',
+                          width:40
+                      }
+                    ];
+    
+    // column define for grid
+    var columns = [
+                     //{title:'ID', name: 'customId', width:80},
+                     {title:'Name', name: 'customName', align: 'left'},                     
+                     //{title:'Exp/Reward', name: 'expZoneCd', width:80},
+                     {title:'Exp/Reward', name: 'expZoneNm', align: 'left'},
+                     {title:'Exp No', name: 'expZoneSeq', width:60, align: 'center'},
+                     {title:'Status', name: 'expNm', align: 'center'},
+                     {title:'Exp date', name: 'expDate', align: 'center'}
+                    ];
+    
+    var localeCode = 'EN';
+    var option={gridid:"grid", columns:columns, rowHeaders:rowHeaders, headerCellHeight:30, useClientSort:true, pagination:false, bodyHeight: 540, scrollX:false, scrollY:true}
+    grid = createGridUi(option); 
+    
+    fnSelectList();  
+}
+
+/////////////////////////////////////////////////////////
+//목록조회
+/////////////////////////////////////////////////////////
+function fnSelectList(){
+  //전역 변수 초기화
+  rowCount = 0;
+  
+  var data = {srCd : 'SR001',
+              expDate : '',
+              customId : 'Beat0830363',
+              expZoneCd : '',
+              expCd : '',
+              sDate : '2019-11-21',
+              eDate : '2019-11-28'
+             };
+  searchCon = data;
+
+  //조회
+  var url = "/customer/customerReg/selectHistPopAjax.do";
+  gfnAjax(url, data, selectListCallback);
+}
+
+//전체 이력 조회
+/////////////////////////////////////////////////////////
+function fnSearchAllHistory(){
+    //전역 변수 초기화
+    rowCount = 0;
+  
+    var data = {
+            srCd : 'SR001',
+            customId : 'Beat0830363'
+    };
+    
+    searchCon = data;
+    
+    //조회
+    var url = "/customer/customerReg/selectHistPopAjax.do";
+    gfnAjax(url, data, selectListCallback);
+}
+
+/////////////////////////////////////////////////////////
+//조회버튼 ajax 성공 함수
+/////////////////////////////////////////////////////////
+function selectListCallback(data){
+  loadingHide();
+  
+  var rows = data.rows;
+  //alert("count=" +  gfnFormatNumber(data.rows.length) + ", GridList : " + JSON.stringify(data));
+  grid.clear();
+  grid.setData(data.rows);
+  
+  if(data.rows == null) {
+      $("#totalNum").text(gfnFormatNumber(0));    
+  } else {
+      $("#totalNum").text(gfnFormatNumber(data.rows.length));
+  }
+}
+
+/////////////////////////////////////////////////////////
+//엑셀 다운로드
+/////////////////////////////////////////////////////////
+function fnExcelDown() {
+    if(grid.getRows().length == 0) {
+        gfnAlert(300, "There is no data to downlad. Pleace check it again.");
+        return;
+    }
+    if($('#reasonCd').val() == '') {
+        gfnAlert(300, gfnGetMsg("Please, input {0}", "Spec Region"));            
+        return;
+    }        
+    if($('#schSrCd').val() != '') {
+        var data = {
+                srCd : 'SR001',
+                expDate : '',
+                customId : 'Beat0830363',
+                expZoneCd : '',
+                expCd : '',
+                sDate : '2019-11-21',
+                eDate : '2019-11-28',
+                reasonCd : $('#reasonCd').val()
+                    };
+        var url = "/customer/customerReg/excelPopupExport.do";
+        gfnAjax(url, data, downloadExcelCallback);
+    }
+}
+/////////////////////////////////////////////////////////
+//엑셀 다운로드 downloadExcelCallback
+/////////////////////////////////////////////////////////
+function downloadExcelCallback(data){
+    window.location.href="/common/excel/excelDaownLoad.do?fileName=" + encodeURIComponent(data.fileName) + "&reasonCd=" + encodeURIComponent(data.reasonCd) + "&fileSize=" + encodeURIComponent(data.fileSize) + "";
+    $('#excelDownload').hide();
+}
+
+</script>
+
+
+
+
+<!-- body -->
+
+  <div class="window-content">
+      <div class="window-header">
+        <h5>Customer Exp/Reward History</h5>
+      </div>
+      <!-- modal-body -->
+      <div class="window-body">
+        <!-- row -->
+        <div class="row">
+          <div class="summary f-l"><span>Total<b><span id="totalNum">7</span></b></span></div>
+          <div class="btn-area">
+            <button class="search-button" id="searchAllHistory">Total History</button>
+            <button class="line-button" id="excelDownBtn"><i class="excelDown"></i>Excel</button>
+          </div>
+          <div id="grid" class="grid3 mt20 headerLinegrid tui-grid-container" data-grid-id="1"><div class="tui-grid-content-area tui-grid-no-scroll-x tui-grid-show-lside-area"><div class="tui-grid-lside-area" style="display: block; width: 42px;"><div class="tui-grid-head-area" style="height: 29px;"><table class="tui-grid-table"><colgroup><col data-column-name="_number" style="width:41px"></colgroup><tbody><tr><th data-column-name="_number" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">No</th></tr></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -30px; height: 30px;"><div data-column-index="0" data-column-name="_number" class="tui-grid-column-resize-handle tui-grid-column-resize-handle-last" title="" style="width: 7px; height: 28px; display: block; left: 38px;"></div></div></div><div class="tui-grid-body-area" style="overflow-x: hidden; height: 540px;"><div class="tui-grid-body-container" style="height: 259px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup><col data-column-name="_number" style="width:41px"></colgroup>   <tbody><tr data-row-key="0" class="tui-grid-row-odd" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td></tr><tr data-row-key="1" class="tui-grid-row-even" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2</div></td></tr><tr data-row-key="2" class="tui-grid-row-odd" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">3</div></td></tr><tr data-row-key="3" class="tui-grid-row-even" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">4</div></td></tr><tr data-row-key="4" class="tui-grid-row-odd" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">5</div></td></tr><tr data-row-key="5" class="tui-grid-row-even" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">6</div></td></tr><tr data-row-key="6" class="tui-grid-row-odd" style="height: 37px;"><td align="center" class="tui-grid-cell-row-head tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="_number" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">7</div></td></tr></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div></div><div class="tui-grid-rside-area" style="display: block; width: 519px; margin-left: 41px;"><div class="tui-grid-head-area" style="height: 29px;"><table class="tui-grid-table"><colgroup><col data-column-name="customName" style="width: 110px;"><col data-column-name="expZoneNm" style="width: 110px;"><col data-column-name="expZoneSeq" style="width:61px"><col data-column-name="expNm" style="width: 110px;"><col data-column-name="expDate" style="width: 110px;"></colgroup><tbody><tr><th data-column-name="customName" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">Name</th><th data-column-name="expZoneNm" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">Exp/Reward</th><th data-column-name="expZoneSeq" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">Exp No</th><th data-column-name="expNm" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">Status</th><th data-column-name="expDate" class="tui-grid-cell tui-grid-cell-head" height="28" colspan="1" rowspan="1">Exp date</th></tr></tbody></table><div class="tui-grid-column-resize-container" style="display: block; margin-top: -30px; height: 30px;"><div data-column-index="0" data-column-name="customName" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 28px; display: block; left: 107px;"></div><div data-column-index="1" data-column-name="expZoneNm" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 28px; display: block; left: 217px;"></div><div data-column-index="2" data-column-name="expZoneSeq" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 28px; display: block; left: 278px;"></div><div data-column-index="3" data-column-name="expNm" class="tui-grid-column-resize-handle " title="" style="width: 7px; height: 28px; display: block; left: 388px;"></div><div data-column-index="4" data-column-name="expDate" class="tui-grid-column-resize-handle tui-grid-column-resize-handle-last" title="" style="width: 7px; height: 28px; display: block; left: 498px;"></div></div></div><div class="tui-grid-body-area" style="overflow-x: hidden; height: 540px;"><div class="tui-grid-body-container" style="height: 259px;"><div class="tui-grid-table-container" style="top: 0px; overflow: visible;"><table class="tui-grid-table">   <colgroup><col data-column-name="customName" style="width: 110px;"><col data-column-name="expZoneNm" style="width: 110px;"><col data-column-name="expZoneSeq" style="width:61px"><col data-column-name="expNm" style="width: 110px;"><col data-column-name="expDate" style="width: 110px;"></colgroup>   <tbody><tr data-row-key="0" class="tui-grid-row-odd" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Surround Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience completed</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="0" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 20:38:11</div></td></tr><tr data-row-key="1" class="tui-grid-row-even" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Surround Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience registration</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="1" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 20:01:19</div></td></tr><tr data-row-key="2" class="tui-grid-row-odd" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Configurator Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience registration</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="2" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 19:59:30</div></td></tr><tr data-row-key="3" class="tui-grid-row-even" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Configurator Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience completed</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="3" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 19:58:54</div></td></tr><tr data-row-key="4" class="tui-grid-row-odd" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Configurator Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience registration</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="4" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 19:56:28</div></td></tr><tr data-row-key="5" class="tui-grid-row-even" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Mixed Reality Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience completed</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="5" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 19:54:19</div></td></tr><tr data-row-key="6" class="tui-grid-row-odd" style="height: 37px;"><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="customName" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">vipin agrawal</div></td><td align="left" class=" tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="expZoneNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Mixed Reality Zone</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="expZoneSeq" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">1</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="expNm" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">Experience registration</div></td><td align="center" class=" tui-grid-cell" data-edit-type="normal" data-row-key="6" data-column-name="expDate" style=""><div class="tui-grid-cell-content" style="white-space:nowrap">2019-11-25 19:24:22</div></td></tr></tbody></table></div><div class="tui-grid-layer-selection" style="display: none;"></div><div class="tui-grid-layer-focus" style="display: none;"><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div><div class="tui-grid-layer-focus-border"></div></div></div></div><div class="tui-grid-scrollbar-y-inner-border" style="top: 30px; height: 540px;"></div><div class="tui-grid-scrollbar-y-outer-border"></div><div class="tui-grid-scrollbar-right-top" style="height: 28px;"></div><div class="tui-grid-scrollbar-right-bottom" style="height: 0px;"></div></div><div class="tui-grid-border-line tui-grid-border-line-top"></div><div class="tui-grid-border-line tui-grid-border-line-left"></div><div class="tui-grid-border-line tui-grid-border-line-right"></div><div class="tui-grid-border-line tui-grid-border-line-bottom" style="bottom: 0px;"></div></div><div class="tui-grid-layer-state" style="top: 30px; height: 539px; left: 0px; right: 17px; display: none;"><div class="tui-grid-layer-state-content">    <p>No Data.</p>    </div></div><div class="tui-grid-layer-editing tui-grid-cell-content"></div><div contenteditable="true" class="tui-grid-clipboard"></div></div>
+        </div>
+        <!-- //row -->
+      </div>
+      <!-- //modal-body -->
+  </div> 
+    
+  
+
+</body>
+
+</html>
