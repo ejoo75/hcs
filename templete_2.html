@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+
+<!-- GNB -->
+<header id="header" class="header">
+	<h1 class="topLogo"><a href="/dashboard/dashboardMain/view.do?menuId=41000">BEAT 360</a></h1>
+	<nav class="topNav">
+		<a href="#none" class="user line"><i class="ion ion-md-contact"></i>kyunghee&nbsp;kim</a>
+		<a href="/logout.do" class="tooltip line"><i class="ion ion-md-power"></i><span class="tooltiptext">Log out</span></a>
+	</nav>
+</header>
+<!--// GNB -->
+
+<!-- LNB -->
+<aside class="sidenav">
+	<nav class="lnb"> 
+		<ul class="nav-container">
+			<li class="nav-item open">
+				<span>Code Management</span>
+				<ul class="subnav">
+					<li><a href="/system/user/view.do?menuId=51100">User Management</a></li>
+					<li><a href="/system/commonCode/view.do?menuId=51200">Common Code Management</a></li>
+					<li><a href="/system/messageList/view.do?menuId=51300" class="active">Message Management</a></li>
+				</ul>
+			</li>
+			<li class="nav-item ">
+				<span>Menu Management</span>
+				<ul class="subnav">
+					<li><a href="/system/menuList/view.do?menuId=52100">Menu Management</a></li>
+				</ul>
+			</li>      
+			<li class="nav-item ">
+				<span>Auth Management</span>
+				<ul class="subnav">
+					<li><a href="/system/authList/view.do?menuId=53100">Auth Group Menu Management</a></li>
+					<li><a href="/system/userConnection/view.do?menuId=53200">User Reconnection Approval</a></li>   
+				</ul>
+			</li>       
+			<li class="nav-item ">
+				<span>Log Search</span>
+				<ul class="subnav">
+					<li><a href="/system/apiSendLogList/view.do?menuId=54100">Send Log Search</a></li>
+					<li><a href="/system/apiList/view.do?menuId=54200">API Log</a></li>
+					<li><a href="/system/crmLogList/view.do?menuId=54400">CRM Request History</a></li>
+					<li><a href="/system/apiSettingList/view.do?menuId=54300">API Setting List</a></li>    
+				</ul>
+			</li>     
+			<li class="nav-item ">
+				<span>Store Maintenance</span>
+				<ul class="subnav">
+					<li><a href="/system/deviceHist/view.do?menuId=55100">Device Maintenance</a></li>
+					<li><a href="/system/calendar/view.do?menuId=55200">Schedule Management</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</aside>
+<!--// LNB -->
+
+<!-- Content -->
+<section class="container">
+	<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
+	<div class="content">
+		<h3>Message Management<span>Admin Management</span></h3>
+		<div class="btn-area">
+			<button class="line-button" id="excelDownBtn">Cancel</button>
+			<button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
+		</div>
+		<!-- searchForm -->
+		<div id="searchForm" class="search-form">
+			<div class="search-input-area">
+				<div class="col-3">
+					<label for="schCdType">Code</label><!--공통코드유형--> 
+					<div class="inputWrap">
+						<select name="schCdType" id="schCdType">                       
+							<option value="0001">[0001] SPACE MANAGEMENT </option>
+							<option value="0002">[0002] SHOWROOM</option>
+							<option value="0003">[0003] Dealer</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-3">
+					<label for="schDlrSrCd">Showroom/Dealer</label>  <!--쇼룸/딜러-->
+					<div class="inputWrap"> 
+						<select name="schDlrSrCd" id="schDlrSrCd">
+							<option value="XXXX">[XXXX] Space Platform</option></select>
+					</div>
+				</div>
+				<!-- column -->
+				<div class="col-3">
+					<label for="messageType">Message Type</label><!-- 메시지 유형 -->
+						<div class="inputWrap">
+							<select name="schMsgTypeCd" id="schMsgTypeCd">
+								<option value="">- ALL -</option>
+							</select>
+						</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-3">
+					<label for="schMsgCd">Message Code</label><!-- 메시지 코드 -->
+					<div class="inputWrap">
+						<input name="schMsgCd" id="schMsgCd" type="text" autocomplete="off">
+					</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-3">
+					<label for="schMsgExpl">Message Name</label><!-- 코드명 -->
+						<div class="inputWrap">
+						<input name="schMsgExpl" id="schMsgExpl" type="text" autocomplete="off">
+					</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-3">
+					<label for="schUseYn">Use Flag</label><!--사용유무-->
+					<div class="inputWrap">
+						<select name="schUseYn" id="schUseYn" class="" placeholder="">
+							<option value="">- ALL -</option>
+						</select>
+					</div>
+				</div>
+				<!-- //column -->
+			</div>
+			<div class="search-button-area">
+				<button class="search-button" id="searchBtn">Search</button> <!-- 조회 -->
+			</div>
+		</div>
+		<!-- //searchForm -->
+		<!-- row -->
+		<div class="row">
+        <!-- w-50 -->
+        <div class="w-50">
+          <h4>User List</h4><!--사용자 목록-->
+          <button class="line-button btn-ico" onclick="javascript:fnButtons('delete');"><i class="ion ion-md-remove"></i></button>
+          <button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+          <div class="summary">Total<span id="totalNum">14</span></div>
+          
+        </div>
+        <!-- //w-50 -->
+        <div class="grid-line"></div>
+        <!-- w-50 -->
+        <div class="w-50 ">
+          <h4>Detail Info</h4><!--상세 정보-->
+          <div class="btn-topWarp">
+            
+          </div>
+          <!-- table-area -->
+          <div class="table-area">
+            <table class="list-table ">
+              <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+              </colgroup>
+              <tbody><tr>
+                <th><label for="wUserId" class="must">Customer ID</label></th><!--USER ID-->
+                <td>
+                  <div class="w70">
+                    <input type="hidden" id="rowKey" name="rowKey" value="">
+                    <input type="text" id="wUserId" name="wUserId" value="" maxlength="300" autocomplete="off" disabled="">
+                  </div>
+                  <div class="w30">
+                    <button id="btnPwReset" name="btnPwReset" class="btn-control" onclick="javascript:fnButtons('pwreset');" disabled="">Password Reset</button><!--패스워드 초기화-->
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="firstNm" class="must">First Name</label></th><!--First Name-->
+                <td><input type="text" id="firstNm" name="firstNm" value="" maxlength="250" autocomplete="off" disabled=""></td>
+              </tr>
+              <tr>
+                <th><label for="lastNm" class="must">Last Name</label></th><!--lastNm-->
+                <td><input type="text" id="lastNm" name="lastNm" value="" maxlength="250" autocomplete="off" disabled=""></td>
+              </tr>
+              <tr>
+                <th><label for="userEmlAdr" class="must">E-Mail</label></th><!--E-mail-->
+                <td><input type="text" id="userEmlAdr" name="userEmlAdr" value="" maxlength="100" autocomplete="off" disabled=""></td>
+              </tr>
+              <tr>
+                <th><label for="userHpNo">Mobile</label></th><!--Telephone-->
+                <td><input type="text" id="userHpNo" name="userHpNo" value="" maxlength="20" autocomplete="off" disabled=""></td>
+              </tr>
+              <tr>
+                <th><label for="authMenuGrpCd" class="must">Menu Auth Group</label></th><!--권한그룹-->
+                <td>
+                  <select id="authMenuGrpCd" name="authMenuGrpCd" value="" disabled="">
+                      <option value=""></option>
+                    
+                      <option value="SYSADM">[SYSADM] System Manager</option>
+                  
+                      <option value="ADM">[ADM] Manager</option>
+                  
+                      <option value="GRU">[GRU] Guru</option>
+                  
+                      <option value="DEAL">[DEAL] Dealer</option>
+                  
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="srCd">Showroom Code</label></th><!--쇼룸코드-->
+                <td>
+                  <select id="srCd" name="srCd" value="" disabled="">
+                      <option value=""></option>
+                      
+                        <option value="SR001">[SR001] BEAT360 Delhi</option>
+                    
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="dlrCd">Dealer Code</label></th><!--딜러코드-->
+                <td>
+                  <select name="dlrCd" id="dlrCd" value="" disabled="">
+                      <option value=""></option>
+                      
+                          <option value="KMI02">[KMI02] BEAT360(Delhi)</option>
+                      
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="authGrpCd" class="must">Auth Role</label></th><!--권한롤-->
+                <td>
+                  <select id="authGrpCd" name="authGrpCd" value="" disabled="">
+                    <option value=""></option>
+                  
+                    <option value="SYSADM">[SYSADM] System Adm</option>
+                
+                    <option value="CMGR">[CMGR] Company Manager</option>
+                
+                    <option value="MANAGE">[MANAGE] Manager</option>
+                
+                    <option value="USER">[USER] User</option>
+                
+                </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="useYn">Use Flag</label></th><!--사용유무-->
+                <td>
+                  <div class="check-area">
+                    <div class="Checkbox_checkbox">
+                      <label class="checkLabel">
+                        <input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody></table>
+          </div>
+          <!-- //table-area -->
+        </div>
+        <!-- //w-50 -->
+      </div>
+		<!-- //content -->
+	</div>
+</section>
+<!-- Content -->
+
+</body>
+</html>
