@@ -111,8 +111,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .header .topNav .tooltip:hover .tooltiptext {visibility: visible; opacity: 1;}
 
 /* aside */
-.sidenav {height: calc(100% - 70px); width: 200px; position: fixed; z-index: 100; top: 70px; left: 0; background-color: #fff; overflow-x: hidden;
-  border-right: 1px solid #ddd;}
+.sidenav {height: calc(100% - 70px); width: 200px; position: fixed; z-index: 100; top: 70px; left: 0; background-color: #c5ccd3; overflow-x: hidden;
+  border-right: 1px solid #aaa;}
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
 .sidenav .lnb ul.nav-container {overflow: auto;}
 .sidenav .lnb li.nav-item { overflow: hidden;}
@@ -140,7 +140,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb li.nav-item:last-of-type span {border-bottom: 1px solid #e3e3e3;}
 .sidenav .lnb li.nav-item ul.subnav {visibility: hidden; max-height: 0; transition: 0.25s ease; transition-property: max-height, opacity; opacity: 0;
   padding: 0; margin: 0;}
-.sidenav .lnb li.nav-item ul.subnav li {width: 100%; height: 100%; background: #f9f9f9; padding: 2px 10px;}
+.sidenav .lnb li.nav-item ul.subnav li {width: 100%; height: 100%; background: #e0e3e6; padding: 2px 10px;}
 .sidenav .lnb li.nav-item ul.subnav a {position: relative; display: block; width: 180px; color: #666; font-size: 13px; padding: 6px; letter-spacing: -1px; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out;}
 .sidenav .lnb li.nav-item ul.subnav a:hover {background: #efefef; border-radius: 3px;}
 .sidenav .lnb li.nav-item ul.subnav a.active {color: #fff; background: #bb162b; border-radius: 3px;}
