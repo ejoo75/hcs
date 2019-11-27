@@ -243,9 +243,9 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
   user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
-.checkmark {position: absolute; top: 50%; left:50%; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; border-radius: 2px; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.checkmark {position: absolute; top: 50%; left:50%; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
-.checkLabel input:checked ~ .checkmark {background-color: #bb162b; border: 2px solid #bb162b;}
+.checkLabel input:checked ~ .checkmark {background-color: #00afd5; border: 2px solid #00afd5;}
 .checkmark:after {content: ""; position: absolute; display: none;}
 .checkLabel input:checked ~ .checkmark:after {display: block;}
 .checkLabel .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
