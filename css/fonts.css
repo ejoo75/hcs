@@ -1,28 +1,69 @@
-@charset "UTF-8";
+@charset "utf-8";
 
+/* 한글 HyundaiSansHead */
 @font-face {
-    font-family: 'KIA';
+    font-family: "HeadBold";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
-    font-weight: 300;
-    src: local('KIA Light'), local('KIA-Light'),
-    url(../fonts/KIA_LIGHT.ttf) format('truetype'),
-    url(../fonts/KIA_LIGHT.woff) format('woff');
+}
+@font-face {
+    font-family: "HeadLight";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRLight.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRLight.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRLight.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRLight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HeadRegular";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRRegular.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRRegular.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRRegular.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HeadMedium";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRMedium.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRMedium.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRMedium.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'KIA';
-    font-style: normal;
-    font-weight: 400;
-    src: local('KIA Medium'), local('KIA-Medium'),
-    url(../fonts/KIA_MEDIUM.ttf) format('truetype'),
-    url(../fonts/KIA_MEDIUM.woff) format('woff');
-}
 
+/* 한글 HyundaiSansText */
 @font-face {
-    font-family: 'KIA';
+    font-family: "TextBold";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRBold.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRBold.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRBold.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRBold.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
-    font-weight: 700;
-    src: local('KIA Bold'), local('KIA-Bold'),
-    url(../fonts/KIA_BOLD.ttf) format('truetype'),
-    url(../fonts/KIA_BOLD.woff) format('woff');
+}
+@font-face {
+    font-family: "TextMedium";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRMedium.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRMedium.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRMedium.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextRegular";
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRRegular.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRRegular.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRRegular.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansTextKRRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
