@@ -10,7 +10,7 @@ h2:before {content: ""; display: block; position: absolute; left: 50%; width: 40
 h2 {font-size: 24px; font-weight: bold; text-align: center; padding: 30px 25px 15px; color:#222; letter-spacing: -1px; border-bottom: 1px solid #e3e3e3; white-space:pre-wrap;}
 h3:before {content: ""; display: inline-block; width: 3px; height: 18px; background-color: #bb162b; margin: -3px 10px 0 0; vertical-align: middle;}
 h3 {font-size:24px; color: #111; display: inline-block;}
-h3 span {dispaly:block;font-size:24px;color: #ccc;}
+h3 span {dispaly:block;font-size:18px;color: #ccc;}
 h4 {font-size:15px; display: inline-block; margin-right: 20px; color: #111; margin: 0 30px 10px 0; float: left;}
 h5 {font-size: 15px; color:#333;}
 h3,h4,h5,h6 {font-weight:500; letter-spacing: -1px;}
