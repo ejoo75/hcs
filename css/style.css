@@ -284,7 +284,7 @@ border-left: 1px solid #ccc;border-rigt: 1px solid #ccc;
         width: inherit;
 color:#000;
         line-height: 30px; /* header-bg height값 */
-        border-left: 1px solid #000;
+        border-left: 1px solid #e5e5e5;
     }
     th:first-child .th-text {
         border-left: none;
