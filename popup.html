@@ -22,33 +22,29 @@
 
 </head>
 <body>
-<div id="confirmModal" class="modal animate">
-
-<!-- body -->
-
-  <div class="window-content">
-      <div class="window-header">
-        <h5>Customer Exp/Reward History</h5>
+<div id="srDetailPopup" class="modal animate" style="display: block; z-index: 100;">
+    <!-- Modal content -->
+    <div class="modal-content ui-draggable ui-draggable-handle" id="modal-content" style="max-width:900px;">
+      <div class="modal-header">
+        <span class="close" id="closeBtnModal"><i class="ion ion-md-close"></i></span>
+        <h5>Detail Information</h5>
       </div>
       <!-- modal-body -->
-      <div class="window-body">
-        <!-- row -->
+      <div class="modal-body">
         <div class="row">
-          <div class="summary f-l"><span>Total<b><span id="totalNum">7</span></b></span></div>
-          <div class="btn-area">
-            <button class="search-button" id="searchAllHistory">Total History</button>
-            <button class="line-button" id="excelDownBtn"><i class="excelDown"></i>Excel</button>
-            <div class="list-group">
-    <a href="#" class="list-group-item">First item</a>
-    <a href="#" class="list-group-item">Second item</a>
-    <a href="#" class="list-group-item">Third item</a>
-  </div>
-          </div>
-        <!-- //row -->
+        
+        
+        </div>
+
+        <div class="modal-btnWrap">
+          <button type="submit" class="line-button cancel" onclick="document.getElementById('srDetailPopup').style.display='none';">Cancel</button> <!-- 취소 -->
+          <button type="submit" class="save-button" onclick="javascript:fnButtons('savePopup');">Apply</button> <!-- 적용 -->
+        </div>
       </div>
       <!-- //modal-body -->
-  </div> 
-    
+    </div>
+    <!-- //Modal content -->
+  </div>
   
 
 </body>
