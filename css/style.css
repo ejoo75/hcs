@@ -225,7 +225,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .process .row .list-table .list-table td {text-align:center;background: #fff!important}
 .process .row .list-table .list-table th .checkmark, .process .row .list-table .list-table td .checkmark {left:50%}
 .process .row .list-table .btn-area {margin-top:5px}
-.process .row .list-table button {height: 22px;padding: 3px 7px;}
+.process .row td button {height: 22px;padding: 3px 7px;}
 .process + .btn-area {margin:20px 0 0 35px;float:left}
 h4 + .txt-1 {margin:10px 0 0 21px}
 .txt-1 {clear:both;color: #444;font-size:13px;margin-bottom:10px}
