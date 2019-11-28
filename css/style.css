@@ -244,14 +244,14 @@ tr.lev2 th label {margin-left:40px}
 
 /* fixed-table */
 .fixed-table-container {
-        width: 600px;
         height: 200px;
-        border: 1px solid #000;
+        border: 1px solid #aaa;
+border-left: 1px solid #ccc;border-rigt: 1px solid #ccc;
         position: relative;
         padding-top: 30px; /* header-bg height값 */
     }
     .header-bg {
-        background: skyblue;
+        background: #ddd;
         height: 30px; /* header-bg height값 */
         position: absolute;
         top: 0;
@@ -282,6 +282,7 @@ tr.lev2 th label {margin-left:40px}
         position: absolute;
         top: 0;
         width: inherit;
+color:#000;
         line-height: 30px; /* header-bg height값 */
         border-left: 1px solid #000;
     }
