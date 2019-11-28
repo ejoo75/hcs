@@ -86,6 +86,7 @@ template {display: none;}
 .w50 {float: left; width: 50% !important;}
 .w40 {float: left; width: 40% !important; display: table;}
 .w24 {float: left; width: 24% !important; display: table;}
+.w_33 {float: left; width: calc(33% - 50px);}
 .w_45 {float: left; width: calc(40% - 50px);}
 .w_55 {float: left; width: calc(60% - 50px);}
 .w30 {float: left; width: 30% !important;}
