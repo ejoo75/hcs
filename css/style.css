@@ -76,7 +76,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .modal .member-info {color: #666; margin: 15px 0; text-align: left;}
 .modal .member-info span {display: block; height: 18px;}
 .modal .member-info span.inner-txt {text-indent: 15px;}
-.modal input[type=text], input[type=password] {height: 26px; margin-bottom: 6px;}
+.modal input[type=text], input[type=password] {height: 26px; margin-bottom: *6px;}
 .member-btnWrap {width: 100%; position: absolute; text-align: center; margin-top: 30px; left: 50%; transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
 
 
@@ -212,7 +212,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .process li:first-child {padding:0 0 10px;}
 .process li:nth-child(10) {padding:10px 0 20px;}
 .process li:nth-child(11) {border-left: 1px solid #fff;padding:0}
-.process .num {display:inline-block;margin-left:-13px;height:24px;width:24px;color:#fff;font-family:arial;font-weight:bold;font-size:14px;text-align:center;line-height:22px;border-radius:15px;background:#00afd5;margin-right:10px;}
+.process .num_wrap {margin-left:-13px;}
+.process .num {display:inline-block;height:24px;width:24px;color:#fff;font-family:arial;font-weight:bold;font-size:14px;text-align:center;line-height:22px;border-radius:15px;background:#00afd5;margin-right:10px;}
 .process h4 {float: inherit;color:#494949;margin:0}
 .process .row {width:100%;padding:20px 0 0 22px;}
 .process .row h5 {float:left;overflow:hidden;color:#00afd5;font-family:"Textbold";margin-bottom:10px;}
@@ -227,10 +228,11 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .process .row .list-table .btn-area {margin-top:5px}
 .process .row td button {height: 22px;padding: 3px 7px;}
 .process + .btn-area {margin:20px 0 0 35px;float:left}
-h4 + .txt-1 {margin:10px 0 0 21px}
+h4 + .txt-1 {margin:10px 0 0 35px}
 .txt-1 {clear:both;color: #444;font-size:13px;margin-bottom:10px}
 .txt-red {color: #bb162b}
 .txt-blue {color:#0078d7}
+.txt-center {text-align:center;}
 tr.lev th, tr.lev td {background:#f7f7f7!important}
 tr.lev th label, tr.lev td label {margin-left:20px}
 tr.lev2 th label {margin-left:40px}
@@ -243,55 +245,37 @@ tr.lev2 th label {margin-left:40px}
 .process_li .close {display:inline-block}
 
 /* fixed-table */
-.fixed-table-container {
-        height: 200px;
-        border: 1px solid #aaa;
-border-left: 1px solid #ccc;border-right: 1px solid #ccc;
-        position: relative;
-        padding-top: 30px; /* header-bg height값 */
-margin-top:40px;
-    }
-    .header-bg {
-        background: #ddd;
-        height: 35px; /* header-bg height값 */
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        border-bottom: 1px solid #e5e5e5;
-    }
-    .table-wrapper {
-        overflow-x: hidden;
-        overflow-y: auto;
-        height: 100%;
-    }
-    .table-wrapper table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .table-wrapper td {
-        border-bottom: 1px solid #e5e5e5;
-        padding: 9px 10px 7px;
-    }
-   .table-wrapper td + td {
-        border-left: 1px solid #e5e5e5;
-    }
-  .table-wrapper th {
-        padding: 0px; /* reset */
-    }
-    .th-text {
-        position: absolute;
-        top: 0;
-        width: inherit;
-text-align:center;
-color:#000;
-        line-height: 30px; /* header-bg height값 */
-        border-left: 1px solid #e5e5e5;
-padding:2px ;
-    }
-   .table-wrapper th:first-child .th-text {
-        border-left: none;
-    }
+.fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
+.header-bg {background: #ddd;height: 35px; /* header-bg height값 */position: absolute;top: 0;right: 0;left: 0;border-bottom: 1px solid #ccc;}
+.table-wrapper {overflow-x: hidden;overflow-y: auto;height: 100%;}
+.table-wrapper table {width: 100%;border-collapse: collapse;}
+.table-wrapper td {height:31px;border-bottom: 1px solid #e5e5e5;padding: 5px 10px 4px;}
+.table-wrapper td + td {border-left: 1px solid #e5e5e5;}
+.table-wrapper th {font-weight:normal;padding: 0px; /* reset */}
+.th-text {position: absolute;top: 0;width: inherit;text-align:center;color:#000;line-height: 30px; /* header-bg height값 */border-left: 1px solid #e5e5e5;padding:2px ;}
+.table-wrapper th:first-child .th-text {border-left: none;}
+.table-wrapper tr:hover td {background:#fbfcfd}
+.table-wrapper tr.active td {background:#f2f2f2}
+.table-wrapper td button {height: 22px;padding: 3px 7px;}
+
+/* img_popup */
+.img_wrap {position:relative;text-align:center;background:#e5e5e5 url(../images/thumb_bg.png) no-repeat center;}
+.img_wrap img{ position:absolute; max-width:95%; max-height:95%;width:auto; height:auto;margin:auto;top:0; bottom:0; left:0; right:0;}
+.small.img_wrap {margin-bottom:5px}
+h5 + .table-area {margin-top:5px}
+.gallery .modal-header {border-bottom:none;padding:0 30px;margin-top:25px}
+.gallery .modal-header h3 {font-family: "HeadRegular", sans-serif;margin-bottom:0;}
+.gallery .modal-header .close {top:0;right:30px;}
+.gallery .modal-body {padding:20px 30px}
+.gallery .w-35 {width:35%!important}
+.gallery .w-65 {width:65%!important}
+.gallery h5 {float:none;margin-bottom:10px}
+.gallery .fixed-table-container {padding-top:0}
+.gallery .table-area {margin-bottom:0}
+.gallery .fixed-table-container {border: 1px solid #e5e5e5;border-left: 1px solid #e5e5e5;border-right: 1px solid #e5e5e5;border-bottom: none;}
+.gallery .table-wrapper td {height: 50px;font-size:15px;padding-left:20px}
+.gallery .img_wrap {background:#f2f2f2;border: 1px solid #e5e5e5;border-left:none}
+.gallery.modal-content {border-radius:20px;border:none}
 
 /* button */
 button, .btn {display: inline-block; height: 26px; padding: 5px 15px; margin-left: 4px; font-size: 13px; line-height: 1; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; user-select: none;background-image: none; border: 1px solid transparent; -webkit-transition: all 0.25s; -ms-transition: all 0.25s; -moz-transition: all 0.25s; transition: all 0.325;}
@@ -330,6 +314,8 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .left-button.active, .right-button.active {border:none;background-color: #00afd5; color: #fff;}
 .center-button {background: #fff; border: 1px solid #ddd;border-left:none;border-right:none; color: #333;margin-left:0}
 .center-button.active {border:none;background-color: #00afd5; color: #fff;}
+.line-button .ion {font-size:14px;}
+.no_title {overflow:hidden;margin-bottom:10px}
 
 /* check box*/
 .check-wrap { display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
@@ -339,8 +325,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .check-wrap input:checked ~ .checkmark:after {display: block;}
 .check-wrap .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 
-.checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
-  user-select: none;}
+.checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .checkmark {position: absolute; top: 50%; left:10px; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
@@ -350,6 +335,18 @@ input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opac
 .checkLabel .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 th.tui-grid-cell-head .checkLabel {top:0;}
 .tui-grid-cell-head .checkLabel .Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
+.txt-center .checkmark {left:50%;}
+
+/* radio button*/
+.checks {position: relative;}
+.checks input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border: 0;}
+.checks input[type="radio"] + label {display: inline-block;position: relative;font-size: 12px;padding-left: 25px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+.checks input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: -2px;width: 16px;height: 16px;text-align: center;background: #fff;border: 2px solid #757575;border-radius: 100%;}
+.checks input[type="radio"]:hover + label:before {background: #bbbbbb;}
+.checks input[type="radio"]:checked + label:before {background: #00afd5;border-color: #00afd5;}
+.checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;left: 6px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
+.table-wrapper td .checks {margin-top:-17px}
+
 
 .grid {max-height: 680px; padding-right: 17px; overflow-y:auto; min-height:100px}
 .grid:after {content: ""; display: table; clear: both;}
@@ -410,6 +407,13 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 /* .window-btnWrap {position: absolute; text-align: center; bottom: 30px; left:50%; transform: translateX(-50%);} 2019.08.16 */
 .window-btnWrap {position: relative; width: 100%; text-align: center; left:50%; transform: translateX(-50%); margin-top: 20px; z-index: 10000;}
 
+.modal-body .fixed-table-container, .window-body .fixed-table-container {margin-top:0}
+.modal-body .w-50, .window-body .w-50 {width: calc(50% - 10px);}
+.modal-body .w-50-m, .window-body .w-50-m {width:20px;}
+.modal-body .w-35, .window-body .w-35 {width: calc(35% - 10px);}
+.modal-body .w-65, .window-body .w-65 {width: calc(65% - 10px);}
+.window-header .close {top:10px;}
+.modal-header .close {top:5px;}
 
 /* Add Animation */
 @keyframes animatetop {
@@ -612,7 +616,6 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .ico-cell {display: block; width: 100%; text-align: center; color: #c0c0c0; font-size: 16px;}
 
 .btnCtrl-wrap2 {position: relative; top: 200px; float: left; width: 20px; height: 100px;}
-.btnCtrl-wrap3 {position: relative; top: 200px; float: left; width: 2%; height: 50px;}
 
 /*
 .tui-grid-cell-row-head{position:relative;}
