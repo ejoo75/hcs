@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+<section class="container">
+
+	<!-- content -->
+	<div class="content">
+		<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
+		<h3>Kiosk Management
+			<div>Add, edit Kiosk hardware and settings. Mapping hardware with Kiosk settings.</div>
+		</h3>
+		<!-- btn-area -->
+		<div class="btn-area">
+			<button class="save-button" id="saveBtn">Save</button>
+		</div>
+		<!-- //btn-area -->
+		
+		<!-- row -->
+		<div class="row">
+			<div class="w-50">
+				<h4>Hardware List</h4>
+				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+				<!-- table-area -->
+				<div class="table-area">
+					<div class="fixed-table-container" style="height:500px">
+						<div class="header-bg"></div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th width="10%"> <!-- %넓이 값을 지정을 위해 div를 포함시켰다. -->
+											<div class="th-text">순번</div>
+										</th>
+										<th width="30%">
+											<div class="th-text">하드웨어코드</div>
+										</th>
+										<th width="30%">
+											<div class="th-text">하드웨어명</div>
+										</th>
+										<th width="10%">
+											<div class="th-text">USE</div>
+										</th>
+										<th width="20%">
+											<div class="th-text"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="active">
+									 	<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center">
+											<label class="checkLabel">
+												<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr> 
+									<tr>
+									 	<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center">
+											<label class="checkLabel">
+												<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--// table-area -->
+			</div>
+			<div class="w-50-m"></div>
+			<div class="w-50">
+				<h4>Kiosk(컨피규레이터, 시뮬레이터) Setting List</h4>
+				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+				<!-- table-area -->
+				<div class="table-area">
+					<div class="fixed-table-container" style="height:500px">
+						<div class="header-bg"></div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th width="10%"> <!-- %넓이 값을 지정을 위해 div를 포함시켰다. -->
+											<div class="th-text">
+												<div class="checks">
+													<input type="radio" id="ex_rd1" name="ex_rds"> 
+													<label for="ex_rd1"></label> 
+												</div>
+											</div>
+										</th>
+										<th width="35%">
+											<div class="th-text">Setting Code</div>
+										</th>
+										<th width="35%">
+											<div class="th-text">Kiosk Setting Name</div>
+										</th>
+										<th width="20%">
+											<div class="th-text"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-center">
+											<div class="checks">
+												<input type="radio" id="ex_rd2" name="ex_rds"> 
+												<label for="ex_rd2"></label> 
+											</div>
+										</td>
+										<td>DC-SC-K01</td>
+										<td>Gate Kiosk</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>                     			   
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--// table-area -->
+			</div>
+		</div>
+		<!-- //row -->
+	</div>
+	<!-- //content -->
+</section>
+</body>
+</html>
