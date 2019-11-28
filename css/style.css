@@ -269,11 +269,11 @@ border-left: 1px solid #ccc;border-rigt: 1px solid #ccc;
         border-collapse: collapse;
     }
     td {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #e5e5e5;
         padding: 5px;
     }
     td + td {
-        border-left: 1px solid #ccc;
+        border-left: 1px solid #e5e5e5;
     }
     th {
         padding: 0px; /* reset */
