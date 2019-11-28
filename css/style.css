@@ -265,18 +265,18 @@ margin-top:40px;
         overflow-y: auto;
         height: 100%;
     }
-    table {
+    .table-wrapper table {
         width: 100%;
         border-collapse: collapse;
     }
-    td {
+    .table-wrapper td {
         border-bottom: 1px solid #e5e5e5;
         padding: 5px;
     }
-    td + td {
+   .table-wrapper td + td {
         border-left: 1px solid #e5e5e5;
     }
-    th {
+  .table-wrapper th {
         padding: 0px; /* reset */
     }
     .th-text {
@@ -287,7 +287,7 @@ color:#000;
         line-height: 30px; /* header-bg height값 */
         border-left: 1px solid #e5e5e5;
     }
-    th:first-child .th-text {
+   .table-wrapper th:first-child .th-text {
         border-left: none;
     }
 
