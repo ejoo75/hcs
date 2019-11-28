@@ -271,7 +271,7 @@ margin-top:40px;
     }
     .table-wrapper td {
         border-bottom: 1px solid #e5e5e5;
-        padding: 5px;
+        padding: 10px;
     }
    .table-wrapper td + td {
         border-left: 1px solid #e5e5e5;
@@ -286,6 +286,7 @@ margin-top:40px;
 color:#000;
         line-height: 30px; /* header-bg height값 */
         border-left: 1px solid #e5e5e5;
+padding:10px;
     }
    .table-wrapper th:first-child .th-text {
         border-left: none;
