@@ -246,9 +246,10 @@ tr.lev2 th label {margin-left:40px}
 .fixed-table-container {
         height: 200px;
         border: 1px solid #aaa;
-border-left: 1px solid #ccc;border-rigt: 1px solid #ccc;
+border-left: 1px solid #ccc;border-right: 1px solid #ccc;
         position: relative;
         padding-top: 30px; /* header-bg height값 */
+margin-top:40px;
     }
     .header-bg {
         background: #ddd;
