@@ -561,7 +561,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .ico-cell {display: block; width: 100%; text-align: center; color: #c0c0c0; font-size: 16px;}
 
 .btnCtrl-wrap2 {position: relative; top: 200px; float: left; width: 20px; height: 100px;}
-.btnCtrl-wrap3 {position: relative; top: 200px; float: left; width: 20px; height: 50px;}
+.btnCtrl-wrap3 {position: relative; top: 200px; float: left; width: 2%; height: 50px;}
 
 /*
 .tui-grid-cell-row-head{position:relative;}
