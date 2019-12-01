@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+
+<!-- GNB -->
+<!--// GNB -->
+
+<!-- LNB -->
+<!--// LNB -->
+
+<!-- Content -->
+<section class="container">
+	<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
+	<div class="content">
+		<h3>Configurator Management <span>New(Edit) Configurator Setting</span>
+			<div>Write(edit) Kiosk setting information</div>
+		</h3>
+		<div class="btn-area">
+			<button class="line-button" id="excelDownBtn">Cancel</button>
+			<button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
+		</div>
+		<ul class="process">
+			<li>
+				<!-- 1 -->
+				<div class="num_wrap"><span class="num">1</span><h4>Setting Name</h4></div>
+				<!-- row -->
+				<div class="row">
+					<h5>NAME SETTING</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Setting Code</label>
+									</th>
+									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Name</label>
+									</th>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Copy From</label>
+									</th>
+									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Use Y/N</label>
+									</th>
+									<td>
+										<label class="checkLabel">
+											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+											<span class="checkmark"></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// table-area -->
+					<button class="save-button" onclick="">Temp Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //1 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">2</span><h4>Basic Setting</h4></div>
+				<!-- 2 -->
+				<!-- row -->
+				<div class="row">
+					<h5>WATING TIME</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Reset Time</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25">&nbsp;&nbsp;(sec)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>LANGUAGE LIST</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Language List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td>
+										<table  class="list-table" style="width: 50%;">
+										<tr>
+											<th>Language Name</th>
+											<th>Input Aligne</th>
+											<th>Default</th>
+											<th>USE</th>
+										</tr>
+										<tr>
+											<td>English</td>
+											<td>좌</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td>Spanish</td>
+											<td>우</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td>Italian</td>
+											<td></td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+										</tr>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// table-area -->
+					<h5>PRICE FORMAT</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Price Format</label></a>
+									</th>
+									<td><input name="" id="" type="text" maxlength="10" class="form-25"><input name="" id="" type="text" maxlength="10" class="form-25"><input name="" id="" type="text" maxlength="10" class="form-25"><input name="" id="" type="text" maxlength="10"  class="form-25"></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Currency Unit</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><input name="" id="" type="text" maxlength="10" class="form-25"></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Unit Placement</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="line-button" onclick="">Before Price</button><button class="save-button" onclick="">After Price</button> <button class="left-button active" onclick="">Before Price</button><button class="right-button" onclick="">After Price</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>DEALER MENU LIST</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">You must add Dealer webpage setting in ‘<span class="txt-blue">Service Control > Function Management > Promotion & Dealer Web</span>’ Tab.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Menu List</label>
+									</th>
+									<td>
+										<table  class="list-table" >
+										<tr>
+											<th>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</th>
+											<th>No</th>
+											<th>Service Name</th>
+											<th>Order</th>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>1</td>
+											<td>Request a Test Drive</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>2</td>
+											<td>Request a Test Drive</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>3</td>
+											<td>Request a Test Drive</td>
+											<td>3</td>
+										</tr>
+										</table>
+										<div class="btn-area"><button class="line-button" onclick="">Remove</button><button class="line-button" onclick="">+ Add Menu</button></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //2 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">3</span><h4>Entry Page</h4></div>
+				<!-- 3 -->
+				<!-- row -->
+				<div class="row">
+					<h5>WELCOME SETTING</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Welcome Message</label></a>
+									</th>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Welcome Background</label>
+									</th>
+									<td><button class="line-button" onclick="">IMG</button><button class="save-button" onclick="">VIDEO</button> <button class="left-button active" onclick="">IMG</button><button class="right-button" onclick="">VIDEO</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Image List</label>
+									</th>
+									<td><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Video Folder Location</label>
+									</th>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Video List</label>
+									</th>
+									<td>* You must manage a video list by each PC manually.<a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Special Video</label>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr class="lev lev2">
+									<th>
+										<label>Special Video Period</label></a>
+									</th>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-25"> ~ <input type="text" id="" name="" value="" maxlength="250" class="form-25"><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev lev2">
+									<th>
+										<label>Special Video Period</label></a>
+									</th>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+					<h5>LANGUAGE BUTTON</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Language Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>VERIFY & AGREEMENT</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1"> If you want to Verify in the Quotation step, then you must turn OFF below settings and turn ON in the Quotation step.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Verify Mode</label></a>
+									</th>
+									<td><button class="left-button active" onclick="">OFF</button><button class="center-button" onclick="">QR Code</button><button class="right-button" onclick="">Customer Information Sheet</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Choose CIS Type</label><</a>
+									</th>
+									<td>
+										<select id="authMenuGrpCd" name="authMenuGrpCd" value="" disabled="">
+											<option value=""></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<label>Use Agreement Pop-Up?</label>
+									</th>
+									<td><button class="left-button active" onclick="">OFF</button><button class="center-button" onclick="">Before Verify</button><button class="right-button" onclick="">After Verify</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Agreement List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td>
+										<table  class="list-table">
+										<tr>
+											<th>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</th>
+											<th>Agreement Title</th>
+											<th>Read All to Check</th>
+											<th>Order</th>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Legal & Agreement</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Customer Information Usage</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>2</td>
+										</tr>
+										</table>
+										<div class="btn-area"><button class="line-button" onclick="">Remove</button><button class="line-button" onclick="">+ Add Menu</button></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// table-area -->
+					<h5>MARKETING MENU</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Promotion Button</label>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //3 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">4</span><h4>Vehicle Control Management</h4></div>
+				<div class="txt-1">Experience, Compare, Old & New, USP, Painting and Make a Quotation information are managed in Vehicle Control Management. </div>
+				<!-- 4 -->
+				<!-- row -->
+				<div class="row">
+					<h5>DESIGN & FILTER</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Vehicle List Design Type</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="line-button" onclick="">Sliding</button><button class="save-button" onclick="">Change</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Vehicle Type Filter</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Price Filter</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Smart Sense Filter</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>LANGUAGE BUTTON</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Language Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>AGREEMENT</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Agreement Pop-Up?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Agreement List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td>
+										<table  class="list-table">
+										<tr>
+											<th>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</th>
+											<th>Agreement Title</th>
+											<th>Read All to Check</th>
+											<th>Order</th>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Legal & Agreement</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Customer Information Usage</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>2</td>
+										</tr>
+										</table>
+										<div class="btn-area"><button class="line-button" onclick="">Remove</button><button class="line-button" onclick="">+ Add Menu</button></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// table-area -->
+					<h5>MARKETING MENU</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Promotion Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Dealer Menu Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>Other Setting</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Display Price Range</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //4 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">5</span><h4>Playground Page</h4></div>
+				<div class="txt-1">Most of Playground settings are managed in Vehicle Settings because they are set by each vehicles.</div>
+				<!-- 5 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Playground page will be turned off in all vehicles’ menu.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Playground page?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //5 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">6</span><h4>Compare Page</h4></div>
+				<div class="txt-1">Most of Compare settings are managed in Vehicle Settings because they are set by each vehicles.</div>
+				<!-- 6 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Compare page will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Compare page?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>ON/OFF MENU</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Feature Compare Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Engine Compare Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Dimension Compare Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Ask Car Master Sheet Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>OTHER</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Display Price Range</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //6 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">7</span><h4>Smart Sense Page</h4></div>
+				<div class="txt-1">Most of Smart Sense settings are managed in Vehicle Settings because they are set by each vehicles.</div>
+				<!-- 7 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Smart Sense page will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Smart Sense page?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //7 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">8</span><h4>Old & New Page</h4></div>
+				<div class="txt-1">Most of Smart Sense settings are managed in Vehicle Settings because they are set by each vehicles.</div>
+				<!-- 8 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Old & New page will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Old & New menu?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //8 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">9</span><h4>Painting Page</h4></div>
+				<!-- 9 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Painting page will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Painting menu?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //9 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">10</span><h4>Make a Quotation Page</h4></div>
+				<!-- 10 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Make a Quotation page will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Make a Quotation menu?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>ON/OFF OPTION SELECT FUNCTION</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Option Select  function  will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Option Select function?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>OTHER</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Display Price</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+				</div>
+				<!-- //row -->
+				<!-- //10 -->
+			</li>
+			<li>
+				<div class="num_wrap"><span class="num">11</span><h4>Quotation Page</h4></div>
+				<!-- 11 -->
+				<!-- row -->
+				<div class="row">
+					<h5>ON/OFF PAGE</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you turn off this setting, then Make a Quotation menu will be turned off in all vehicles.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use <b class="txt-red">Quotation</b> menu?</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>MARKETING MENUS</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Finance Calculator</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Send Email Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Send SMS Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Print Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Print Customer Name</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Promotion Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr>
+									<th>
+										<label>Dealer Menu Button</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>OTHER</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Display Price</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></a>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>CUSTOMER INFORMATION SHEET & AGREEMENT</h5>  <!-- 메시지 목록 -->
+					<div class="txt-1">If you want to Verify in the Quotation step, then you must turn OFF Verify settings in Entry Page.</div>
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Customer Information Sheet?</label>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Choose CIS Type</label>
+									</th>
+									<td>
+										<select id="authMenuGrpCd" name="authMenuGrpCd" value="" disabled="">
+											<option value=""></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<label>Agreement Pop-Up</label>
+									</th>
+									<td><button class="left-button active" onclick="">OFF</button><button class="center-button" onclick="">Pop-up before CIS</button><button class="right-button" onclick="">Pop-up after CIS</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
+								</tr>
+								<tr class="lev">
+									<th>
+										<label>Agreement List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+									</th>
+									<td>
+										<table class="list-table">
+										<tbody><tr>
+											<th>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</th>
+											<th>Agreement Title</th>
+											<th>Read All to Check</th>
+											<th>Order</th>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Legal &amp; Agreement</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>Customer Information Usage</td>
+											<td>
+												<label class="checkLabel">
+													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+													<span class="checkmark"></span>
+												</label>
+											</td>
+											<td>2</td>
+										</tr>
+										</tbody></table>
+										<div class="btn-area"><button class="line-button" onclick="">Remove</button><button class="line-button" onclick="">+ Add Menu</button></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button>
+				</div>
+				<!-- //row -->
+				<!-- //11 -->
+			</li>
+		</ul>
+		<div class="btn-area">
+			<button class="btn-control" onclick="javascript:fnButtons('save');">SAVE & DONE</button><!-- 저장 -->
+			<button class="line-button" id="excelDownBtn">Cancel</button>
+		</div>
+	</div>	
+</section>
+<!-- //content -->
+
+</body>
+</html>

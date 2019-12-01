@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+<section class="container">
+
+	<!-- content -->
+	<div class="content">
+		<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
+		<h3>Vehicle List & Image Management<span></span>
+			<div></div>
+		</h3>
+		
+		<!-- row -->
+		<div class="row">
+			<!-- w_50 -->
+			<div class="w_40">
+				<h4>Vehicle List</h4>
+				<div class="btn-area">
+					<button class="line-button" id="gridRowDelBtn" style=""><i class="ion ion-md-add"></i>&nbsp;&nbsp;&nbsp;Add New</button>
+					<!--//icon button + total
+					<button class="line-button btn-ico" id="gridRowDelBtn" style=""><i class="ion ion-md-remove"></i></button>
+					<button class="line-button btn-ico" id="gridRowAddBtn" style=""><i class="ion ion-md-add"></i></button>
+					<div class="summary">Total<span id="totalNum">1</span></div> 
+					-->
+				</div>        
+				<div id="grid" style="height:400px"></div><!-- //grid 작업되면 height 뺄것 -->
+			</div>
+			<!-- //w_50 -->   
+			<div class="btnCtrl-wrap">
+				<button class="btn-add" id="btn-add"></button>
+				<button class="btn-remove" id="btn-remove"></button>
+			</div>
+			<!-- w_50 -->
+			<div class="w_60 ">
+				<h4>Sales Vehicle List</h4>
+					<!-- // total
+					<div class="summary">Total<span id="totalNum2">1</span></div> 
+					-->
+					<div id="grid1"></div>
+			</div>
+			<!-- //w_50 -->
+		</div>
+		<!-- //row -->
+		
+		<!-- btn-area -->
+		<div class="btn-area">
+			<button class="save-button" id="saveBtn">SAVE</button>
+		</div>
+		<!-- //btn-area -->
+	</div>
+	<!-- //content -->
+</section>
+</body>
+</html>

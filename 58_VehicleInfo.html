@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+
+<!-- GNB -->
+<!--// GNB -->
+
+<!-- LNB -->
+<!--// LNB -->
+
+<!-- Content -->
+<section class="container">
+	<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
+	<div class="content">
+		<h3>Vehicle Information Management<span></span><!-- 20191130 span수정  -->
+			<div></div>
+		</h3>
+		<div class="btn-area">
+			<button class="line-button" id="saveBtn">Cancel</button><button class="save-button" id="saveBtn">SAVE</button>
+		</div>
+		<ul class="marker-wrap">
+			<li>
+				<!-- 1 -->
+				<!-- row -->
+				<div class="row">
+					<div class="th-wrap">
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Vehicle</label>
+								</th>
+							</tr>
+						</table>
+					</div>
+					<div class="td-wrap">
+						<table class="list-table">
+							<tr>
+								<td class="txt-center">
+									<select name="select1" id="select1" style="width:150px">
+										<option value="">TUCSON</option>
+										<option value="">Option2</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="th-wrap">
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Specification</label>
+								</th>
+							</tr>
+						</table>
+					</div>
+					<div class="td-wrap">
+						<table class="list-table">
+							<tr>
+								<td class="txt-center"><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button></td>
+							</tr>
+						</table>
+					</div>
+					<div class="th-wrap">
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>스토어 맵핑 여부</label>
+								</th>
+							</tr>
+						</table>
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<!-- group -->
+					<div class="th-wrap">
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Engine</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Trim</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
+								</th>
+							</tr>
+						</table>
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									1.6 MPI<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
+								</td>
+								<td colspan="2" class="txt-center">
+									1.6 GDI<button class="btn-ico-only btn-write" disabled><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
+								</td>
+								<td class="txt-center">
+									1.6 GDI<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									GO (100,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+								</td>
+								<td class="txt-center">
+									MID (110,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+								</td>
+								<td class="txt-center">
+									HIGH (130,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+								</td>
+								<td class="txt-center">
+									HIGH-TECH (200,000,000) <button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<!--// group -->
+				</div>
+				<!-- //row -->
+				<!-- //1 -->
+			</li>
+			<li>
+				<!-- 2 -->
+				<div class="marker">
+					<div class="th-wrap">Ad Option List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="td-wrap">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropdown"></i></button></div>
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="th-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Option 3</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Option 4</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- //2 -->
+			</li>
+			<li>
+				<!-- 3 -->
+				<div class="marker">
+					<div class="th-wrap">Additional Option List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="td-wrap">Additional Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="th-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- //2 -->
+			</li>
+			<li>
+				<!-- 4 -->
+				<div class="marker">
+					<div class="th-wrap">Exterior Color List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="td-wrap">Exterior Color List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="th-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Ex Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Ex Color 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- //4 -->
+			</li>
+			<li>
+				<!-- 5 -->
+				<div class="marker">
+					<div class="th-wrap">Interior Color List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="td-wrap">Interior Color List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="th-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<tr>
+								<th>
+									<label>Int Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<label>Int Color 2 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+					<div class="td-wrap">
+						<!-- table -->
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+							</colgroup>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<!--// table -->
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- //5 -->
+			</li>
+		</ul>
+	</div>	
+</section>
+<!-- //content -->
+
+</body>
+</html>

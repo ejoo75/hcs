@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+<section class="container">
+
+	<!-- content -->
+	<div class="content">
+		<h3>Template <span>Search 2Row 3Grid</span>
+			<div>Subtitle</div>
+		</h3>
+		<!-- searchForm -->
+		<div id="searchForm" class="search-form">
+			<div class="search-input-area">
+				<div class="col-3">
+					<label for="schCdType">Code</label><!--공통코드유형--> 
+					<div class="inputWrap">
+						<select name="schCdType" id="schCdType">                       
+							<option value="0001">[0001] SPACE MANAGEMENT </option>
+							<option value="0002">[0002] SHOWROOM</option>
+							<option value="0003">[0003] Dealer</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-3">
+					<label for="schDlrSrCd">Showroom/Dealer</label>  <!--쇼룸/딜러-->
+					<div class="inputWrap"> 
+						<select name="schDlrSrCd" id="schDlrSrCd" readonly>
+							<option value="XXXX">[XXXX] Space Platform</option></select>
+					</div>
+				</div>
+				<!-- column -->
+				<div class="col-3">
+					<label for="messageType">Message Type</label><!-- 메시지 유형 -->
+						<div class="inputWrap">
+							<select name="schMsgTypeCd" id="schMsgTypeCd">
+								<option value="">- ALL -</option>
+							</select>
+						</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-4">
+					<label for="schMsgExpl">Message Name</label><!-- 코드명 -->
+						<div class="inputWrap">
+						<input name="schMsgExpl" id="schMsgExpl" type="text" autocomplete="off">
+					</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-4">
+					<label for="schUseYn">Use Flag</label><!--사용유무-->
+					<div class="inputWrap">
+						<select name="schUseYn" id="schUseYn" class="" placeholder="">
+							<option value="">- ALL -</option>
+						</select>
+					</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-4">
+					<label for="schUseYn">Use Flag</label><!--사용유무-->
+					<div class="inputWrap">
+						<select name="schUseYn" id="schUseYn" class="" placeholder="">
+							<option value="">- ALL -</option>
+						</select>
+					</div>
+				</div>
+				<!-- //column -->
+				<!-- column -->
+				<div class="col-4">
+					<label for="schUseYn">Use Flag</label><!--사용유무-->
+					<div class="inputWrap">
+						<select name="schUseYn" id="schUseYn" class="" placeholder="">
+							<option value="">- ALL -</option>
+						</select>
+					</div>
+				</div>
+				<!-- //column -->
+			</div>
+			<div class="search-button-area">
+				<button class="line-button btn-ico" onclick=""><i class="ion ion-md-refresh"></i></button><button class="search-button" id="searchBtn">Search</button> <!-- 조회 -->
+			</div>
+		</div>
+		<!-- //searchForm -->
+		<!-- btn-area -->
+		<div class="btn-area">
+			<button class="line-button" id="saveBtn">Cancel</button><button class="save-button" id="saveBtn">SAVE</button>
+		</div>
+		<!-- //btn-area -->
+		<!-- row -->
+		<div class="row">
+			<div class="w-33">
+				<h4>Hardware List</h4>
+				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+				<!-- table-area -->
+				<div class="table-area">
+					<div class="fixed-table-container" style="height:500px">
+						<div class="header-bg"></div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th width="10%"> <!-- %넓이 값을 지정을 위해 div를 포함시켰다. -->
+											<div class="th-text">순번</div>
+										</th>
+										<th width="30%">
+											<div class="th-text">하드웨어코드</div>
+										</th>
+										<th width="40%">
+											<div class="th-text">하드웨어명</div>
+										</th>
+										<th width="20%">
+											<div class="th-text"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="active">
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>   
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr> 
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>   
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>  
+									<tr>
+										<td class="txt-center">1</td>
+										<td>DC-SC-C01</td>
+										<td>Configurator 1</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr> 
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--// table-area -->
+			</div>
+			<div class="w-33-m"></div>
+			<div class="w-33">
+				<h4>Configurator Setting List</h4>
+				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+				<!-- table-area -->
+				<div class="table-area">
+					<div class="fixed-table-container" style="height:500px">
+						<div class="header-bg"></div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th width="20%"> <!-- %넓이 값을 지정을 위해 div를 포함시켰다. -->
+											<div class="th-text">
+												<div class="checks">
+													<input type="radio" id="ex_rd1" name="ex_rds"> 
+													<label for="ex_rd1"></label> 
+												</div>
+											</div>
+										</th>
+										<th width="60%">
+											<div class="th-text">Config Setting Name</div>
+										</th>
+										<th width="20%">
+											<div class="th-text"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-center">
+											<div class="checks">
+												<input type="radio" id="ex_rd2" name="ex_rds"> 
+												<label for="ex_rd2"></label> 
+											</div>
+										</td>
+										<td>Config Setting Name</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>                     			   
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--// table-area -->
+			</div>
+			<div class="w-33-m"></div>
+
+			<div class="w-33">
+				<h4>Vehicle Setting List</h4>
+				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
+				<!-- table-area -->
+				<div class="table-area">
+					<div class="fixed-table-container" style="height:500px">
+						<div class="header-bg"></div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th width="20%"> <!-- %넓이 값을 지정을 위해 div를 포함시켰다. -->
+											<div class="th-text">
+												<div class="checks">
+													<input type="radio" id="ex_rd1" name="ex_rds"> 
+													<label for="ex_rd1"></label> 
+												</div>
+											</div>
+										</th>
+										<th width="60%">
+											<div class="th-text">Vehicle Setting Name</div>
+										</th>
+										<th width="20%">
+											<div class="th-text"></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-center">
+											<div class="checks">
+												<input type="radio" id="ex_rd2" name="ex_rds"> 
+												<label for="ex_rd2"></label> 
+											</div>
+										</td>
+										<td>Config Setting Name</td>
+										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									</tr>                     			   
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--// table-area -->					   
+			</div>
+		</div>
+		<!-- //row -->
+	</div>
+	<!-- //content -->
+</section>
+</body>
+</html>
