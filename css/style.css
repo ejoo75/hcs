@@ -8,7 +8,7 @@ h1 a {display: block; width: 100%; height: 100%; font-size:0;text-indent:-9999px
 h1 a:hover, h1 a.active {background:none;}
 h2:before {content: ""; display: block; position: absolute; left: 50%; width: 40px; height: 3px; background-color: #222; margin:-5px 0 0 -20px; line-height: 1.2;}
 h2 {font-size: 24px; font-weight: bold; text-align: center; padding: 30px 25px 15px; color:#222; letter-spacing: -1px; border-bottom: 1px solid #e3e3e3; white-space:pre-wrap;}
-h3 {font-size:24px; color: #111; display: inline-block;margin-bottom:20px;}
+h3 {font-size:24px; color: #111; display: inline-block; margin-bottom:20px;}
 h3 span {font-size:18px; color: #111;margin-left:20px}
 h3 div {font-size:14px;color: #aaa;}
 h4 {font-size:18px; display: inline-block; margin-right: 20px; color: #111; margin: 0 30px 10px 0; float: left;}
@@ -16,8 +16,8 @@ h5 {font-size: 15px; color:#333;}
 
 
 /* form */
+input[type=text], input[type=number], input[type=password], input[type=tel], input[type=email], input[type=date], select, textarea {width: 100%; height: 26px; line-height:26px; padding: 0 10px; border: 1px solid #e5e5e5; resize: vertical;background:#fff}
 input[type=number] {padding:0 0 0 10px!important;}
-input[type=text], input[type=password], input[type=tel], input[type=email], input[type=date], input[type=number], select, textarea {width: 100%; height: 26px; line-height:26px; padding: 0 10px; border: 1px solid #e5e5e5; resize: vertical;background:#fff}
 textarea {width: 100%; min-height: 60px;}
 input:focus, select:focus, textarea:focus {border:1px solid #27aae2;}
 label {position: relative; display: inline-block; color: #000; font-size: 13px; font-weight: 500; vertical-align: middle;}
@@ -77,7 +77,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .modal .member-info {color: #666; margin: 15px 0; text-align: left;}
 .modal .member-info span {display: block; height: 18px;}
 .modal .member-info span.inner-txt {text-indent: 15px;}
-.modal input[type=text], input[type=password] {height: 26px; margin-bottom: *6px;}
+.modal input[type=text], input[type=password] {height: 26px;}
 .member-btnWrap {width: 100%; position: absolute; text-align: center; margin-top: 30px; left: 50%; transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%);}
 
 
@@ -162,37 +162,47 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .breadcrumb span:after {content: ""; position: absolute; right: 10px; top: 5px; border: solid #a5a5a5; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;transform: rotate(-45deg); -webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transition: -webkit-transform 0.25s ease;transition: -ms-transform 0.25s ease;transition: transform 0.25s ease;}
 
 /* search-form */
-.search-form {width: 100%; margin: 0 auto 20px; padding: 10px; border: 1px solid #aaa;background:#f3f4f6;}
+.search-form {width: 100%; margin: 0 auto 15px; padding: 10px; border: 1px solid #aaa;background:#f3f4f6;}
 .modal-body .search-form {margin-top:0;}
 .search-form:after {content: ""; display: table; clear: both;}
 .search-form .search-input-area {display: table; float: left; width: 80%;}
 .search-form .search-input-area label {width: 35%; display: table-cell; line-height: 1.2; text-align: right; padding-right: 10px;}
 .search-form .search-input-area .label-calendar {width: 17.5%;}
 .search-form .search-input-area .label-calendar2 {width: 23.5%;}
-.search-form .search-input-area .inputWrap {width: 100%; display: table-cell; vertical-align: middle;  padding-right: 15px;}
+.search-form .search-input-area .label-calendar3 {width: 12%;}/* align with calendar header */
+.search-form .search-input-area .inputWrap {width: 100%; height: 34px; display: table-cell; vertical-align: middle;  padding-right: 15px;}
 .search-input-area select {height: 26px; line-height: 26px; margin: 4px;}
 #monTimeList {width: 180px;}
 .search-input-area input {height: 26px; line-height: 26px; margin: 4px;}
 .search-form .search-button-area {float: right; width: 20%; text-align: right;}
-.search-form .search-button-area button {margin: 4px;}
+.search-form .search-button-area button {margin: 2px;}
+.search-form + .btn-area {margin-bottom:10px;}
+.search-form .btn-ico {float: initial;}
+.search-form .search-input-area label.checkLabel {width:initial;}
 
 /* table */
-.table-area {position: relative; width: 100%; margin-bottom: 20px; border-bottom: 1px solid #eee;}
+.table-area {clear: both; position: relative; width: 100%; margin-bottom: 20px; border-bottom: 1px solid #eee;}
 .table-area:after {content: ""; display: table; clear: both;}
 .list-table {border-collapse: collapse; border-spacing: 0; width: 100%; border-top: 1px solid #9ca5b2;}
 .list-table th {text-align: left; padding: 8px 10px; border-bottom: 1px solid #dedede; background: #f3f4f6; color: #000; font-weight: 500; white-space: nowrap;}
-.list-table td {text-align: left; padding: 8px 10px; border-bottom: 1px solid #dedede;}
+.list-table td {height: 43px;text-align: left; padding: 8px 10px; border-bottom: 1px solid #dedede;}
 .list-table tr:hover {background-color: rgba(236, 240, 246, 0.2);}
 .must:after {position: absolute;content: '*';width: 10px;display: inline-block;color: #bb162b;font-size: 18px;font-weight: normal;vertical-align: middle;margin-left: 3px;margin-top: 0;}
 .must2:before {position: relative; content: '*'; width: 10px; display: inline-block; color: #bb162b; font-size: 18px; font-weight: normal; vertical-align: middle; margin-right:5px; margin-top: -3px;}
-.list-table td .search-input {position: relative;}
-.list-table td .btn-search {position: absolute; top:0; right: 0; min-width: 20px !important; padding: 10px; color: #999; font-size: 18px; cursor: pointer;}
-.list-table td .btn-search:hover {box-shadow: none; color: #000;}
-.list-table td .btn-search .ion {position: absolute;top:3px; right: 10px;}
+td .search-input {position: relative;}
+td .btn-search {position: absolute; top:0; right: 0; min-width: 20px !important; padding: 10px; color: #999; font-size: 18px; cursor: pointer;}
+td .btn-search:hover {box-shadow: none; color: #000;}
+td .btn-search .ion {position: absolute;top:3px; right: 10px;}
 .list-table2 th {border-bottom: 1px solid #ccc;}
 .list-table2 td.agreement {overflow: auto; text-align: left;}
 .list-table2 td.agreement .agreement-inner {width: 95%; height: 80px;}
-
+.gird-table {border-collapse: collapse; border-spacing: 0; width: 100%;     border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.gird-table th {text-align: center; padding: 8px 10px; border-left: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5; background: #ddd; color: #000; font-weight: 500; white-space: nowrap;}
+.gird-table td {padding: 8px 10px; border-bottom: 1px solid #e5e5e5;}
+.gird-table td + td {border-left: 1px solid #e5e5e5;}
+td button {margin-left:0;margin-right:4px;}
+td .btn-area button {margin-left:4px;margin-right:0;}
+.list-table .btn-area {margin-top:5px}
 
 /* 동의서 예제 */
 .list-table2 td.agreement.popCont {}
@@ -207,11 +217,10 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .list-table2 td.agreement .textArea .end{padding-bottom:20px}
 
 /* process */
-.process {padding:0 0 20px}
-.process {padding-left:13px}
+.process {padding-left:13px;margin:0 0 40px;}
 .process li {border-left:1px solid #00afd5;padding:10px 0;}
-.process li:first-child {padding:0 0 10px;}
-.process li:nth-last-child(2) {padding:10px 0 20px;}
+.process li:first-child {padding:0 0 10px!important;}
+.process li:nth-last-child(2) {padding:10px 0 20px;padding-bottom:20px!important}
 .process li:last-child {border-left: 1px solid #fff;padding:0}
 .process .num_wrap {margin-left:-13px;}
 .process .num {display:inline-block;height:24px;width:24px;color:#fff;font-family:arial;font-weight:bold;font-size:14px;text-align:center;line-height:22px;border-radius:15px;background:#00afd5;margin-right:10px;}
@@ -220,23 +229,27 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .process .row h5 {float:left;overflow:hidden;color:#00afd5;font-family:"Textbold";margin-bottom:10px;}
 .process .row .list-table {border-top:1px solid #00afd5;}
 .process .row .list-table th {background:none;}
+.process .row .list-table td {height:43px;}
+.process .row .list-table td td {height:32px;}
 .process input[type=text], .process input[type=password], .process input[type=tel], .process input[type=email], .process input[type=date], .process select, .process textarea {width: calc(100% - 100px);} 
 .txt-num {width:55px;color:#0078d7;margin-left:10px}
 .process .row .list-table .list-table {border-top: 1px solid #9ca5b2}
 .process .row .list-table .list-table th {text-align:center;background: #f3f4f6;}
 .process .row .list-table .list-table td {text-align:center;background: #fff!important}
-.process .row .list-table .list-table th .checkmark, .process .row .list-table .list-table td .checkmark {left:50%}
-.process .row .list-table .btn-area {margin-top:5px}
+.process .row .list-table .list-table th .checkmark, .process .row .list-table .list-table td .checkmark {left:calc(50% - 9px)}
 .process .row td button {height: 22px;padding: 3px 7px;}
-.process + .btn-area {margin:20px 0 0 35px;float:left}
-h4 + .txt-1 {margin:10px 0 0 35px}
+.process + .btn-area {margin:0 0 0 35px;float:left}
+.num_wrap + .txt-1 {margin:10px 0 0 22px}
 .txt-1 {clear:both;color: #444;font-size:13px;margin-bottom:10px}
 .txt-red {color: #bb162b}
 .txt-blue {color:#0078d7}
-.txt-center {text-align:center;}
+.txt-left {text-align:left!important;}
+.txt-center {text-align:center!important;}
+.txt-right {text-align:right!important;}
 tr.lev th, tr.lev td {background:#f7f7f7!important}
 tr.lev th label, tr.lev td label {margin-left:20px}
 tr.lev2 th label {margin-left:40px}
+tr.lev3 th label {margin-left:80px}
 
 .option_hide .row {display:none}
 .option_hide .open {display:inline-block}
@@ -245,15 +258,32 @@ tr.lev2 th label {margin-left:40px}
 .process_li .open {display:none}
 .process_li .close {display:inline-block}
 
+/* marker */
+.marker-wrap .marker {overflow:hidden;}
+.marker-wrap .marker .th-wrap {color:#fff;font-size:14px;background:#949ba6;padding:7px 10px 1px}
+.marker-wrap .marker .td-wrap {color:#fff;font-size:14px;text-align:right;background:#949ba6;padding:7px 10px 1px}
+.marker-wrap .th-wrap {float:left;width:20%}
+.marker-wrap .td-wrap {float:left;width:80%}
+.marker-wrap .th-wrap th {height: 43px;}
+.marker-wrap .th-wrap td {text-align:center}
+.marker-wrap .th-wrap th label {margin:5px 0 0 10px}
+.btn-additem, .btn-open, .btn-img, .btn-write {float:right;}
+.btn-additem, .btn-open {margin-top:-2px}
+.txt-center .btn-write, .txt-center .btn-img {float:none}
+.marker-wrap .marker .th-wrap .btn-additem .ion {color:#fff}
+.marker-wrap .th-wrap th {position:relative}
+.marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
+.marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
+
 /* fixed-table */
 .fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
-.header-bg {background: #ddd;height: 35px; /* header-bg height값 */position: absolute;top: 0;right: 0;left: 0;border-bottom: 1px solid #ccc;}
+.header-bg {background: #ddd;height: 35px; position: absolute;top: 0;right: 0;left: 0;border-bottom: 1px solid #ccc;}
 .table-wrapper {overflow-x: hidden;overflow-y: auto;height: 100%;}
 .table-wrapper table {width: 100%;border-collapse: collapse;}
 .table-wrapper td {height:31px;border-bottom: 1px solid #e5e5e5;padding: 5px 10px 4px;}
 .table-wrapper td + td {border-left: 1px solid #e5e5e5;}
-.table-wrapper th {font-weight:normal;padding: 0px; /* reset */}
-.th-text {position: absolute;top: 0;width: inherit;text-align:center;color:#000;line-height: 30px; /* header-bg height값 */border-left: 1px solid #e5e5e5;padding:2px ;}
+.table-wrapper th {font-weight:normal;padding: 0px; }
+.th-text {position: absolute;top: 0;width: inherit;text-align:center;color:#000;line-height: 30px;border-left: 1px solid #e5e5e5;padding:2px ;}
 .table-wrapper th:first-child .th-text {border-left: none;}
 .table-wrapper tr:hover td {background:#fbfcfd}
 .table-wrapper tr.active td {background:#f2f2f2}
@@ -277,6 +307,11 @@ h5 + .table-area {margin-top:5px}
 .gallery .table-wrapper td {height: 50px;font-size:15px;padding-left:20px}
 .gallery .img_wrap {background:#f2f2f2;border: 1px solid #e5e5e5;border-left:none}
 .gallery.modal-content {border-radius:20px;border:none}
+
+.select-list {border: 1px solid #e5e5e5;border-bottom: none;margin-bottom:10px}
+.select-list li {cursor:pointer;font-size:14px;border-bottom: 1px solid #e5e5e5;padding:15px}
+.select-list li.active {background: #f2f2f2;}
+.select-list li:hover {background: #fbfcfd;}
 
 /* button */
 button, .btn {display: inline-block; height: 26px; padding: 5px 15px; margin-left: 4px; font-size: 13px; line-height: 1; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; user-select: none;background-image: none; border: 1px solid transparent; -webkit-transition: all 0.25s; -ms-transition: all 0.25s; -moz-transition: all 0.25s; transition: all 0.325;}
@@ -310,13 +345,31 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .btn-request {display:inline-block; width:60px !important; background:#949ba6; padding:0; color:#fff; font-weight: 500; text-align: center; border-radius: 3px; cursor:pointer; transition:background .3s ease, color .3s ease; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 .btn-help {color:#e49100!important;font-size:18px;margin-left:10px;vertical-align:middle;}
 .btn-popup {color:#aaa!important;font-size:18px;margin-left:10px;vertical-align:middle;}
-.left-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:3px 0 0 3px;margin-left:0}
-.right-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:0 3px 3px 0;margin-left:0}
+.left-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:3px 0 0 3px;margin-left:0;margin-right:0}
+.right-button {background: #fff; border: 1px solid #ddd; color: #333;border-radius:0 3px 3px 0;margin-left:0;margin-right:4px}
 .left-button.active, .right-button.active {border:none;background-color: #00afd5; color: #fff;}
-.center-button {background: #fff; border: 1px solid #ddd;border-left:none;border-right:none; color: #333;margin-left:0}
+.center-button {background: #fff; border: 1px solid #ddd;border-left:none;border-right:none; color: #333;margin-left:0;margin-right:0}
 .center-button.active {border:none;background-color: #00afd5; color: #fff;}
 .line-button .ion {font-size:14px;}
 .no_title {overflow:hidden;margin-bottom:10px}
+.row + .btn-area {margin: 0;float:left}
+
+.btn-ico-only {padding:0}
+.btn-ico-only:hover {box-shadow:none}
+.btn-additem .ion {color:#949ba6}
+.btn-additem {font-size:20px;margin-left:5px}
+.btn-open .ion{color:#fff}
+.btn-open {font-size:20px;margin-left:5px}
+.btn-additem:hover .ion, .btn-open:hover .ion{color:#ccc!important}
+.btn-img {color:#00afd5;font-size:20px;margin-left:10px}
+.btn-write {color:#00afd5;font-size:20px;margin-left:10px}
+.btn-img:hover {color:#0078d7;}
+.btn-write:hover {color:#0078d7;}
+.btn-up {font-size:16px;margin-left:5px}
+.btn-down {font-size:16px;margin-left:5px}
+.btn-up:hover {color:#0078d7;}
+.btn-down:hover {color:#0078d7;}
+.btn-img:disabled, .btn-write:disabled {color:#aaa;}
 
 /* check box*/
 .check-wrap { display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
@@ -326,7 +379,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .check-wrap input:checked ~ .checkmark:after {display: block;}
 .check-wrap .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 
-.checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
+.checkLabel {display: inline-block!important; position: relative; cursor: pointer;text-align:left!important;  padding:0 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .checkmark {position: absolute; top: 50%; left:10px; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
@@ -336,17 +389,20 @@ input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opac
 .checkLabel .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 th.tui-grid-cell-head .checkLabel {top:0;}
 .tui-grid-cell-head .checkLabel .Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
-.txt-center .checkmark {left:50%;}
+.txt-center .checkmark, .th-text .checkmark, th .checkmark  {left:50%}
+.txt-center .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
+.th-text .checks input[type="radio"] + label:before, th .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
+.gird-table .checks input[type="radio"] + label:before {margin-top:-7px}
 
 /* radio button*/
-.checks {position: relative;}
+.checks {position: relative;display: inline-block;margin-right: 30px;}
 .checks input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border: 0;}
-.checks input[type="radio"] + label {display: inline-block;position: relative;font-size: 12px;padding-left: 25px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+.checks input[type="radio"] + label {display: inline-block;position: relative;width: initial;font-size: 12px;padding-left: 30px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none; -ms-user-select: none;}
 .checks input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: -2px;width: 16px;height: 16px;text-align: center;background: #fff;border: 2px solid #757575;border-radius: 100%;}
 .checks input[type="radio"]:hover + label:before {background: #bbbbbb;}
 .checks input[type="radio"]:checked + label:before {background: #00afd5;border-color: #00afd5;}
 .checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;left: 6px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
-.table-wrapper td .checks {margin-top:-17px}
+.table-wrapper .checks label{margin-top:-15px}
 
 
 .grid {max-height: 680px; padding-right: 17px; overflow-y:auto; min-height:100px}
@@ -386,6 +442,8 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .modal .list_type > li {color: #333; margin-top:20px;padding-left:15px;text-indent:-15px}
 .modal .modal-txt {color:#333; margin-top: 30px;}
 .modal-btnWrap {position: absolute; bottom: 0; left:50%; transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); width: 100%; text-align: center;}
+.modal-body.scroll {overflow-y:auto; height:495px;min-height:initial}
+.modal-footer {text-align:center;padding:10px; border-top: 1px solid #aaa;}
 
 .modal .alert {width: 400px; max-height: 400px;}
 .ico-area {width: 80px; text-align: center; margin: 0 auto; display: block;}
@@ -424,7 +482,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 
 /* date-picker */
 .calendar_wrap {position:relative;}
-.calendar_wrap .input_calendar {float: left; min-width:180px !important; max-width: 247px !important; background: url(../images/icon_calendar.png) no-repeat 95% 50%;}
+.calendar_wrap .input_calendar {float: left; min-width:145px !important; background:#fff url(../images/icon_calendar.png) no-repeat 95% 50%;}
 .calendar_wrap2 {left:0; width: 100%; display: table;}
 .calendar_wrap2 .input_calendar2 {display: table-cell; max-width: calc(100% - 10px) !important;}
 .calendar_wrap2 .space2 {display: table-cell; width: 15px; padding: 0 4px; text-align: center; vertical-align: middle;}
