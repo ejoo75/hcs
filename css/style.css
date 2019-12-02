@@ -275,6 +275,52 @@ tr.lev3 th label {margin-left:80px}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
 
+/* TAB */
+.tab {
+    position: relative;
+    top: -1px;
+    background-color: #eceef3;
+    border-bottom: 1px solid #ccc;
+}
+.content-container, .fe-guide-container, .weekly-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.tab-menus {
+    margin: 0;
+    padding: 0;
+}
+.tab-menus .selected, .tab-menus .tab-item:hover {
+    padding-bottom: 17px;
+    border-bottom: 3px solid #515ce6;
+}
+.tab-menus .tab-item {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 12px;
+    padding: 27px 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tab-item.selected button {
+    font-weight: 700;
+    color: #515ce6;
+}
+.demo-section {
+    border-bottom: 1px solid #e5e5e5;
+}
+.tab-item button {
+    color: #555;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
 /* fixed-table */
 .fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
 .header-bg {background: #ddd;height: 35px; position: absolute;top: 0;right: 0;left: 0;border-bottom: 1px solid #ccc;}
