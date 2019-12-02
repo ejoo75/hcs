@@ -3,10 +3,10 @@
 /* 한글 HyundaiSansHead */
 @font-face {
     font-family: "HeadBold";
-    src: url("../fonts/HyundaiSansHeadKRBold.eot");
-    src: url("../fonts/HyundaiSansHeadKRBold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/HyundaiSansHeadKRBold.woff2") format("woff2"),
-    url("../fonts/HyundaiSansHeadKRBold.woff") format("woff");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.eot");
+    src: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.eot?#iefix") format("embedded-opentype"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.woff2") format("woff2"),
+    url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/font/HyundaiSansHeadKRBold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
