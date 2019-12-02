@@ -392,6 +392,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .txt-center .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
 .th-text .checks input[type="radio"] + label:before, th .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
 .gird-table .checks input[type="radio"] + label:before {margin-top:-7px}
+.Checkbox_input:disabled + .checkmark {border-color:#e0e0e0!important;background:#f2f2f2!important}
 
 /* radio button*/
 .checks {position: relative;display: inline-block;margin-right: 30px;}
@@ -402,7 +403,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .checks input[type="radio"]:checked + label:before {background: #00afd5;border-color: #00afd5;}
 .checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;left: 6px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
 .table-wrapper .checks label{margin-top:-15px}
-
+.checks input:disabled + label:before {border-color:#e0e0e0!important;background:#f2f2f2!important}
 
 .grid {max-height: 680px; padding-right: 17px; overflow-y:auto; min-height:100px}
 .grid:after {content: ""; display: table; clear: both;}
