@@ -307,6 +307,7 @@ height:32px;
             /*--Makes the active tab look like it's connected with its content--*/
             border: 1px solid #aaa; 
 border-bottom: 1px solid #fff; 
+font-family:"TextBold";
         }
 
         /*Tab Conent CSS*/
