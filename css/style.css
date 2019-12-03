@@ -307,7 +307,7 @@ line-height:31px;
             border: 1px solid #ccc; 
 border-bottom: 1px solid #fff; 
 font-family:"TextBold";}
-ul.tabs li.active a  {color:#000}
+ul.tabs li.active a, ul.tabs li.active a:hover {color:#000}
         /*Tab Conent CSS*/
         .tab_container {
             
