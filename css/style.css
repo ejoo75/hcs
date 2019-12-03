@@ -514,7 +514,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {background-color:#323e51 !important;color:#fff}
 .ui-state-default.ui-state-highlight {background-color:#bbb !important;color:#fff}
 .ui-widget-header .ui-icon {background-image: none;}
-
+.space {float: left;padding: 0 5px;line-height: 26px;}
 
 /*--- Photo uploader ---*/
 .photo-uploader-box {width: 100%; background: #fff; padding: 0; text-align: left; margin-left: -20px;}
