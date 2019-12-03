@@ -119,7 +119,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
   border-right: 1px solid #aaa;}
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
 .sidenav .lnb ul.nav-container.active {background:e0e3e6}
-.sidenav .lnb ul.nav-container {overflow: auto;list-style:none;margin:0;padding:0;}
+.sidenav .lnb ul.nav-container {list-style:none;margin:0;padding:0;}
 .sidenav .lnb ul.nav-container a {text-decoration:none;}
 .sidenav .lnb ul.nav-container > li {position:relative;font-family:"TextBold", Arial, tahoma;font-size:15px;}
 .sidenav .lnb ul.nav-container > li > a {display:block;padding:16px 10px 15px 20px;color:#000;}
