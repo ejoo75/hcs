@@ -239,11 +239,11 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .txt-left {text-align:left!important;}
 .txt-center {text-align:center!important;}
 .txt-right {text-align:right!important;}
-.process .list-table tr.lev th, .process .list-table tr.lev td {background:#f7f7f7!important}
-.process .list-table tr.lev th label, .process .list-table tr.lev td label {margin-left:20px}
-.process .list-table tr.lev2 th label {margin-left:40px}
-.process .list-table tr.lev3 th label {margin-left:80px}
-.process label.checkLabel, .process label.checkLabel, .process label.checkLabel, .process .label.checkLabel  {margin-left:0}
+.process .num_wrap {cursor:pointer;}
+.process .list-table tr.lev th, .process .list-table tr.lev td  {background:#f7f7f7!important;margin-left:20px}
+.process .list-table tr.lev2 th {margin-left:40px}
+.process .list-table tr.lev3 th {margin-left:80px}
+.process .list-table tr.lev td th, .process .list-table tr.lev2 td th, .process .list-table tr.lev3 td th  {margin-left:initial}
 
 .option_hide .row {display:none}
 .option_hide .open {display:inline-block}
