@@ -286,7 +286,7 @@ border-bottom: none;
             margin-bottom: -1px; /*--Pull the list item down 1px--*/
             overflow: hidden;
             position: relative;
-            background: #e0e0e0;
+            color:#aaa;
         }
         ul.tabs li a {
             text-decoration: none;
@@ -299,12 +299,11 @@ line-height:31px;
             outline: none;
         }
         ul.tabs li a:hover {
-            background: #ccc;
+            color:#00afd5;
         }
         ul.tabs li.active, ul.tabs li.active a:hover  {
 height:32px;
              /*--Makes sure that the active tab does not listen to the hover properties--*/
-            background: #fff;
             /*--Makes the active tab look like it's connected with its content--*/
             border: 1px solid #aaa; 
 border-bottom: 1px solid #fff; 
