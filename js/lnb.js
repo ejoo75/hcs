@@ -1,6 +1,6 @@
 $.sidebarMenu = function(menu) {
   var animationSpeed = 300,
-    subMenuSelector = '.gnb_sub';
+    subMenuSelector = '.subnav';
 
   $(menu).on('click', 'li a', function(e) {
     var $this = $(this);
@@ -8,7 +8,7 @@ $.sidebarMenu = function(menu) {
 
     if (checkElement.is(subMenuSelector) && checkElement.is(':visible')) {
       checkElement.slideUp(animationSpeed, function() {
-        checkElement.removeClass('menu_open');
+        checkElement.removeClass('open');
       });
       checkElement.parent("li").removeClass("active");
     }
@@ -19,15 +19,15 @@ $.sidebarMenu = function(menu) {
       var parent = $this.parents('ul').first();
       //Close all open menus within the parent
       var ul = parent.find('ul:visible').slideUp(animationSpeed);
-      //Remove the menu_open class from the parent
-      ul.removeClass('menu_open');
+      //Remove the open class from the parent
+      ul.removeClass('open');
       //Get the parent li
       var parent_li = $this.parent("li");
 
-      //Open the target menu and add the menu_open class
+      //Open the target menu and add the open class
       checkElement.slideDown(animationSpeed, function() {
         //Add the class active to the parent li
-        checkElement.addClass('menu_open');
+        checkElement.addClass('open');
         parent.find('li.active').removeClass('active');
         parent_li.addClass('active');
       });
