@@ -243,7 +243,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .process .list-table tr.lev th label, .process .list-table tr.lev td label {margin-left:20px}
 .process .list-table tr.lev2 th label {margin-left:40px}
 .process .list-table tr.lev3 th label {margin-left:80px}
-.process .list-table tr.lev .tui-grid-table th label, .process .list-table tr.lev .tui-grid-table td label, .process .list-table tr.lev2 .tui-grid-table th label, .process .list-table tr.lev3 .tui-grid-table th label   {margin-left:0}
+.process label.checkLabel, .process label.checkLabel, .process label.checkLabel, .process .label.checkLabel  {margin-left:0}
 
 .option_hide .row {display:none}
 .option_hide .open {display:inline-block}
