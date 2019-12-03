@@ -391,7 +391,7 @@ input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opac
 .checkmark:after {content: ""; position: absolute; display: none;}
 .checkLabel input:checked ~ .checkmark:after {display: block;}
 .checkLabel .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
-th.tui-grid-cell-head .checkLabel {top:0;}
+th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 .tui-grid-cell-head .checkLabel .Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .txt-center .checkmark, .th-text .checkmark, th .checkmark  {left:50%}
 .txt-center .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
