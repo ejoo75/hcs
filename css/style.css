@@ -532,7 +532,7 @@ th.tui-grid-cell-head .checkLabel {top:0;}
 
 /* date-picker */
 .calendar_wrap {position:relative;}
-.calendar_wrap .input_calendar {float: left; min-width:145px !important; background:#fff url(../images/icon_calendar.png) no-repeat 95% 50%;}
+.calendar_wrap .input_calendar {float: left; min-width:145px !important; width:145px !important; background:#fff url(../images/icon_calendar.png) no-repeat 95% 50%;}
 .calendar_wrap2 {left:0; width: 100%; display: table;}
 .calendar_wrap2 .input_calendar2 {display: table-cell; max-width: calc(100% - 10px) !important;}
 .calendar_wrap2 .space2 {display: table-cell; width: 15px; padding: 0 4px; text-align: center; vertical-align: middle;}
