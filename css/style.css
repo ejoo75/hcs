@@ -269,60 +269,14 @@ tr.lev3 th label {margin-left:80px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
 
 /* TAB */
-    ul.tabs {
-            margin: 0;
-            padding: 0;
-            float: left;
-            list-style: none;
-            height: 32px; /*--Set height of tabs--*/
-            border-bottom: 1px solid #ccc;
-            width: 100%;
-        }
-        ul.tabs li {
-            float: left;
-            margin: 0;
-            padding: 0;
-            height: 31px; /*--Subtract 1px from the height of the unordered list--*/
-            line-height: 31px; /*--Vertically aligns the text within the tab--*/
-            border-left: none;
-border-bottom: none;
-            margin-bottom: -1px; /*--Pull the list item down 1px--*/
-            overflow: hidden;
-            position: relative;
-            color:#aaa;
-font-family:"TextRegular";
-        }
-        ul.tabs li a {
-            text-decoration: none;
-            color: #aaa;
-            display: block;
-            font-size: 15px;
-line-height:31px;
-            padding: 0 20px;
-            /*--Gives the bevel look with a 1px white border inside the list item--*/
-            outline: none;
-        }
-        ul.tabs li a:hover {
-            color:#00afd5;
-        }
-        ul.tabs li.active{height:32px;
-             /*--Makes sure that the active tab does not listen to the hover properties--*/
-            /*--Makes the active tab look like it's connected with its content--*/
-            border: 1px solid #ccc; 
-border-bottom: 1px solid #fff; 
-font-family:"TextBold";}
+ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
+ul.tabs li {float: left;margin: 0;padding: 0;height: 31px; line-height: 31px; border-left: none;border-bottom: none;margin-bottom: -1px; overflow: hidden;position: relative;color:#aaa;font-family:"TextRegular";}
+ul.tabs li a {text-decoration: none;color: #aaa;display: block;font-size: 15px;line-height:31px;padding: 0 20px;outline: none;}
+ul.tabs li a:hover {color:#00afd5;}
+ul.tabs li.active{height:32px;border: 1px solid #ccc; border-bottom: 1px solid #fff; font-family:"TextBold";}
 ul.tabs li.active a, ul.tabs li.active a:hover {color:#000}
-        /*Tab Conent CSS*/
-        .tab_container {
-            
-            
-            clear: both;
-           
-            
-        }
-        .tab_content {
-            padding-top: 20px;
-        }
+.tab_container {clear: both;}
+.tab_content {padding-top: 20px;}
 
 /* fixed-table */
 .fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
