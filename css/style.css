@@ -124,6 +124,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container > li {position:relative;font-family:"TextBold", Arial, tahoma;font-size:15px;}
 .sidenav .lnb ul.nav-container > li:last-child{border-bottom:1px solid #dadada;}
 .sidenav .lnb ul.nav-container > li > a {display:block;padding:16px 10px 15px 20px;color:#222;}
+.sidenav .lnb ul.nav-container > li > a i {font-size:20px;opacity:0.3}
 .sidenav .lnb ul.nav-container > li:hover > a, .gnb_wrap > li.active > a {color:#1b99ff;}
 .sidenav .lnb ul.nav-container > li.active {border-top-color:#1b99ff;border-bottom:1px solid #1b99ff;}
 .sidenav .lnb ul.nav-container li > a > .ic_arrow {float:right;width:20px;height:20px;background:url(../images/gnb_down.png) no-repeat;}
