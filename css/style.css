@@ -271,8 +271,7 @@ tr.lev3 th label {margin-left:80px}
             float: left;
             list-style: none;
             height: 32px; /*--Set height of tabs--*/
-            border-bottom: 1px solid #999;
-            border-left: 1px solid #999;
+            border-bottom: 1px solid #aaa;
             width: 100%;
         }
         ul.tabs li {
@@ -302,14 +301,13 @@ line-height:31px;
         ul.tabs li a:hover {
             color:#00afd5;
         }
-        ul.tabs li.active, ul.tabs li.active a:hover  {
-height:32px;
+        ul.tabs li.active{height:32px;
              /*--Makes sure that the active tab does not listen to the hover properties--*/
             /*--Makes the active tab look like it's connected with its content--*/
             border: 1px solid #aaa; 
 border-bottom: 1px solid #fff; 
-font-family:"TextBold";
-        }
+font-family:"TextBold";}
+ul.tabs li.active a:hover  {}
 
         /*Tab Conent CSS*/
         .tab_container {
