@@ -281,7 +281,6 @@ tr.lev3 th label {margin-left:80px}
             padding: 0;
             height: 31px; /*--Subtract 1px from the height of the unordered list--*/
             line-height: 31px; /*--Vertically aligns the text within the tab--*/
-            border: 1px solid #dedede;
             border-left: none;
 border-bottom: none;
             margin-bottom: -1px; /*--Pull the list item down 1px--*/
@@ -307,7 +306,8 @@ height:32px;
              /*--Makes sure that the active tab does not listen to the hover properties--*/
             background: #fff;
             /*--Makes the active tab look like it's connected with its content--*/
-            border-bottom: 1px solid #fff; 
+            border: 1px solid #aaa; 
+border-bottom: 1px solid #fff; 
         }
 
         /*Tab Conent CSS*/
