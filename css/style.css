@@ -140,7 +140,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextMedium";font-size:14px;padding:8px 5px 8px 0;display: block;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {font-family:"TextBold";}
 .sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0;}
-.sidenav .lnb ul.nav-container .subnav > li.active > a, .sidenav .lnb ul.nav-container .subnav > li > a:hover {color:#00afd5;}
+.sidenav .lnb ul.nav-container .subnav > li.active > a {}
+.sidenav .lnb ul.nav-container .subnav > li > a:hover {color:#00afd5;}
 
 /* section */
 .container {position: relative; width: calc(100vw - 240px); top: 60px; left: 240px; padding: 20px 30px 50px 30px;}
