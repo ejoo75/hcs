@@ -104,17 +104,16 @@
 			<button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
 		</div>
 		<!-- searchForm -->
-		<div class="content-container">
-			<ul class="tab-menus" data-testid="detail-tab">
-				<li class="tab-item " data-testid="Monthly"><button>Monthly</button></li>
-				<li class="tab-item " data-testid="Weekly"><button>Weekly</button></li>
-				<li class="tab-item " data-testid="Daily"><button>Daily</button></li>
-				<li class="tab-item selected" data-testid="2 Weeks"><button>2 Weeks</button></li>
-			</ul>
-		</div>
+		    <!--탭 메뉴 영역 -->
+    <ul class="tabs">
+        <li><a href="#tab1">tab1</a></li>
+        <li><a href="#tab2">tab2</a></li>
+    </ul>
+
+    <!--탭 콘텐츠 영역 -->
 		<!-- //searchForm -->
 		<!-- demo -->
-		<div class="demo-section">
+		<div class="tab_container">
 			<!-- row -->
 			<div class="row">
 				<h4>Message List</h4>  <!-- 메시지 목록 -->
