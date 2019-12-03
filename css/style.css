@@ -312,10 +312,9 @@ ul.tabs li.active a:hover  {}
         /*Tab Conent CSS*/
         .tab_container {
             
-            overflow: hidden;
+            
             clear: both;
-            float: left; 
-            width: 100%;
+           
             
         }
         .tab_content {
