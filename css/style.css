@@ -3,7 +3,7 @@
 /* heading */
 h1,h2,h3{margin:0;font-weight:normal; font-family:"HeadMedium", sans-serif;}
 h4, h5,h6 {margin:0;font-weight:normal; font-family:"TextMedium", sans-serif;}
-h1 {float: left; width: 111px; height: 40px; margin:10px 0 10px 30px; background: url(../images/top_logo.png) no-repeat 0 0; background-size: 100% auto;}
+h1 {float: left; width: 145px; height: 40px; margin:10px 0 10px 30px; background: url(../images/top_logo.png) no-repeat 0 0; background-size: 100% auto;}
 h1 a {display: block; width: 100%; height: 100%; font-size:0;text-indent:-9999px;}
 h1 a:hover, h1 a.active {background:none;}
 h2:before {content: ""; display: block; position: absolute; left: 50%; width: 40px; height: 3px; background-color: #222; margin:-5px 0 0 -20px; line-height: 1.2;}
@@ -396,7 +396,8 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .check-wrap input:checked ~ .checkmark:after {display: block;}
 .check-wrap .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 
-.checkLabel {display: inline-block!important; position: relative; cursor: pointer;text-align:left!important;  padding:0 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
+/*.checkLabel {display: inline-block!important; position: relative; cursor: pointer;text-align:left!important;  padding:0 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}*/
+.checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .checkmark {position: absolute; top: 50%; left:10px; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
@@ -419,7 +420,7 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 .checks input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: -2px;width: 16px;height: 16px;text-align: center;background: #fff;border: 2px solid #757575;border-radius: 100%;}
 .checks input[type="radio"]:hover + label:before {background: #bbbbbb;}
 .checks input[type="radio"]:checked + label:before {background: #00afd5;border-color: #00afd5;}
-.checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;left: 6px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
+.checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;/*left: 6px*/;right:-4px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
 .table-wrapper .checks label{margin-top:-15px}
 .checks input:disabled + label:before {border-color:#e0e0e0!important;background:#f2f2f2!important}
 
@@ -528,7 +529,7 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {background-color:#323e51 !important;color:#fff}
 .ui-state-default.ui-state-highlight {background-color:#bbb !important;color:#fff}
 .ui-widget-header .ui-icon {background-image: none;}
-.space {float: left;padding: 0 5px;line-height: 26px;}
+.space {float: left;padding: 0 4px;line-height: 26px;}
 
 /*--- Photo uploader ---*/
 .photo-uploader-box {width: 100%; background: #fff; padding: 0; text-align: left; margin-left: -20px;}
