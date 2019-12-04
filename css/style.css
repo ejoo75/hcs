@@ -118,12 +118,12 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .header .lnb-open {display:none}
 .hidden-lnb .header .lnb-open {display:inline-block;}
 .hidden-lnb .header .lnb-close {display:none}
-.hidden-lnb .sidenav {display:none}
+.hidden-lnb .sidenav {left:-240px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 .hidden-lnb .container {width:100vw;left:0;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 
 /* aside */
 .sidenav {height: calc(100% - 60px); width: 240px; position: fixed; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;
-  border-right: 1px solid #aaa;}
+  border-right: 1px solid #aaa;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
 .sidenav .lnb ul.nav-container .nav-item.active {background:#e0e3e6;padding-bottom:10px;}
 .sidenav .lnb ul.nav-container {list-style:none;margin:0;padding:0;}
@@ -154,7 +154,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container .subnav > li > a:hover {color:#00afd5;}
 
 /* section */
-.container {position: relative; width: calc(100vw - 240px); top: 60px; left: 240px; padding: 20px 30px 50px 30px;}
+.container {position: relative; width: calc(100vw - 240px); top: 60px; left: 240px; padding: 20px 30px 50px 30px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 .container:after {clear: both; display: table; content: "";}
 .sub-txt {margin-top: 10px;}
 .breadcrumb {color:#5f5e5e;font-family:"HeadRegular", sans-serif;background:#eeefef;border: 1px solid #ddd;margin:-20px -30px 20px -30px;padding:15px 30px; }
