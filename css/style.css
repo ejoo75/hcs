@@ -100,8 +100,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .header {position: fixed; width:100%; height:60px; background-color: #003468; z-index: 1000;}
 .header .topNav {float: right;padding-right:30px;}
 .header .topNav a {display: inline-block; color: #fff; text-align: center; text-transform: capitalize; padding-top: 16px; font-size: 16px; margin-left: 50px; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; letter-spacing: -1px;}
-.header .topNav a:hover, .header .topNav a.active {color: #fff ;}
-.header .topNav a .ion {display: inline-block; opacity:0.4; font-size: 26px; width: 1.1em; margin-right: 7px; vertical-align: middle;}
+.header .topNav a:hover i, .header .topNav a.active i {opacity: 1 ;}
+.header .topNav a .ion {display: inline-block; color:#fff; opacity:0.4; font-size: 26px; width: 1.1em; margin-right: 7px; vertical-align: middle;}
 .header .topNav a.time {color:#a3aebd}
 .header .topNav a.user {color:#fff;margin-left: 20px;}
 .header .topNav a.user:hover, .header .topNav a.user.active {color:#fff; border-bottom: none;}
