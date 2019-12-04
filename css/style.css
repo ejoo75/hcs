@@ -51,12 +51,12 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .form-footer {margin-top:50px;}
 /* Input Setup */
 .form-section .form-contain .form-control {display:block; width:100%; height:auto; font-weight:400; font-size:14px; line-height:15px; color:#666; padding:15px 15px 15px 60px; border:1px solid #d3dae1; border-radius:4px; outline:none; box-shadow:none; margin-bottom: 20px; transition:all 0.3s ease 0s;}
-.form-section .form-contain .form-control:focus {color:#c41230; border:2px solid #c41230; outline:0; box-shadow:none;}
+.form-section .form-contain .form-control:focus {color:#27aae2; border:2px solid #27aae2; outline:0; box-shadow:none;}
 .form-section .form-contain .form-control.username {background: #fff url('../images/icon_id.png') no-repeat 15px 50%;}
 .form-section .form-contain .form-control.password {background: #fff url('../images/icon_password.png') no-repeat 15px 50%;}
 .form-section .form-contain .username:focus {background: #fff url('../images/icon_id_ov.png') no-repeat 15px 50%;}
 .form-section .form-contain .password:focus {background: #fff url('../images/icon_password_ov.png') no-repeat 15px 50%;}
-.form-section .form-contain .btn-login {display: block; font-weight: 500; color: #fff; font-size: 24px; line-height: 48px; letter-spacing: 0; background: #c41230; padding: 0 45px; border-radius: 4px; width: 100%; height: 50px; margin-top: 20px; vertical-align: middle;}
+.form-section .form-contain .btn-login {display: block; font-weight: 500; color: #fff; font-size: 24px; line-height: 48px; letter-spacing: 0; background: #27aae2; padding: 0 45px; border-radius: 4px; width: 100%; height: 50px; margin-top: 20px; vertical-align: middle;}
 .form-section .info {display: block; width: 100%; color: #666; font-size: 14px; padding: 2% 7%;}
 .form-section .form-contain .form-control::-webkit-input-placeholder {color:#a5aeb8;}
 .form-section .form-contain .form-control:-moz-placeholder {color:#a5aeb8;}
