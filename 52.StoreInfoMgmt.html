@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
+<link type="text/css" rel="stylesheet" href="./css/reset.css">
+<link type="text/css" rel="stylesheet" href="./css/fonts.css">
+<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+
+<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/function.debug.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+  
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+<section class="container">
+
+	<!-- content -->
+	<div class="content">
+		<h3>Template <span>Search 1Row</span>
+			<div>Subtitle</div>
+		</h3>
+		<!-- row -->
+		<div class="row">
+			<h4>Exterior Color Name</h4>  
+			<!-- table-area -->
+			<div class="table-area">
+				<table class="list-table ">
+					<colgroup>
+						<col style="width: 20%;">
+						<col style="width: ;">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th><label for="input1">Exterior Color Code</label></th>
+						<td><input type="text" id="input1" name="input1" maxlength="100" disabled class="form-50"></td>
+					</tr>
+					<tr>
+						<th><label for="input2" class="must">Exterior Color Name</label></th>
+						<td><input type="text" id="input2" name="input2" maxlength="100" class="form-50"></td>
+					</tr>
+				</table>
+			</div>
+			<!--// table-area -->
+			<h4>Exterior Color Basic Information</h4>  
+			<!-- table-area -->
+			<div class="table-area">
+				<table class="list-table ">
+					<colgroup>
+						<col style="width: 20%;">
+						<col style="width: ;">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th><label for="input1">VBOM Option Code</label></th>
+						<td><input type="text" id="input1" name="input1" maxlength="100" class="form-50"></td>
+					</tr>
+				</table>
+			</div>
+			<!--// table-area -->
+			<h4>Parts Mapping</h4>  
+			<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-arrow-up"></i></button>
+			<!-- table-area -->
+			<div class="table-area">
+				<table class="gird-table">
+					<colgroup>
+						<col style="width: 10%;">
+						<col style="width: 20%;">
+						<col style="width: 60%;">
+						<col style="width: 10%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Division</th>
+							<th>Name</th>
+							<th>Use</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt-center">1</td>
+							<td>Cruise Control</td>
+							<td>Diamond Casting Grill</td>
+							<td class="txt-center">
+								<div class="checks">
+									<input type="radio" id="Radio1" name="Radio1"> 
+									<label for="Radio1"></label> 
+								</div>
+							</td>
+						</tr> 
+						<tr>
+							<td class="txt-center">1</td>
+							<td>Cruise Control</td>
+							<td>Diamond Casting Grill</td>
+							<td class="txt-center">
+								<div class="checks">
+									<input type="radio" id="Radio1" name="Radio1"> 
+									<label for="Radio1"></label> 
+								</div>
+							</td>
+						</tr> 
+						<tr>
+							<td class="txt-center">1</td>
+							<td>Cruise Control</td>
+							<td>Diamond Casting Grill</td>
+							<td class="txt-center">
+								<div class="checks">
+									<input type="radio" id="Radio1" name="Radio1"> 
+									<label for="Radio1"></label> 
+								</div>
+							</td>
+						</tr> 
+						<tr>
+							<td class="txt-center">1</td>
+							<td>Cruise Control</td>
+							<td>Diamond Casting Grill</td>
+							<td class="txt-center">
+								<div class="checks">
+									<input type="radio" id="Radio1" name="Radio1"> 
+									<label for="Radio1"></label> 
+								</div>
+							</td>
+						</tr> 
+						<tr>
+							<td class="txt-center">1</td>
+							<td>Cruise Control</td>
+							<td>Diamond Casting Grill</td>
+							<td class="txt-center">
+								<div class="checks">
+									<input type="radio" id="Radio1" name="Radio1"> 
+									<label for="Radio1"></label> 
+								</div>
+							</td>
+						</tr> 
+					</tbody>
+				</table>
+			</div>
+			<!--// table-area -->
+			<h4>Exterior Color – Interior Color Mapping Information</h4>  
+			<div class="txt-1">Only use this function if the Exterior Color has a mapping Interior Color.<br>Ex) Fiery Red – Red Stretch Interior</div>
+			<!-- table-area -->
+			<div class="table-area">
+				<table class="gird-table">
+					<colgroup>
+						<col style="width: 10%;">
+						<col style="">
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="2">Interior Color</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt-center">
+								<label class="checkLabel">
+									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+							<td>Black</td>
+						</tr> 
+						<tr>
+							<td class="txt-center">
+								<label class="checkLabel">
+									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+							<td>Black</td>
+						</tr>
+						<tr>
+							<td class="txt-center">
+								<label class="checkLabel">
+									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+							<td>Black</td>
+						</tr>
+						<tr>
+							<td class="txt-center">
+								<label class="checkLabel">
+									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+							<td>Black</td>
+						</tr>
+						<tr>
+							<td class="txt-center">
+								<label class="checkLabel">
+									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+							<td>Black</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--// table-area -->
+		</div>
+		<!--// row --> 
+	</div>
+	<!-- //content -->
+</section>
+</body>
+</html>
