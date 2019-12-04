@@ -58,3 +58,11 @@ $(document).ready(function() {
             });
 
         });
+$(document).ready(function () {
+	$('.lnb-open').click(function () {
+		$('body').removeClass('hidden-lnb');
+	});
+	$('.lnb-close').click(function () {
+		$('body').addClass('hidden-lnb');
+	});
+});
