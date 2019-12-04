@@ -59,7 +59,6 @@ $(document).ready(function() {
 
         });
 $(document).ready(function () {
-var animationSpeed = 300;
 	$('.lnb-open').click(function () {
 		$('body').removeClass('hidden-lnb');
 	});
