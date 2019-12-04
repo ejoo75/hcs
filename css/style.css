@@ -99,11 +99,10 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 /* header */
 .header {position: fixed; width:100%; height:60px; background-color: #003468; z-index: 1000;}
 .header .topNav {float: right;padding-right:30px;}
-.header .topNav a {display: inline-block; color: rgba(255,255,255,0.3); text-align: center; text-transform: capitalize; padding-top: 16px; font-size: 16px; margin-left: 50px; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; letter-spacing: -1px;}
+.header .topNav a {display: inline-block; color: rgba(255,255,255,0.6); text-align: center; text-transform: capitalize; padding-top: 16px; font-size: 16px; margin-left: 50px; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; letter-spacing: -1px;}
 .header .topNav a:hover, .header .topNav a.active {color: #fff ; border-bottom: 3px solid #fff;}
-.header .topNav a .ion {display: inline-block; font-size: 26px; width: 1.1em; vertical-align: middle;}
-.header .topNav a.user {margin-left: 20px;}
-.header .topNav a .ion {margin-right: 7px;}
+.header .topNav a .ion {display: inline-block; rgba(255,255,255,0.3); font-size: 26px; width: 1.1em; margin-right: 7px; vertical-align: middle;}
+.header .topNav a.user {rgba(255,255,255);margin-left: 20px;}
 .header .topNav a.user:hover, .header .topNav a.user.active {color:#fff; border-bottom: none;}
 .header .topNav .tooltip {position: relative; margin-left: 20px; padding-right:30px; }
 .header .topNav .tooltip:hover,
