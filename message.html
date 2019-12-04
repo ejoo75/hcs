@@ -18,6 +18,17 @@
 
   
 <script type="text/javascript">
+$(document).ready(function () {
+
+	$('.lnb-close').click(function () {
+		$('body').removeClass('.show-lnb');
+	});
+
+	$('.lnb-open').click(function () {
+		$('body').addClass('show-lnb');
+	});
+
+});
 </script>
 
 </head>
@@ -25,6 +36,8 @@
 <!-- GNB -->
 <header id="header" class="header">
     <h1 class="topLogo"><a href="/dashboard/dashboardMain/view.do?menuId=41000">BEAT 360</a></h1>
+	<a href="#" class="lnb-open"><i class="ion ion-md-menu"></i></a>
+	<a href="#" class="lnb-close"><i class="ion ion-md-menu"></i></a>
     <nav class="topNav">
         <a href="/dashboard/dashboardMain/view.do?menuId=41000">Dash Board</a>
         <a href="/customer/customerQr/view.do?menuId=11000">Customer</a>
