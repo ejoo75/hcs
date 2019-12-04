@@ -251,6 +251,12 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .process .list-table tr.lev2 th {margin-left:40px}
 .process .list-table tr.lev3 th {margin-left:80px}
 .process .list-table tr.lev td th, .process .list-table tr.lev2 td th, .process .list-table tr.lev3 td th  {margin-left:initial}
+.process .row .list-table .tui-grid-table th {background:#ddd!important;padding:0 5px;}
+.process .row .list-table .tui-grid-table th.tui-grid-cell-head {text-align:center;}
+.process .row .list-table .tui-grid-table td {height:initial;padding:0 5px;}
+.process .row .list-table .tui-grid-table td.tui-grid-cell {background-color:#fff!important;}
+.process .row .list-table .grid3 .tui-grid-table .tui-grid-cell-current-row {background-color:#f2f2f2!important;}
+
 
 .option_hide .row {display:none}
 .option_hide .open {display:inline-block}
