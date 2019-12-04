@@ -114,7 +114,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .header .topNav .tooltip .tooltiptext::after {content: ""; position: absolute; bottom: 100%; right: 10px; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #fff transparent;}
 .header .topNav .tooltip:hover .tooltiptext {visibility: visible; opacity: 1;}
 .header .lnb-open, .header .lnb-close {display:inline-block;float:left;width:40px;height:40px;}
-.header .lnb-open i, .header .lnb-close i{font-size:30px}
+.header .lnb-open i, .header .lnb-close i{font-size:36px;color:#fff;}
+.header .lnb-close i {opacity:0.5;}
 .header .lnb-open {display:none}
 .hidden-lnb .header .lnb-open {display:inline-block;}
 .hidden-lnb .header .lnb-close {display:none}
