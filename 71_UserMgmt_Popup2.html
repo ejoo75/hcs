@@ -26,13 +26,12 @@
     <div class="modal-content ui-draggable ui-draggable-handle" id="modal-content" style="max-width:900px;">
       <div class="modal-header">
         <span class="close" id="closeBtnModal"><i class="ion ion-md-close"></i></span>
-        <h5>Exterior Color Information</h5>
+        <h5>Add Group Roll </h5>
       </div>
       <!-- modal-body -->
       <div class="modal-body scroll">
        <!-- row -->
 		<div class="row">
-			<h4>Exterior Color Name</h4>  
 			<!-- table-area -->
 			<div class="table-area">
 				<table class="list-table ">
@@ -42,175 +41,35 @@
 					</colgroup>
 					<tbody>
 					<tr>
-						<th><label for="input1">Exterior Color Code</label></th>
+						<th><label for="input1">Dealer Code(관리 딜러)</label></th>
 						<td><input type="text" id="input1" name="input1" maxlength="100" disabled class="form-50"></td>
 					</tr>
 					<tr>
-						<th><label for="input2" class="must">Exterior Color Name</label></th>
-						<td><input type="text" id="input2" name="input2" maxlength="100" class="form-50"></td>
+						<th><label for="input2">Group Auth</label></th>
+						<td>
+							<select name="select1" id="select1" class="form-50">
+								<option value="">Option1</option>
+								<option value="">Option2</option>
+							</select>
+						</td>
 					</tr>
-				</table>
-			</div>
-			<!--// table-area -->
-			<h4>Exterior Color Basic Information</h4>  
-			<!-- table-area -->
-			<div class="table-area">
-				<table class="list-table ">
-					<colgroup>
-						<col style="width: 20%;">
-						<col style="width: ;">
-					</colgroup>
-					<tbody>
 					<tr>
-						<th><label for="input1">VBOM Option Code</label></th>
-						<td><input type="text" id="input1" name="input1" maxlength="100" class="form-50"></td>
+						<th><label for="input1">Group Role</label></th>
+						<td><input type="text" id="input1" name="input1" maxlength="100" disabled style="width:100px"> 
+						<input type="text" id="input1" name="input1" maxlength="100" style="width:calc(75% - 103px)">
+						</td>
+					</tr>
+					<tr>
+						<th><label for="input2">Copy From</label></th>
+						<td>
+							<select name="select1" id="select1" class="form-75">
+								<option value="">Option1</option>
+								<option value="">Option2</option>
+							</select>
+						</td>
 					</tr>
 				</table>
 			</div>
-			<!--// table-area -->
-			<h4>Parts Mapping</h4>  
-			<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-arrow-up"></i></button>
-			<!-- table-area -->
-			<div class="table-area">
-				<table class="gird-table">
-					<colgroup>
-						<col style="width: 10%;">
-						<col style="width: 20%;">
-						<col style="width: 60%;">
-						<col style="width: 10%;">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>No</th>
-							<th>Division</th>
-							<th>Name</th>
-							<th>Use</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="txt-center">1</td>
-							<td>Cruise Control</td>
-							<td>Diamond Casting Grill</td>
-							<td class="txt-center">
-								<div class="checks">
-									<input type="radio" id="Radio1" name="Radio1"> 
-									<label for="Radio1"></label> 
-								</div>
-							</td>
-						</tr> 
-						<tr>
-							<td class="txt-center">1</td>
-							<td>Cruise Control</td>
-							<td>Diamond Casting Grill</td>
-							<td class="txt-center">
-								<div class="checks">
-									<input type="radio" id="Radio1" name="Radio1"> 
-									<label for="Radio1"></label> 
-								</div>
-							</td>
-						</tr> 
-						<tr>
-							<td class="txt-center">1</td>
-							<td>Cruise Control</td>
-							<td>Diamond Casting Grill</td>
-							<td class="txt-center">
-								<div class="checks">
-									<input type="radio" id="Radio1" name="Radio1"> 
-									<label for="Radio1"></label> 
-								</div>
-							</td>
-						</tr> 
-						<tr>
-							<td class="txt-center">1</td>
-							<td>Cruise Control</td>
-							<td>Diamond Casting Grill</td>
-							<td class="txt-center">
-								<div class="checks">
-									<input type="radio" id="Radio1" name="Radio1"> 
-									<label for="Radio1"></label> 
-								</div>
-							</td>
-						</tr> 
-						<tr>
-							<td class="txt-center">1</td>
-							<td>Cruise Control</td>
-							<td>Diamond Casting Grill</td>
-							<td class="txt-center">
-								<div class="checks">
-									<input type="radio" id="Radio1" name="Radio1"> 
-									<label for="Radio1"></label> 
-								</div>
-							</td>
-						</tr> 
-					</tbody>
-				</table>
-			</div>
-			<!--// table-area -->
-			<h4>Exterior Color – Interior Color Mapping Information</h4>  
-			<div class="txt-1">Only use this function if the Exterior Color has a mapping Interior Color.<br>Ex) Fiery Red – Red Stretch Interior</div>
-			<!-- table-area -->
-			<div class="table-area">
-				<table class="gird-table">
-					<colgroup>
-						<col style="width: 10%;">
-						<col style="">
-					</colgroup>
-					<thead>
-						<tr>
-							<th colspan="2">Interior Color</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="txt-center">
-								<label class="checkLabel">
-									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-									<span class="checkmark"></span>
-								</label>
-							</td>
-							<td>Black</td>
-						</tr> 
-						<tr>
-							<td class="txt-center">
-								<label class="checkLabel">
-									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-									<span class="checkmark"></span>
-								</label>
-							</td>
-							<td>Black</td>
-						</tr>
-						<tr>
-							<td class="txt-center">
-								<label class="checkLabel">
-									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-									<span class="checkmark"></span>
-								</label>
-							</td>
-							<td>Black</td>
-						</tr>
-						<tr>
-							<td class="txt-center">
-								<label class="checkLabel">
-									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-									<span class="checkmark"></span>
-								</label>
-							</td>
-							<td>Black</td>
-						</tr>
-						<tr>
-							<td class="txt-center">
-								<label class="checkLabel">
-									<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-									<span class="checkmark"></span>
-								</label>
-							</td>
-							<td>Black</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!--// table-area -->
 		</div>
 		<!--// row --> 
       </div>
