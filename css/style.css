@@ -406,7 +406,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .check-wrap .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 
 /*.checkLabel {display: inline-block!important; position: relative; cursor: pointer;text-align:left!important;  padding:0 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}*/
-.checkLabel { display: block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
+.checkLabel { display: inline-block; position: relative; cursor: pointer; width:18px;-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none;}
 input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .checkmark {position: absolute; top: 50%; left:10px; height: 18px; width: 18px; background-color: #fff; border: 2px solid #757575; box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .checkLabel:hover input ~ .checkmark {background-color: #bbb;}
@@ -429,7 +429,7 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 .checks input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: -2px;width: 16px;height: 16px;text-align: center;background: #fff;border: 2px solid #757575;border-radius: 100%;}
 .checks input[type="radio"]:hover + label:before {background: #bbbbbb;}
 .checks input[type="radio"]:checked + label:before {background: #00afd5;border-color: #00afd5;}
-.checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;/*left: 6px*/;right:-4px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
+.checks input[type="radio"]:checked + label:after {content: '';position: absolute;top: 4px;left: 6px;right:-4px;width: 8px;height: 8px;background: #fff;border-radius: 100%;}
 .table-wrapper .checks label{margin-top:-15px}
 .checks input:disabled + label:before {border-color:#e0e0e0!important;background:#f2f2f2!important}
 
