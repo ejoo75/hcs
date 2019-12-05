@@ -117,55 +117,121 @@
 			<button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
 		</div>
 		<!-- searchForm -->
-		    <!--탭 메뉴 영역 -->
-    <ul class="tabs">
-        <li><a href="#tab1">tab1</a></li>
-        <li><a href="#tab2">tab2</a></li>
-    </ul>
 
-    <!--탭 콘텐츠 영역 -->
+	<style>
+		header, section {
+			display: block;
+		}
+		body {
+			font-family: 'Droid Serif';
+		}
+		h1, h2 {
+			text-align: center;
+			font-weight: normal;
+		}
+		#features {
+			margin: auto;
+			width: 460px;
+			font-size: 0.9em;
+		}
+		.connected, .sortable, .exclude, .handles {
+			margin: auto;
+			padding: 0;
+			width: 310px;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.sortable.grid {
+			overflow: hidden;
+		}
+		.connected li, .sortable li, .exclude li, .handles li {
+			list-style: none;
+			border: 1px solid #CCC;
+			background: #F6F6F6;
+			font-family: "Tahoma";
+			color: #1C94C4;
+			margin: 5px;
+			padding: 5px;
+			height: 22px;
+		}
+		.handles span {
+			cursor: move;
+		}
+		li.disabled {
+			opacity: 0.5;
+		}
+		.sortable.grid li {
+			line-height: 80px;
+			float: left;
+			width: 80px;
+			height: 80px;
+			text-align: center;
+		}
+		li.highlight {
+			background: #FEE25F;
+		}
+		#connected {
+			width: 440px;
+			overflow: hidden;
+			margin: auto;
+		}
+		.connected {
+			float: left;
+			width: 200px;
+		}
+		.connected.no2 {
+			float: right;
+		}
+		li.sortable-placeholder {
+			border: 1px dashed #CCC;
+			background: none;
+		}
+	</style>
+
+
+
+	
+	
+	<section>
+		<h2>Sortable Grid</h2>
+		<ul class="sortable grid">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+	</section>
+	
+	
+	<a href="http://github.com/farhadi/html5sortable"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/edc6dae7a1079163caf7f17c60495bbb6d027c93/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.sortable.js"></script>
+	<script>
+		$(function() {
+			$('.sortable').sortable();
+			$('.handles').sortable({
+				handle: 'span'
+			});
+			$('.connected').sortable({
+				connectWith: '.connected'
+			});
+			$('.exclude').sortable({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
+
+
 		<!-- //searchForm -->
 		<!-- demo -->
-		<div class="tab_container">
-     <div id="tab1" class="tab_content">
-			<!-- row -->
-			<div class="row">
-				<h4>Message List</h4>  <!-- 메시지 목록 -->
-				<button class="line-button btn-ico" onclick="javascript:fnButtons('delete');"><i class="ion ion-md-remove"></i></button>
-				<button class="line-button btn-ico" onclick="javascript:fnButtons('new');"><i class="ion ion-md-add"></i></button>
-				<div class="summary">Total<span id="totalNum">391</span></div>
-				<!-- table-area -->
-				<div class="table-area">
-					<table class="list-table">
-						<colgroup>
-							<col style="width: 20%;">
-							<col style="width: 80%;">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th>
-									<label for="msgSbc">Message Name</label>
-                                             <!--메세지명-->
-								</th>
-								<td><textarea name="msgSbc" id="msgSbc" style="width:100%;height:62px;" disabled="" maxlength="4000"></textarea></td>
-							</tr>
-							<tr>
-								<th>
-									<label for="rem2">Remark</label>
-                                             <!--메세지명-->
-								</th>
-								<td><textarea name="rem2" id="rem2" style="width:100%;height:62px;" disabled="" maxlength="400"></textarea></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--// table-area -->
-			</div>
-			<!-- //row -->
-		</div>
-</div>
-     <div id="tab1" class="tab_content">
-Xxxx</div>
+		
+
 		<!--// demo -->
 	</div>
 </section>
