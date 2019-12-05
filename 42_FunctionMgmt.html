@@ -33,25 +33,24 @@
 <section class="container">
 	<div class="breadcrumb"><span>Home</span> <span>Admin System</span>  <span>Code Managemen</span>  <b>Common Code Mgmt</b></div>
 	<div class="content">
-		<h3>Kiosk Management <span> New(Edit) Kiosk Setting</span><!-- 20191130 span수정  -->
-			<div>Write(edit) Kiosk setting information</div>
+		<h3>Function Management <span> </span><!-- 20191130 span수정  -->
+			<div>Write(edit) vehicle setting information</div>
 		</h3>
 		<!--Tab -->
 		<ul class="tabs">
-			<li><a href="#tab1">tab1</a></li>
-			<li><a href="#tab2">tab2</a></li>
-			<li><a href="#tab3">tab2</a></li>
+			<li><a href="#tab1">Customer Information Sheet</a></li>
+			<li><a href="#tab2">Template</a></li>
+			<li><a href="#tab3">Promotion & Dealer Web</a></li>
 		</ul>
 		<!--Tab -->
 <div class="tab_container">
 	<div id="tab1" class="tab_content">
-		<ul class="process">
+		<ul class="process no-circle">
 			<li>
 				<!-- 1 -->
-				<div class="num_wrap"><span class="num">1</span><h4>Setting Name</h4></div>
 				<!-- row -->
 				<div class="row">
-					<h5>NAME SETTING</h5>  <!-- 메시지 목록 -->
+					<h5>Name</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -62,48 +61,21 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Setting Code</label>
+										<label>Use Name Field</label>
 									</th>
-									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"></td>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
 								</tr>
 								<tr>
 									<th>
-										<label>Name</label>
+										<label>Format</label>
 									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
-								</tr>
-								<tr>
-									<th>
-										<label>Copy From</label>
-									</th>
-									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-								<tr>
-									<th>
-										<label>Use Y/N</label>
-									</th>
-									<td>
-										<label class="checkLabel">
-											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-											<span class="checkmark"></span>
-										</label>
-									</td>
+									<td><button class="line-button" onclick="">Full Name One Line</button><button class="save-button active" onclick="">First, Mid, Last Name Separate Line</button><button class="line-button" onclick="">First, Last Name Separate Line</button><button class="line-button" onclick="">Full Name</button></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<!--// table-area -->
-					<button class="save-button" onclick="">Temp Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
-				</div>
-				<!-- //row -->
-				<!-- //1 -->
-			</li>
-			<li>
-				<div class="num_wrap"><span class="num">2</span><h4>Gate Page </h4></div>
-				<!-- 2 -->
-				<!-- row -->
-				<div class="row">
-					<h5>WELCOME SETTING</h5>  <!-- 메시지 목록 -->
+					<h5>Phone</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -114,81 +86,20 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Welcome Message</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+										<label>Use Phone Field</label></a>
 									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span></td>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
 								</tr>
 								<tr>
 									<th>
-										<label>Welcome Background</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+										<label>Country Code</label></a>
 									</th>
-									<td><button class="line-button" onclick="">IMG</button><button class="save-button" onclick="">VIDEO</button> <button class="left-button active" onclick="">IMG</button><button class="right-button" onclick="">VIDEO</button></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Image List</label>
-									</th>
-									<td><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Video Folder Location</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Video List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td>* You must manage a video list by each PC manually.</td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Special Video</label>
-									</th>
-									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
-								</tr>
-								<tr class="lev lev2">
-									<th>
-										<label>Special Video Period</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td>
-										<div class="calendar_wrap">
-											<input type="text" class="input_calendar hasDatepicker" name="sdatepicter" id="sdatepicter" value="">
-											<span class="space">~</span>
-											<input type="text" class="input_calendar hasDatepicker" name="edatepicter" id="edatepicter" value="">
-										</div>
-									</td>
-								</tr>
-								<tr class="lev lev2">
-									<th>
-										<label>Special Video Period</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"></td>
-								</tr>
-								
-							</tbody>
-						</table>
-					</div>
-					<h5>LANGUAGE BUTTON</h5>  <!-- 메시지 목록 -->
-					<!-- table-area -->
-					<div class="table-area">
-						<table class="list-table">
-							<colgroup>
-								<col style="width: 20%;">
-								<col style="width: 80%;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>
-										<label>Language Button</label>
-									</th>
-									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
+									<td><input type="text" id="" name="" value="" maxlength="250" class="form-25"></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<h5>LANGUAGE LIST</h5>  <!-- 메시지 목록 -->
+					<h5>Email</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -199,68 +110,15 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Language List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+										<label>Use Email Field</label>
 									</th>
-									<td>
-										<table  class="list-table" style="width: 50%;">
-										<tr>
-											<th>Language Name</th>
-											<th>Main</th>
-											<th>USE</th>
-										</tr>
-										<tr>
-											<td>English</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-										</tr>
-										<tr>
-											<td>Spanish</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-										</tr>
-										<tr>
-											<td>Italian</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-										</tr>
-										</table>
-									</td>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<!--// table-area -->
-					<h5>SHOW REWARDS</h5>  <!-- 메시지 목록 -->
+					<h5>Gender</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -271,138 +129,21 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Show Rewards Button</label>
+										<label>Use Gender Field</label>
 									</th>
-									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Rewards Image List</label>
-									</th>
-									<td><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<h5>EXPERIENCE LIST</h5>  <!-- 메시지 목록 -->
-					<!-- table-area -->
-					<div class="table-area">
-						<table class="list-table">
-							<colgroup>
-								<col style="width: 20%;">
-								<col style="width: 80%;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>
-										<label>Experience List Button</label>
-									</th>
-									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Experience Image List</label>
-									</th>
-									<td><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button><button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
-				</div>
-				<!-- //row -->
-				<!-- //2 -->
-			</li>
-			<li>
-				<div class="num_wrap"><span class="num">3</span><h4>Customer Information Sheet Page</h4>
-				</div>
-				<div class="txt-1"> Customer Information Fields will be managed in <span class="txt-blue">Function Management > Customer Information Sheet</span>.</div><!-- 20191130 위치 컬러 수정 -->
-				<!-- 3 -->
-				<!-- row -->
-				<div class="row">
-					<h5>CUSTOMER INFORMATION SHEET & AGREEMENT</h5>  <!-- 메시지 목록 -->
-					<!-- table-area -->
-					<div class="table-area">
-						<table class="list-table">
-							<colgroup>
-								<col style="width: 20%;">
-								<col style="width: 80%;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>
-										<label>Choose CIS Type</label></a>
-									</th>
-									<td>
-										<select id="authMenuGrpCd" name="authMenuGrpCd" value="" disabled="">
-											<option value=""></option>
-										</select>
-									</td>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
 								</tr>
 								<tr>
 									<th>
-										<label>Agreement Pop-Up</label>
+										<label>Format</label>
 									</th>
-									<td><button class="left-button active" onclick="">OFF</button><button class="center-button" onclick="">Pop-up before CIS</button><button class="right-button" onclick="">Pop-up after CIS</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Agreement List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td>
-										<table  class="list-table">
-										<tr>
-											<th>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</th>
-											<th>Agreement Title</th>
-											<th>Read All to Check</th>
-											<th>Order</th>
-										</tr>
-										<tr>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>Legal & Agreement</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>Customer Information Usage</td>
-											<td>
-												<label class="checkLabel">
-													<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-													<span class="checkmark"></span>
-												</label>
-											</td>
-											<td>2</td>
-										</tr>
-										</table>
-										<div class="btn-area"><button class="line-button" onclick="">Remove</button><button class="line-button" onclick="">+ Add Menu</button></div>
-									</td>
+									<td><button class="line-button" onclick="">Male, Female</button><button class="save-button active" onclick="">Male, Female, else(neutral) </button></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<!--// table-area -->
-					<h5>QR RECEIVE METHOD</h5>  <!-- 메시지 목록 -->
+					<h5>Age</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -413,21 +154,39 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Method Type</label>
+										<label>Use Age Field</label>
 									</th>
-									<td><button class="left-button active" onclick="">SMS</button><button class="right-button" onclick="">Email</button></td>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button>
+					<!--// table-area -->
+						<!--// table-area -->
+					<h5>Birthday</h5>  <!-- 메시지 목록 -->
+					<!-- table-area -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>Use Birthday Field</label>
+									</th>
+									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// table-area -->
 				</div>
-				<!-- //row -->
-				<!-- //3 -->
 			</li>
 		</ul>
 		<div class="btn-area">
-			<button class="btn-control" onclick="javascript:fnButtons('save');">SAVE & DONE</button><!-- 저장 -->
+			<button class="btn-control" onclick="javascript:fnButtons('save');">SAVE</button><!-- 저장 -->
 			<button class="line-button" id="excelDownBtn">Cancel</button>
 		</div>
 	</div>
@@ -436,10 +195,10 @@
 		<ul class="process">
 			<li>
 				<!-- 1 -->
-				<div class="num_wrap"><span class="num">1</span><h4>Setting Name</h4></div>
+				<div class="num_wrap"><span class="num">1</span><h4>Template<span>[Customer] Send Email</span></h4></div>
 				<!-- row -->
 				<div class="row">
-					<h5>NAME SETTING</h5>  <!-- 메시지 목록 -->
+					<h5>Template Basic Setting</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -450,47 +209,40 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Setting Code</label>
+										<label>Template Form</label>
+									</th>
+									<td><select name="select1" id="select1" class="form-25" disabled>
+											<option value="">Option1</option>
+											<option value="">Option2</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<label>Template Code</label>
 									</th>
 									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"></td>
 								</tr>
 								<tr>
 									<th>
-										<label>Name</label>
+										<label>Template Title</label>
 									</th>
 									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a></td>
-								</tr>
-								<tr>
-									<th>
-										<label>Copy From</label>
-									</th>
-									<td><input name="" id="" type="text" maxlength="10" disabled class="form-25"><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-								<tr>
-									<th>
-										<label>Use Y/N</label>
-									</th>
-									<td>
-										<label class="checkLabel">
-											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-											<span class="checkmark"></span>
-										</label>
-									</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<!--// table-area -->
-					<button class="save-button" onclick="">Temp Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
+					<button class="save-button" onclick="">Save & Next&nbsp;&nbsp;<i class="ion ion-md-arrow-forward"></i></button>
 				</div>
 				<!-- //row -->
 				<!-- //1 -->
 				<li>
-				<div class="num_wrap"><span class="num">2</span><h4>Gate Page </h4></div>
+				<div class="num_wrap"><span class="num">2</span><h4>Write Content</h4></div>
 				<!-- 2 -->
 				<!-- row -->
 				<div class="row">
-					<h5>WELCOME SETTING</h5>  <!-- 메시지 목록 -->
+					<h5>Content Title</h5>  <!-- 메시지 목록 -->
 					<!-- table-area -->
 					<div class="table-area">
 						<table class="list-table">
@@ -501,63 +253,27 @@
 							<tbody>
 								<tr>
 									<th>
-										<label>Welcome Message</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
+										<label>Title</label></a>
 									</th>
 									<td><input type="text" id="" name="" value="" maxlength="250" class="form-75"><span class="txt-num">(28/100)</span></td>
 								</tr>
-								<tr>
-									<th>
-										<label>Welcome Background</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td><button class="line-button" onclick="">IMG</button><button class="save-button" onclick="">VIDEO</button> <button class="left-button active" onclick="">IMG</button><button class="right-button" onclick="">VIDEO</button></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Image List</label>
-									</th>
-									<td><a href="" class="btn-popup"><i class="ion ion-md-open"></i></a></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Video Folder Location</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"></td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Video List</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td>* You must manage a video list by each PC manually.</td>
-								</tr>
-								<tr class="lev">
-									<th>
-										<label>Special Video</label>
-									</th>
-									<td><button class="left-button active" onclick="">ON</button><button class="right-button" onclick="">OFF</button></td>
-								</tr>
-								<tr class="lev lev2">
-									<th>
-										<label>Special Video Period</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td>
-										<div class="calendar_wrap">
-											<input type="text" class="input_calendar hasDatepicker" name="sdatepicter" id="sdatepicter" value="">
-											<span class="space">~</span>
-											<input type="text" class="input_calendar hasDatepicker" name="edatepicter" id="edatepicter" value="">
-										</div>
-									</td>
-								</tr>
-								<tr class="lev lev2">
-									<th>
-										<label>Special Video Period</label><a href="" class="btn-help"><i class="ion ion-md-help-circle"></i></a>
-									</th>
-									<td><input type="text" id="" name="" value="" maxlength="250" class="form-90"></td>
-								</tr>
-								
 							</tbody>
 						</table>
 					</div>
-					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous</button>
+					<h5>Content Body (HTML Format)</h5>  <!-- 메시지 목록 -->
+					<div class="table-area">
+						<table class="list-table">
+							<colgroup>
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<td><textarea id="area" name="area" value="" maxlength="400" style="width:100%;min-height:300px"></textarea></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<button class="line-button" onclick=""><i class="ion ion-md-arrow-back"></i>&nbsp;&nbsp;Previous Step</button>
 				</div>
 				<!-- //row -->
 				<!-- //2 -->
@@ -571,10 +287,10 @@
 	<div id="tab3" class="tab_content">
 	<!-- row -->
 		<div class="row">
-			<h4>Title</h4>  <!-- 메시지 목록 -->
+			<h4>Service List</h4>  <!-- 메시지 목록 -->
 			<!-- btn-area -->
 			<div class="btn-area">
-				<button class="line-button" id="saveBtn">Cancel</button><button class="save-button" id="saveBtn">SAVE</button>
+				<button class="btn-control" id="saveBtn">Remove</button><button class="line-button" id="excelDownBtn"><i class="ion ion-ios-add"></i>&nbsp;&nbsp;ADD NEW</button>
 			</div>
 			<!-- //btn-area -->
 			<!-- table-area -->
@@ -586,47 +302,60 @@
 							<thead>
 								<tr>
 									<th width="10%"> 
-										<div class="th-text">No</div>
+										<label class="checkLabel">
+											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+											<span class="checkmark"></span>
+										</label>
 									</th>
-									<th width="30%">
-										<div class="th-text">Header1</div>
+									<th width="10%"> 
+										<div class="th-text">Use</div>
 									</th>
-									<th width="30%">
-										<div class="th-text">Header2</div>
+									<th width="20%">
+										<div class="th-text">Service Code</div>
+									</th>
+									<th width="15%">
+										<div class="th-text">Menu Type</div>
+									</th>
+									<th width="15%">
+										<div class="th-text">Service Title</div>
+									</th>
+									<th width="20%">
+										<div class="th-text">URL</div>
 									</th>
 									<th width="10%">
-										<div class="th-text">Header3</div>
-									</th>
-									<th width="10%">
-										<div class="th-text"></div>
+										<div class="th-text">Order</div>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="active">
-								 	<td class="txt-center">1</td>
-									<td>DC-SC-C01</td>
-									<td>Configurator 1</td>
-									<td class="txt-center">
+								 	<td class="txt-center">
 										<label class="checkLabel">
 											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
 											<span class="checkmark"></span>
 										</label>
 									</td>
-									<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
+									<td class="txt-center">Y</td>
+									<td>DC-SC-Serv-Pro01</td>
+									<td>Promotion</td>
+									<td>Promotion</td>
+									<td>http://Hyundai.com/promotion</td>
+									<td class="txt-center"></td>
 								</tr> 
 								<tr>
-								 	<td class="txt-center">1</td>
-									<td>DC-SC-C01</td>
-									<td>Configurator 1</td>
-									<td class="txt-center">
+								 	<td class="txt-center">
 										<label class="checkLabel">
 											<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
 											<span class="checkmark"></span>
 										</label>
 									</td>
-									<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
-								</tr>
+									<td class="txt-center">Y</td>
+									<td>DC-SC-Serv-Pro01</td>
+									<td>Promotion</td>
+									<td>Promotion</td>
+									<td>http://Hyundai.com/promotion</td>
+									<td class="txt-center"></td>
+								</tr> 
 							</tbody>
 						</table>
 					</div>
