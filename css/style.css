@@ -12,6 +12,7 @@ h3 {font-size:24px; color: #111; display: inline-block; margin-bottom:20px;}
 h3 span {font-size:18px; color: #111;margin-left:20px}
 h3 div {font-size:14px;color: #aaa;}
 h4 {font-size:18px; display: inline-block; margin-right: 20px; color: #111; margin: 0 30px 10px 0; float: left;}
+h4 span{font-size:16px; font-family:"TextRegular";margin-left:10px}
 h5 {font-size: 15px; color:#333;}
 
 
@@ -258,7 +259,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .process .row .list-table .tui-grid-table td {height:initial;padding:0 5px;}
 .process .row .list-table .tui-grid-table td.tui-grid-cell {background-color:#fff!important;}
 .process .row .list-table .grid3 .tui-grid-table .tui-grid-cell-current-row {background-color:#f2f2f2!important;}
-
+.process.no-circle {padding-left: 0;margin: 0 0 0;}
 
 .option_hide .row {display:none}
 .option_hide .open {display:inline-block}
