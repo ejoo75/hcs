@@ -26,7 +26,7 @@
 
 	<!-- content -->
 	<div class="content">
-		<h3>Template <span>Search 2Row Radio</span>
+		<h3>Template <span>Search 1Row4 2Grid</span>
 			<div>Subtitle</div>
 		</h3>
 		<!-- btn-area -->
@@ -37,8 +37,8 @@
 		<!-- row -->
 		<div class="row">
 			<!-- w_50 -->
-			<div class="w-50">
-				<h4>Vehicle List</h4>
+			<div class="w-35">
+				<h4>Image Bucket</h4>
 				<div class="btn-area">
 					<button class="line-button" id="gridRowDelBtn" style=""><i class="ion ion-md-add"></i>&nbsp;&nbsp;&nbsp;Add New</button>
 					<!--//icon button + total
@@ -48,137 +48,85 @@
 					-->
 				</div>        
 				<!-- table-area -->
-				<div class="table-area">
-					<div class="fixed-table-container" style="height:500px">
-						<div class="header-bg"></div>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th width="10%"> 
-											<div class="th-text">No</div>
-										</th>
-										<th width="30%">
-											<div class="th-text">Header1</div>
-										</th>
-										<th width="30%">
-											<div class="th-text">Header2</div>
-										</th>
-										<th width="10%">
-											<div class="th-text">Header3</div>
-										</th>
-										<th width="10%">
-											<div class="th-text"></div>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="active">
-										<td class="txt-center">1</td>
-										<td>DC-SC-C01</td>
-										<td>Configurator 1</td>
-										<td class="txt-center">
-											<label class="checkLabel">
-												<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-												<span class="checkmark"></span>
-											</label>
-										</td>
-										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
-									</tr> 
-									<tr>
-										<td class="txt-center">1</td>
-										<td>DC-SC-C01</td>
-										<td>Configurator 1</td>
-										<td class="txt-center">
-											<label class="checkLabel">
-												<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-												<span class="checkmark"></span>
-											</label>
-										</td>
-										<td class="txt-center"><button class="line-button" onclick="">Edit</button></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
+				<div class="tree-box">
+				</div>  
 				<!--// table-area -->
 			</div>
 			<!-- //w_50 -->   
 			<div class="w-50-m"></div>
 			<!-- w_50 -->
-			<div class="w-50 ">
-            <h4>Detail Info</h4> <!--코드상세정보-->
-            <div class="btn-topWarp"></div>
-            <!-- table-area -->
-			<div class="table-area">
-				<table class="list-table ">
-					<colgroup>
-						<col style="width: 20%;">
-						<col style="width: 30%;">
-						<col style="width: 20%;">
-						<col style="width: 30%;">
-					</colgroup>
-					<tbody>
-					<tr>
-						<th><label for="className" class="must">Large Category Code</label></th> <!--분류명-->
-						<td>
-							<div class="search-input">
-								<input type="hidden" id="rowKey" name="rowKey" value="">
-								<input type="hidden" id="rowKey2" name="rowKey2" value="">
-								<input type="text" id="lgrpCd" name="lgrpCd" value="" disabled=""><button id="btnPopSearch" name="btnPopSearch" class="btn-search" disabled="" onclick="javascript:fnButtons('open');"><i class="ion ion-ios-search"></i></button></div>
-						</td>
-						<th><label for="sgrpCd" class="must">Small Category Code</label></th> <!--공통코드-->
-						<td>
-							<input type="text" id="sgrpCd" name="sgrpCd" value="" disabled="" maxlength="10" autocomplete="off">
-						</td>
-					</tr>
-					<tr>
-						<th><label for="cdExpl">Small Category Name</label></th> <!--공통코드명-->
-						<td colspan="3">
-							<textarea id="cdExpl" name="cdExpl" value="" disabled="" maxlength="250"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<th><label for="optCd1">Link Code(1)</label></th> <!--연계코드-->
-						<td><input type="text" id="optCd1" name="optCd1" value="" disabled="" maxlength="250" autocomplete="off"></td>
-						<th><label for="optCd2">Link Code(2)</label></th>
-						<td><input type="text" id="optCd2" name="optCd2" value="" disabled="" maxlength="250" autocomplete="off"></td>
-					</tr>
-					<tr>
-						<th><label for="optCd3">Link Code(3)</label></th> <!--연계코드-->
-						<td><input type="text" id="optCd3" name="optCd3" value="" disabled="" maxlength="250" autocomplete="off"></td>
-						<th><label for="optCd4">Link Code(4)</label></th>
-						<td><input type="text" id="optCd4" name="optCd4" value="" disabled="" maxlength="250" autocomplete="off"></td>
-					</tr>
-					<tr>
-						<th><label for="rem">Remark</label></th> <!--비고-->
-						<td colspan="3">
-							<textarea id="rem" name="rem" value="" disabled="" maxlength="400"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<th><label for="use">Use Flag</label></th> <!--사용유무-->
-						<td>
-							<div class="check-area">
-								<div class="Checkbox_checkbox">
-									<label class="checkLabel">
-										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn" checked="">
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</td>
-						<th><label for="sortNo">Sort No</label></th> <!--정렬번호-->
-						<td><input type="text" id="sortNo" name="sortNo" value="" autocomplete="off" disabled=""></td>
-					</tr>
-					</tbody>
-				</table>
+			<div class="w-65">
+				<h4>Image Information</h4>
+				<!-- // total
+				<div class="summary">Total<span id="totalNum2">1</span></div> 
+				-->
+				<!-- table-area -->
+				<div class="table-area">
+					<table class="list-table">
+						<colgroup>
+							<col style="width: 30%;">
+							<col style="width: 70%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>
+									<label>Image</label>
+								</th>
+								<td><div class="img_wrap small" style="height:200px"><img src="images/sample.jpg" width="585" height="350" border="0" alt=""></div></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Image Code</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Image Size</label>
+								</th>
+								<td><input name="" id="" type="text" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Image Volume</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Order</label>
+								</th>
+								<td><input name="" id="" type="text" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Uploader</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Dealer</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" disabled="" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Image Name</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" class=""></td>
+							</tr>
+							<tr>
+								<th>
+									<label>Remark</label>
+								</th>
+								<td><input type="text" id="" name="" value="" maxlength="100" class=""></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// table-area -->
 			</div>
-			<!-- //table-area -->
-  
-  
-          </div>
 			<!-- //w_50 -->
 		</div>
 		<!-- //row -->
