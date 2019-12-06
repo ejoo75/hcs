@@ -139,14 +139,6 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container > li.active  i {opacity:1;}
 .sidenav .lnb ul.nav-container > li.active a{color:#000}
 /*.sidenav .lnb ul.nav-container li > a > .ic_arrow {float:right;width:20px;height:20px;background:url(../images/gnb_down.png) no-repeat;}*/
-.sidenav .lnb ul.nav-container li > a::after {content: ""; position: absolute; right: 20px; top: 45%; border: solid #333; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transition: -webkit-transform 0.25s ease;
-    transition: -ms-transform 0.25s ease;
-    transition: transform 0.25s ease;
-}
 .sidenav .lnb ul.nav-container li > a:hover > .ic_arrow {background:url(../images/gnb_down_hover.png) no-repeat;}
 .sidenav .lnb ul.nav-container li.active > a > .ic_arrow {background:url(../images/gnb_up.png) no-repeat;}
 .sidenav .lnb ul.nav-container li.active > .subnav {display:block;}
@@ -154,6 +146,14 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container .subnav li {padding:0 0 0 46px;}
 .sidenav .lnb ul.nav-container .subnav .subnav {margin-left:-46px}
 .sidenav .lnb ul.nav-container .subnav .subnav li {padding:0 0 0 61px;}
+.sidenav .lnb ul.nav-container .subnav li > a::after {content: ""; position: absolute; right: 20px; top: 45%; border: solid #333; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transition: -webkit-transform 0.25s ease;
+    transition: -ms-transform 0.25s ease;
+    transition: transform 0.25s ease;
+}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active {background:#00afd5;}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
 .sidenav .lnb ul.nav-container .subnav .ic_arrow {opacity:0.5;margin-right:5px}
