@@ -150,17 +150,14 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
     transition: -ms-transform 0.25s ease;
     transition: transform 0.25s ease;
 }
-.sidenav .lnb li.open {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+.sidenav .lnb li.nav-item span.sn::after {display: none;}
+.sidenav .lnb li.nav-item span.sn:hover {background: #eee;}
+.sidenav .lnb li.nav-item span.sn.active {background-color: #00afd5; color: #fff;}
+.sidenav .lnb li.nav-item span.sn.active a {color: #fff;}
+.sidenav .lnb li.nav-item.open span.sn {border-bottom: none; color: #333;}
+.sidenav .lnb li.nav-item.open {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
 .sidenav .lnb ul.nav-container .subnav li {position:relative;padding:0 0 0 46px;}
 .sidenav .lnb ul.nav-container .subnav .subnav {margin-left:-46px}
-.sidenav .lnb ul.nav-container .subnav .subnav::before {content: ""; position: absolute; right: 10px; top: 24px; border: solid #333; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transition: -webkit-transform 0.25s ease;
-    transition: -ms-transform 0.25s ease;
-    transition: transform 0.25s ease;
-}
 .sidenav .lnb ul.nav-container .subnav .subnav li {padding:0 0 0 61px;}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active {background:#00afd5;}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
