@@ -8,7 +8,7 @@
 <link type="text/css" rel="stylesheet" href="./css/reset.css">
 <link type="text/css" rel="stylesheet" href="./css/fonts.css">
 <link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
-<link type="text/css" rel="stylesheet" href="./css/style_20191205.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
 
 <script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
@@ -55,7 +55,7 @@
 <nav class="lnb"> 
     <ul class="nav-container">
         <li class="nav-item">
-        <a href="#"><span><i class="ion ion-ios-analytics"></i>DashBoard</span></a>
+        <a href="#"><span><i class="ion"></i>DashBoard</span></a>
 			<ul class="subnav">
 				<li><a href="#">AAA</a>
 					<ul class="subnav">
@@ -68,20 +68,20 @@
 			</ul>
 		</li>
 		<li class="nav-item ">
-			<a href="#"><span><i class="ion ion-md-grid"></i>Statics</span></a>
+			<a href="#"><span><i class="ion"></i>Statics</span></a>
 			<ul class="subnav">
 				<li><a href="#">Menu Management</a></li>
 			</ul>
         </li>      
         <li class="nav-item ">
-			<a href="#"><span><i class="ion ion-md-cog"></i> System Control</span></a>
+			<a href="#"><span><i class="ion"></i>System Control</span></a>
 			<ul class="subnav">
 				<li><a href="#">Auth Group Menu Management</a></li>
 				<li><a href="#">User Reconnection Approval</a></li>   
 			</ul>
 		</li>       
 		<li class="nav-item ">
-			<a href="#"><span><i class="ion ion-md-speedometer"></i>Vehicle Control</span></a>
+			<a href="#"><span><i class="ion"></i>Vehicle Control</span></a>
 			<ul class="subnav">
 				<li><a href="#">Send Log Search</a></li>
 				<li><a href="#">API Log</a></li>
@@ -90,7 +90,7 @@
 			</ul>
 		</li>     
 		<li class="nav-item ">
-			<a href="#"><span><i class="ion ion-md-settings"></i>Admin System</span></a>
+			<a href="#"><span><i class="ion"></i>Admin System</span></a>
 			<ul class="subnav">
 				<li><a href="#">User Management</a></li>
 				<li><a href="#">Auth Management</a></li>
@@ -105,7 +105,7 @@
 			</ul>
 		</li> 
 		<li class="nav-item ">
-			<a href="#"><span><i class="ion ion-md-book"></i>Guide Download</span></a>
+			<a href="#"><span><i class="ion"></i>Guide Download</span></a>
 			<ul class="subnav">
 				<li><a href="#">Device Maintenance</a></li>
 				<li><a href="#">Schedule Management</a></li>
@@ -117,74 +117,41 @@
 </aside>
 <!--// LNB -->
 <!-- Content -->
-<section class="container">
+<section class="container dashboard">
 	<div class="content">
-		<h3>Message Management<span>Admin Management</span></h3>
+		<h3>DASHBOARD<span></span>
+			<div>Show live Contents</div>
+		</h3>
 		<div class="btn-area">
-			<button class="line-button" id="excelDownBtn">Cancel</button>
-			<button class="save-button" onclick="javascript:fnButtons('save');">Save</button><!-- 저장 -->
+			Wed. September 9, 2020
 		</div>
 		<!-- searchForm -->
-
-	<style>
-		header, section {
-			display: block;
-		}
-		.connected, .sortable, .exclude, .handles {
-			margin: auto;
-			padding: 0;
-			
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-		.sortable.grid {
-			overflow: hidden;
-		}
-		.connected li, .sortable li, .exclude li, .handles li {
-			list-style: none;
-			border: 1px solid #CCC;
-			background: #F6F6F6;
-			font-family: "Tahoma";
-			color: #1C94C4;
-			margin: 5px;
-			padding: 5px;
-			height: 22px;
-		}
-		.handles span {
-			cursor: move;
-		}
-		li.disabled {
-			opacity: 0.5;
-		}
-		.sortable.grid li {
-			line-height: 80px;
-			float: left;
-			width: calc(33.3% - 22px);
-			height: 200px;
-			text-align: center;
-		}
-		li.highlight {
-			background: #FEE25F;
-		}
-		li.sortable-placeholder {
-			border: 1px dashed #CCC;
-			background: none;
-		}
-	</style>
-
-
-
 	
-	
-	<section>
-		
+	<div class="sortable_wrap">
 		<ul class="sortable grid">
-			<li>
-				<div id="container" style="width: 75%;">
+			<li class="board kiosk">
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+				<div class="tit1">Kiosk</div>
+				<div class="num">580</div>
+				<div class="tit2">Counts (Today)</div>
+			</li>
+			<li class="board config">
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+				<div class="tit1">Configurator</div>
+				<div class="num">480</div>
+				<div class="tit2">Counts (Today)</div>
+			</li>
+			<li class="board simul">
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+				<div class="tit1">Simulator</div>
+				<div class="num">325</div>
+				<div class="tit2">Counts (Today)</div>
+			</li>
+			<li style="width: calc(66.6% - 10px);">
+				<h4>Visitor Counts Overview</h4>
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+	<!-- Chart 		
+	<div id="container">
 		<canvas id="canvas"></canvas>
 	</div>
 	<script>
@@ -303,14 +270,67 @@
 			window.myBar.update();
 		});
 	</script>
-			
+	Chart -->	
 			</li>
-			<li>Item 2<div>111111111<br>111111111</div></li>
-			<li>Item 3</li>
-			<li style="width: calc(66.6% - 22px);">Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-<li style="width: calc(66.6% - 22px);">Item 5</li>
+			<li>
+				<h4>Current Weather <span>Seoul</span></h4>
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+			</li>
+			<li>
+				<h4>System Monitoring Status</h4>
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+				<div class="table-area">
+					<table class="list-table">
+						<colgroup>
+							<col style="width: 25%;">
+							<col style="width: 15%;">
+							<col style="width: 20%;">
+							<col style="">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>KIOSK 1</th>
+								<td><span class="on">ON</span></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>KIOSK 2</th>
+								<td><span class="off">OFF</span></td>
+								<td>Avante</td>
+								<td>Quotation Page</td>
+							</tr>
+							<tr>
+								<th>CONFIGURATOR R1</th>
+								<td><span class="on">ON</span></td>
+								<td>Avante</td>
+								<td>Quotation Page</td>
+							</tr>
+							<tr>
+								<th>CONFIGURATOR R2</th>
+								<td><span class="on">ON</span></td>
+								<td>Avante</td>
+								<td>Quotation Page</td>
+							</tr>
+							<tr>
+								<th>SIMULATOR 1</th>
+								<td><span class="on">ON</span></td>
+								<td>Avante</td>
+								<td>Quotation Page</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li style="width: calc(66.6% - 10px);">
+				<h4>Recent Live Alarm <span>(Last updated : 07:45:10 PM)</span></h4>
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+				<div class="list"><span class="time">07:45 PM</span> - <span class="con">CONFIGURATOR 1</span> : [Veloster] Customer is interested in Price Calculation.</div>
+			</li>
+			<li style="width: calc(100% - 12px);">
+				<h4>Recent System Update Notification</h4>
+				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
+			</li>
 		</ul>
 	</section>
 	
@@ -338,9 +358,8 @@
 
 		<!--// demo -->
 	</div>
-</section>
+</div>
 <!-- Content -->
 
 </body>
 </html>
-y
