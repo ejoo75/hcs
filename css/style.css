@@ -194,16 +194,14 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb li.nav-item.open span.sn {border-bottom: none; color: #333;}
 .sidenav .lnb li.nav-item.open {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
 .sidenav .lnb ul.nav-container .subnav li {position:relative;}
-.sidenav .lnb ul.nav-container .subnav li a {padding:0 0 0 46px;}
 .sidenav .lnb ul.nav-container .subnav .subnav {margin-left:-46px}
-.sidenav .lnb ul.nav-container .subnav .subnav li {padding:0 0 0 61px;}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active {background:#00afd5;}
 .sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
 .sidenav .lnb ul.nav-container .subnav .ic_arrow {opacity:0.5;margin-right:5px}
 .sidenav .lnb ul.nav-container .subnav .active a .ic_arrow, .sidenav .lnb ul.nav-container .subnav a:hover .ic_arrow{opacity:1}
-.sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextRegular";font-size:14px;padding:8px 5px 8px 0;display: block;}
+.sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextRegular";font-size:14px;padding:0 0 0 46px;display: block;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {font-family:"TextBold";}
-.sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0;}
+.sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0 6px 61px;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {color:#000}
 .sidenav .lnb ul.nav-container .subnav > li :hover {background:#fff;}
 
