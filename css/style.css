@@ -118,8 +118,9 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sortable_wrap .table-area {overflow-y:auto;height:125px;border-top:1px solid #9ca5b2;border-bottom:1px solid #9ca5b2;margin-top:-5px}
 .sortable_wrap .table-area .list-table {border-top: none;}
 .sortable_wrap .table-area td {height:33px;border-left:1px solid#f3f4f6}
-.sortable_wrap h4 + a + .list {padding-top: 5px;height: 27px;}
-.sortable_wrap .list {clear:both;height:22px;color:#000;border-bottom: 1px solid #dedede;margin-top:10px}
+.sortable_wrap .list {clear: both;}
+.sortable_wrap .sortable.grid .list li {float: initial;width: initial!important;line-height: normal!important;height: 35px!important;color: #000;border: none;margin: 0 -15px;padding: 10px 15px 0;}
+.sortable_wrap .list li:nth-child(1), .sortable_wrap .list li:nth-child(3) {background: #f3f4f6;}
 .sortable_wrap .list span{display:inline-block;}
 .sortable_wrap .time {width:60px;color:#aaa;margin-right:10px}
 .sortable_wrap .tit {font-weight:bold;color:#555;}
