@@ -199,7 +199,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
 .sidenav .lnb ul.nav-container .subnav .ic_arrow {opacity:0.5;margin-right:5px}
 .sidenav .lnb ul.nav-container .subnav .active a .ic_arrow, .sidenav .lnb ul.nav-container .subnav a:hover .ic_arrow{opacity:1}
-.sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextRegular";font-size:14px;padding:0 0 0 46px;display: block;}
+.sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextRegular";font-size:14px;padding:8px 5px 8px 46px;display: block;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {font-family:"TextBold";}
 .sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0 6px 61px;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {color:#000}
