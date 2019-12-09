@@ -2,7 +2,7 @@ $.sidebarMenu = function(menu) {
   var animationSpeed = 300,
     subMenuSelector = '.subnav';
 
-  $(menu).on('click', 'li a', function(e) {
+  $(menu).on('click', 'li span', function(e) {
     var $this = $(this);
     var checkElement = $this.next();
 
