@@ -165,14 +165,15 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(3) span i:before {content: "\f2cf";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(4) span i:before {content: "\f37f";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(5) span i:before {content: "\f377";}
-.sidenav .lnb ul.nav-container li.nav-item:nth-child(6) span i:before {content: "\f29e";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(6) span i:before {content: "\f2df";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(7) span i:before {content: "\f29e";}
 .sidenav .lnb ul.nav-container {list-style:none;margin:0;padding:0;}
 .sidenav .lnb ul.nav-container a {text-decoration:none;}
 .sidenav .lnb ul.nav-container > li {position:relative;font-family:"TextBold", Arial, tahoma;font-size:15px;}
-.sidenav .lnb ul.nav-container > li > a {display:block;padding:16px 10px 15px 20px;color:#000;}
-.sidenav .lnb ul.nav-container > li > a i {width:16px;font-size:20px;margin-right:10px;opacity:0.3;vertical-align:middle;}
-.sidenav .lnb ul.nav-container > li > a:hover {background:#fff;}
-.sidenav .lnb ul.nav-container > li > a:hover i {opacity:1;}
+.sidenav .lnb ul.nav-container > li > span {display:block;padding:16px 10px 15px 20px;color:#000;}
+.sidenav .lnb ul.nav-container > li > span i {width:16px;font-size:20px;margin-right:10px;opacity:0.3;vertical-align:middle;}
+.sidenav .lnb ul.nav-container > li > span:hover {background:#fff;}
+.sidenav .lnb ul.nav-container > li > span:hover i {opacity:1;}
 .sidenav .lnb ul.nav-container > li.active  i {opacity:1;}
 .sidenav .lnb ul.nav-container > li.active a{color:#000}
 .sidenav .lnb ul.nav-container li > a:hover > .ic_arrow {background:url(../images/gnb_down_hover.png) no-repeat;}
@@ -198,8 +199,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
 .sidenav .lnb ul.nav-container .subnav .ic_arrow {opacity:0.5;margin-right:5px}
 .sidenav .lnb ul.nav-container .subnav .active a .ic_arrow, .sidenav .lnb ul.nav-container .subnav a:hover .ic_arrow{opacity:1}
-.sidenav .lnb ul.nav-container .subnav > li > a {font-family:"TextRegular";font-size:14px;padding:8px 5px 8px 46px;display: block;}
-.sidenav .lnb ul.nav-container .subnav > li > a:hover {background:#fff;}
+.sidenav .lnb ul.nav-container .subnav > li > span {font-family:"TextRegular";font-size:14px;padding:8px 5px 8px 46px;display: block;}
+.sidenav .lnb ul.nav-container .subnav > li > span:hover {background:#fff;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {font-family:"TextBold";}
 .sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0 6px 61px;}
 .sidenav .lnb ul.nav-container .subnav > li.active > a {color:#000}
