@@ -128,6 +128,13 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
   border-right: 1px solid #aaa;}
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
 .sidenav .lnb ul.nav-container li.nav-item span i{font-size: 20px;margin-right: 10px;opacity: 0.3;vertical-align: middle;}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(1) span i:before {content: "\f3ce";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(2) span i:before {content: "\f302";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(3) span i:before {content: "\f2cf";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(4) span i:before {content: "\f37f";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(5) span i:before {content: "\f377";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(6) span i:before {content: "\f2df";}
+.sidenav .lnb ul.nav-container li.nav-item:nth-child(7) span i:before {content: "\f29e";}
 .sidenav .lnb ul.nav-container {overflow: auto;}
 .sidenav .lnb li.nav-item { overflow: hidden;}
 .sidenav .lnb li.nav-item:after {clear: both; display: table; content: "";}
