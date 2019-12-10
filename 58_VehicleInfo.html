@@ -18,6 +18,14 @@
 
   
 <script type="text/javascript">
+$(document).ready(function () {
+	$('.open-1').click(function () {
+		$('option-1').removeClass('hidden-row');
+	});
+	$('.close-1').click(function () {
+		$('option-1').addClass('hidden-row');
+	});
+});
 </script>
 
 </head>
@@ -77,7 +85,7 @@
 					<div class="td-wrap">
 						<table class="list-table">
 							<tr>
-								<td class="txt-center"><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button></td>
+								<td class="txt-center"><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button></td>
 							</tr>
 						</table>
 					</div>
@@ -154,27 +162,27 @@
 							</colgroup>
 							<tr>
 								<td class="txt-center">
-									1.6 MPI<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
+									1.6 MPI<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
 								</td>
 								<td colspan="2" class="txt-center">
-									1.6 GDI<button class="btn-ico-only btn-write" disabled><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
+									1.6 GDI<button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
 								</td>
 								<td class="txt-center">
-									1.6 GDI<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button>
+									1.6 GDI<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button>
 								</td>
 							</tr>
 							<tr>
 								<td class="txt-center">
-									GO (100,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+									GO (100,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
 								</td>
 								<td class="txt-center">
-									MID (110,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+									MID (110,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
 								</td>
 								<td class="txt-center">
-									HIGH (130,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+									HIGH (130,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
 								</td>
 								<td class="txt-center">
-									HIGH-TECH (200,000,000) <button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button>
+									HIGH-TECH (200,000,000) <button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
 								</td>
 							</tr>
 						</table>
@@ -185,11 +193,12 @@
 				<!-- //row -->
 				<!-- //1 -->
 			</li>
-			<li>
+			<li class="option-1 hidden-row">
 				<!-- 2 -->
 				<div class="marker">
 					<div class="th-wrap">Ad Option List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
-					<div class="td-wrap">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropdown"></i></button></div>
+					<div class="td-wrap open-1">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropdown"></i></button></div>
+					<div class="td-wrap close-1">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
 				</div>
 				<!-- row -->
 				<div class="row">
@@ -198,22 +207,22 @@
 						<table class="list-table">
 							<tr>
 								<th>
-									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Option 3</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 3</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Option 4</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 4</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 						</table>
@@ -352,12 +361,12 @@
 						<table class="list-table">
 							<tr>
 								<th>
-									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 						</table>
@@ -444,12 +453,12 @@
 						<table class="list-table">
 							<tr>
 								<th>
-									<label>Ex Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Ex Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Ex Color 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Ex Color 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 						</table>
@@ -536,12 +545,12 @@
 						<table class="list-table">
 							<tr>
 								<th>
-									<label>Int Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Int Color 1</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Int Color 2 2</label><button class="btn-ico-only btn-write"><i class="ion ion-md-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label>Int Color 2 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 						</table>
