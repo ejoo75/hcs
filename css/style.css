@@ -92,7 +92,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .drop-down .select-list li span:hover,
 .drop-down .select-list li span:focus {background-color: rgba(0, 0, 0, 0.2);}
 .select-list-link .ion {position: absolute; top: 8px; right: 15px; color:#fff; font-size: 16px;}
-.KO  {background: url(../images/icon_kor.png) no-repeat 0 50%;}
+.KO {background: url(../images/icon_kor.png) no-repeat 0 50%;}
 .EN {background: url(../images/icon_eng.png) no-repeat 0 50%;}
 
 
@@ -157,9 +157,9 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 
 /* aside */
 .sidenav {height: calc(100% - 60px); width: 240px; position: fixed; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;
-  border-right: 1px solid #aaa;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
+  border-right: 1px solid #aaa;}
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
-.sidenav .lnb ul.nav-container .nav-item.active {background:#e0e3e6;padding-bottom:10px;}
+.sidenav .lnb ul.nav-container li.nav-item span i{font-size: 20px;margin-right: 10px;opacity: 0.3;vertical-align: middle;}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(1) span i:before {content: "\f3ce";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(2) span i:before {content: "\f302";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(3) span i:before {content: "\f2cf";}
@@ -167,20 +167,16 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(5) span i:before {content: "\f377";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(6) span i:before {content: "\f2df";}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(7) span i:before {content: "\f29e";}
-.sidenav .lnb ul.nav-container {list-style:none;margin:0;padding:0;}
-.sidenav .lnb ul.nav-container a {text-decoration:none;}
-.sidenav .lnb ul.nav-container > li {cursor:pointer;position:relative;font-family:"TextBold", Arial, tahoma;font-size:15px;}
-.sidenav .lnb ul.nav-container > li > span {display:block;padding:16px 10px 15px 20px;color:#000;}
-.sidenav .lnb ul.nav-container > li > span i {width:16px;font-size:20px;margin-right:10px;opacity:0.3;vertical-align:middle;}
-.sidenav .lnb ul.nav-container > li > span:hover {background:#fff;}
-.sidenav .lnb ul.nav-container > li > span:hover i {opacity:1;}
-.sidenav .lnb ul.nav-container > li.active  i {opacity:1;}
-.sidenav .lnb ul.nav-container > li.active a{color:#000}
-.sidenav .lnb ul.nav-container li > a:hover > .ic_arrow {background:url(../images/gnb_down_hover.png) no-repeat;}
-.sidenav .lnb ul.nav-container li.active > a > .ic_arrow {background:url(../images/gnb_up.png) no-repeat;}
-.sidenav .lnb ul.nav-container li.active > .subnav {display:block;}
-.sidenav .lnb ul.nav-container .subnav {display:none;list-style:none;}
-.sidenav .lnb ul.nav-container .subnav::before {content: ""; position: absolute; right: 10px; top: 24px; border: solid #333; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;
+.sidenav .lnb ul.nav-container {overflow: auto;}
+.sidenav .lnb li.nav-item { overflow: hidden;}
+.sidenav .lnb li.nav-item:after {clear: both; display: table; content: "";}
+.sidenav .lnb li.nav-item span {display: block; width: 100%; color: #333; font-size: 15px; font-weight: 500; background: #c5ccd3; padding: 15px 0 15px 20px; cursor: pointer;  position: relative;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.sidenav .lnb li.nav-item span::after {content: ""; position: absolute; right: 20px; top: 45%; border: solid #333; border-width: 0 1px 1px 0; display: inline-block; padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -188,23 +184,24 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
     transition: -ms-transform 0.25s ease;
     transition: transform 0.25s ease;
 }
+.sidenav .lnb li.nav-item span:hover {background:#fff}
 .sidenav .lnb li.nav-item span.sn::after {display: none;}
 .sidenav .lnb li.nav-item span.sn:hover {background: #eee;}
 .sidenav .lnb li.nav-item span.sn.active {background-color: #00afd5; color: #fff;}
 .sidenav .lnb li.nav-item span.sn.active a {color: #fff;}
 .sidenav .lnb li.nav-item.open span.sn {border-bottom: none; color: #333;}
-.sidenav .lnb li.nav-item.open {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
-.sidenav .lnb ul.nav-container .subnav li {position:relative;}
-.sidenav .lnb ul.nav-container .subnav .subnav li.active {background:#00afd5;}
-.sidenav .lnb ul.nav-container .subnav .subnav li.active a{color:#fff;}
-.sidenav .lnb ul.nav-container .subnav .ic_arrow {opacity:0.5;margin-right:5px}
-.sidenav .lnb ul.nav-container .subnav .active a .ic_arrow, .sidenav .lnb ul.nav-container .subnav a:hover .ic_arrow{opacity:1}
-.sidenav .lnb ul.nav-container .subnav > li > span {font-family:"TextRegular";font-size:14px;padding:8px 5px 8px 46px;display: block;}
-.sidenav .lnb ul.nav-container .subnav > li > span:hover {background:#fff;}
-.sidenav .lnb ul.nav-container .subnav > li.active > a {font-family:"TextBold";}
-.sidenav .lnb ul.nav-container .subnav .subnav > li > a {font-size:13px;padding:6px 0 6px 61px;}
-.sidenav .lnb ul.nav-container .subnav > li.active > a {color:#000}
-.sidenav .lnb ul.nav-container .subnav .subnav > li > a:hover {background:#fff;}
+.sidenav .lnb li.nav-item:first-of-type span {border-top: none;}
+.sidenav .lnb li.nav-item:last-of-type span {border-bottom:none;}
+.sidenav .lnb li.nav-item ul.subnav {visibility: hidden; max-height: 0; background:#e0e3e6;transition: 0.25s ease; transition-property: max-height, opacity; opacity: 0;
+  padding: 0; margin: 0;}
+.sidenav .lnb li.nav-item ul.subnav li {width: 100%; height: 100%; background: #e0e3e6;}
+.sidenav .lnb li.nav-item ul.subnav a {position: relative; display: block; color: #000; font-size: 14px; padding: 8px 5px 8px 46px; letter-spacing: -1px; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out;}
+.sidenav .lnb li.nav-item ul.subnav a:hover {background: #fff;}
+.sidenav .lnb li.nav-item ul.subnav a.active {color: #fff; background: #00afd5;}
+.sidenav .lnb li.nav-item.open span {border-bottom: 1px solid #e3e3e3; color: #000;}
+.sidenav .lnb li.nav-item.open span::after {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+.sidenav .lnb li.nav-item.open ul.subnav {visibility: visible; max-height: 200px; opacity: 1;}
+
 
 /* section */
 .container {position: relative; width: calc(100vw - 240px); top: 60px; left: 240px; padding: 20px 30px 50px 30px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
@@ -321,19 +318,21 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 /* marker */
 .marker-wrap .marker {overflow:hidden;}
 .marker-wrap .marker .th-wrap {color:#fff;font-size:14px;background:#949ba6;padding:7px 10px 1px}
-.marker-wrap .marker .td-wrap {color:#fff;font-size:14px;text-align:right;background:#949ba6;padding:7px 10px 1px}
-.marker-wrap .th-wrap {float:left;width:20%}
-.marker-wrap .td-wrap {float:left;width:80%}
+.marker-wrap .marker .td-wrap {color:#fff;font-size:14px;text-align:center;background:#949ba6;padding:7px 10px 1px}/* 20191210 - align*/
+.marker-wrap .th-wrap {float:left;width:15%}/* 20191210 - width*/
+.marker-wrap .td-wrap {float:left;width:85%}/* 20191210 - width */
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
 .marker-wrap .th-wrap th label {margin:5px 0 0 10px}
-.btn-additem, .btn-open, .btn-img, .btn-write {float:right;}
+.btn-additem, .btn-img, .btn-write {float:right;}/* 20191210 - btn-open del */
 .btn-additem, .btn-open {margin-top:-2px}
 .txt-center .btn-write, .txt-center .btn-img {float:none}
 .marker-wrap .marker .th-wrap .btn-additem .ion {color:#fff}
 .marker-wrap .th-wrap th {position:relative}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
+.option-1.hidden-row .row {display:none}/* 20191210 - add*/
+.option-1 .close-1 {display:none}/* 20191210 - add*/
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
@@ -427,12 +426,13 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .btn-ico-only {padding:0}
 .btn-ico-only:hover {box-shadow:none}
 .btn-additem .ion {color:#949ba6}
-.btn-additem {font-size:20px;margin-left:5px}
+.btn-additem {font-size:22px;margin-left:5px}/* 20191210 - fontsize */
 .btn-open .ion{color:#fff}
 .btn-open {font-size:20px;margin-left:5px}
 .btn-additem:hover .ion, .btn-open:hover .ion{color:#ccc!important}
-.btn-img {color:#00afd5;font-size:20px;margin-left:10px}
-.btn-write {color:#00afd5;font-size:20px;margin-left:10px}
+.btn-img {color:#00afd5;font-size:22px;margin-left:10px}/* 20191210 - fontsize */
+.btn-img .ion:before {margin-top:2px}/* 20191210 - add */
+.btn-write {color:#00afd5;font-size:22px;margin-left:10px}/* 20191210 - fontsize */
 .btn-img:hover {color:#0078d7;}
 .btn-write:hover {color:#0078d7;}
 .btn-up {font-size:16px;margin-left:5px}
@@ -458,13 +458,14 @@ input.tui-grid-cell-main-button, input.Checkbox_input  {position: absolute; opac
 .checkmark:after {content: ""; position: absolute; display: none;}
 .checkLabel input:checked ~ .checkmark:after {display: block;}
 .checkLabel .checkmark:after {left: 3px; top: -1px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
-th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
+th.tui-grid-cell.tui-grid-cell-head .checkLabel{top:0;left:0;}/* 20191210 - line chage*/
 .tui-grid-cell-head .checkLabel .Checkbox_input  {position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;}
 .txt-center .checkmark, .th-text .checkmark, th .checkmark  {left:50%}
 .txt-center .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
 .th-text .checks input[type="radio"] + label:before, th .checks input[type="radio"] + label:before {left:calc(50% + 5px)}
 .gird-table .checks input[type="radio"] + label:before {margin-top:-7px}
 .Checkbox_input:disabled + .checkmark {border-color:#e0e0e0!important;background:#f2f2f2!important}
+
 
 /* radio button*/
 .checks {position: relative;display: inline-block;margin-right: 30px;}
