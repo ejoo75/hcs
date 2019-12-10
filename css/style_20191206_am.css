@@ -96,6 +96,38 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .EN {background: url(../images/icon_eng.png) no-repeat 0 50%;}
 
 
+/* dashboard*/
+.dashboard {background: #f3f4f6}
+.dashboard .right-date {display: inline-block;float: right; margin-top: 30px;}
+.sortable_wrap .connected, .sortable_wrap .sortable, .sortable_wrap .exclude, .sortable_wrap .handles {margin: auto;padding: 0;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.sortable_wrap .sortable.grid {overflow: hidden;max-height:initial;min-height:initial;}
+.sortable_wrap .connected li, .sortable_wrap .sortable li, .sortable_wrap .exclude li, .sortable_wrap .handles li {list-style: none;border: 1px solid #ececec;background: #fff;margin: 5px;padding: 10px 15px;height: 22px;}
+.sortable_wrap .handles span {cursor: move;}
+.sortable_wrap li.disabled {opacity: 0.5;}
+.sortable_wrap .sortable.grid li {line-height: 80px;float: left;width: calc(33.3% - 10px);height: 180px;}
+.sortable_wrap li.highlight {background: #FEE25F;}
+.sortable_wrap li.sortable-placeholder {border: 1px dashed #CCC;background: none;}
+.sortable_wrap .btn-refresh {float:right;color:#aaa!important;font-size:20px;margin-right:5px}
+.sortable_wrap .board {color: #fff;text-align:center}
+.sortable_wrap .board .btn-refresh {color:#fff!important}
+.sortable_wrap .board .tit1 {font-family: "HeadMedium";font-size:28px;margin-top:15px}
+.sortable_wrap .board .num {font-family: "Arial";font-size:36px;margin:10px 0;}
+.sortable_wrap .board .tit2 {font-family: "TextMedium";font-size:22px;}
+.sortable_wrap .kiosk {background: #00afd5!important;}
+.sortable_wrap .config {background: #20c0ae!important;}
+.sortable_wrap .simul {background: #8b74e7!important;}
+.sortable_wrap .grid-scroll {clear:both;overflow-y: auto;height:137px!important;border-top:1px solid #bbb;margin:-5px -15px 0}
+.sortable_wrap .grid-scroll .list-table {border-top: none;}
+.sortable_wrap .grid-scroll th {background: #fafafa} 
+.sortable_wrap .grid-scroll td {height:30px;border-left:1px solid#f3f4f6;padding: 5px;}
+.sortable_wrap .list {clear: both;}
+.sortable_wrap .sortable.grid .list li {float: initial;width: initial!important;line-height: normal!important;height: 35px!important;color: #000;border: none;border-top:1px solid #eee;margin: 0 -15px;padding: 10px 15px 0;}
+.sortable_wrap .list li:nth-child(1), .sortable_wrap .list li:nth-child(3) {background: #fafafa;}
+.sortable_wrap .list span{display:inline-block;}
+.sortable_wrap .time {width:60px;color:#aaa;margin-right:10px}
+.sortable_wrap .tit {font-weight:bold;color:#555;}
+.sortable_wrap .date {width:80px;color:#aaa;}
+
 /* header */
 .header {position: fixed; width:100%; height:60px; background-color: #003468; z-index: 1000;}
 .header .drop-box {position: relative;float: left;color:#d4d8df;border:1px solid #809ab4;padding: 4px 30px 4px 10px;margin: 16px 10px 0 0;}
@@ -122,7 +154,6 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .hidden-lnb .header .lnb-close {display:none}
 .hidden-lnb .sidenav {left:-240px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 .hidden-lnb .container {width:100vw;left:0;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
-
 /* aside */
 .sidenav {height: calc(100% - 60px); width: 240px; position: fixed; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;
   border-right: 1px solid #aaa;}
@@ -478,7 +509,7 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 .modal .list_type > li {color: #333; margin-top:20px;padding-left:15px;text-indent:-15px}
 .modal .modal-txt {color:#333; margin-top: 30px;}
 .modal-btnWrap {position: absolute; bottom: 0; left:50%; transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); width: 100%; text-align: center;}
-.modal-body.scroll {overflow-y:auto; height:495px;min-height:initial}
+.modal-body.scroll {overflow-y:auto; height:470px;min-height:initial}
 .modal-footer {text-align:center;padding:10px; border-top: 1px solid #aaa;}
 
 .modal .alert {width: 400px; max-height: 400px;}
@@ -579,13 +610,12 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 @media screen and (max-width: 1680px) {
 /*    .form-section .form {width: 80%; height: 75%;}     2019.08.16  */
   .login-wrap .form-header {margin-top: 10px;}
-   img.logo {width: 200px !important;}
-   /*.btn-member {margin-top: 10px;}    2019.08.16  */
-   .save-id {height: 50px;}
+   img.logo {width: 60% !important;}
+
 }
 
 @media screen and (max-width: 1440px) {
-  .left-area .login-wrap {margin-top: -23%;}
+  .login-wrap .form-header {padding: 15% 0;}
   .form-section .form {width: 80%; height: 75%;}
   /* .form-section .form {width: 1200px; height: 700px;}  2019.08.16 */
 }
@@ -608,11 +638,8 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
   .modal-content  {width: 80%; height: 80%;}
    #passChange .member {height: 600px;}
    #passChange .member .member-tit {padding-top: 0;}      
-   .header {height: 60px;}
-   .header .topNav a {padding: 17px 0;}
-    h1 {width: 100px; height: 36px;}
-    .sidenav {height: calc(100% - 60px); width: 160px; top: 60px;}    
-    .container {width: calc(100vw - 160px); top: 60px; left: 160px; padding: 10px 20px 30px 20px;}
+    .sidenav {height: calc(100% - 60px); position: absolute; top: 60px;}    
+    .container {width: 100vw; left: 0;}
 }
 
 /* 공유하기 이미지*/
@@ -652,11 +679,32 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 
 
 @media screen and (max-width: 768px){
+	.form-section .form {width:90%}
+	.right-area {display:none}
+	.left-area .login-wrap {width: 100%;top: 25%;}
+	 h1 {float:none;width: 120px; height: 36px;margin-top: 0;margin: 5px auto;}
+	.header {height: 80px;}
+	.sidenav {top: 80px;}
+	.container {top: 80px;}
+	.header .lnb-open, .header .lnb-close {position:absolute;top:5px;left:10px;height:30px;margin:0}
+	.header .drop-box {position:absolute;top:40px;left:10px;font-size: 12px;margin:7px 0 0 0}
+	.header .drop-box + .drop-box {left:130px}
+	.header .topNav {position:absolute;top:45px;right:20px;padding-right: 0;}
+	.header .topNav a {padding-top:0px;}
+	.header .topNav .time.line {display:none}
+	.header .topNav a.user {font-size:12px}
+	 .right-date {width: 40%;margin-top: 15px!important;text-align:right}
+	 .sortable_wrap .sortable.grid li {width:100%!important}
+	 .search-form .search-input-area, .search-form .search-button-area, .column, .column40, .column45, .col-1, .col-2, .col-3, .col-4, .col-5, .w-33, .w-35, .w-50, .w-65  {display: block;width: 100%;}
+	 .w-50-m {height:20px}
+	 .search-form .search-input-area label {width:25%!important}
+	 .search-form .search-input-area .label-calendar2 {width:15%!important}
    .qr-container {height: 55%;}
    .qr-code {margin: 7% auto;}
 }
 
 @media screen and (max-width: 414px) {
+
   .qr-logo {width: 160px; height: 58px;}
   .qr-footer .foot-logo {width: 74px ; height: 37px;}
   .qr-container {height: 60%;}
@@ -789,3 +837,4 @@ th.tui-grid-cell-head .checkLabel {top:-7px;left:-12px;}
 #detailPopup textarea {width: 100%; min-height: 60px; height: 100%;}
 #detailPopup .close1 {position: absolute; top: 0; right: 15px; color: #000; float: right; font-size: 26px; font-weight: bold; opacity: 0.3; z-index: 10;}
 #detailPopup .close1:hover, .close1:focus {text-decoration: none; cursor: pointer; opacity: 0.8; box-shadow: none;}
+
