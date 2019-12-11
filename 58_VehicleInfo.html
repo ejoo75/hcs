@@ -19,13 +19,13 @@
   
 <script type="text/javascript">
 $(document).ready(function () {
-    $('.open-1').click(function (e) {
-        $(e.target).closest("li.option-1").removeClass('hidden-row');
+    $('.open-row').click(function (e) {
+        $(e.target).closest("li.marker-option").removeClass('hidden-row');
     });
 
-    $('.close-1').click(function (e) {
+    $('.close-row').click(function (e) {
 
-        $(e.target).closest("li.option-1").addClass('hidden-row');
+        $(e.target).closest("li.marker-option").addClass('hidden-row');
     });
 });
 </script>
