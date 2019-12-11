@@ -1,5 +1,6 @@
 <aside class="sidenav">
- <nav class="lnb">
+<nav class="lnb">
+<ul class="nav-container">
   <c:set var="frontLevel" value="0" />
   
   <c:forEach var="menu" items="${menuList}" varStatus="status">
@@ -10,9 +11,9 @@
        </li>
       </c:if>
       <c:if test="${status.index > 0}"> </ul> </c:if> <%-- 이전 Level1 ul 닫기 --%>
-     
-      <h2>${menu.menuNm }</h2>
-      <ul class="nav-container">
+      <li class="nav-item">
+       <span><i class-"ion"></i>${menu.menuNm }</span>
+      <ul class="subnav">
      </c:when>
      <c:when test='${"2" eq menu.menuL}'>
       <c:choose>
@@ -24,12 +25,12 @@
       
       <c:choose>
        <c:when test='${"0" eq menu.leafYn}'>
-         <li class="nav-item <c:if test='${menuId.substring(0,2) eq menu.menuId.substring(0,2) }'>open</c:if>">
-         <span>${menu.menuNm }</span>
+         <li class="<c:if test='${menuId.substring(0,2) eq menu.menuId.substring(0,2) }'>open</c:if>">
+         <u>${menu.menuNm }</u>
          <ul class="subnav">
        </c:when>
        <c:otherwise>
-        <li class="nav-item"><a href="${menu.url}?menuId=${menu.menuId}"><span class="sn<c:if test='${menuId eq menu.menuId }'> active</c:if>">${menu.menuNm }</span></a></li>
+        <li><a href="${menu.url}?menuId=${menu.menuId}" class="sn<c:if test='${menuId eq menu.menuId }'> active</c:if>">${menu.menuNm }</span></li>
        </c:otherwise>
       </c:choose>
      </c:when>
