@@ -320,7 +320,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .marker .th-wrap {color:#fff;font-size:14px;background:#949ba6;padding:7px 10px 1px}
 .marker-wrap .marker .td-wrap {color:#fff;font-size:14px;text-align:center;background:#949ba6;padding:7px 10px 1px}/* 20191210 - align*/
 .marker-wrap .th-wrap {float:left;width:15%}/* 20191210 - width*/
-.marker-wrap .td-wrap {float:left;width:85%}/* 20191210 - width */
+.marker-wrap .td-wrap {position:relative;float:left;width:85%;}/* 20191210 - width, position */
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
 .marker-wrap .th-wrap th label {margin:5px 0 0 10px}
@@ -332,10 +332,15 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
 .marker-option.hidden-row .row {display:none}/* 20191210 - add*/
-.marker-option.hidden-row .close-row {display:none}
-.marker-option.hidden-row .open-row {display:inline-block}
+.marker-option.hidden-row .close-row {display:none}/* 20191210 - add*/
+.marker-option.hidden-row .open-row {display:inline-block}/* 20191210 - add*/
 .marker-option .open-row {cursor:pointer;display:none}/* 20191210 - add*/
-.marker-option .close-row {cursor:pointer;display:inline-block}
+.marker-option .close-row {cursor:pointer;display:inline-block}/* 20191210 - add*/
+.marker-wrap .td-wrap .btn-left {position:absolute;top:0;left:-5px;width:20px;height:86px;color:#fff;background-color:#949ba6;}
+.marker-wrap .td-wrap .btn-right {position:absolute;top:0;right:0;width:20px;height:86px;color:#fff;background-color:#949ba6}
+.marker-wrap .td-wrap .btn-up {position:absolute;top:0;right:0;width:20px;height:50%;color:#fff;background-color:#949ba6;}
+.marker-wrap .td-wrap .btn-down {position:absolute;top:50%;right:0;width:20px;height:50%;color:#fff;background-color:#949ba6}
+.block {height:173px; overflow:hidden;}/* 20191210 - add*/
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
