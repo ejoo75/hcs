@@ -25,7 +25,7 @@
       </li>
       </c:if> <%-- �댁쟾 Level1 ul �リ린 --%>
      
-     <li class="nav-item <c:if test='${menuId.substring(0,2) eq menu.menuId.substring(0,2) }'>open</c:if>">
+     <li class="nav-item <c:if test='${menuId.substring(0,1) eq menu.menuId.substring(0,1) }'>open</c:if>">
       <span><i class="ion"></i>${menu.menuNm }</span>
       <ul class="subnav">
      </c:when>
@@ -39,17 +39,17 @@
       
       <c:choose>
        <c:when test='${"0" eq menu.leafYn}'>
-         <li class="<c:if test='${menuId.substring(0,3) eq menu.menuId.substring(0,3) }'>open</c:if>">
+         <li class="<c:if test='${menuId.substring(0,2) eq menu.menuId.substring(0,2) }'>open</c:if>">
          <u>${menu.menuNm }</u>
          <ul class="subnav">
        </c:when>
        <c:otherwise>
-        <li><a href="${menu.pgmPath}" class="<c:if test='${menuId eq menu.menuId }'>sn active</c:if>">${menu.menuNm }</a></li>
+        <li><a href="${menu.pgmPath}" class="<c:if test='${menuId eq menu.menuId }'>active</c:if>">${menu.menuNm }</a></li>
        </c:otherwise>
       </c:choose>
      </c:when>
      <c:otherwise>
-        <li><a href="${menu.pgmPath}" class="<c:if test='${menuId eq menu.menuId }'>sn active</c:if>">${menu.menuNm }</a></li>
+        <li><a href="${menu.pgmPath}" class="<c:if test='${menuId eq menu.menuId }'>active</c:if>">${menu.menuNm }</a></li>
      </c:otherwise>
     </c:choose>
     
