@@ -60,12 +60,10 @@ $(document).on('click','.btn-up',function(){
           }); 
     
 });
-
 jQuery(document).ready(function() {
- var jbHeight = $('.left-th').height();
- $('.right-td').css( height, .append(jbHeight)px );
+ var jbHeight = $('.left-th').outerHeight();
+ $('.right-td').css( 'height', jbHeight );
 } );
-    
 </script>
 
 </head>
@@ -244,68 +242,48 @@ jQuery(document).ready(function() {
 				</div>
 				<!-- row -->
 				<div class="row">
-					<div class="th-wrap">
-						<!-- table -->
-						<table class="list-table">
+					<!-- table -->
+						<table class="list-table" id="ticker">
+							<colgroup>
+								<col style="width: 12%;">
+								<col style="width: 22%;">
+								<col style="width: 22%;">
+								<col style="width: 22%;">
+								<col style="width: 22%;">
+							</colgroup>
 							<tr>
-								<th class=“left-th”>
-									<label>Option Option 1Option 11Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
+								<th>
+									<label>Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
 								</th>
+								<td class="txt-center">1
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
+								<td class="txt-center">
+									<label class="checkLabel">
+										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
+										<span class="checkmark"></span>
+									</label>
+								</td>
 							</tr>
 							<tr>
 								<th>
 									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
-							</tr>
-							<tr>
-								<th>
-									<label>Option 3</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
-								</th>
-							</tr>
-							<tr>
-								<th>
-									<label>Option 4</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
-								</th>
-							</tr>
-						</table>
-						<!--// table -->
-					</div>
-					<div class="td-wrap block">
-						<!-- table -->
-						<table class="list-table" id="ticker">
-							<colgroup>
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-							</colgroup>
-							<tr>
-								<td class="txt-center right-td" style=“width:jbHeight”>1
-									<label class="checkLabel">
-										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-										<span class="checkmark"></span>
-									</label>
-								</td>
-								<td class="txt-center">
-									<label class="checkLabel">
-										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-										<span class="checkmark"></span>
-									</label>
-								</td>
-								<td class="txt-center">
-									<label class="checkLabel">
-										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-										<span class="checkmark"></span>
-									</label>
-								</td>
-								<td class="txt-center">
-									<label class="checkLabel">
-										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
-										<span class="checkmark"></span>
-									</label>
-								</td>
-							</tr>
-							<tr>
 								<td class="txt-center">2
 									<label class="checkLabel">
 										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
@@ -332,6 +310,9 @@ jQuery(document).ready(function() {
 								</td>
 							</tr>
 							<tr>
+								<th>
+									<label>Option 3</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
 								<td class="txt-center">3
 									<label class="checkLabel">
 										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
@@ -358,6 +339,9 @@ jQuery(document).ready(function() {
 								</td>
 							</tr>
 							<tr>
+								<th>
+									<label>Option 4</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								</th>
 								<td class="txt-center">4
 									<label class="checkLabel">
 										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
@@ -385,9 +369,6 @@ jQuery(document).ready(function() {
 							</tr>
 						</table>
 						<!--// table -->
-						<button class="btn-up"><i class="ion ion-md-arrow-dropup"></i></button>
-						<button class="btn-down"><i class="ion ion-md-arrow-dropdown"></i></button>
-					</div>
 				</div>
 				<!-- //row -->
 				<!-- //2 -->
@@ -405,8 +386,8 @@ jQuery(document).ready(function() {
 						<!-- table -->
 						<table class="list-table">
 							<tr>
-								<th>
-									<label>Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+								<th class="left-th">
+									<label>Option 1Option 1Option 1Option 1Option 1Option 1</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 							<tr>
@@ -427,7 +408,7 @@ jQuery(document).ready(function() {
 								<col style="width: 25%;">
 							</colgroup>
 							<tr>
-								<td class="txt-center">
+								<td class="txt-center right-td">
 									<label class="checkLabel">
 										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
 										<span class="checkmark"></span>
