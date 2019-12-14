@@ -60,6 +60,12 @@ $(document).on('click','.btn-up',function(){
           }); 
     
 });
+
+jQuery( document ).ready( function() {
+ var jbHeight = $( '.left-th' ).height();
+ $( '.right-td' ).height( jbHeight );
+} );
+    
 </script>
 
 </head>
@@ -242,7 +248,7 @@ $(document).on('click','.btn-up',function(){
 						<!-- table -->
 						<table class="list-table">
 							<tr>
-								<th>
+								<th class=“left-th”>
 									<label>Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
@@ -274,7 +280,7 @@ $(document).on('click','.btn-up',function(){
 								<col style="width: 25%;">
 							</colgroup>
 							<tr>
-								<td class="txt-center">1
+								<td class="txt-center class=“right-td">1
 									<label class="checkLabel">
 										<input class="Checkbox_input" type="checkbox" id="useYn" name="useYn">
 										<span class="checkmark"></span>
