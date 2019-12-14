@@ -341,7 +341,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .td-wrap .btn-up {position:absolute;top:0;right:0;width:20px;height:50%;color:#fff;background-color:#949ba6;}
 .marker-wrap .td-wrap .btn-down {position:absolute;top:50%;right:0;width:20px;height:50%;color:#fff;background-color:#949ba6}
 .block {height:173px; overflow:hidden;}/* 20191210 - add*/
-.marke-wrap .th-wrap th{white-space:normal;}
+.marker-wrap .th-wrap th{white-space:normal;}
 
 
 /* TAB */
