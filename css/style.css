@@ -329,7 +329,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .td-wrap {position:relative;float:left;width:88%}
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
-.marker-wrap .th-wrap th label {margin:5px 0 0 10px}
+.marker-wrap th label {margin:5px 0 0 10px}/* 20191215 th margin */
 .marker-wrap th .btn-additem, .marker-wrap th .btn-img, .marker-wrap th .btn-write, .marker-wrap th .btn-list {float:right;}
 .btn-additem, .btn-open {margin-top:-2px}
 .marker-wrap .marker .th-wrap .btn-additem .ion {color:#425269;}
@@ -337,7 +337,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .th-wrap th {position:relative}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
-.marker-wrap .th-wrap th .btn-write {margin-left:5px;}
+.marker-wrap th .btn-write {margin-left:5px;} /* 20191215 th bt margin */
 .marker-wrap .th-wrap th .btn-additem {margin-top:1px;margin-bottom:-1px;}
 .marker-option.hidden-row .row {display:none}
 .marker-option.hidden-row .close-row {display:none}
@@ -353,7 +353,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-option .marker .th-wrap {width:15%}
 .marker-option .marker .td-wrap {width:85%}
 .marker-option th{white-space: normal;} 
-/*.marker-wrap .th-wrap th{white-space:normal;} 20191214 add */
+/*.marker-wrap .th-wrap th{white-space:normal;} 20191215 re dis */
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
