@@ -26,7 +26,8 @@
       </c:if> <%-- �댁쟾 Level1 ul �リ린 --%>
      
      <li class="nav-item <c:if test='${menuId.substring(0,1) eq menu.menuId.substring(0,1) }'>open</c:if>">
-      <span><i class="ion"></i>${menu.menuNm }</span>
+      <a href="<c:choose><c:when test='${menu.url == null}'>#</c:when><c:otherwise>${menu.url }</c:otherwise></c:choose>" <c:if test='${menu.menuId.substring(0,1) eq menuId.substring(0,1)}'>class="active"</c:if>><span><i class="ion"></i>${menu.menuNm }</span></a>
+	
       <ul class="subnav">
      </c:when>
      <c:when test='${"2" eq menu.menuL}'>
