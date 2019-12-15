@@ -154,8 +154,7 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .hidden-lnb .header .lnb-close {display:none}
 .hidden-lnb .sidenav {left:-240px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 .hidden-lnb .container {width:100vw;left:0;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
-.footer {position:relative ;height:42px;color:#fff;font-family:"TextRegular";padding-top:2px;background:#aaa;}
-.footer:before {content:"";display:inline-block;width:40px;height:40px;background:url(../images/top_logo.png) no-repeat 0 2px;background-size:120px;margin:0 10px 0 30px;vertical-align: middle;}
+section.container:after {content:"COPYRIGHT ⓒ HYUDAI MOTOR COMPANY. ALL RIGHTS RESERVED.";display:block;color:#fff;font-family:"TextRegular";margin:20px -30px -50px -30px;padding:15px 0 10px 70px;background:#aaa url(../images/footer_logo.png) no-repeat 20px 12px;}
 
 /* aside */
 .sidenav {/* height: calc(100% - 60px)*/; width: 240px; position:absolute /* fixed */; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;
