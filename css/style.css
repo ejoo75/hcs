@@ -348,8 +348,8 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .td-wrap .btn-right {position:absolute;top:0;right:0;width:20px;height:86px;color:#fff;background-color:#00afd5;padding:0;}
 .marker-wrap .td-wrap .btn-left:disabled {background-color:#aaa;}
 .marker-wrap .td-wrap .btn-right:disabled {background-color:#aaa;}
-.marker-option .td-wrap td {border-right:1px solid #eee;}
-.marker-option .td-wrap tr td:last-child {border-right:none;}
+.marker-option td {border-right:1px solid #eee;}/* 20191215 td line */
+.marker-option tr td:last-child {border-right:none;}/* 20191215 td line */
 .marker-option .marker .th-wrap {width:15%}
 .marker-option .marker .td-wrap {width:85%}
 /*.marker-option th{white-space: normal;} 20191214 add */
