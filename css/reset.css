@@ -3,9 +3,9 @@
 
 /* reset */
 * {margin:0; padding:0; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
-html{font-family:sans-serif;background-color:#c5ccd3;overflow-x:hidden;text-size-adjust:100%;}/* 20191215 background */
+html{font-family:sans-serif;background:linear-gradient(to right, #c5ccd3 241px, #c5ccd3 241px, #fff 241px, #fff 100%);overflow-x:hidden;text-size-adjust:100%;}/* 20191215 background */
 html,body{height:100%;}
-body{position:relative; height: 100%; word-break:break-all; padding:0; margin:0; font-family:"TextMedium", sans-serif; color: #555; font-size:13px; font-weight: 400; line-height:1.2; background-color:#c5ccd3; letter-spacing: 0; -webkit-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased;}/* 20191215 background */
+body{position:relative; height: 100%; word-break:break-all; padding:0; margin:0; font-family:"TextMedium", sans-serif; color: #555; font-size:13px; font-weight: 400; line-height:1.2; background:linear-gradient(to right, #c5ccd3 241px, #c5ccd3 241px, #fff 241px, #fff 100%); letter-spacing: 0; -webkit-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased;}/* 20191215 background */
 
 /* Set html5 elements to block */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,main,nav,section,summary{display:block;}
