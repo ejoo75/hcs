@@ -207,7 +207,7 @@ section.container:after {content:"COPYRIGHT ⓒ HYUDAI MOTOR COMPANY. ALL RIGHTS
 .sidenav .lnb li.nav-item ul.subnav ul.subnav li a{font-size: 13px;padding: 4px 5px 4px 66px;}
 .sidenav .lnb li.nav-item.open span {color: #000;}
 .sidenav .lnb li.nav-item.open span::after {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
-.sidenav .lnb li.nav-item.open ul.subnav {visibility: visible; max-height: 200px; opacity: 1;}
+.sidenav .lnb li.nav-item.open ul.subnav {visibility: visible; max-height: 500px; opacity: 1;}
 
 
 /* section */
