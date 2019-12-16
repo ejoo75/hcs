@@ -156,7 +156,8 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .hidden-lnb .header .lnb-close {display:none}
 .hidden-lnb .sidenav {left:-240px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }/* 20191215 ani important*/
 .hidden-lnb .container {width:100vw;left:0;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
-section.container:after {content:"COPYRIGHT ⓒ HYUDAI MOTOR COMPANY. ALL RIGHTS RESERVED.";position:absolute;bottom:10px;left: 30px;width:calc(100% + 170px);color:#fff;font-family:"TextRegular";font-size:12px;margin:20px -30px -50px -270px;padding:15px 0 10px 70px;background:#aaa url(../images/footer_logo.png) no-repeat 20px 12px;}/* 20191215 footer edit */
+section.container:after {content:"COPYRIGHT ⓒ HYUDAI MOTOR COMPANY. ALL RIGHTS RESERVED.";position:absolute;bottom:10px;left: 30px;width:calc(100% + 170px);color:#fff;font-family:"TextRegular";font-size:12px;margin:20px -30px -50px -271px;padding:15px 0 10px 70px;background:#aaa url(../images/footer_logo.png) no-repeat 20px 12px;}/* 20191215 footer edit */
+.hidden-lnb section.container:after {width:calc(100% - 70px);margin:20px -30px -50px -31px}
 
 /* aside */
 .sidenav {/* height: calc(100% - 60px)*/; width: 240px; position:absolute /* fixed */; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out;}/* 20191215 border del & ani*/
