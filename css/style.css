@@ -331,7 +331,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .td-wrap {position:relative;float:left;width:88%}
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
-.marker-wrap th label {margin:5px 0 0 10px}/* 20191215 th margin */
+.marker-wrap th label {display: inline-block;width: 125px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin:5px 0 0 10px}/* 20191215 th margin */
 .marker-wrap th .btn-additem, .marker-wrap th .btn-img, .marker-wrap th .btn-write, .marker-wrap th .btn-list {float:right;}
 .btn-additem, .btn-open {margin-top:-2px}
 .marker-wrap .marker .th-wrap .btn-additem .ion {color:#425269;}
@@ -339,7 +339,8 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .th-wrap th {position:relative}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
-.marker-wrap th .btn-write {margin-left:5px;} /* 20191215 th bt margin */
+.marker-wrap th .btn-write {position:absolute;top:8px;right:0;} /* 20191217 th bt margin */
+.marker-wrap th .btn-img{position:absolute;top:8px;right:23px;}/* 20191217 th bt margin */
 .marker-wrap .th-wrap th .btn-additem {margin-top:1px;margin-bottom:-1px;}
 .marker-option.hidden-row .row {display:none}
 .marker-option.hidden-row .close-row {display:none}
@@ -352,10 +353,9 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .td-wrap .btn-right:disabled {background-color:#aaa;}
 .marker-option td {border-right:1px solid #eee;}/* 20191215 td line */
 .marker-option tr td:last-child {border-right:none;}/* 20191215 td line */
-.marker-option .marker .th-wrap {width:15%}
-.marker-option .marker .td-wrap {width:85%}
-.marker-option th{white-space: normal;} 
-/*.marker-wrap .th-wrap th{white-space:normal;} 20191215 re dis */
+.marker-option .marker .th-wrap {width:20%} /* 20191217 width */
+.marker-option .marker .td-wrap {width:80%} /* 20191217 width */
+.marker-option th{position:relative;white-space: normal;}  /* 20191217 position */
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
@@ -505,6 +505,8 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
 .table-wrapper .checks label{margin-top:-15px}
 .checks input:disabled + label:before {border-color:#e0e0e0!important;background:#f2f2f2!important}
 
+.ion.check-icon {width:12px;height:16px;background:url('../images/ic_check_on.png') no-repeat 50% 50%}
+.ion.check-icon-outline {width:12px;height:16px;background:url('../images/ic_check_off.png') no-repeat 50% 50%}
 .ion.radio-icon {width:12px;height:16px;background:url('../images/ic_radio_on.png') no-repeat 50% 50%}
 .ion.radio-icon-outline {width:12px;height:16px;background:url('../images/ic_radio_off.png') no-repeat 50% 50%}
 
@@ -647,13 +649,14 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
 /*    .form-section .form {width: 80%; height: 75%;}     2019.08.16  */
   .login-wrap .form-header {margin-top: 10px;}
    img.logo {width: 60% !important;}
-
+	.marker-wrap th label {width: 90px;}/* 20191217 */
 }
 
 @media screen and (max-width: 1440px) {
   .login-wrap .form-header {padding: 15% 0;}
   .form-section .form {width: 80%; height: 75%;}
   /* .form-section .form {width: 1200px; height: 700px;}  2019.08.16 */
+  .marker-wrap th label {width: 70px;}/* 20191217 */
 }
 
 @media screen and (max-width: 1360px) {
@@ -668,6 +671,7 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
   .grid {max-height: 450px;}
   .btn-member {margin-top: 30px;}
   .form-footer {margin-top: 30px;}
+  .marker-wrap th label {width: 60px;}/* 20191217 */
 }
 
 @media screen and (max-width: 1280px) {
@@ -676,6 +680,9 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
    #passChange .member .member-tit {padding-top: 0;}      
     .sidenav {height: calc(100% - 60px); position: absolute; top: 60px;}    
     .container {width: 100vw; left: 0;}
+	.marker-wrap th label {width: 90px;}/* 20191217 */
+	.marker-option .marker .th-wrap {width:30%} /* 20191217 width */
+.marker-option .marker .td-wrap {width:70%} /* 20191217 width */
 }
 
 /* 공유하기 이미지*/
@@ -713,6 +720,8 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
 .qr-stxt {font-size:4.5vw; font-weight: normal;}
 .qr-mtxt {font-size:5vw; line-height: 1.3; margin-top:20px; font-weight: 500;}
 
+@media screen and (max-width: 1220px){.marker-wrap th label {width: 70px;}}
+@media screen and (max-width: 1075px){.marker-wrap th label {width: 40px;}}
 
 @media screen and (max-width: 768px){
     .form-section .form {width:90%}
@@ -737,6 +746,10 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
      .search-form .search-input-area .label-calendar2 {width:15%!important}
    .qr-container {height: 55%;}
    .qr-code {margin: 7% auto;}
+   .marker-wrap th label {width: 60px;  margin-top: -10px;}
+   .marker-wrap th .btn-write, .marker-wrap th .btn-img {top: 18px;}
+   .marker-option .marker .th-wrap {width:40%} /* 20191217 width */
+   .marker-option .marker .td-wrap {width:60%} /* 20191217 width */
 }
 
 @media screen and (max-width: 414px) {
@@ -745,6 +758,11 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
   .qr-footer .foot-logo {width: 74px ; height: 37px;}
   .qr-container {height: 60%;}
   .qr-code {width: 60%; margin: 12% auto;}
+  .marker-option .marker {letter-spacing:-1.2px}
+  .marker-option .marker .th-wrap {width:50%} /* 20191217 width */
+   .marker-option .marker .td-wrap {width:50%} /* 20191217 width */
+   .marker-wrap .th-wrap  {width:30%}
+   .marker-wrap .td-wrap {width:70%}
  }
  
  /* 20190722 판매모델관리 선택복사 버튼 클릭시 팝업 오류 수정*/
