@@ -88,6 +88,7 @@ template {display: none;}
 .w-35 {float: left; width: calc(35% - 30px);}
 .w-50 {float: left; width: calc(50% - 30px);}
 .w-65 {float: left; width: calc(65% - 30px);}
+.w80 {float: left; width: 80% !important;}
 .w70 {float: left; width: 70% !important;}
 .w60 {float: left; width: 60% !important; display: table;}
 .w50 {float: left; width: 50% !important;}
