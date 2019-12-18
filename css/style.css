@@ -261,6 +261,8 @@ td .btn-search .ion {position: absolute;top:3px; right: 10px;}
 td button {margin-left:0;margin-right:4px;}
 td .btn-area button {margin-left:4px;margin-right:0;}
 .list-table .btn-area {margin-top:5px}
+.table-area .w20 + .w40, .table-area .w40 + .w40 {width:calc(40% - 1px);margin-left:-1px}
+.table-area .w20 + .w80 {width:calc(80% - 1px);margin-left:-1px}
 
 /* 동의서 예제 */
 .list-table2 td.agreement.popCont {}
@@ -332,15 +334,17 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
 .marker-wrap th label {display: inline-block;width: 125px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin:5px 0 0 10px}/* 20191215 th margin */
-.marker-wrap th .btn-additem, .marker-wrap th .btn-img, .marker-wrap th .btn-write, .marker-wrap th .btn-list {float:right;}
+.marker-wrap th .btn-img, .marker-wrap th .btn-write, {float:right;}
+.marker-wrap th .btn-list {position:absolute;top:8px;right:5px;}
+.marker-wrap th .btn-additem {position:absolute;top:8px;right:30px;}
 .btn-additem, .btn-open {margin-top:-2px}
 .marker-wrap .marker .th-wrap .btn-additem .ion {color:#425269;}
 .marker-wrap .marker .th-wrap .btn-additem:hover .ion:before {color:#fff;}
 .marker-wrap .th-wrap th {position:relative}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
-.marker-wrap th .btn-write {position:absolute;top:8px;right:0;} /* 20191217 th bt margin */
-.marker-wrap th .btn-img{position:absolute;top:8px;right:23px;}/* 20191217 th bt margin */
+.marker-wrap th .btn-write {position:absolute;top:8px;right:5px;} /* 20191217 th bt margin */
+.marker-wrap th .btn-img{position:absolute;top:8px;right:30px;}/* 20191217 th bt margin */
 .marker-wrap .th-wrap th .btn-additem {margin-top:1px;margin-bottom:-1px;}
 .marker-option.hidden-row .row {display:none}
 .marker-option.hidden-row .close-row {display:none}
