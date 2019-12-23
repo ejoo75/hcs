@@ -360,7 +360,8 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-option .marker .th-wrap {width:20%} /* 20191217 width */
 .marker-option .marker .td-wrap {width:80%} /* 20191217 width */
 .marker-option th{position:relative;white-space: normal;}  /* 20191217 position */
-.marker-wrap .ellipsis{display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.marker-wrap .ellipsis1 {width:130px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.marker-wrap .ellipsis2 {width:280pxdisplay: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
