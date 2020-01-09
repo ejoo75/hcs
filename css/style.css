@@ -361,17 +361,28 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-option .marker .td-wrap {width:80%} /* 20191217 width */
 .marker-option th{position:relative;white-space: normal;}  /* 20191217 position */
 .marker-wrap .ellipsis1 {width:130px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
-.marker-wrap .ellipsis2 {width:280px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.marker-wrap .ellipsis2 {width:280px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: marker-wrap .th-wrap > .btn-additem {position:absolute;top:5px;left:152px}
+.marker-wrap .th-wrap > .btn-mapping {position:absolute;top:6px;left:177px;width:18px;height:18px;background:#425269 url(../images/ic_mapping.png) no-repeat center;border-radius:10px;padding:0;}
+.marker-wrap .th-wrap > .btn-mapping:hover {background-color:#fff;box-shadow: none;}
 
 /* TAB */
-ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #ccc;width: 100%;}
+ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #888;width: 100%;}
 ul.tabs li {float: left;margin: 0;padding: 0;height: 31px; line-height: 31px; border-left: none;border-bottom: none;margin-bottom: -1px; overflow: hidden;position: relative;color:#aaa;font-family:"TextRegular";}
-ul.tabs li a {text-decoration: none;color: #aaa;display: block;font-size: 15px;line-height:31px;padding: 0 20px;outline: none;}
+ul.tabs li a {text-decoration: none;color: #888;display: block;font-size: 15px;line-height:31px;padding: 0 20px;outline: none;}
 ul.tabs li a:hover {color:#00afd5;}
-ul.tabs li.active{height:32px;border: 1px solid #ccc; border-bottom: 1px solid #fff; font-family:"TextBold";}
+ul.tabs li.active{height:32px;border: 1px solid #aaa; border-bottom: 1px solid #fff; font-family:"TextBold";}
 ul.tabs li.active a, ul.tabs li.active a:hover {color:#000}
 .tab_container {clear: both;}
 .tab_content {padding-top: 20px;}
+
+ul.stabs {margin: 10px 0 0 0;padding: 0;float: left;list-style: none;height: 26px; border-bottom: 1px solid #ccc;width: 100%;}
+ul.stabs li {float: left;margin: 0;padding: 0!important;height: 31px; line-height: 25px; border-left: none;border-bottom: none;margin-bottom: -1px; overflow: hidden;position: relative;color:#aaa;font-family:"TextRegular";}
+ul.stabs li a {text-decoration: none;color: #aaa;display: block;font-size: 14px;line-height:25px;padding: 0 20px;outline: none;}
+ul.stabs li a:hover {color:#00afd5;}
+ul.stabs li.active{height:26px;border: 1px solid #ccc; border-bottom: 1px solid #fff; font-family:"TextBold";padding:0;}
+ul.stabs li.active a, ul.stabs li.active a:hover {color:#000}
+.stab_container {clear: both;}
+.stab_content {padding-top: 20px;}
 
 /* fixed-table */
 .fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
