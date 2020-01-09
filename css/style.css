@@ -361,7 +361,8 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-option .marker .td-wrap {width:80%} /* 20191217 width */
 .marker-option th{position:relative;white-space: normal;}  /* 20191217 position */
 .marker-wrap .ellipsis1 {width:130px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
-.marker-wrap .ellipsis2 {width:280px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: marker-wrap .th-wrap > .btn-additem {position:absolute;top:5px;left:152px}
+.marker-wrap .ellipsis2 {width:280px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.marker-wrap .th-wrap > .btn-additem {position:absolute;top:5px;left:152px}
 .marker-wrap .th-wrap > .btn-mapping {position:absolute;top:6px;left:177px;width:18px;height:18px;background:#425269 url(../images/ic_mapping.png) no-repeat center;border-radius:10px;padding:0;}
 .marker-wrap .th-wrap > .btn-mapping:hover {background-color:#fff;box-shadow: none;}
 
