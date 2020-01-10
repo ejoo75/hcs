@@ -157,10 +157,10 @@ h1.l-tit {float: unset; width: 100%; height: 31px; margin:20px 0 30px -5px; font
 .hidden-lnb .sidenav {left:-240px;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }/* 20191215 ani important*/
 .hidden-lnb .container {width:100vw;left:0;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; }
 section.container:after {content:"COPYRIGHT ⓒ HYUDAI MOTOR COMPANY. ALL RIGHTS RESERVED.";position:absolute;bottom:10px;left: 30px;width:calc(100% + 170px);color:#fff;font-family:"TextRegular";font-size:12px;margin:20px -30px -50px -271px;padding:15px 0 10px 70px;background:#aaa url(../images/footer_logo.png) no-repeat 20px 12px;}/* 20191215 footer edit */
-.hidden-lnb section.container:after {width:calc(100% - 70px);margin:20px -30px -50px -31px}
+.hidden-lnb section.container:after {width:calc(100% - 70px);margin:20px -30px -50px -31px;}
 
 /* aside */
-.sidenav {/* height: calc(100% - 60px)*/; width: 240px; position:absolute /* fixed */; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out;}/* 20191215 border del & ani*/
+.sidenav {/* height: calc(100% - 60px)*/; width: 240px; position:fixed; z-index: 100; top: 60px; left: 0; background-color: #c5ccd3; overflow-x: hidden;transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out;}/* 20191215 border del & ani*/
 .sidenav .lnb {display: flex; flex-direction: column; flex: 1;}
 .sidenav .lnb ul.nav-container li.nav-item span i{font-size: 20px;margin-right: 10px;opacity: 0.3;vertical-align: middle;}
 .sidenav .lnb ul.nav-container li.nav-item:nth-child(1) span i:before {content: "\f3ce";}
@@ -327,44 +327,68 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 
 /* marker */
 .marker-wrap .marker {overflow:hidden;border-top:1px solid #9ca5b2;}
-.marker-wrap .marker .th-wrap {color:#425269;font-family:"TextBold";background:#cbced6;padding:7px 10px 1px}
-.marker-wrap .marker .td-wrap {color:#425269;font-family:"TextBold";text-align:center;background:#cbced6;padding:7px 10px 1px}
-.marker-wrap .th-wrap {float:left;width:12%}
+.marker-wrap .marker-option .td-wrap {border-top:1px solid #9ca5b2;}
+.marker-wrap .marker-option .marker .td-wrap {border-top:none;}
+.marker-wrap .marker .th-wrap {height:32px;color:#425269;font-family:"TextBold";background:#cbced6;padding:7px 10px 1px}    /* 2020 add height*/
+.marker-wrap .marker .td-wrap {height:32px;color:#425269;font-family:"TextBold";text-align:center;background:#cbced6;padding:7px 10px 1px}
+.marker-wrap .th-wrap {float:left;width:12%;}
 .marker-wrap .td-wrap {position:relative;float:left;width:88%}
 .marker-wrap .th-wrap th {height: 43px;}
 .marker-wrap .th-wrap td {text-align:center}
-.marker-wrap th label {display: inline-block;width: 125px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin:5px 0 0 10px}/* 20191215 th margin */
-.marker-wrap th .btn-img, .marker-wrap th .btn-write, {float:right;}
-.marker-wrap th .btn-list {position:absolute;top:8px;right:5px;}
-.marker-wrap th .btn-additem {position:absolute;top:8px;right:30px;}
+.marker-wrap th label {width:125px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:5px 0 0 10px}/* 20191215 th margin */
+.marker-wrap th .btn-img, .marker-wrap th .btn-write {float:right;}
+.marker-wrap th .btn-list {position:absolute;top:24px;right:5px} 
+.marker-wrap th .btn-additem {position:absolute;top:24px;right:30px} 
 .btn-additem, .btn-open {margin-top:-2px}
 .marker-wrap .marker .th-wrap .btn-additem .ion {color:#425269;}
 .marker-wrap .marker .th-wrap .btn-additem:hover .ion:before {color:#fff;}
 .marker-wrap .th-wrap th {position:relative}
 .marker-wrap .th-wrap th .btn-up {position:absolute;top:0;left:2px}
 .marker-wrap .th-wrap th .btn-down {position:absolute;bottom:-2px;left:2px}
-.marker-wrap th .btn-write {position:absolute;top:8px;right:5px;} /* 20191217 th bt margin */
-.marker-wrap th .btn-img{position:absolute;top:8px;right:30px;}/* 20191217 th bt margin */
+.marker-wrap th .btn-write {position:absolute;top:8px;right:5px} /* 20191215 th bt margin */
+.marker-wrap th .btn-img {position:absolute;top:8px;right:30px} 
 .marker-wrap .th-wrap th .btn-additem {margin-top:1px;margin-bottom:-1px;}
 .marker-option.hidden-row .row {display:none}
 .marker-option.hidden-row .close-row {display:none}
 .marker-option.hidden-row .open-row {display:inline-block}
 .marker-option .open-row {cursor:pointer;display:none}
 .marker-option .close-row {cursor:pointer;display:inline-block}
-.marker-wrap .td-wrap .btn-left {position:absolute;top:0;left:-5px;width:20px;height:86px;color:#fff;background-color:#00afd5;padding:0;}
-.marker-wrap .td-wrap .btn-right {position:absolute;top:0;right:0;width:20px;height:86px;color:#fff;background-color:#00afd5;padding:0;}
+.marker-wrap .td-wrap .btn-left {position:absolute;top:0;left:-5px;width:20px;height:160px;color:#fff;background-color:#00afd5;padding:0;}
+.marker-wrap .td-wrap .btn-right {position:absolute;top:0;right:0;width:20px;height:160px;color:#fff;background-color:#00afd5;padding:0;}
 .marker-wrap .td-wrap .btn-left:disabled {background-color:#aaa;}
 .marker-wrap .td-wrap .btn-right:disabled {background-color:#aaa;}
 .marker-option td {border-right:1px solid #eee;}/* 20191215 td line */
 .marker-option tr td:last-child {border-right:none;}/* 20191215 td line */
-.marker-option .marker .th-wrap {width:20%} /* 20191217 width */
-.marker-option .marker .td-wrap {width:80%} /* 20191217 width */
-.marker-option th{position:relative;white-space: normal;}  /* 20191217 position */
-.marker-wrap .ellipsis1 {width:130px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
-.marker-wrap .ellipsis2 {width:280px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
-.marker-wrap .th-wrap > .btn-additem {position:absolute;top:5px;left:152px}
-.marker-wrap .th-wrap > .btn-mapping {position:absolute;top:6px;left:177px;width:18px;height:18px;background:#425269 url(../images/ic_mapping.png) no-repeat center;border-radius:10px;padding:0;}
+.marker-option .marker .th-wrap {position:relative;width:20%}
+.marker-option .marker .td-wrap {width:80%;padding-right:8%}
+.marker-option th{position:relative;white-space: normal;} 
+.engine-tr th, .engine-tr td {height:73px!important}
+.ellipsis1 {width:265px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 15px;}
+.popup-option {overflow: hidden;margin-bottom:30px}
+.popup-option.hidden-grid .grid3 {display:none}
+.popup-option.hidden-grid .close-grid {display:none}
+.popup-option.hidden-grid .open-grid {display:inline-block}
+.popup-option .open-grid {display:none}
+.marker-wrap {border-bottom: 1px solid #9ca5b2;}
+.marker-wrap .marker-option .td-wrap .list-table {border-top:none}
+.marker-wrap .th-wrap > .btn-additem {position:absolute;top:5px;left:163px;}
+.marker-wrap .th-wrap > .btn-mapping {position:absolute;top:6px;left:165px;width:18px;height:18px;background:#425269 url(../images/ic_mapping.png) no-repeat center;border-radius:10px;padding:0;}
 .marker-wrap .th-wrap > .btn-mapping:hover {background-color:#fff;box-shadow: none;}
+.marker-wrap .th-wrap > .btn-mapping + .btn-additem {left:141px;}
+
+.demo-icon{font-family: "hdcity";font-style: normal;font-weight: normal;speak: none;display: inline-block;text-decoration: inherit;width: 1em;margin-right: .2em;text-align: center;}
+@font-face {
+      font-family: 'hdcity';
+      src: url('../fonts/hdcity.eot?60158791');
+      src: url('../fonts/hdcity.eot?60158791#iefix') format('embedded-opentype'),
+           url('../fonts/hdcity.woff?60158791') format('woff'),
+           url('../fonts/hdcity.ttf?60158791') format('truetype'),
+           url('../fonts/hdcity.svg?60158791#hdcity') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
 
 /* TAB */
 ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 32px; border-bottom: 1px solid #888;width: 100%;}
@@ -385,6 +409,15 @@ ul.stabs li.active a, ul.stabs li.active a:hover {color:#000}
 .stab_container {clear: both;}
 .stab_content {padding-top: 20px;}
 
+.num_wrap {position:relative;}
+.num_wrap .tab_wrap {position:absolute;top:5px;right:0;width:calc(100% - 35px);text-align:right;}
+.tab_wrap {height:26px;border-bottom: 1px solid #ddd;}
+.tab_wrap .tab-button {font-family:"TextBold";color:#333;}
+.tab_wrap .tab-button:hover {color:#00afd5;box-shadow: none;}
+.tab_wrap .tab-button.active {color:#00afd5;background:#fff;border: 1px solid #ddd;border-bottom:none;}
+.tab_content_wrap {display:none}
+.tab_content_wrap.active {display:block}
+
 /* fixed-table */
 .fixed-table-container {height: 200px;border: 1px solid #aaa;border-left: 1px solid #ccc;border-right: 1px solid #ccc;position: relative;padding-top: 35px; margin-top:40px;}
 .header-bg {background: #ddd;height: 35px; position: absolute;top: 0;right: 0;left: 0;border-bottom: 1px solid #ccc;}
@@ -396,7 +429,7 @@ ul.stabs li.active a, ul.stabs li.active a:hover {color:#000}
 .th-text {position: absolute;top: 0;width: inherit;text-align:center;color:#000;line-height: 30px;border-left: 1px solid #e5e5e5;padding:2px ;}
 .table-wrapper th:first-child .th-text {border-left: none;}
 .table-wrapper tr:hover td {background:#fbfcfd}
-.table-wrapper tr.active td {background:#f2f2f2}
+.table-wrapper tr.active td {font-weight:bold;background:#f2f2f2}
 .table-wrapper td button {height: 22px;padding: 3px 7px;}
 
 /* img_popup */
@@ -418,6 +451,8 @@ h5 + .table-area {margin-top:5px}
 .gallery .img_wrap {background:#f2f2f2;border: 1px solid #e5e5e5;border-left:none}
 .gallery.modal-content {border-radius:20px;border:none}
 
+.gallery.modal-content.noradius {border-radius:0;}
+
 .select-list {border: 1px solid #e5e5e5;border-bottom: none;margin-bottom:10px}
 .select-list li {cursor:pointer;font-size:14px;border-bottom: 1px solid #e5e5e5;padding:15px}
 .select-list li.active {background: #f2f2f2;}
@@ -431,6 +466,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .search-button {background-color: #222e4f;  color: #fff;}
 .search-button .ion {margin-right: 3px;}
 .save-button {background-color: #00afd5; color: #fff;}
+.delete-button {background-color: #949ba6; color: #fff;}
 .line-button {background: #fff; border: 1px solid #ddd; color: #333;}
 .line-button:hover {border: 1px solid #00afd5; color: #00afd5;}
 .excelUp, .excelDown {display: inline-block; width: 16px; height: 15px; margin-right: 5px; vertical-align: middle;}
@@ -446,6 +482,7 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .btn-remove:hover {background:#00afd5 url(../images/ico_arrow.png) no-repeat -40px -40px;}
 .btn-topWarp {display: inline-block; float:right;}
 .btn-control {background: #949ba6; color: #fff;}
+.btn-control.active {background: #00afd5; color: #fff;}  
 .ion-logo-windows {font-size: 14px; color: #999; margin-right: 5px;}
 .winop:hover .ion-logo-windows {color: #00afd5;}
 .btn-ico {min-width: 30px !important; width: 30px; height: 26px;  padding: 2px !important; margin: 4px;}
@@ -463,6 +500,10 @@ button:hover, .btn:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 r
 .line-button .ion {font-size:14px;}
 .no_title {overflow:hidden;margin-bottom:10px}
 .row + .btn-area {margin: 0;float:left}
+.noline-button:hover {box-shadow:none; }
+.noline-button.btn-ico {padding: 2px 0!important;}
+.noline-button.btn-ico .ion{font-size: 22px;}
+.btn-area .noline-button.btn-ico {margin-right: -5px;}
 
 .btn-ico-only {padding:0}
 .btn-ico-only:hover {box-shadow:none}
@@ -667,14 +708,13 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
 /*    .form-section .form {width: 80%; height: 75%;}     2019.08.16  */
   .login-wrap .form-header {margin-top: 10px;}
    img.logo {width: 60% !important;}
-	.marker-wrap th label {width: 90px;}/* 20191217 */
+
 }
 
 @media screen and (max-width: 1440px) {
   .login-wrap .form-header {padding: 15% 0;}
   .form-section .form {width: 80%; height: 75%;}
   /* .form-section .form {width: 1200px; height: 700px;}  2019.08.16 */
-  .marker-wrap th label {width: 70px;}/* 20191217 */
 }
 
 @media screen and (max-width: 1360px) {
@@ -689,7 +729,6 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
   .grid {max-height: 450px;}
   .btn-member {margin-top: 30px;}
   .form-footer {margin-top: 30px;}
-  .marker-wrap th label {width: 60px;}/* 20191217 */
 }
 
 @media screen and (max-width: 1280px) {
@@ -698,9 +737,6 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
    #passChange .member .member-tit {padding-top: 0;}      
     .sidenav {height: calc(100% - 60px); position: absolute; top: 60px;}    
     .container {width: 100vw; left: 0;}
-	.marker-wrap th label {width: 90px;}/* 20191217 */
-	.marker-option .marker .th-wrap {width:30%} /* 20191217 width */
-.marker-option .marker .td-wrap {width:70%} /* 20191217 width */
 }
 
 /* 공유하기 이미지*/
@@ -738,8 +774,6 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
 .qr-stxt {font-size:4.5vw; font-weight: normal;}
 .qr-mtxt {font-size:5vw; line-height: 1.3; margin-top:20px; font-weight: 500;}
 
-@media screen and (max-width: 1220px){.marker-wrap th label {width: 70px;}}
-@media screen and (max-width: 1075px){.marker-wrap th label {width: 40px;}}
 
 @media screen and (max-width: 768px){
     .form-section .form {width:90%}
@@ -764,10 +798,6 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
      .search-form .search-input-area .label-calendar2 {width:15%!important}
    .qr-container {height: 55%;}
    .qr-code {margin: 7% auto;}
-   .marker-wrap th label {width: 60px;  margin-top: -10px;}
-   .marker-wrap th .btn-write, .marker-wrap th .btn-img {top: 18px;}
-   .marker-option .marker .th-wrap {width:40%} /* 20191217 width */
-   .marker-option .marker .td-wrap {width:60%} /* 20191217 width */
 }
 
 @media screen and (max-width: 414px) {
@@ -776,11 +806,6 @@ th.tui-grid-cell.tui-grid-cell-head .checkLabel {top:0;left:0;}
   .qr-footer .foot-logo {width: 74px ; height: 37px;}
   .qr-container {height: 60%;}
   .qr-code {width: 60%; margin: 12% auto;}
-  .marker-option .marker {letter-spacing:-1.2px}
-  .marker-option .marker .th-wrap {width:50%} /* 20191217 width */
-   .marker-option .marker .td-wrap {width:50%} /* 20191217 width */
-   .marker-wrap .th-wrap  {width:30%}
-   .marker-wrap .td-wrap {width:70%}
  }
  
  /* 20190722 판매모델관리 선택복사 버튼 클릭시 팝업 오류 수정*/
