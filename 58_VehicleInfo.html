@@ -2,6 +2,7 @@
 <html lang='EN'>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HCS</title>
 <link rel="shortcut icon" href="./images/favicon.ico">
 <link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
@@ -62,7 +63,7 @@ $(document).on('click','.btn-up',function(){
 });
 jQuery(document).ready(function() {
  var jbHeight = $('.left-th').innerHeight();
- $('.right-td').css( 'height', jbHeight + 1 );
+ $('.right-td').css( 'height', jbHeight );
 } );
 </script>
 
@@ -179,12 +180,12 @@ jQuery(document).ready(function() {
 						<table class="list-table">
 							<tr>
 								<th>
-									<label>Engine</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
+									<label>Engine</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-list"><i class="ion ion-md-reorder"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<label>Trim</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
+									<label>Trim</label><button class="btn-ico-only btn-up"><i class="ion ion-md-arrow-dropup"></i><button class="btn-ico-only btn-down"><i class="ion ion-md-arrow-dropdown"></i></button><button class="btn-ico-only btn-list"><i class="ion ion-md-reorder"></i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button>
 								</th>
 							</tr>
 						</table>
@@ -194,25 +195,17 @@ jQuery(document).ready(function() {
 						<button class="btn-left"><i class="ion ion-md-arrow-dropleft"></i></button>
 						<table class="list-table">
 							<colgroup>
-								<col style="width: 16.6%;">
-								<col style="width: 16.6%;">
-								<col style="width: 16.6%;">
-								<col style="width: 16.6%;">
-								<col style="width: 16.6%;">
-								<col style="width: 16.6%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
+								<col style="width: 25%;">
 							</colgroup>
 							<tr>
 								<td class="txt-center">
-									<div class="ellipsis1">1.6  jehdhidknv djbb shu dhjh jehdhidknv djbb shu jehdhidknv djbb shu dhjh jehdhidknv djbb shu dhjh d dhhd dghjb ggfe</div><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
-								</td>
-								<td class="txt-center">
-									<div class="ellipsis1">1.6  jehdhidknv djbb shu dhjh jehdh1.6 GDI1.6 GDI1.6 GDIidknv djbb shu jehdhidknv djbb shu dhjh jehdhidknv djbb shu dhjh d dhhd dghjb ggfe</div><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
+									1.6 MPI<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
 								</td>
 								<td colspan="2" class="txt-center">
-									<div class="ellipsis2">1.6 GD1.6 GDI1.6 GDI1.6 GDI1.6 GDI1.6.6 GDI1.6 GDII.6 GDI1.6 GDII GDI1.6 GDII</div><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
-								</td>
-								<td class="txt-center">
-									1.6 GDI<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button>
+									1.6 GDI<button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button>
 								</td>
 								<td class="txt-center">
 									1.6 GDI<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button>
@@ -224,12 +217,6 @@ jQuery(document).ready(function() {
 								</td>
 								<td class="txt-center">
 									MID (110,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
-								</td>
-								<td class="txt-center">
-									HIGH (130,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
-								</td>
-								<td class="txt-center">
-									HIGH-TECH (200,000,000) <button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
 								</td>
 								<td class="txt-center">
 									HIGH (130,000,000)<button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button>
@@ -250,7 +237,7 @@ jQuery(document).ready(function() {
 			<li class="marker-option">
 				<!-- 2 -->
 				<div class="marker">
-					<div class="th-wrap">Ad Option List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="th-wrap">Ad Option List<button class="btn-ico-only btn-additem"><i class="demo-icon icon-mapping">&#xe800;</i></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
 					<div class="td-wrap open-row">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropdown"></i></button></div>
 					<div class="td-wrap close-row">Ad Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
 				</div>
@@ -267,7 +254,7 @@ jQuery(document).ready(function() {
 							</colgroup>
 							<tr>
 								<th>
-									<label>Option 1Option 1Option 1Option 1Option 1Option 1Option 1Option 1Option 1Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
+									<label>Option 1</label><button class="btn-ico-only btn-write" disabled><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img" disabled><i class="ion ion-md-image"></i></button></button>
 								</th>
 								<td class="txt-center">1
 									<label class="checkLabel">
@@ -390,7 +377,7 @@ jQuery(document).ready(function() {
 			<li class="marker-option">
 				<!-- 3 -->
 				<div class="marker">
-					<div class="th-wrap">Additional Option List<button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
+					<div class="th-wrap">Additional Option List<button class="btn-mapping"></button><button class="btn-ico-only btn-additem"><i class="ion ion-md-add-circle"></i></button></div>
 					<div class="td-wrap open-row">Additional Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropdown"></i></button></div>
 					<div class="td-wrap close-row">Additional Option List<button class="btn-ico-only btn-open"><i class="ion ion-md-arrow-dropup"></i></button></div>
 				</div>
@@ -406,7 +393,7 @@ jQuery(document).ready(function() {
 							</tr>
 							<tr>
 								<th>
-									<label>Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
+									<label title="Option 2Option 2Option 2Option 2Option 2Option 2Option 2">Option 2Option 2Option 2Option 2Option 2Option 2Option 2</label><button class="btn-ico-only btn-write"><i class="ion ion-ios-create"></i></button><button class="btn-ico-only btn-img"><i class="ion ion-md-image"></i></button></button>
 								</th>
 							</tr>
 						</table>
