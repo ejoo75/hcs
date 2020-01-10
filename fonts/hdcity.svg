@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="hdcity" horiz-adv-x="1000" >
+<font-face font-family="hdcity" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mapping" unicode="&#xe800;" d="M700 254h-5-33c-114 0-209 85-225 195h263c14-37 50-65 92-65 54 0 98 44 98 98 0 54-44 97-98 97-42 0-78-27-92-65h-401c-13 38-49 65-92 65-54 0-97-43-97-97 0-54 43-98 97-98 43 0 79 28 92 65h73c16-146 140-260 290-260h33 5c14-37 50-65 92-65 54 0 98 44 98 98 0 54-44 97-98 97-42 0-78-27-92-65z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
