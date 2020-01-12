@@ -379,7 +379,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .marker-wrap .th-wrap > .btn-map {position:absolute;top:6px;left:165px;}
 .btn-map {width:18px;height:18px;background:#425269;border-radius:10px;padding:0;}
 .btn-map:hover {background-color:#fff;box-shadow: none;}
-.btn-map .hdcity {font-family: "hdcity";font-style: normal;font-weight: normal;font-size: 16px;color: #cbced6;line-height:22px;}
+.btn-map .hdcity {font-family: "hdcity";font-style: normal;font-weight: normal;font-size: 16px;color: #cbced6;line-height:20px;}
 .hdcity-map:before {content: "\e800";}
 .marker-wrap .th-wrap > .btn-map + .btn-additem {left:141px;}
 
