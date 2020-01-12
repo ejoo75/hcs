@@ -380,7 +380,7 @@ td .btn-area button {margin-left:4px;margin-right:0;}
 .btn-map {width:18px;height:18px;background:#425269;border-radius:10px;padding:0;}
 .btn-map:hover {background-color:#fff;box-shadow: none;}
 .btn-map .ion {font-family: "hdcity";font-style: normal;font-weight: normal;font-size: 22px;color: #f3f4f6;}
-.hdcity-map:before {content: "&#xe800;";}
+.hdcity-map:before {content: "&#xe800";}
 .marker-wrap .th-wrap > .btn-map + .btn-additem {left:141px;}
 
 .demo-icon{font-family: "hdcity";font-style: normal;font-weight: normal;speak: none;display: inline-block;text-decoration: inherit;width: 1em;margin-right: .2em;text-align: center;}
