@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='EN'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HCS</title>
+<style>
+
+/*예제 1*/
+
+#btnControl {
+	display: none;
+}
+.btn {
+	border: 1px solid #FFF;
+	cursor: pointer;
+}
+
+/*마우스 눌린 상태일때*/
+
+.btn:active {
+	border: 1px solid red;
+}
+
+/*클릭 후*/
+
+#btnControl:checked + label {
+	font-size: 26px;
+}
+
+/*예제 2*/
+
+.mdT {
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	outline: 0;
+	vertical-align: middle;
+	background-color: #AAAAAA;
+}
+.mdT:focus {
+	width: 80px;
+	height: 80px;
+}
+.mdI1 {
+	background-color: grey;
+}
+.mdI1:focus {
+	background-color: red;
+}
+.mdI2 {
+	background-color: grey;
+}
+.mdI2:focus {
+	background-color: red;
+}
+.mdI3 {
+	background-color: grey;
+}
+.mdI3:focus {
+	background-color: red;
+}
+.mdI4 {
+	background-color: grey;
+}
+.mdI4:focus {
+	background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+<br>
+<br>
+<input type="checkbox" id="btnControl" />
+<label class="btn" for="btnControl">
+	Click Here!
+</label>
+
+<br>
+<br> 예제 2: 버튼 사용 (:focus)
+<br>
+
+<button class="mdT mdI1"></button>
+<button class="mdT mdI2"></button>
+<button class="mdT mdI3"></button>
+<button class="mdT mdI4"></button>
+
+<br>
+<br>
+
+</body>
+</html>
