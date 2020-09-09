@@ -1,373 +1,84 @@
-<!DOCTYPE html>
-<html lang='EN'>
+<!doctype html>
+<html lang="ko">
 <head>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HCS</title>
-<link rel="shortcut icon" href="./images/favicon.ico">
-<link type="text/css" rel="stylesheet" href="./css/normalize.min.css">
-<link type="text/css" rel="stylesheet" href="./css/reset.css">
-<link type="text/css" rel="stylesheet" href="./css/fonts.css">
-<link type="text/css" rel="stylesheet" href="./css/ionicons.min.css">
-<link type="text/css" rel="stylesheet" href="./css/style.css">
-
-<script type="text/javascript" src="./js/jquery/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="./js/jquery/jquery-ui.min.js"></script>
-<script type="text/javascript" src="./js/function.debug.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
-<script type="text/javascript" src="./js/lnb.js"></script>
-<script src="./js/Chart.min.js"></script>
-	<script src="./js/utils.js"></script>
-	<style>
-	canvas {
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-	}
-	</style>
-  
-<script type="text/javascript">
-
-</script>
-
+<title>Heungkuk</title>
+<style>
+html, body{margin:0px;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#f0f1f3;}
+body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
+h2 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:13px;line-height:1.2em;color:#333;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+h3 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:11px;font-weight:normal;line-height:1.2em;color:#777;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#wrap {min-width:360px;background-color:#f0f1f3}
+#header {background-color:#fff;}
+#header a.logo {display:inline-block;font-size: 0;width:75%;height:30px;margin:10px 0 5px 20px;background:url(heungkuk_bi_m.png) no-repeat;background-size:auto 80%;text-indent:-99999px;}
+#header .header_wrap {height:45px;background-color:#2d1264}
+#header .header_wrap .user{float:left;display:inline-block;height:22px;color:#fff;background:url(ic_user.png) no-repeat;background-size:auto 100%;padding:3px 0 0 40px;margin:10px 0 0 20px}
+#header .header_wrap .logout{float:right;font-size:0;width:25px;height:25px;background:url(ic_logout.png) no-repeat;background-size:auto 100%;text-indent:-99999px;margin:10px 15px 0 0}
+#container {padding:10px}
+.report_wrap {display:inline-block;width:calc(50% - 43px);border-radius:3px;background-color:#fff;margin:7px 5px;padding:15px 15px 3px;-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);}
+.report_wrap i{display:inline-block;float:left;display:inline-block;width:35px;height:35px;background-size:100%;margin-bottom:15px}
+.ic_report_01 {background:url(ic_report_01.png) no-repeat;}
+.ic_report_02 {background:url(ic_report_02.png) no-repeat;}
+.ic_report_03 {background:url(ic_report_03.png) no-repeat;}
+.ic_report_04 {background:url(ic_report_04.png) no-repeat;}
+.ic_report_05 {background:url(ic_report_05.png) no-repeat;}
+.ic_report_06 {background:url(ic_report_06.png) no-repeat;}
+.ic_report_07 {background:url(ic_report_07.png) no-repeat;}
+.ic_report_08 {background:url(ic_report_08.png) no-repeat;}
+.more {display:inline-block;float:right;display:inline-block;width:15px;height:15px;background:url(ic_more.png) no-repeat;background-size:100%}
+@media ( min-width: 640px ) {
+.report_wrap {display:inline-block;width:calc(33% - 41px);}
+}
+@media ( min-width: 700px ) {
+.report_wrap {display:inline-block;width:calc(25% - 44px);}
+}
+</style>
 </head>
 <body>
-<!-- GNB -->
-<header id="header" class="header">
-    <h1 class="topLogo"><a href="/dashboard/dashboardMain/view.do?menuId=41000">BEAT 360</a></h1>
-	<a href="#" class="lnb-open"><i class="ion ion-ios-menu"></i></a>
-	<a href="#" class="lnb-close"><i class="ion ion-ios-menu"></i></a>
-	<a href="#" class="drop-box">Dealer Name</a>
-	<a href="#" class="drop-box">Store Name</a>
-    <nav class="topNav">
-
-
-	<a href="#none" class="time line"><i class="ion ion-md-time"></i>00:00</a>
-        <a href="#none" class="user line"><i class="ion ion-ios-contact"></i>kyunghee&nbsp;kim</a>
-    </nav>
-</header>
-<!--// GNB -->
-<!-- LNB -->
-<aside class="sidenav">
-<nav class="lnb"> 
-    <ul class="nav-container">
-        <li class="nav-item">
-        <span><i class="ion"></i>DashBoard</span>
-			<ul class="subnav">
-				<li><span>AAA</span>
-					<ul class="subnav">
-						<li><a href="#">111</a></li>
-						<li><a href="#">222 </a></li>
-					</ul>
-				</li>
-				<li><span>BBB</span></li>
-				<li><span>CCC</span></li>
-			</ul>
-		</li>
-		<li class="nav-item ">
-			<span><i class="ion"></i>Statics</span>
-			<ul class="subnav">
-				<li><span>Menu Management</span></li>
-			</ul>
-        </li>      
-        <li class="nav-item ">
-			<span><i class="ion"></i>System Control</span>
-			<ul class="subnav">
-				<li><span>Auth Group Menu Management</span></li>
-				<li><span>User Reconnection Approval</span></li>   
-			</ul>
-		</li>       
-		<li class="nav-item ">
-			<span><i class="ion"></i>Vehicle Control</span>
-			<ul class="subnav">
-				<li><span>Send Log Search</span></li>
-				<li><span>API Log</span></li>
-				<li><span>CRM Request History</span></li>
-				<li><span>API Setting List</span></li>    
-			</ul>
-		</li>     
-		<li class="nav-item ">
-			<span><i class="ion"></i>Admin System</span>
-			<ul class="subnav">
-				<li><span>User Management</span></li>
-				<li><span>Auth Management</span></li>
-				<li><span>Code Management</span>
-					<ul class="subnav">
-						<li><a href="#">Common Code Management</a></li>
-						<li><a href="#">Admin Code Mgmt </a></li>
-					</ul>
-				</li>
-				<li><span>Text Management</span></li>
-				<li><span>Menu Management</span></li>
-			</ul>
-		</li> 
-		<li class="nav-item ">
-			<span><i class="ion"></i>Guide Download</span>
-			<ul class="subnav">
-				<li><span>Device Maintenance</span></li>
-				<li><span>Schedule Management</span></li>
-			</ul>
-		</li>
-	</ul>
-</nav>
-<script>$.sidebarMenu($('.nav-container'))</script>
-</aside>
-<!--// LNB -->
-<!-- Content -->
-<section class="container dashboard">
-	<div class="content">
-		<h3>DASHBOARD<span>Show live Contents</span><!-- 20191215 title  -->
-		</h3>
-		<div class="right-date">
-			Wed. September 9, 2020
+<div id="wrap">
+	<!-- Header -->
+	<div id="header">
+		<a class="logo" title="Heungkuk - Business Intelligence">Heungkuk - Business Intelligence</a>
+		<div class="header_wrap">
+			<span class="user">홍길동</span>
+			<i class="logout">Logout</i>
 		</div>
-		<!-- searchForm -->
-	
-	<div class="sortable_wrap">
-		<ul class="sortable grid">
-			<li class="board kiosk">
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<div class="tit1">Kiosk</div>
-				<div class="num">580</div>
-				<div class="tit2">Counts (Today)</div>
-			</li>
-			<li class="board config">
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<div class="tit1">Configurator</div>
-				<div class="num">480</div>
-				<div class="tit2">Counts (Today)</div>
-			</li>
-			<li class="board simul">
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<div class="tit1">Simulator</div>
-				<div class="num">325</div>
-				<div class="tit2">Counts (Today)</div>
-			</li>
-			<li style="width: calc(66.6% - 10px);">
-				<h4>Visitor Counts Overview</h4>
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-	<!-- Chart 		
-	<div id="container">
-		<canvas id="canvas"></canvas>
 	</div>
-	<script>
-		var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-		var color = Chart.helpers.color;
-		var barChartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-			datasets: [{
-				label: 'Dataset 1',
-				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-				borderColor: window.chartColors.red,
-				borderWidth: 1,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'Dataset 2',
-				backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-				borderColor: window.chartColors.blue,
-				borderWidth: 1,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
-
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myBar = new Chart(ctx, {
-				type: 'bar',
-				data: barChartData,
-				options: {
-					responsive: true,
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: 'Chart.js Bar Chart'
-					}
-				}
-			});
-
-		};
-
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			var zero = Math.random() < 0.2 ? true : false;
-			barChartData.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return zero ? 0.0 : randomScalingFactor();
-				});
-
-			});
-			window.myBar.update();
-		});
-
-		var colorNames = Object.keys(window.chartColors);
-		document.getElementById('addDataset').addEventListener('click', function() {
-			var colorName = colorNames[barChartData.datasets.length % colorNames.length];
-			var dsColor = window.chartColors[colorName];
-			var newDataset = {
-				label: 'Dataset ' + (barChartData.datasets.length + 1),
-				backgroundColor: color(dsColor).alpha(0.5).rgbString(),
-				borderColor: dsColor,
-				borderWidth: 1,
-				data: []
-			};
-
-			for (var index = 0; index < barChartData.labels.length; ++index) {
-				newDataset.data.push(randomScalingFactor());
-			}
-
-			barChartData.datasets.push(newDataset);
-			window.myBar.update();
-		});
-
-		document.getElementById('addData').addEventListener('click', function() {
-			if (barChartData.datasets.length > 0) {
-				var month = MONTHS[barChartData.labels.length % MONTHS.length];
-				barChartData.labels.push(month);
-
-				for (var index = 0; index < barChartData.datasets.length; ++index) {
-					// window.myBar.addData(randomScalingFactor(), index);
-					barChartData.datasets[index].data.push(randomScalingFactor());
-				}
-
-				window.myBar.update();
-			}
-		});
-
-		document.getElementById('removeDataset').addEventListener('click', function() {
-			barChartData.datasets.pop();
-			window.myBar.update();
-		});
-
-		document.getElementById('removeData').addEventListener('click', function() {
-			barChartData.labels.splice(-1, 1); // remove the label first
-
-			barChartData.datasets.forEach(function(dataset) {
-				dataset.data.pop();
-			});
-
-			window.myBar.update();
-		});
-	</script>
-	Chart -->	
-			</li>
-			<li>
-				<h4>Current Weather <span>Seoul</span></h4>
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-			</li>
-			<li>
-				<h4>System Monitoring Status</h4>
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<div class="grid-scroll">
-					<table class="list-table">
-						<colgroup>
-							<col style="width: 25%;">
-							<col style="width: 15%;">
-							<col style="width: 20%;">
-							<col style="">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th>KIOSK 1</th>
-								<td><span class="on">ON</span></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<th>KIOSK 2</th>
-								<td><span class="off">OFF</span></td>
-								<td>Avante</td>
-								<td>Quotation Page</td>
-							</tr>
-							<tr>
-								<th>CONFIGURATOR R1</th>
-								<td><span class="on">ON</span></td>
-								<td>Avante</td>
-								<td>Quotation Page</td>
-							</tr>
-							<tr>
-								<th>CONFIGURATOR R2</th>
-								<td><span class="on">ON</span></td>
-								<td>Avante</td>
-								<td>Quotation Page</td>
-							</tr>
-							<tr>
-								<th>SIMULATOR 1</th>
-								<td><span class="on">ON</span></td>
-								<td>Avante</td>
-								<td>Quotation Page</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-			</li>
-			<li style="width: calc(66.6% - 10px);">
-				<h4>Recent Live Alarm <span>(Last updated : 07:45:10 PM)</span></h4>
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<ul class="list">
-					<li><span class="time">07:45 PM</span> <span class="tit">CONFIGURATOR 1</span> : [Veloster] Customer is interested in Price Calculation.</li>
-					<li><span class="time">07:11 PM</span> <span class="tit">CONFIGURATOR 1</span> : [Veloster] Customer is interested in Price Calculation.</li>
-					<li><span class="time">11:45 PM</span> <span class="tit">CONFIGURATOR 1</span> : [Veloster] Customer is interested in Price Calculation.</li>
-					<li><span class="time">07:00 PM</span> <span class="tit">CONFIGURATOR 1</span> : [Veloster] Customer is interested in Price Calculation.</li>
-				</ul>
-			</li>
-			<li style="width: calc(100% - 12px);">
-				<h4>Recent System Update Notification</h4>
-				<a href="#" class="btn-refresh"><i class="ion ion-md-refresh"></i></a>
-				<ul class="list">
-					<li><span class="date">2020/01/23 </span> <span class="tit">ADMIN SYSTEM[v.1.3.5.1]</span> : Statistics (By Weather Module) is updated.</li>
-					<li><span class="date">2020/09/23 </span> <span class="tit">ADMIN SYSTEM[v.1.3.5.1]</span> : Statistics (By Weather Module) is updated.</li>
-					<li><span class="date">2020/11/23 </span> <span class="tit">ADMIN SYSTEM[v.1.3.5.1]</span> : Statistics (By Weather Module) is updated.</li>
-					<li><span class="date">2020/09/11 </span> <span class="tit">ADMIN SYSTEM[v.1.3.5.1]</span> : Statistics (By Weather Module) is updated.</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="http://farhadi.github.io/html5sortable/jquery.sortable.js"></script>
-	<script>
-		$(function() {
-			$('.sortable').sortable();
-			$('.handles').sortable({
-				handle: 'span'
-			});
-			$('.connected').sortable({
-				connectWith: '.connected'
-			});
-			$('.exclude').sortable({
-				items: ':not(.disabled)'
-			});
-		});
-	</script>
-
-
-		<!-- //searchForm -->
-		<!-- demo -->
-		
-
-		<!--// demo -->
+	<div id="container">
+		<div class="report_wrap">
+			<i class="ic_report_01"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_02"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_03"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_04"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_05"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_06"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
 	</div>
 </div>
-<!-- Content -->
-
-</body>
+ </body>
 </html>
