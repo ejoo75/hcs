@@ -2,8 +2,8 @@ html, body{height:100%;margin:0;padding:0;font-family:"Malgun Gothic", Arial, ta
 body {padding:5px;}
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 h1 {height:40px;font-size:18px;text-align:center;line-height:40px;color:#53535d;margin:5px 5px 10px 5px;padding:0;background-color:#ffcc00;}
-h2 {position:relative;height:34px;font-size:16px;line-height:34px;color:#53535d;margin:5px;padding:0 0 0 15px;border-bottom:1px solid #b7c4dc;}
-h2:before {content:"";display:block;position:absolute;top:12px;lefr:0;widrh:5px;height:5px;border:3px solid #b8b2d1;border-radius:5px;}
+h2 {position:relative;height:34px;font-size:16px;line-height:34px;color:#53535d;margin:5px;padding:0 0 0 15px;border-bottom:1px solid #c7c7c7;}
+h2:before {content:"";display:block;position:absolute;top:12px;left:0;width:5px;height:5px;border:3px solid #b8b2d1;border-radius:5px;}
 h2 span {float:right;font-size:12px;font-weight:normal}
 h3 {height:32px;font-size:14px;line-height:32px;color:#444444;;margin:0;padding:0 15px;border-bottom:1px solid #e3e5ea;}
 h3 span {float:right;font-size:12px;font-weight:normal}
