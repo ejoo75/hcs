@@ -1,5 +1,5 @@
-html, body{height:100%;margin:0;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#f8f8f8;overflow:hidden}
-body {padding:5px;backgound:*linear-gradient(0deg #fff calc(100% - 40px), #a39ebe calc(100% - 40px), #a39ebe 100%);} 
+html, body{height:100%;margin:0;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#000;overflow:hidden}
+body {max-width:1850px;padding:5px;background-color:#f8f8f8;} 
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 h1 {height:40px;font-size:18px;line-height:40px;color:#fff;margin:5px;padding:0 0 0 15px;background-color:#9199a9;}
 h2 {position:relative;height:34px;font-size:16px;line-height:34px;color:#53535d;margin:5px;padding:0 0 0 15px;border-bottom:1px solid #dcdcdc;}
@@ -11,18 +11,28 @@ h3 span {float:right;font-size:12px;font-weight:normal}
 .container .container {float:left;}
 .content {box-sizing:border-box;margin:5px;padding:0;display:inline-block;float:left;border:1px solid #e3e5ea;background-color:#fff;-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.06); box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.06);}
 
-table.display {border-collapse:separate;border-spacing:10px;width:100%;table-layout: fixed;}
-table.display th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #b7c4dc;border-bottom:1px solid #b7c4dc;white-space:nowrap;}
-table.display td {position:relative;padding:4px 10px;border-top:1px solid #dde3eat;border-right:1px solid #dde3ea;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+table.display {border-collapse:collapse;width:calc(100% - 20px);height:calc(100% - 40px);table-layout: fixed;margin:5px auto 0;}
+table.display tr {border-top:1px solid #dddcda;}
+table.display tr:first-child {border-top:none;}
+table.display th {color:#333;text-align:left;font-size:18px;padding-top:5px;padding-left:5px;}
+table.display td {font-weight:bold;text-align:right;font-size:36px;padding-top:5px;padding-right:5px;}
+table.display td span {color:#333;font-size:18px;font-weight:normal;}
+
+table.display + table.display {border-collapse:collapse;width:calc(100% - 10px);height:calc(100% - 40px);table-layout: fixed;margin:0 auto;}
+table.display + table.display tr {border-top:1px solid #fff;}
+table.display + table.display th {font-size:16px;padding-left:30px;}
+table.display + table.display td {font-size:30px;padding-right:10px;}
+table.display td span {font-size:16px;}
 
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;border:1px solid #b7c4dc;}
 table.list_v thead tr{background-color:#eef1f5}
 table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f7f7f7}
-table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #b7c4dc;border-bottom:1px solid #b7c4dc;white-space:nowrap;}
-table.list_v td {position:relative;padding:4px 10px;border-top:1px solid #dde3ea;border-right:1px solid #dde3ea;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:11px 10px;border-right:1px solid #b7c4dc;border-bottom:1px solid #b7c4dc;}
+table.list_v td {position:relative;padding:10px 10px;border-top:1px solid #dde3ea;border-right:1px solid #dde3ea;text-align:right}
 table.list_v td:last-child {border-right:none}
-table.list_v .over {background:#fafafa!important;}
-table.list_v .select {background:#f7f7f7;}
-table.list_v td select {width:100%;font-size:14px;height:30px;}
-table.list_v td a{color:#2986bc}
+table.list_v td.left {text-align:left;}
+table.list_v td .up {position:relative;color:#eb7311}
+table.list_v td .up:before {content:"";display:block;position:absolute;top:-3px;left:-17px;width:0;height:0;border-top:8px solid transparent;border-right:6px solid transparent;border-bottom:8px solid #eb7311;border-left:6px solid transparent;}
+table.list_v td .down {position:relative;color:#508ae6}
+table.list_v td .down:before {content:"";display:block;position:absolute;top:5px;left:-17px;width:0;height:0;border-top:8px solid #508ae6;border-right:6px solid transparent;border-bottom:8px solid transparent;border-left:6px solid transparent;}
