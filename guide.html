@@ -2,56 +2,83 @@
 <html lang="ko">
 <head>
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Guide1</title>
+<title>Heungkuk</title>
 <style>
-html, body{height:100%;margin:10px;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#f0f1f3;}
+html, body{margin:0px;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#f0f1f3;}
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
-h1 {height:40px;font-size:18px;line-height:1.2em;color:#333;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-h2 {height:40px;font-size:16px;font-weight:normal;line-height:1.2em;color:#222;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-h3 {height:25px;font-size:14px;font-weight:normal;line-height:1.2em;color:#222;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.container {display:block;}
-.container .container {float:left;}
-.content {box-sizing:border-box;padding:10px;display:inline-block;float:left;; border-radius:3px;background-color:#fff;-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1); box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);}
+h2 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:13px;line-height:1.2em;color:#333;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+h3 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:11px;font-weight:normal;line-height:1.2em;color:#777;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#wrap {min-width:360px;background-color:#f0f1f3}
+#header {background-color:#fff;}
+#header a.logo {display:inline-block;font-size: 0;width:75%;height:30px;margin:10px 0 5px 20px;background:url(heungkuk_bi_m.png) no-repeat;background-size:auto 80%;text-indent:-99999px;}
+#header .header_wrap {height:45px;background-color:#2d1264}
+#header .header_wrap .user{float:left;display:inline-block;height:22px;color:#fff;background:url(ic_user.png) no-repeat;background-size:auto 100%;padding:3px 0 0 40px;margin:10px 0 0 20px}
+#header .header_wrap .logout{float:right;font-size:0;width:25px;height:25px;background:url(ic_logout.png) no-repeat;background-size:auto 100%;text-indent:-99999px;margin:10px 15px 0 0}
+#container {padding:10px}
+.report_wrap {display:inline-block;width:calc(50% - 43px);border-radius:3px;background-color:#fff;margin:7px 5px;padding:15px 15px 3px;-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1); 
+box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);}
+.report_wrap i{display:inline-block;float:left;display:inline-block;width:35px;height:35px;background-size:100%;margin-bottom:15px}
 .ic_report_01 {background:url(ic_report_01.png) no-repeat;}
+.ic_report_02 {background:url(ic_report_02.png) no-repeat;}
+.ic_report_03 {background:url(ic_report_03.png) no-repeat;}
+.ic_report_04 {background:url(ic_report_04.png) no-repeat;}
+.ic_report_05 {background:url(ic_report_05.png) no-repeat;}
+.ic_report_06 {background:url(ic_report_06.png) no-repeat;}
+.ic_report_07 {background:url(ic_report_07.png) no-repeat;}
+.ic_report_08 {background:url(ic_report_08.png) no-repeat;}
 .more {display:inline-block;float:right;display:inline-block;width:15px;height:15px;background:url(ic_more.png) no-repeat;background-size:100%}
+@media ( min-width: 640px ) {
+.report_wrap {display:inline-block;width:calc(33% - 41px);}
+}
+@media ( min-width: 700px ) {
+.report_wrap {display:inline-block;width:calc(25% - 44px);}
+}
 </style>
 </head>
 <body>
-<h1>디지털 본부 기본 현황</h1>
-<h2>
-<i class="ic_report_01"></i><a class="more"></a>
-디지털 본부 기본 현황
-</h2>
-<div class="container" style="height:calc(50% - 50px)">
-<div class="container" style="width:50%;height:100%">
-	<div class="content" style="width:50%;height:50%">
-		<h3>신규 고객 월별 리포트</h3>
+<div id="wrap">
+	<!-- Header -->
+	<div id="header">
+		<a class="logo" title="Heungkuk - Business Intelligence">Heungkuk - Business Intelligence</a>
+		<div class="header_wrap">
+			<span class="user">홍길동</span>
+			<i class="logout">Logout</i>
+		</div>
 	</div>
-	<div class="content" style="width:50%;height:50%">
-		<h3>신규 고객 월별 리포트</h3>
-	</div>
-	<div class="content" style="width:50%;height:50%">
-		<h3>신규 고객 월별 리포트</h3>
-	</div>
-	<div class="content" style="width:50%;height:50%">
-		<h3>신규 고객 월별 리포트</h3>
+	<div id="container">
+		<div class="report_wrap">
+			<i class="ic_report_01"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_02"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_03"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_04"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_05"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
+		<div class="report_wrap">
+			<i class="ic_report_06"></i><a class="more"></a>
+			<h2>신규 고객 월별 리포트</h2>
+			<h3>CM > PZ > 신규고객(월별)</h3>
+		</div>
 	</div>
 </div>
-<div class="container" style="width:50%;height:100%">
-	<div class="content" style="height:50%">
-		<h3>신규 고객 월별 리포트</h3>
-	</div>
-	<div class="content" style="height:50%">
-		<h3>신규 고객 월별 리포트</h3>
-	</div>
-</div>
-</div>
-
-<div class="container" style="height:calc(50% - 50px)">
-	<div class="content" style="width:25%;height:50%">
-		<h3>신규 고객 월별 리포트</h3>
-	</div>
-</div>
-</body>
+ </body>
 </html>
