@@ -10,7 +10,7 @@ h3 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:11px;font-we
 #header .ic_filter {position:absolute;top:15px;right:15px;font-size:0;width:25px;height:25px;background:url(ic_filter.png) no-repeat;background-size:auto 100%;text-indent:-99999px;}
 #container {padding:0}
 .dashboard_wrap {background-color:#f0f1f3;}
-.dashboard_wrap iframe {width:100%;bordor:none;}
+.dashboard_wrap iframe {width:100%;border:none;}
 .report_wrap {box-sizing:border-box;text-align:center; background-color:#ffffff;padding:0 20px;}
 .icon_wrap {display:inline-block;box-sizing:border-box;width:calc(25% - 15px);text-align:center;margin:10px 5px;padding:5px 0;}
 .icon_wrap i{display:inline-block;width:35px;height:35px;background-size:100%;margin-top:5px}
