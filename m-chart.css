@@ -9,6 +9,7 @@ h2 span {float:right;font-size:12px;font-weight:normal}
 h3 {height:32px;font-size:14px;line-height:32px;color:#444444;;margin:0;padding:0 15px;border-bottom:1px solid #e3e5ea;}
 h3 span {float:right;font-size:12px;font-weight:normal}
 h4 {text-align:center;font-size:14px;line-height:35px;color:#444444;margin:0;padding:10px;}
+h4 span {font-size:18px;}
 h5 {font-size:18px;color:#ffffff;margin:0 0 15px 0;text-align:center;}
 h5 span {display:inline-block;background-color:#444444;padding:5px 10px 7px;margin:0;}
 h6 {text-align:center;font-size:40px;line-height:40px;color:#444444;margin:0;padding:0 15px;}
