@@ -24,12 +24,12 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 .chart_dashboard h4 {padding-bottom:0;}
 .chart_dashboard h5 {position:absolute;top:38%;right:20px}
 
-table.display {border-collapse:collapse;width:100%;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
+table.display {border-collapse:collapse;width:90%;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
 table.display tr {border-top:1px solid #dddcda;}
 table.display tr:first-child {border-top:none;}
 table.display th {color:#333;text-align:center;font-size:15px;padding-top:12px;}
-table.display td {font-weight:bold;text-align:center;font-size:36px;line-height:50px;}
-table.display td span {color:#333;font-size:18px;font-weight:normal;}
+table.display td {font-weight:bold;text-align:center;font-size:30px;line-height:50px;}
+table.display td span {color:#333;font-size:18px;font-weight:normal;}9
 
 table.display + table.display {border-collapse:collapse;width:calc(100% - 10px);height:calc(100% - 40px);table-layout: fixed;margin:0 auto;}
 table.display + table.display tr {border-top:1px solid #fff;}
