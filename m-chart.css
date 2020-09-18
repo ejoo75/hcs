@@ -8,10 +8,10 @@ h2:before {content:"";display:block;position:absolute;top:12px;left:0;width:4px;
 h2 span {float:right;font-size:12px;font-weight:normal}
 h3 {height:32px;font-size:14px;line-height:32px;color:#444444;;margin:0;padding:0 15px;border-bottom:1px solid #e3e5ea;}
 h3 span {float:right;font-size:12px;font-weight:normal}
-h4 {text-align:center;font-size:14px;line-height:35px;color:#444444;margin:0;padding:15px;}
-h5 {font-size:18px;color:#ffffff;margin:0 0 20px 0;text-align:center;}
-h5 span {display:inline-block;background-color:#444444;padding:10px 15px;margin:0;}
-h6 {text-align:center;font-size:48px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
+h4 {text-align:center;font-size:14px;line-height:35px;color:#444444;margin:0;padding:10px;}
+h5 {font-size:18px;color:#ffffff;margin:0 0 15px 0;text-align:center;}
+h5 span {display:inline-block;background-color:#444444;padding:5px 10px 7px;margin:0;}
+h6 {text-align:center;font-size:40px;line-height:40px;color:#444444;margin:0;padding:0 15px;}
 h6 span {font-size:16px;font-weight:normal;color:#444444;}
 h7 {font-size:16px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
 h7 span {font-size:26px;font-weight:bold;padding-left:10px}
@@ -24,7 +24,7 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 .chart_dashboard h4 {padding-bottom:0;}
 .chart_dashboard h5 {position:absolute;top:38%;right:20px}
 
-table.display {border-collapse:collapse;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
+table.display {border-collapse:collapse;width:100%;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
 table.display tr {border-top:1px solid #dddcda;}
 table.display tr:first-child {border-top:none;}
 table.display th {color:#333;text-align:center;font-size:15px;padding-top:12px;}
