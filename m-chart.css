@@ -10,8 +10,8 @@ h3 {height:32px;font-size:14px;line-height:32px;color:#444444;;margin:0;padding:
 h3 span {float:right;font-size:12px;font-weight:normal}
 h4 {text-align:center;font-size:14px;line-height:35px;color:#444444;margin:0;padding:10px;}
 h4 span {font-size:18px;margin-left:10px;}
-h5 {font-size:18px;color:#ffffff;margin:0 0 15px 0;text-align:center;}
-h5 span {display:inline-block;background-color:#444444;padding:5px 10px 7px;margin:0;}
+h5 {margin:0 0 15px 0;text-align:center;}
+h5 span {display:inline-block;font-size:30px;color:#ffffff; background-color:#444444;padding:10px 15px 12px;margin:0;}
 h5 span b {font-size:16px}
 h6 {text-align:center;font-size:40px;line-height:40px;color:#444444;margin:0;padding:0 15px;}
 h6 span {font-size:16px;font-weight:normal;color:#444444;}
@@ -25,6 +25,7 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 .chart_dashboard h4, .chart_dashboard h6, .chart_dashboard h7 {text-align:left;padding-left:0;}
 .chart_dashboard h4 {padding-bottom:0;}
 .chart_dashboard h5 {position:absolute;top:38%;right:20px}
+.chart_dashboard h5 span {font-size:18px;padding:5px 10px 7px;}
 
 table.display {border-collapse:collapse;width:90%;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
 table.display tr {border-top:1px solid #dddcda;}
