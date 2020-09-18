@@ -13,8 +13,8 @@ h5 {font-size:18px;color:#ffffff;margin:0 0 20px 0;text-align:center;}
 h5 span {display:inline-block;background-color:#444444;padding:10px 15px;margin:0;}
 h6 {text-align:center;font-size:48px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
 h6 span {font-size:16px;font-weight:normal;color:#444444;}
-h7 {font-size:14px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
-h7 span {font-size:16px}
+h7 {font-size:16px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
+h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 
 .container {display:block;}
 .container .container {float:left;}
