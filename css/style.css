@@ -25,6 +25,44 @@ table.display + table.display th {font-size:16px;padding-left:30px;}
 table.display + table.display td {font-size:30px;padding-right:10px;}
 table.display td span {font-size:16px;}
 
+.mb_15 {margin-bottom:15px}
+
+.t_l {text-align:left}
+.t_r {text-align:right}
+
+.f_l {float:left}
+.f_r {float:right}
+
+.tc_br1 {color:#8d744a}
+.tc_br2 {color:#7e9925}
+.tc_ye1 {color:#e29600}
+.tc_ye2 {color:#fbb731}
+.tc_gn1 {color:#768447}
+.tc_gn2 {color:#7e9925}
+.tc_bl1 {color:#4c7ece}
+.tc_bl2 {color:#628ed6}
+
+.bg_br1 {background-color:#8d744a}
+.bg_br2 {background-color:#7e9925}
+.bg_ye1 {background-color:#e29600}
+.bg_ye2 {background-color:#fbb731}
+.bg_gn1 {background-color:#768447}
+.bg_gn2 {background-color:#7e9925}
+.bg_bl1 {background-color:#4c7ece}
+.bg_bl2 {background-color:#628ed6}
+
+.bo_br1 {border-color:#8d744a}
+.bo_br2 {border-color:#7e9925}
+.bo_ye1 {border-color:#e29600}
+.bo_ye2 {border-color:#fbb731}
+.bo_gn1 {border-color:#768447}
+.bo_gn2 {border-color:#7e9925}
+.bo_bl1 {border-color:#4c7ece}
+.bo_bl2 {border-color:#628ed6}
+
+.bt_3 {border-top:3px solid}
+.bb_1 {border-bottom:1px solid}
+
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;border:1px solid #b7c4dc;}
 table.list_v thead tr{background-color:#eef1f5}
 table.list_v tr {background-color:#fff}
