@@ -47,10 +47,10 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 
 .bg_br1 {background-color:#8d744a}
 .bg_br2 {background-color:#ba9a63}
-.bg_br4 {background-color:#e9dcc3}
+.bg_br4 {background-color:#e9dcc3!important}
 .bg_ye1 {background-color:#e29600}
 .bg_ye2 {background-color:#fbb731}
-.bg_ye4 {background-color:#ffdb94}
+.bg_ye4 {background-color:#ffdb94!important}
 .bg_gn1 {background-color:#768447}
 .bg_gn2 {background-color:#7e9925}
 .bg_gn3 {background-color:#6c9000}
