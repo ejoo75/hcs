@@ -65,11 +65,12 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 .bt_3 {border-top:3px solid}
 .bb_1 {border-bottom:1px solid}
 
-table.display + table.display {border-collapse:collapse;width:calc(100% - 10px);height:calc(100% - 40px);table-layout: fixed;margin:0 auto;}
-table.display + table.display tr {border-top:1px solid #fff;}
-table.display + table.display th {font-size:16px;padding-left:30px;}
-table.display + table.display td {font-size:30px;padding-right:10px;}
-table.display td span {font-size:16px;}
+table.display {border-collapse:collapse;width:90%;height:calc(100% - 40px);table-layout:fixed;margin:5px auto 10px;}
+table.display tr {border-top:1px solid #dddcda;}
+table.display tr:first-child {border-top:none;}
+table.display th {color:#333;text-align:center;font-size:15px;padding-top:12px;}
+table.display td {font-weight:bold;text-align:center;font-size:30px;line-height:50px;}
+table.display td span {color:#333;font-size:18px;font-weight:normal;}9
 
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;border:1px solid #b7c4dc;}
 table.list_v thead tr{background-color:#eef1f5}
