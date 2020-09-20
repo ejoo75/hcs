@@ -12,7 +12,7 @@ h3 span {float:right;font-size:12px;font-weight:normal}
 h4 {text-align:center;font-size:16px;line-height:35px;color:#444444;margin:0;padding:10px;}
 h4 span {font-size:18px;margin-left:10px;}
 h5 {margin:0 0 15px 0;text-align:center;}
-h5 span {display:inline-block;font-size:30px;color:#ffffff; background-color:#444444;padding:12px 15px 9px;margin:0;}
+h5 span {display:inline-block;font-size:30px;color:#ffffff; background-color:#444444;padding:12px 15px 7px;margin:0;}
 h5 span b {font-size:16px}
 h6 {text-align:center;font-size:40px;line-height:40px;color:#444444;margin:0;padding:0 15px;}
 h6 span {font-size:16px;font-weight:normal;color:#444444;}
@@ -26,7 +26,7 @@ h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 .chart_dashboard h4, .chart_dashboard h6, .chart_dashboard h7 {text-align:left;padding-left:0;}
 .chart_dashboard h4 {padding-bottom:0;}
 .chart_dashboard h5 {position:absolute;top:38%;right:20px;text-align:left;}
-.chart_dashboard h5 span {font-size:18px;padding:5px 10px 7px;}
+.chart_dashboard h5 span {font-size:18px;padding:5px 10px 3px;}
 .chart_dashboard h5 .up {position:relative;background-color:#eb7311;padding-left:25px;}
 .chart_dashboard h5 .up:before {content:"";display:block;position:absolute;top:3px;left:10px;width:0;height:0;border-top:8px solid transparent;border-right:6px solid transparent;border-bottom:8px solid #fff;border-left:6px solid transparent;}
 .chart_dashboard h5 .down {position:relative;background-color:#508ae6;padding-left:25px;}
