@@ -1,6 +1,8 @@
 html, body{margin:0;padding:0;font-family:"Malgun Gothic", Arial, tahoma;background-color:#f8f8f8;overflow-y:auto;}
 body {max-width:1850px;padding:5px;background-color:#f8f8f8;} 
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
+u {text-decoration:none;color:blue;font-size:15px}
+u b {color:#fff;background-color:blue;padding:0 5px:}
 h1 {height:40px;font-size:18px;line-height:40px;color:#fff;margin:5px;padding:0 10px 0 15px;background-color:#9199a9;}
 h1 div {float:right;color:#fff;font-size:12px;font-weight:normal;text-align:right;line-height:15px;margin-top:5px}
 h2 {position:relative;clear:both;height:34px;font-size:16px;line-height:34px;color:#53535d;margin:5px;padding:0 0 0 15px;border-bottom:1px solid #dcdcdc;}
