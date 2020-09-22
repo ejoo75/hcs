@@ -143,8 +143,8 @@ table.list_v td .red {color:#eb7311}
 table.list_v td .blue {color:#508ae6}
 
 
-table.list_g {border-collapse:collapse;width:100%;table-layout: fixed;border:1px solid #bbbbbb;}
+table.list_g {border-collapse:collapse;width:100%;table-layout: fixed;border:3px solid #bbbbbb;}
 table.list_g thead tr{background-color:#f7f7f7}
 table.list_g tr {background-color:#fff}
-table.list_g th {color:#222;font-weight:bold;padding:11px 10px;border-right:1px solid #bbbbbb;border-bottom:1px solid #bbbbbb;}
-table.list_g td {color:#222;padding:10px 10px;border-top:1px solid #dde3ea;border-right:1px solid #cccccc;text-align:right}
+table.list_g th {color:#222;font-weight:bold;border-right:2px solid #bbbbbb;border-bottom:2px solid #bbbbbb;}
+table.list_g td {color:#222;border-top:2px solid #cccccc;border-right:2px solid #cccccc;}
