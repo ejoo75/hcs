@@ -2,7 +2,7 @@ html, body{margin:0;padding:0;font-family:"Malgun Gothic", Arial, tahoma;backgro
 body {max-width:1850px;padding:5px;background-color:#f8f8f8;} 
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 u {text-decoration:none;color:blue;font-size:15px;font-weight:bold;}
-u b {color:#fff;background-color:blue;padding:0 5px:}
+u b {color:#fff;background-color:blue;padding:0 5px}
 h1 {height:40px;font-size:18px;line-height:40px;color:#fff;margin:5px;padding:0 10px 0 15px;background-color:#9199a9;}
 h1 div {float:right;color:#fff;font-size:12px;font-weight:normal;text-align:right;line-height:15px;margin-top:5px}
 h2 {position:relative;clear:both;height:34px;font-size:16px;line-height:34px;color:#53535d;margin:5px;padding:0 0 0 15px;border-bottom:1px solid #dcdcdc;}
@@ -143,8 +143,8 @@ table.list_v td .red {color:#eb7311}
 table.list_v td .blue {color:#508ae6}
 
 
-table.list_g {border-collapse:collapse;width:100%;table-layout: fixed;border:3px solid #bbbbbb;}
+table.list_g {border-collapse:collapse;width:80%;table-layout: fixed;margin-left:20%;border:3px solid #222;}
 table.list_g thead tr{background-color:#f7f7f7}
 table.list_g tr {background-color:#fff}
-table.list_g th {color:#222;font-weight:bold;border-right:2px solid #bbbbbb;border-bottom:2px solid #bbbbbb;}
-table.list_g td {color:#222;border-top:2px solid #cccccc;border-right:2px solid #cccccc;}
+table.list_g th {font-size:14px;color:#222;font-weight:bold;padding:5px;border-right:2px solid #222;border-bottom:2px solid #222;}
+table.list_g td {font-size:14px;color:#222; padding:5px; border-top:2px solid #ccc;border-right:2px solid #ccc;}
