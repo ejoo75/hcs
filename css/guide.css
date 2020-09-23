@@ -26,8 +26,8 @@ h4 u, h5 u, h6 u {position:relative}
 
 .container {display:block;}
 .container.f_l {width:740px;}
-.container.f_l .content {width:50%;}
-.container.f_r {float:right;width:calc(100% - 750px)}
+.container.f_l .content {float:left;width:calc(50% - 10px);}
+.container .container.f_r {float:right;width:calc(100% - 750px)}
 .container .container {float:left;}
 .content {position:relative;box-sizing:border-box;margin:5px;padding:0;border:1px solid #e3e5ea;background-color:#fff;-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.06); box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.06);}
 .chart_dashboard {position:relative;box-sizing:border-box;width:100%;padding:0 20px;}
