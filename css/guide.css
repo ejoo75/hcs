@@ -21,7 +21,7 @@ h6 span {font-size:16px;font-weight:normal;color:#444444;}
 h7 {font-size:16px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
 h7 span {font-size:26px;font-weight:bold;padding-left:10px}
 h4 u, h5 u, h6 u, table th, table td {position:relative}
-.content u b, table.display th u b, table.display td u b {position:absolute;bottom:calc(100% - 30px);left:calc(100% - 30px)}
+.content u b, table.display th u b, table.display td u b {position:absolute;bottom:calc(100% - 60px);left:calc(100% - 30px)}
 .content h4 u b, .content h5 u b, .content h6 u b {bottom:-20px;left:0;line-height:20px;}
 table.display th u b, table.display td u b {bottom:0!important;left:0 !important;line-height:20px;}
 
