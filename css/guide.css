@@ -20,9 +20,10 @@ h6 {text-align:center;font-size:40px;line-height:40px;color:#444444;margin:0;pad
 h6 span {font-size:16px;font-weight:normal;color:#444444;}
 h7 {font-size:16px;line-height:35px;color:#444444;margin:0;padding:0 15px;}
 h7 span {font-size:26px;font-weight:bold;padding-left:10px}
-h4 u, h5 u, h6 u {position:relative}
-.content u b {position:absolute;bottom:calc(100% - 30px);left:calc(100% - 30px)}
+h4 u, h5 u, h6 u, table th, table td {position:relative}
+.content u b, table th u b, table td u b {position:absolute;bottom:calc(100% - 30px);left:calc(100% - 30px)}
 .content h4 u b, .content h5 u b, .content h6 u b {bottom:-20px;left:0;line-height:20px;}
+table th u b, table td u b {bottom:0;left:0;line-height:20px;}
 
 .container {display:block;}
 .container.f_l {width:1110px;}
