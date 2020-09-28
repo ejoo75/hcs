@@ -11,7 +11,7 @@ h3 {clear:both;font-family:"Malgun Gothic", Arial, tahoma;font-size:11px;font-we
 #container {padding:0}
 .dashboard_wrap {background-color:#f0f1f3;}
 .dashboard_wrap iframe {width:100%;border:none;overflow-y:auto;}
-.report_wrap {box-sizing:border-box;text-align:center; background-color:#ffffff;padding:0 10px;}
+.report_wrap {box-sizing:border-box;text-align:center; background-color:#ffffff;padding:20px 10px;}
 .icon_wrap {display:inline-block;width:calc(25% - 5px);text-align:center;margin:10px 0 10px}
 .icon_wrap i{display:inline-block;width:45px;height:45px;background-size:100%;}
 .ic_report_01 {background:url(../images/ic_report_01.png) no-repeat;}
