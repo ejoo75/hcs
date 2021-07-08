@@ -3,6 +3,11 @@ https://material-ui.com/styles/basics/
 https://www.daleseo.com/material-ui-styles/
 */
 
+.jss333{font-size:0!important;}
+.jss333 img{display:none;}
+.jss333:before{content:'';display:inline-block;width:26px;height:26px;border-color:#fff;border:6px 6px 0 0;}
+.jss333:after{content:'BIS'}
+
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
 .MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
 
