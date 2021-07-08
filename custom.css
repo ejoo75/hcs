@@ -3,10 +3,13 @@ https://material-ui.com/styles/basics/
 https://www.daleseo.com/material-ui-styles/
 */
 
+.jss316:before{content:'';display:inline-block;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
+
 .jss333{font-size:0!important;}
 .jss333 img{display:none;}
-.jss333:before{content:'';display:inline-block;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
-.jss333:after{content:'BIS';font-size:16px;clor:#fff;}
+
+.jss333:before{content:'BIS';font-weight:bold;font-size:24px;color:#fff!important;}
+.jss333:after{content:'Business Intelligence System';font-size:12px;color:#fff!important;}
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
 .MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
