@@ -7,3 +7,5 @@ https://www.daleseo.com/material-ui-styles/
 .MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
 
 .MuiAppBar-colorPrimary{background-color: #000000!important;}
+
+#mainContent .MulPaper-rounded{border-radius:0!important;}
