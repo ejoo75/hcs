@@ -10,4 +10,4 @@ https://www.daleseo.com/material-ui-styles/
 
 #mainContent .MuiPaper-rounded{border-radius:0!important;}
 #mainContent .MuiGrid-item div{border-radius:0!important;}
-#mainContent div div{background-image:none;}
+#mainContent div div{background-image:none!important;}
