@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="base.css?v=20210707001"/>
+<link rel="stylesheet" type="text/css" href="main.css?v=20210707001"/>
+</head>
+<body>
+	<div class="wrap">
+		<!--  -->
+		<header>
+			<div class="header_bg">
+				<h1><a href="javascript:fnGoMain();"><img src="images/logo-dark.png" style="width: 140px;" alt="PARADISE"></a></h1>
+				<div class="header_wrap">
+					<div class="gnb">
+						<div class="gnb_navi">
+							<ul>
+								<li id="notice" style="cursor:pointer;">공지사항</li>
+								<li>│</li>
+								<li id="allMenu" style="cursor:pointer;">전체 메뉴</li>
+								<li>│</li>
+								<li id="dataMng" style="cursor:pointer;">데이터 관리</li>
+								<li>│</li>
+								<li id="bookMarkList" style="cursor:pointer;">줄겨찾기 목록</li>
+							</ul>
+						</div>
+						<div class="log_info">
+							<ul>
+								<li class="user">
+									<span>홍길동</span>
+								</li>
+							</ul>
+						</div>
+						<!-- 내리포트 , 구독목록, 팀보고서 메뉴 표시 영역  -->
+						<div class="header_subMenu">
+							<ul>
+								<li id="myReport">내 리포트</li>
+								<li> | </li> 
+								<li id="subscrList"> 구독목록 </li> 
+								<li> | </li> 
+								<li id="systemMng">시스템 관리</li> 
+								<li> | </li>
+								<li id="teamReport"> 팀 리포트 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 대분류 메뉴 영역  -->
+			<div class="header_menu">
+				<div class="gnb_menu">
+					<div class="gnb_menu_navi">
+						<ul>
+							<li id="gnb_menu_navi_list1"> <span folder-id="1CB8F83F49D12BAE7C2C6DB14E26B866">그룹/경쟁사 실적</span> 
+								<div class="gnb_menu_box" id="gnb_menu_singleListBox1" folder-id="1CB8F83F49D12BAE7C2C6DB14E26B866">
+									<ul>
+										<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">그룹 실적
+											<ul class="reportList_wrapper" style="margin-left:20px;">
+												<li isfolder="false" report-id="F38EA7724034DF570CCE4BA0B1FBC069" report-type="55" report-struct="undefined"> 그룹 카지노/리조트 부문 일일 실적</li>
+												<li isfolder="false" report-id="5FCC6E604593A5743C388B9D67DB128F" report-type="55" report-struct="undefined"> 그룹 카지노/리조트 부문 월별 실적_____목표필요</li>
+												<li isfolder="false" report-id="EF5071524115E4508891EBB785C973CF" report-type="55" report-struct="undefined"> 그룹 등록고객 현황</li>
+												<li isfolder="false" report-id="61B18FF64EC5AEC059A7DEBAF4940BFD" report-type="55" report-struct="undefined"> 그룹 카지노 부문 실적</li>
+												<li isfolder="false" report-id="B0FD9F7249B340860116F5AB9E3639BB" report-type="55" report-struct="undefined"> 그룹 카지노 부문 일자별 실적(H)</li>
+												<li isfolder="false" report-id="F22DEF644AA779F565378698F86676BC" report-type="55" report-struct="undefined"> 그룹 카지노 부문 팀별 실적(S)_연간</li>
+											</ul>
+										</li>
+										<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">카지노 부문 경쟁사 실적
+											<ul class="reportList_wrapper" style="margin-left:20px;">
+												<li isfolder="false" report-id="B53ECD844491F89D120B6DA2D9361D06" report-type="55" report-struct="undefined"> 카지노 경쟁사 실적 비교</li>
+												<li isfolder="false" report-id="D7B9CF924BD01497900F22A919BEDB2B" report-type="55" report-struct="undefined"> 전국 카지노 실적 추이 보고</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li id="gnb_menu_navi_list2"> <span folder-id="5299E19D4867AF3B5C2A1BB02B8E7E70">고객</span> </li>
+							<li id="gnb_menu_navi_list3"> <span folder-id="D0D020AE45C546C3B27E4498A59E76CD">마케팅</span> </li>
+							<li id="gnb_menu_navi_list4"> <span folder-id="6CBF6EE448B73C590C8889963020BBA8">오퍼레이션</span> </li>
+							<li id="gnb_menu_navi_list5"> <span folder-id="36D0C3714F3FCBAC115D92B853A8783D">경영관리</span> </li>
+							<li id="gnb_menu_navi_list6"><span folder-id="4B7F54C74DE39B67371990931B61CF11">이메일링</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section><!-- Prompt, IFrame(MSTRWEB Embeded -->
+			<!-- Main Default Layer -->
+			<div id="MainLayer">
+				<!-- Main 대시보드 -->
+				<div class="dashBoardWrapper">
+					<p style="margin: 10px 0px 10px 20px; font-weight: bold;">00월 00일 (D-1일 마감기준) 주요지표</p>
+					<iframe id="mainMstrReport" name="mainMstrReport" width="100%" height="93%"></iframe>
+				</div>
+				<!-- 최근 실행 리포트, 최다 실행 리포트 -->
+				<div class="myLookupReportWrapper">
+					<p style="margin: 0px 0px 10px 20px; width:92%; font-weight: bold;">내 조회 리포트</p>
+					<div class="LookupContainer">
+						<ul class="LookupTabs">
+							<li class="current_tab active">최근 조회순</li>
+							<li class="most_tab">조회 빈도순</li>
+						</ul>
+						<div class="LookupTab_container">
+							<div id="LookupCurrentTab" class="LookupTab_content">
+								<table class="recentListTbl">
+									<thead>
+										<tr><th>NO</th><th>리포트 명</th></tr>
+									</thead>
+									<tbody class="recentTblBody">
+										<tr report-id="8B930DEA40C7901921780D845F288329" report-type="55"><td>1</td><td>순매출 분석</td></tr>
+										<tr report-id="54820E5A49112F0EF5BED3960BF4113E" report-type="55"><td>2</td><td>C7 카드 &amp; Seal 소모량 추이</td></tr>
+										<tr report-id="3CFF49F841369586B2DF438B1240E7FD" report-type="55"><td>3</td><td>(C8) 시간대별 영업장 리뷰</td></tr>
+										<tr report-id="4FB193134CB52EB9167FD78803C9ED62" report-type="55"><td>4</td><td>C6.카지노 오퍼레이션 인력 현황</td></tr>
+										<tr report-id="5FCC6E604593A5743C388B9D67DB128F" report-type="55"><td>5</td><td>2. 그룹 카지노/리조트 부문 월별 실적_____목표필요</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="LookupMostTab" class="LookupTab_content" style="display: none;">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 공지사항 -->
+				<div class="noticeBoardWrapper">
+					<p style="margin: 0px 0px 10px 20px; width:92%; font-weight: bold;">공지사항</p>
+					<div class="noticeContainer">
+						<p id="noticeListBtn" style="float: right; font-size: 13px; font-style: italic; color: blue; cursor: pointer;">more</p>
+						<div class="noticeList_container">
+							<table class="noticeListTbl">
+								<thead>
+									<tr><th>제목</th><th>작성자</th></tr>
+								</thead>
+								<tbody class="noticeListTblBody">
+									<tr notice-id="2021-07-07-00001">
+										<td>공지 테스트</td><td>paradise</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Report Layer -->
+			<div id="ReportLayer" style="display: none;">
+				<div class="reportInfo">
+					<div id="reportInfoWrapper">
+						<span id="report_title"> 리포트 제목 </span>
+						<img id="btnReportBookmark_default" class="default" src="images/icon-bookmark-off-16.png" width="16" height="16" alt="즐겨찾기">
+						<img id="btnReportBookmark_active" class="active" style="display:none;" src="images/icon-bookmark-on-16.png" width="16" height="16" alt="즐겨찾기">
+						<p id="report_path"> 리포트 경로 </p>
+					</div>
+				</div>
+				<div class="promptArea"><!-- 프롬프트 등 영역 (조회 버튼) -->
+					
+				</div>
+				<div class="promptToggleBtn"><span id="toggle_btn"> <img src="images/icon-toggle-up-16.png"> </span></div>
+				<div class="reportArea">
+					<iframe id="mstrReport" name="mstrReport" width="100%" height="100%" title="MSTR Report" style="border:none"></iframe>
+				</div>
+			</div>
+			<!-- Menu Layer -->
+			
+		</section>
+	</div>
+
+</html>
