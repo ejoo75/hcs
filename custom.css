@@ -4,6 +4,6 @@ https://www.daleseo.com/material-ui-styles/
 */
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #000000!important;}
-.MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important:}
+.MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
 
 .MuiAppBar-colorPrimary{background-color: #000000!important;}
