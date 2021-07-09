@@ -24,11 +24,13 @@ https://www.daleseo.com/material-ui-styles/
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.7)!important;}
-.MuiTypography-body1{color:#fff!important;opacity:70%;}
+.MuiTypography-body1{color:#fff!important;}
 .jss354 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
 .jss354:before{background:rgba(255, 255, 255, 0.7);}
 .jss354 .MuiListItemIcon-root{color:#fff!important;}
 
 .jss337{display:none!important;}/* Left User Del */
 
-.jss347.jss346{padding-top:40px!important}
+.jss347.jss346{padding-top:40px!important}/* Logo Padding */
+
+.jss372 svg[class^="MuiSvgIcon"]{display:none!important;}
