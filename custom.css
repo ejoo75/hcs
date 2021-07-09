@@ -47,6 +47,11 @@ https://www.daleseo.com/material-ui-styles/
 .jss506 li:nth-child(3) .MuiAvatar-colorDefault{background-color:#5d88fb!important;}
 .jss506 li:nth-child(4) .MuiAvatar-colorDefault{background-color:#1ea5a1!important;}
 
+.jss506 li:nth-child(1) h6 span{color:#4f4793!important;}
+.jss506 li:nth-child(2) h6 span{color:#715deb!important;}
+.jss506 li:nth-child(3) h6 span{color:#5d88fb!important;}
+.jss506 li:nth-child(4) h6 span{color:#1ea5a1!important;}
+
 /* Right Icon */
 .MuiLinearProgress-root + aside{display:none}
 
