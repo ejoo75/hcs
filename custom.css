@@ -23,9 +23,10 @@ https://www.daleseo.com/material-ui-styles/
 #mainContent div .jss288{background-image:none!important;}/* BG img Del */
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
-.MuiListItemIcon-root{color:rgba(255, 255, 255, 0.54)!important;}
-.MuiTypography-body1{color:#ffffff!important;}
-.jss354 .MuiTypography-body1{color:yellow!important;}/* Menu Opened */
+.MuiListItemIcon-root{color:rgb(255 255 255 / 70%)!important;}
+.MuiTypography-body1{color:#fff!important;opacity:70%;}
+.jss354 .MuiTypography-body1{color:#fff!important;}/* Menu Opened */
+.jss354:before{background:rgb(255 255 255 / 70%);}
 
 .jss337{display:none!important;}/* Left User Del */
 
