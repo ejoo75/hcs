@@ -3,8 +3,9 @@ https://material-ui.com/styles/basics/
 https://www.daleseo.com/material-ui-styles/
 */
 
+/* Logo Simbol */
 .jss316:before{content:'';display:inline-block;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
-
+/* Logo BI */
 .jss335{font-size:0!important;display:inline-block;}
 .jss335 img{display:none;}
 .jss335:before{content:'BIS';font-weight:bold;font-size:24px;color:#fff!important;}
@@ -17,10 +18,12 @@ https://www.daleseo.com/material-ui-styles/
 
 #mainContent .MuiPaper-rounded{border-radius:0!important;}
 #mainContent .MuiGrid-item div{border-radius:0!important;}
-#mainContent .jss283{background:#cccccc;}
-#mainContent div .jss288{background-image:none!important;}
-#mainContent div .jss288 img{display:none!important;}
+#mainContent .jss283{background:#cccccc;}/* BG Color */
+#mainContent div .jss288{background-image:none!important;}/* BG img Del */
+#mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.54)!important;}
 .MuiTypography-body1{color:#ffffff!important;}
-.jss354 .MuiTypography-body1{color:yellow!important;}
+.jss354 .MuiTypography-body1{color:yellow!important;}/* Menu Opened */
+
+.jss337{display:none;}/* Left User Del */
