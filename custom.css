@@ -4,13 +4,13 @@ https://www.daleseo.com/material-ui-styles/
 */
 
 /* Logo */
-.jss318{position:relative;}
-.jss318:before{display:block;content:'BIS';line-height:35px;text-align:center;font-weight:bold;font-size:30px;color:#fff!important;padding-top:40px;}
+.jss316{position:relative;}
+.jss316:before{display:block;content:'BIS';line-height:35px;text-align:center;font-weight:bold;font-size:30px;color:#fff!important;padding-top:40px;}
 
-.jss335{font-size:0!important;height:20px!important;padding:0!important}
-.jss335 img{display:none;}
-.jss318:after{content:'';position:absolute;top:39px;right:87px;width:16px;height:16px;border-top:4px solid #fff;border-right:4px solid #fff;}
-.jss335:after{display:block;content:'Business Intelligence System';font-size:12px;color:#fff!important;}
+.jss316 a{font-size:0!important;height:20px!important;padding:0!important}
+.jss316 a img{display:none;}
+.jss316:after{content:'';position:absolute;top:39px;right:87px;width:16px;height:16px;border-top:4px solid #fff;border-right:4px solid #fff;}
+.jss316 a:after{display:block;content:'Business Intelligence System';font-size:12px;color:#fff!important;}
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
 .MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
@@ -25,29 +25,29 @@ https://www.daleseo.com/material-ui-styles/
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.7)!important;}
 .MuiTypography-body1{color:#fff!important;}
-.jss354 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
-.jss354:before{background:rgba(255, 255, 255, 0.7);}
-.jss354 .MuiListItemIcon-root{color:#fff!important;}
+.jss349 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
+.jss349:before{background:rgba(255, 255, 255, 0.7);}
+.jss349 .MuiListItemIcon-root{color:#fff!important;}
 
-.jss337{display:none!important;}/* Left User Del */
+.jss316 a + div{display:none!important;}/* Left User Del */
 
-.jss347.jss346{padding-top:40px!important}/* Logo Padding */
+#sidebar {padding-top:40px!important}/* SLide Padding */
 
-.jss372 svg[class^="MuiSvgIcon"]{display:none!important;}/* Menu Arrow */
+#sidebar svg[class^="MuiSvgIcon"]{display:none!important;}/* Menu Arrow */
 
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(1) .jss579{background-color:#4f4793!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(2) .jss579{background-color:#715deb!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(3) .jss579{background-color:#5d88fb!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(4) .jss579{background-color:#1ea5a1!important;}
+.jss394 .MuiGrid-container .MuiGrid-item:nth-child(1) .MuiPaper-elevation1{background-color:#4f4793!important;}
+.jss394 .MuiGrid-container .MuiGrid-item:nth-child(2) .MuiPaper-elevation1{background-color:#715deb!important;}
+.jss394 .MuiGrid-container .MuiGrid-item:nth-child(3) .MuiPaper-elevation1{background-color:#5d88fb!important;}
+.jss394 .MuiGrid-container .MuiGrid-item:nth-child(4) .MuiPaper-elevation1{background-color:#1ea5a1!important;}
 
 /* Main Round Icon */
-.jss506 .jss514{background-color:#4f4793!important;}
-.jss506 .jss516{background-color:#715deb!important;}
-.jss506 .jss510{background-color:#5d88fb!important;}
-.jss506 .jss512{background-color:#1ea5a1!important;}
+.jss506 li:nth-child(1) .MuiAvatar-colorDefault{background-color:#4f4793!important;}
+.jss506 li:nth-child(2) .MuiAvatar-colorDefault{background-color:#715deb!important;}
+.jss506 li:nth-child(3) .MuiAvatar-colorDefault{background-color:#5d88fb!important;}
+.jss506 li:nth-child(4) .MuiAvatar-colorDefault{background-color:#1ea5a1!important;}
 
 /* Right Icon */
-.jss7{display:none}
+.MuiLinearProgress-root + aside{display:none}
 
 
 
