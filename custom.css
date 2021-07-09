@@ -19,6 +19,7 @@ https://www.daleseo.com/material-ui-styles/
 
 #mainContent .MuiPaper-rounded{border-radius:0!important;}
 #mainContent .MuiGrid-item div{border-radius:0!important;}
+#mainContent .MuiGrid-item .MuiAvatar-circle{border-radius:50%;}
 #mainContent .jss283{background:#f2f0fd;}/* BG Color */
 #mainContent div .jss288{background-image:none!important;}/* BG img Del */
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
