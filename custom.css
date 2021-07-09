@@ -5,10 +5,10 @@ https://www.daleseo.com/material-ui-styles/
 
 .jss316:before{content:'';display:inline-block;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
 
-.jss333{font-size:0!important;display:inline-block;}
-.jss333 img{display:none;}
-.jss333:before{content:'BIS';font-weight:bold;font-size:24px;color:#fff!important;}
-.jss333:after{content:'Business Intelligence System';font-size:12px;color:#fff!important;}
+.jss335{font-size:0!important;display:inline-block;}
+.jss335 img{display:none;}
+.jss335:before{content:'BIS';font-weight:bold;font-size:24px;color:#fff!important;}
+.jss335:after{content:'Business Intelligence System';font-size:12px;color:#fff!important;}
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
 .MuiPaper-root.MuiDrawer-paperAnchorLeft div{backdrop-filter:unset!important;background-color:unset!important;}
@@ -23,4 +23,4 @@ https://www.daleseo.com/material-ui-styles/
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.54)!important;}
 .MuiTypography-body1{color:#ffffff!important;}
-.jss352 .MuiTypography-body1{color:yellow!important;}
+.jss354 .MuiTypography-body1{color:yellow!important;}
