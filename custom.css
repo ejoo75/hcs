@@ -35,7 +35,11 @@ https://www.daleseo.com/material-ui-styles/
 
 .jss372 svg[class^="MuiSvgIcon"]{display:none!important;}/* Menu Arrow */
 
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(1) .jss579{background-color:#715deb!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(2) .jss579{background-color:#5d88fb!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(3) .jss579{background-color:#1ea5a1!important;}
-.jss482 .MuiGrid-container .MuiGrid-item:nth-child(4) .jss579{background-color:#5581f7!important;}
+.jss482 .MuiGrid-container .MuiGrid-item:nth-child(1) .jss579{background-color:#4f4793!important;}
+.jss482 .MuiGrid-container .MuiGrid-item:nth-child(2) .jss579{background-color:#715deb!important;}
+.jss482 .MuiGrid-container .MuiGrid-item:nth-child(3) .jss579{background-color:#5d88fb!important;}
+.jss482 .MuiGrid-container .MuiGrid-item:nth-child(4) .jss579{background-color:#1ea5a1!important;}
+
+
+
+
