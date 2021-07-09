@@ -4,11 +4,12 @@ https://www.daleseo.com/material-ui-styles/
 */
 
 /* Logo */
-.jss318:before{display:block;content:'BIS';font-weight:bold;font-size:24px;color:#fff!important;padding-top:30px;}
+.jss318{position:relative;}
+.jss318:before{display:block;content:'BIS';text-align:center;font-weight:bold;font-size:24px;color:#fff!important;padding-top:30px;}
 
 .jss335{font-size:0!important;height:20px!important;}
 .jss335 img{display:none;}
-.jss335:before{content:'';position:absolute;top:0;right:0;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
+.jss318:after{content:'';position:absolute;top:0;right:0;width:26px;height:26px;border-top:6px solid #fff;border-right:6px solid #fff;}
 .jss335:after{display:block;content:'Business Intelligence System';font-size:12px;color:#fff!important;}
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
