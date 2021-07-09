@@ -53,11 +53,11 @@ https://www.daleseo.com/material-ui-styles/
 .jss506 li:nth-child(4) h6 span{color:#1ea5a1!important;}
 
 
-.jss505 li:nth-child(1) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{color:#4f4793!important;}
-.jss505 li:nth-child(2) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{color:#715deb!important;}
-.jss505 li:nth-child(3) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{color:#5d88fb!important;}
-.jss505 li:nth-child(4) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{color:#1ea5a1!important;}
-.jss505 li:nth-child(4) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{color:#83786f!important;}
+.jss505 li:nth-child(1) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{background-color:#4f4793!important;}
+.jss505 li:nth-child(2) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{background-color:#715deb!important;}
+.jss505 li:nth-child(3) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{background-color:#5d88fb!important;}
+.jss505 li:nth-child(4) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{background-color:#1ea5a1!important;}
+.jss505 li:nth-child(4) .MuiLinearProgress-colorPrimary .MuiLinearProgress-bar{background-color:#83786f!important;}
 
 
 
