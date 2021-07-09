@@ -25,7 +25,7 @@ https://www.daleseo.com/material-ui-styles/
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.7)!important;}
-.MuiTypography-body1{color:#fff!important;}
+#sidebar .MuiTypography-body1{color:#fff!important;}
 .jss352 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
 .jss352:before{background:rgba(255, 255, 255, 0.7)!important;}
 .jss352 .MuiListItemIcon-root{color:#fff!important;}
