@@ -26,4 +26,4 @@ https://www.daleseo.com/material-ui-styles/
 .MuiTypography-body1{color:#ffffff!important;}
 .jss354 .MuiTypography-body1{color:yellow!important;}/* Menu Opened */
 
-.jss337{display:none;}/* Left User Del */
+.jss337{display:none!important;}/* Left User Del */
