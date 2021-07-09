@@ -19,7 +19,7 @@ https://www.daleseo.com/material-ui-styles/
 
 #mainContent .MuiPaper-rounded{border-radius:0!important;}
 #mainContent .MuiGrid-item div{border-radius:0!important;}
-#mainContent .jss283{background:#cccccc;}/* BG Color */
+#mainContent .jss283{background:#f2f0fd;}/* BG Color */
 #mainContent div .jss288{background-image:none!important;}/* BG img Del */
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
@@ -33,4 +33,6 @@ https://www.daleseo.com/material-ui-styles/
 
 .jss347.jss346{padding-top:40px!important}/* Logo Padding */
 
-.jss372 svg[class^="MuiSvgIcon"]{display:none!important;}
+.jss372 svg[class^="MuiSvgIcon"]{display:none!important;}/* Menu Arrow */
+
+.jss482 .MuiGrid-container .MuiGrid-item:nth-child(1) .jss579{background-color:#715deb!important;}
