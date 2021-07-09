@@ -19,16 +19,16 @@ https://www.daleseo.com/material-ui-styles/
 
 #mainContent .MuiPaper-rounded{border-radius:0!important;}
 #mainContent .MuiGrid-item div{border-radius:0!important;}
-#mainContent .MuiGrid-item .MuiAvatar-circle{border-radius:50%;}
+#mainContent .MuiGrid-item .MuiAvatar-circle{border-radius:50%!important;}
 #mainContent .jss283{background:#f2f0fd;}/* BG Color */
 #mainContent div .jss288{background-image:none!important;}/* BG img Del */
 #mainContent div .jss288 img{display:none!important;} /* BG img Del */
 
 .MuiListItemIcon-root{color:rgba(255, 255, 255, 0.7)!important;}
 .MuiTypography-body1{color:#fff!important;}
-.jss349 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
-.jss349:before{background:rgba(255, 255, 255, 0.7);}
-.jss349 .MuiListItemIcon-root{color:#fff!important;}
+.jss352 .MuiTypography-body1{font-weight:bold;color:#fff!important;}/* Menu Opened */
+.jss352:before{background:rgba(255, 255, 255, 0.7);}
+.jss352 .MuiListItemIcon-root{color:#fff!important;}
 
 .jss316 a + div{display:none!important;}/* Left User Del */
 
