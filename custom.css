@@ -5,11 +5,11 @@ https://www.daleseo.com/material-ui-styles/
 
 /* Logo */
 .jss318{position:relative;}
-.jss318:before{display:block;content:'BIS';line-height:35px;text-align:center;font-weight:bold;font-size:30px;color:#fff!important;padding-top:30px;}
+.jss318:before{display:block;content:'BIS';line-height:35px;text-align:center;font-weight:bold;font-size:30px;color:#fff!important;padding-top:40px;}
 
 .jss335{font-size:0!important;height:20px!important;padding:0!important}
 .jss335 img{display:none;}
-.jss318:after{content:'';position:absolute;top:29px;right:87px;width:16px;height:16px;border-top:4px solid #fff;border-right:4px solid #fff;}
+.jss318:after{content:'';position:absolute;top:39px;right:87px;width:16px;height:16px;border-top:4px solid #fff;border-right:4px solid #fff;}
 .jss335:after{display:block;content:'Business Intelligence System';font-size:12px;color:#fff!important;}
 
 .MuiPaper-root.MuiDrawer-paperAnchorLeft{background-color: #715deb!important;}
@@ -28,3 +28,5 @@ https://www.daleseo.com/material-ui-styles/
 .jss354 .MuiTypography-body1{color:yellow!important;}/* Menu Opened */
 
 .jss337{display:none!important;}/* Left User Del */
+
+.jss347.jss346{padding-top:40px!important}
