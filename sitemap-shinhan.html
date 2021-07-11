@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="sitemap.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+</head>
+
+<body>
+<div>
+
+	<!-- Content -->
+	<div class="content_wrap">
+		<div class="title_wrap">
+			<h3>전사 리포트</h3>
+		</div>
+		<!-- List -->
+		<div class="sitemap_wrap">
+			<div class="row">
+				<div class="col">
+					<h5>01.고객</h5>
+					<ul>
+						<li>
+							<a href="#">01.고객기본정보</a>
+							<ul>
+								<li>
+									<a href="#">내가만든개체</a>
+									<ul>
+										<li><a href="#">내가만든개체</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">01.고객기본정보(두낫콜)</a></li>
+						<li><a href="#">02.고객관계(레드플래그)</a></li>
+						<li><a href="#">02.고객관계(법정후견인)</a></li>
+						<li><a href="#">03.고객계좌(고위험 고객)</a></li>
+						<li><a href="#">03.고객계좌(외국인 가입고객)</a></li>
+						<li><a href="#">04.고객계약(신규계약)</a></li>
+						<li><a href="#">04.고객계약(유지계약)</a></li>
+						<li><a href="#">05.고객상품(연령별)</a></li>
+						<li><a href="#">05.고객상품(조직분류별)</a></li>
+						<li><a href="#">06.고객변경내역</a></li>
+						<li><a href="#">06.고객변경내역(리스크 고객)</a></li>
+						<li><a href="#">07.계좌이력</a></li>
+						<li><a href="#">07.계좌이력(은행방카)</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h5>02.접촉</h5>
+					<ul>
+						<li><a href="#">01.접촉고객안내(발송시스템)</a></li>
+						<li><a href="#">01.접촉고객안내(법정안내)</a></li>
+						<li><a href="#">02.안내발송(SMS)</a></li>
+						<li><a href="#">02.안내발송(고객안내장)</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h5>03.계약</h5>
+					<ul>
+						<li><a href="#">01.계약기본정보)</a></li>
+						<li><a href="#">01.계약기본정보(보험분석)</a></li>
+						<li><a href="#">02.계약수익자</a></li>
+						<li><a href="#">02.계약수익자(레드플레그)</a></li>
+						<li><a href="#">03.계약자피보험자</a></li>
+						<li><a href="#">03.계약자피보험자(보종)</a></li>
+						<li><a href="#">04.계약유지율(OL)</a></li>
+						<li><a href="#">04.계약유지율(OL)(모집)</a></li>
+						<li><a href="#">05.계약유지율(SL)</a></li>
+						<li><a href="#">05.계약유지율(SL)(수금FC)</a></li>
+						<li><a href="#">06.계약납입</a></li>
+						<li><a href="#">06.계약납입(수금FC)체</a></li>
+						<li><a href="#">07.해약</a></li>
+						<li><a href="#">07.해약(지급)</a></li>
+						<li><a href="#">08.모집FC계약</a></li>
+						<li><a href="#">08.모집FC계약(상품)</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h5>04.계약변경</h5>
+					<ul>
+						<li><a href="#">01.계약변경신청(변경사유별)</a></li>
+						<li><a href="#">01.계약별경신청(수금FC)</a></li>
+						<li><a href="#">02.건강연령변경신청</a></li>
+						<li><a href="#">02.건강연령변경신청(변경사유)</a></li>
+						<li><a href="#">03.계약자피보험자변경신청</a></li>
+						<li><a href="#">03.계약자피보험자변경신청(내역)</a></li>
+						<li><a href="#">04.계약수익자변경신청</a></li>
+						<li><a href="#">04.계약수익자변경신청(내역)</a></li>
+						<li><a href="#">05.상품변경신청</a></li>
+						<li><a href="#">05.상품변경신청(내역)</a></li>
+						<li><a href="#">06.수익자변경신청</a></li>
+						<li><a href="#">06.수익자변경신청(내역)</a></li>
+						<li><a href="#">07.지급변경신청</a></li>
+						<li><a href="#">07.지급변경신청(내역)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h5>05.보험상품</h5>
+					<ul>
+						<li><a href="#">01.상품(변액)</a></li>
+						<li><a href="#">01.상품(종신)</a></li>
+						<li><a href="#">02.펀드</a></li>
+						<li><a href="#">02.펀드(수익증권)</a></li>
+						<li><a href="#">03.보증</a></li>
+						<li><a href="#">03.보증(상세)</a></li>
+						<li><a href="#">04.보증이력</a></li>
+						<li><a href="#">04.보증이력(상세)</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h5>06.영업인사조직</h5>
+					<ul>
+						<li><a href="#">01.인사</a></li>
+						<li><a href="#">01.인사(FC)</a></li>
+						<li><a href="#">02.영업조직</a></li>
+						<li><a href="#">02.영업조직(상세)</a></li>
+						<li><a href="#">03.영업인사학력</a></li>
+						<li><a href="#">03.영업인사학력(상세)</a></li>
+						<li><a href="#">04.영업인사도입(OL)(TS합격여부)</a></li>
+						<li><a href="#">04.영업인사도입(OL)(상세)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //List -->
+	</div>
+	<!-- //Content -->
+</div>
+</body>
+
+</html>
