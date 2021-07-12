@@ -46,7 +46,7 @@
 
 /* Common Style */
 html, body{height:100%;min-height:800px;margin:0px; font-family:'NotoSans', sans-serif;}
-body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'NotoSans', sans-serif;font-size:14px;color:#333;}
+body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'NotoSans', sans-serif;font-size:14px;color:#666;}
 td {color:#484848;line-height:1.5em;}
 h2 {font-size:20px;line-height:1.6em;}
 h3 {font-size:18px;line-height:1.6em;}
