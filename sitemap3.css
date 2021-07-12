@@ -15,7 +15,7 @@ a:hover{text-decoration:underline}
 
  /* Content Page */
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
-.title_wrap {overflow:hidden;padding:10px 0 20px 0;} /* 20200906 - paddingLeft */
+.title_wrap {overflow:hidden;padding:10px 0 25px 0;} /* 20200906 - paddingLeft */
 
  /* 20200906 SiteMap */
 .sitemap_wrap .row{overflow:hidden;margin-bottom:30px;}
