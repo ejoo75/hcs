@@ -36,5 +36,5 @@ a:hover{text-decoration:underline}
 .sitemap_wrap li .ic_report {background-position:0 -272px;margin-right:7px;}
 .sitemap_wrap li .ic_none {background-position:0 -257px;margin-right:7px;}
 
-.sitemap_wrap, .sitemap_wrap ul{list-style: none;}
+.sitemap_wrap, .sitemap_wrap ul{list-style: none;border-left:1px solid #445fe6;}
 .sitemap_wrap *:before{width:15px;height:17px;display:inline-block;}
