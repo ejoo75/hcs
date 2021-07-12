@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="base.css?v=20210707001"/>
+<link rel="stylesheet" type="text/css" href="main.css?v=20210707001"/>
+</head>
+<body>
+	<div class="wrap">
+		<!--  -->
+		<header>
+			<div class="header_bg">
+				<h1><a href="javascript:fnGoMain();"><img src="images/logo-dark.png" style="width: 140px;" alt="PARADISE"></a></h1>
+				<div class="header_wrap">
+					<div class="gnb">
+						<div class="gnb_navi">
+							<!-- 20210711  수정
+							<ul>
+								<li id="notice" style="cursor:pointer;">공지사항</li>
+								<li>│</li>
+								<li id="allMenu" style="cursor:pointer;">전체 메뉴</li>
+								<li>│</li>
+								<li id="dataMng" style="cursor:pointer;">데이터 관리</li>
+								<li>│</li>
+								<li id="bookMarkList" style="cursor:pointer;">줄겨찾기 목록</li>
+							</ul>
+							-->
+							<ul>
+								<li id="notice" style="cursor:pointer;"><span class="material-icons" title="공지사항">notifications</span></li>
+								<li id="allMenu" style="cursor:pointer;"><span class="material-icons" title="전체 메뉴">map</span></li>
+								<li id="dataMng" style="cursor:pointer;"><span class="material-icons" title="데이터 관리">settings</span></li>
+								<li id="bookMarkList" style="cursor:pointer;"><span class="material-icons" title="즐겨찾기 목록">turned_in_not</span></li>
+							</ul>
+						</div>
+						<div class="log_info">
+							<ul>
+								<li class="user">
+									<span class="material-icons">account_circle</span><!-- 20210711 추가  -->
+									<span>홍길동</span>
+								</li>
+							</ul>
+						</div>
+						<!-- 내리포트 , 구독목록, 팀보고서 메뉴 표시 영역  -->
+						<div class="header_subMenu">
+							<ul>
+								<li id="myReport">내 리포트</li>
+								<!-- 20210711 <li> | </li>  삭제  -->
+								<li id="subscrList"> 구독목록 </li> 
+								<!-- 20210711 <li> | </li>  삭제  -->
+								<li id="systemMng">시스템 관리</li> 
+								<!-- 20210711 <li> | </li>  삭제  -->
+								<li id="teamReport"> 팀 리포트 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 대분류 메뉴 영역  -->
+			<div class="header_menu">
+				<div class="gnb_menu">
+					<div class="gnb_menu_navi">
+						<ul>
+							<li id="gnb_menu_navi_list1"> <span folder-id="1CB8F83F49D12BAE7C2C6DB14E26B866">그룹/경쟁사 실적</span> </li>
+							<li id="gnb_menu_navi_list2"> <span folder-id="5299E19D4867AF3B5C2A1BB02B8E7E70">고객</span> </li>
+							<li id="gnb_menu_navi_list3"> <span folder-id="D0D020AE45C546C3B27E4498A59E76CD">마케팅</span> </li>
+							<li id="gnb_menu_navi_list4"> <span folder-id="6CBF6EE448B73C590C8889963020BBA8">오퍼레이션</span> </li>
+							<li id="gnb_menu_navi_list5"> <span folder-id="36D0C3714F3FCBAC115D92B853A8783D">경영관리</span> </li>
+							<li id="gnb_menu_navi_list6"><span folder-id="4B7F54C74DE39B67371990931B61CF11">이메일링</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section>
+			<!-- Menu Layer -->
+			<!-- 전체 메뉴(대분류 기준 메뉴 구분) -->
+			<div id="MenuLayer" style="">
+				<div class="title_wrapper"><!-- 20210711 추가  -->
+					<h2>전체 메뉴</h2><!-- 20210711 추가  -->
+					<!-- 리포트 검색  -->
+					<div class="report_searchWraaper">
+						<span>검색</span> <input type="text" id="inputReportObjectSearchText"><img src="images/btn-search-thin-22.png">
+					</div>
+				</div><!-- 20210711 추가  -->
+				<!-- 전체 메뉴 영역  -->
+				<div class="allmenu_wrapper">
+					
+					<div class="menu_box1" folder-id="1CB8F83F49D12BAE7C2C6DB14E26B866"><span>그룹/경쟁사 실적</span>
+						<div class="menu_list1">
+							<ul>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">그룹 실적
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="F38EA7724034DF570CCE4BA0B1FBC069" report-type="55" report-struct="undefined"> 그룹 카지노/리조트 부문 일일 실적</li>
+										<li isfolder="false" report-id="5FCC6E604593A5743C388B9D67DB128F" report-type="55" report-struct="undefined"> 그룹 카지노/리조트 부문 월별 실적_____목표필요</li>
+										<li isfolder="false" report-id="EF5071524115E4508891EBB785C973CF" report-type="55" report-struct="undefined"> 그룹 등록고객 현황</li>
+										<li isfolder="false" report-id="61B18FF64EC5AEC059A7DEBAF4940BFD" report-type="55" report-struct="undefined"> 그룹 카지노 부문 실적</li>
+										<li isfolder="false" report-id="B0FD9F7249B340860116F5AB9E3639BB" report-type="55" report-struct="undefined"> 그룹 카지노 부문 일자별 실적(H)</li>
+										<li isfolder="false" report-id="F22DEF644AA779F565378698F86676BC" report-type="55" report-struct="undefined"> 그룹 카지노 부문 팀별 실적(S)_연간</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">카지노 부문 경쟁사 실적
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="B53ECD844491F89D120B6DA2D9361D06" report-type="55" report-struct="undefined"> 카지노 경쟁사 실적 비교</li>
+										<li isfolder="false" report-id="D7B9CF924BD01497900F22A919BEDB2B" report-type="55" report-struct="undefined"> 전국 카지노 실적 추이 보고</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_box2" folder-id="5299E19D4867AF3B5C2A1BB02B8E7E70"><span>고객</span>
+						<div class="menu_list2">
+							<ul>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">공통현황
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="7E0F27334C81C76ECEFA5ABE2DBD62DC" report-type="55" report-struct="undefined"> 총 등록고객수</li>
+										<li isfolder="false" report-id="F5CAB6964CAAF483CEF9128C6FF7D62D" report-type="55" report-struct="undefined"> 월별 등록고객수 상세조회</li>
+										<li isfolder="false" report-id="22A472024F1221B46F7944A42E2E38CC" report-type="55" report-struct="undefined"> 신규고객수</li>
+										<li isfolder="false" report-id="8EBBF52E46DA1C42F91250A66A7038D6" report-type="55" report-struct="undefined"> VOC 현황</li>
+										<li isfolder="false" report-id="3B55ECC149F4ACA83BDC32A9CB2CDB3D" report-type="55" report-struct="undefined"> VOC 상세검색</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">멤버십
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="A69E40554697E528282E56B9F44FC54E" report-type="55" report-struct="undefined"> 멤버십 회원수</li>
+										<li isfolder="false" report-id="0BCC98BC41721D66EEB8BFB609073512" report-type="55" report-struct="undefined"> 멤버십 회원 가입 채널</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">카지노
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="4DB8630F4E97CCD10C65258119BE66E4" report-type="55" report-struct="undefined"> 카지노 실적 고객 현황</li>
+										<li isfolder="false" report-id="995E93074B05A4851E481C947A08BFFE" report-type="55" report-struct="undefined"> 카지노 실적고객 현황 (반정형)</li>
+										<li isfolder="false" report-id="AE0C4A7647E7D576792A7EAA1A901F35" report-type="55" report-struct="undefined"> 카지노 신규고객 현황 (유입경로별)</li>
+										<li isfolder="false" report-id="6450A4AB4D4561191DB5C28F31389DAD" report-type="55" report-struct="undefined"> 카지노 이관고객 현황</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">리조트
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="C96B93C44FFBFD35BD3477B3396500E4" report-type="55" report-struct="undefined"> 리조트 실적고객 현황</li>
+										<li isfolder="false" report-id="C9E2AD66476C2E46048B2785B80086C2" report-type="55" report-struct="undefined"> 리조트 실적고객 현황 (반정형)</li>
+										<li isfolder="false" report-id="B3D907BC40BD225BD05CC2AC5CF0BF6C" report-type="55" report-struct="undefined"> 리조트 고객 세분군별 현황</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_box3" folder-id="D0D020AE45C546C3B27E4498A59E76CD"><span>마케팅</span>
+						<div class="menu_list3">
+							<ul>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">공통</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">카지노
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="BD6909364E82AA74F6910EAE55024700" report-type="55" report-struct="undefined"> 카지노 RFID기반 바카라 수익성</li>
+										<li isfolder="false" report-id="D2E9061A43A861BD48056EB6FE02EF6C" report-type="55" report-struct="undefined"> 카지노 마케팅 주간실적 추이</li>
+										<li isfolder="false" report-id="B0FBBF4043192C3E800FD6B67C005BBD" report-type="55" report-struct="undefined"> 카지노 마케팅 일일보고</li>
+										<li isfolder="false" report-id="F42C155E4EAD49DCF70FF79D9A67FE5A" report-type="55" report-struct="undefined"> VIP 일일보고</li>
+										<li isfolder="false" report-id="B78BA939403F4F241ABC7EBA6A4F6653" report-type="55" report-struct="undefined">귀빈청 매출보고</li>
+										<li isfolder="false" report-id="935096FC4D36DC3D5D7EFCAF84FB32ED" report-type="55" report-struct="undefined">유닛별 마케팅 비용 집계 및 마케팅 이익산출</li>
+										<li isfolder="false" report-id="741711954FA48379A12344AFB5F3F164" report-type="55" report-struct="undefined">카지노 마케팅 실적</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">리조트
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="AB15EBF44BA865BBC698D4BDC265F49E" report-type="55" report-struct="undefined">호텔 객실 마켓그룹별 일일 예약현황</li>
+										<li isfolder="false" report-id="679CBEF142A0942E293F59BA8DE68808" report-type="55" report-struct="undefined">호텔 객실 매출 상세 실적</li>
+										<li isfolder="false" report-id="FA0C60404E0D9155B44F1594DA53A45E" report-type="55" report-struct="undefined">호텔 객실 매출 상세 실적(목표/전년비)</li>
+										<li isfolder="false" report-id="63B26FA5469630FF720291802FF04F53" report-type="55" report-struct="undefined">호텔 객실 예약/취소 상세(결제일 기준)</li>
+										<li isfolder="false" report-id="C0DA19A243B1818AFFBC4C831B804EFF" report-type="55" report-struct="undefined">호텔 객실 예약/취소 상세(투숙일 기준)</li>
+										<li isfolder="false" report-id="F6E8B1404AFF7A8C6E3861B0C4E93C44" report-type="55" report-struct="undefined">호텔 객실 숙박일수</li>
+										<li isfolder="false" report-id="E263E04D4C06901185EEA1BF92C6F348" report-type="55" report-struct="undefined">호텔 객실상품 요금 가이드</li>
+										<li isfolder="false" report-id="DD523F1B47781D8BFB686A9F33ACC17C" report-type="55" report-struct="undefined">H6 호텔 객실 OTA 수수료</li>
+										<li isfolder="false" report-id="F7D941964AF3B481EC7FF58B09D0D872" report-type="55" report-struct="undefined">R1-1 호텔 레저 매출 실적</li>
+										<li isfolder="false" report-id="873E3BDC4E4D2F4F198D5486AA39AF49" report-type="55" report-struct="undefined">R1-2 리조트 품목별 판매현황</li>
+										<li isfolder="false" report-id="75D60C88485D091D0A8F4E8405F5A777" report-type="55" report-struct="undefined">R1-3 펀시티 사업부분별 매출 실적</li>
+										<li isfolder="false" report-id="C8A28D844884FA642455DF8E9A2172F6" report-type="55" report-struct="undefined">R1-4 영업장 시간대별 이용객 현황</li>
+										<li isfolder="false" report-id="AB6740314D39E80F620EFA85A9E52058" report-type="55" report-struct="undefined">호텔 식음 영업장별 매출 실적</li>
+										<li isfolder="false" report-id="306ED42B48294C7DA3AECEB0E4D8E181" report-type="55" report-struct="undefined">R2 플라자 직영샵 품목별 재고 현황</li>
+										<li isfolder="false" report-id="FA38DF934DF5D88FD0A8919E8A86E14B" report-type="55" report-struct="undefined">T18 리포트 마케팅 실적</li>
+										<li isfolder="false" report-id="14C65F3E4CAB8A9AC9E0ECA9D34A2278" report-type="55" report-struct="undefined">호텔 객실 매출 실적</li>
+										<li isfolder="false" report-id="195D280E4DDEA09B4D4047B889E406E9" report-type="55" report-struct="undefined">호텔 객실 예약 현황</li>
+										<li isfolder="false" report-id="FAD2947647535EC6E3863B9E9C783E3B" report-type="55" report-struct="undefined">호텔 식음 매출 실적</li>
+										<li isfolder="false" report-id="FA78F017442C302498F0F59B42E180CC" report-type="55" report-struct="undefined">T21 펀시티 실적</li>
+										<li isfolder="false" report-id="66B92871463943E1A2CCE8880F01124A" report-type="55" report-struct="undefined">리조트 Daily Business Report</li>
+										<li isfolder="false" report-id="316B870547084A49D0ACBE946ADBEF93" report-type="55" report-struct="undefined">리조트 Daily Business Report(SBU 상세)</li>
+										<li isfolder="false" report-id="346FB0D14D2C3844E5F9669044B6A4FE" report-type="55" report-struct="undefined">메뉴 원가분석</li>
+										<li isfolder="false" report-id="FE8D0FB14752463A931CAAB3FF03725B" report-type="55" report-struct="undefined">세일즈 담당자별 실적 현황</li>
+										<li isfolder="false" report-id="22B51C7A49A1BF010B867AB6AC0642CC" report-type="55" report-struct="undefined">호텔 객실 상품별 일일 예약현황</li>
+										<li isfolder="false" report-id="0EE1A16345FA9922C0BDB199C6728A84" report-type="55" report-struct="undefined">호텔 식음 주간 매출 상세</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">마케팅 활동</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_box4" folder-id="6CBF6EE448B73C590C8889963020BBA8"><span>오퍼레이션</span>
+						<div class="menu_list4">
+							<ul>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">카지노
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="3CFF49F841369586B2DF438B1240E7FD" report-type="55" report-struct="undefined">(C8) 시간대별 영업장 리뷰</li>
+										<li isfolder="false" report-id="4FB193134CB52EB9167FD78803C9ED62" report-type="55" report-struct="undefined">카지노 오퍼레이션 인력 현황</li>
+										<li isfolder="false" report-id="54820E5A49112F0EF5BED3960BF4113E" report-type="55" report-struct="undefined">C7 카드 &amp; Seal 소모량 추이</li>
+									</ul>
+								</li>
+								<li class="list_show" isfolder="true"><img src="images/icon-folder-open-16.png">리조트
+									<ul class="reportList_wrapper" style="margin-left:20px;">
+										<li isfolder="false" report-id="3587656349D34293E649798C8C7885E2" report-type="55" report-struct="undefined">호텔 객실 고객용품 제공 현황</li>
+										<li isfolder="false" report-id="9421F5B64AA71398FFB27A9B3FE30473" report-type="55" report-struct="undefined">호텔 객실 업무메신저 접수 현황</li>
+										<li isfolder="false" report-id="8289A3FA40A8E1B1F652769B54C9205A" report-type="55" report-struct="undefined">H17-2 월별 재료비 소진현황</li>
+										<li isfolder="false" report-id="A579A355436C821E2DC1DFA7E3990D3C" report-type="55" report-struct="undefined">호텔 객실 타입별 운영 현황</li>
+										<li isfolder="false" report-id="3385C28B4D419D6E2CAFA0B26644D49E" report-type="55" report-struct="undefined">호텔 객실 업그레이드 현황</li>
+										<li isfolder="false" report-id="A7F723A64A2C39436A7A3CA13FAB1494" report-type="55" report-struct="undefined">호텔 객실 체크인 대기고객 현황</li>
+										<li isfolder="false" report-id="1BDA98FD450D3730F4A090A5BA3D9D06" report-type="55" report-struct="undefined">콜센터 인입콜 현황</li>
+										<li isfolder="false" report-id="0A923004463302D52119D98BB026C130" report-type="55" report-struct="undefined">IR14 선수금 반제 요청서</li>
+										<li isfolder="false" report-id="327554994A0DA8B435BAC28243352279" report-type="55" report-struct="undefined">호텔 객실 운영 현황</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_box5" folder-id="36D0C3714F3FCBAC115D92B853A8783D"><span>경영관리</span>
+						<div class="menu_list5">
+							<ul>
+								<li isfolder="false" report-id="C6EF81274AFDFD129AF2D5995B344A9B" report-type="55" report-struct="undefined">IR1 월별 경영실적</li>
+								<li isfolder="false" report-id="CEC61DF04CB359471B47CCB637866AE5" report-type="55" report-struct="undefined">IR2 월별 경영실적 상세</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_box6" folder-id="4B7F54C74DE39B67371990931B61CF11"><span>이메일링</span>
+						<div class="menu_list6">
+							<ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</html>
