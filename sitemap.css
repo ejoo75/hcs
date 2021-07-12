@@ -7,7 +7,7 @@ html, body{height:100%;min-height:800px;margin:0px; font-family:'Open Sans', Ari
 body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'Open Sans', Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 td {font-family:'Open Sans', Arial, tahoma;color:#484848;line-height:1.5em;}
 h2 {font-family:'Open Sans', Arial, tahoma;font-size:30px;line-height:1.6em;}
-h3 {font-family:'Open Sans', Arial, tahoma;color::#445fe6;font-size:24px;font-weight:400;line-height:1.4em;}
+h3 {font-family:'Open Sans', Arial, tahoma;color:#445fe6;font-size:24px;font-weight:400;line-height:1.4em;}
 th {font-size:11px}
 img{border:0px;}
 td img, td input, td select, td .button{vertical-align:middle}
@@ -28,12 +28,12 @@ a:hover{text-decoration:underline}
  /* 20200906 SiteMap */
 .row .col {float:left; width:calc(14.28% - 12px); margin-right:13px;}
 .row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
-.sitemap_wrap .row .col {width:calc(25% - 13px);border-top:1px solidi #ddd;}
+.sitemap_wrap .row .col {width:calc(25% - 13px);border-top:1px solid #ddd;}
 .sitemap_wrap h5{color:#222;line-height:40px;font-size:18px;padding-left:15px;margin-bottom:5px}
 .sitemap_wrap ul li {line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
-.sitemap_wrap ul li ul {border-top:1px solid #cecfd1;}
-.sitemap_wrap ul li ul li {line-height:30px;font-size:14px;font-weight:400;border-bottom:1px solid #ebeced;}
-.sitemap_wrap ul li ul li:last-child {border-bottom:none;}
+.sitemap_wrap ul li ul {}
+.sitemap_wrap ul li ul li {line-height:30px;font-size:14px;font-weight:400;}
+.sitemap_wrap ul li ul li:last-child {}
 .sitemap_wrap ul li ul li label {padding-left:30px;}
 .sitemap_wrap ul li ul li ul {border-top:1px solid #ebeced;}
 .sitemap_wrap ul li ul li ul li {line-height:25px;font-size:13px;border-bottom:1px solid #f7f7f7;}
