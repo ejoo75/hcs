@@ -19,7 +19,7 @@ a:hover{text-decoration:underline}
 
  /* 20200906 SiteMap */
 .sitemap_wrap .row{overflow:hidden;}
-.sitemap_wrap .row .col {display:flex;border-top:1px solid #ddd; margin-right:13px;}
+.sitemap_wrap .row .col {display:flex;border-top:1px solid #ddd; margin-bottom:;10px;margin-right:13px;}
 .sitemap_wrap h5{width:20%;color:#222;line-height:50px;font-size:18px;padding-left:15px;}
 .sitemap_wrap ul{width:80%;}
 .sitemap_wrap ul li {display:inline-block;vertical-align:top;width:24%; line-height:35px;font-size:16px;font-weight:bold;padding-top:10px;padding-left:15px;}
