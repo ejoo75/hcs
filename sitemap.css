@@ -23,12 +23,12 @@ a:hover{text-decoration:underline}
 
 .title_wrap {overflow:hidden;padding:10px 0 20px 0;} /* 20200906 - paddingLeft */
 
-.row {overflow:hidden;}
 
  /* 20200906 SiteMap */
-.row .col {float:left; width:calc(14.28% - 12px); margin-right:13px;}
 .row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
-.sitemap_wrap .row .col {width:calc(25% - 13px);border-top:1px solid #ddd;}
+
+.sitemap_wrap .row{overflow:hidden;margin-bottom:30px;}
+.sitemap_wrap .row .col {float:left;width:calc(25% - 13px);border-top:1px solid #ddd; margin-right:13px;}
 .sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
 .sitemap_wrap ul li {line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
 .sitemap_wrap ul li ul {margin-bottom:5px;}
