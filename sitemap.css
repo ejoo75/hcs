@@ -28,8 +28,8 @@ a:hover{text-decoration:underline}
  /* 20200906 SiteMap */
 .row .col {float:left; width:calc(14.28% - 12px); margin-right:13px;}
 .row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
-.sitemap_wrap .row .col {width:calc(25% - 13px);}
-.sitemap_wrap h5{line-height:40px;font-size:14px;background-color:#ffe478;padding-left:15px;margin-bottom:5px}
+.sitemap_wrap .row .col {width:calc(25% - 13px);border-top:1px sold #ddd;}
+.sitemap_wrap h5{color:#222;line-height:40px;font-size:14px;padding-left:15px;margin-bottom:5px}
 .sitemap_wrap ul li {line-height:35px;font-size:13px;font-weight:bold;padding-left:15px;}
 .sitemap_wrap ul li ul {border-top:1px solid #cecfd1;}
 .sitemap_wrap ul li ul li {line-height:30px;font-size:12px;font-weight:normal;border-bottom:1px solid #ebeced;}
