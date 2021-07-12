@@ -5,28 +5,19 @@
 
 html, body{height:100%;min-height:800px;margin:0px; font-family:'Open Sans', Arial, tahoma}
 body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'Open Sans', Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
-td {font-family:'Open Sans', Arial, tahoma;color:#484848;line-height:1.5em;}
-h2 {font-family:'Open Sans', Arial, tahoma;font-size:30px;line-height:1.6em;}
 h3 {font-family:'Open Sans', Arial, tahoma;color:#445fe6;font-size:24px;font-weight:400;line-height:1.4em;}
-th {font-size:11px}
 img{border:0px;}
 td img, td input, td select, td .button{vertical-align:middle}
 td{list-style-type:none;margin:0;padding:0}
 ul, dl, li, ol, h1, h2, h3, h4, h5, h6, dd, dt, p, div{list-style-type:none;margin:0;padding:0}
-em, address{font-style:normal}
-form{margin:0;padding:0}
 a{color:#222;text-decoration:none}
 a:hover{text-decoration:underline}
 
  /* Content Page */
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
-
 .title_wrap {overflow:hidden;padding:10px 0 20px 0;} /* 20200906 - paddingLeft */
 
-
  /* 20200906 SiteMap */
-.row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
-
 .sitemap_wrap .row{overflow:hidden;margin-bottom:30px;}
 .sitemap_wrap .row .col {float:left;width:calc(25% - 13px);border-top:1px solid #ddd; margin-right:13px;}
 .sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
@@ -47,12 +38,4 @@ a:hover{text-decoration:underline}
 
 .sitemap_wrap, .sitemap_wrap ul{list-style: none;}
 .sitemap_wrap *:before{width:15px;height:17px;display:inline-block;}
-.sitemap_wrap label{cursor: pointer;margin-left:-15px;}
-.sitemap_wrap label:before{content:'';background:url(../images/icons.png) no-repeat -4px -212px;vertical-align: middle;}
-.sitemap_wrap input[type="checkbox"] {display: none;}
-.sitemap_wrap input[type="checkbox"]:checked~ul {display:block;}
-.sitemap_wrap input[type="checkbox"]~ul {display: none;}
-.sitemap_wrap input[type="checkbox"]:checked+label:before{content:'';background:url(../images/icons.png) no-repeat -4px -242px;vertical-align: middle;}
-.mt10 {margin-top:10px;}
-.col_1 li {padding-left:15px;}
 
