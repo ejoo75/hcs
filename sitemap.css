@@ -19,15 +19,15 @@ a:hover{text-decoration:underline}
 
  /* 20200906 SiteMap */
 .sitemap_wrap .row{overflow:hidden;}
-.sitemap_wrap .row .col {display:flex;border-top:1px solid #ddd; margin-bottom:;10px;margin-right:13px;}
+.sitemap_wrap .row .col {display:flex;border-top:1px solid #ddd; margin-bottom:10px;margin-right:13px;}
 .sitemap_wrap h5{width:20%;color:#222;line-height:50px;font-size:18px;padding-left:15px;}
 .sitemap_wrap ul{width:80%;}
 .sitemap_wrap ul li {display:inline-block;vertical-align:top;width:24%; line-height:35px;font-size:16px;font-weight:bold;padding-top:10px;}
 .sitemap_wrap ul li ul {border-top:1px solid #eee;margin-bottom:5px;}
-.sitemap_wrap ul li ul li {display:inherit;width:inherit;line-height:30px;font-size:14px;font-weight:400;padding-top:inherit; padding-left:15px;}
+.sitemap_wrap ul li ul li {display:inherit;width:inherit;line-height:30px;font-size:14px;font-weight:400;padding-top:inherit;}
 .sitemap_wrap ul li ul li label {padding-left:30px;}
 .sitemap_wrap ul li ul li ul {border-top:inherit;}
-.sitemap_wrap ul li ul li ul li {line-height:25px;font-size:13px;}
+.sitemap_wrap ul li ul li ul li {line-height:25px;font-size:13px;padding-left:15px;}
 .sitemap_wrap ul li ul li ul li label, .sitemap_wrap ul li ul li ul li ul li a {padding-left:45px;}
 .sitemap_wrap ul li ul li ul li ul {border-top:none;}
 .sitemap_wrap ul li ul li ul li ul li {font-size: 12px;}
