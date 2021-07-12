@@ -1,4 +1,4 @@
-/* CSS Document */
+ㅣ/* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 @charset "utf-8";
@@ -30,8 +30,7 @@ a:hover{text-decoration:underline}
 .row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
 .sitemap_wrap .row .col {width:calc(25% - 13px);}
 .sitemap_wrap h5{line-height:40px;font-size:14px;background-color:#ffe478;padding-left:15px;margin-bottom:5px}
-.sitemap_wrap ul li {line-height:35px;font-size:13px;font-weight:bold;border-bottom:1px solid #cecfd1;}
-.sitemap_wrap ul li label, .sitemap_wrap ul li a, .sitemap_wrap ul li ul li a{padding-left:15px;}
+.sitemap_wrap ul li {line-height:35px;font-size:13px;font-weight:bold;padding-left:15px;}
 .sitemap_wrap ul li ul {border-top:1px solid #cecfd1;}
 .sitemap_wrap ul li ul li {line-height:30px;font-size:12px;font-weight:normal;border-bottom:1px solid #ebeced;}
 .sitemap_wrap ul li ul li:last-child {border-bottom:none;}
@@ -39,7 +38,6 @@ a:hover{text-decoration:underline}
 .sitemap_wrap ul li ul li ul {border-top:1px solid #ebeced;}
 .sitemap_wrap ul li ul li ul li {line-height:25px;font-size:11px;border-bottom:1px solid #f7f7f7;}
 .sitemap_wrap ul li ul li ul li label, .sitemap_wrap ul li ul li ul li ul li a {padding-left:45px;}
-.sitemap_wrap ul li ul li ul li a {padding-left:30px;}
 .sitemap_wrap ul li ul li ul li ul {border-top:none;}
 .sitemap_wrap li i{display:inline-block;vertical-align:middle;width:17px;height:17px; background:url(../images/icons.png) no-repeat;}
 .sitemap_wrap li .ic_report {background-position:0 -272px;margin-right:7px;}
