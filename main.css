@@ -4,7 +4,7 @@
 
 /* Site Layout Style */
 
-header .header_bg{height: 42px; width: 100%; background: rgb(27 0 0);border-bottom:1px solid #383735;}
+header .header_bg{height: 42px; width: 100%; background: rgb(27 0 0);border-bottom:1px solid rgb(102 84 54);}
 header .header_menu{height: 34px; width: 100%; background: rgb(55 31 0);}
 header h1{position: absolute; top: 0px; left:25px; margin: 8px 0px 0px 0px; z-index:999}
 
@@ -30,7 +30,7 @@ header .gnb_menu_navi {position:relative; float:left; margin-top:9px;}
 header .gnb_menu_navi > ul > li {float:left; display:inline; padding:0px 50px; text-decoration:none; margin:0; font-size:14px; font-weight: bold; color:rgba(255, 255, 255, 0.8);}
 header .gnb_menu_navi > ul > li > span {cursor: pointer;}
 header .gnb_menu_navi > ul > li > span:hover {color: #ffffff;}
-header .gnb_menu_navi .gnb_menu_box { position: absolute; top: 25px; background-color: #fff; border: 2px solid #DEE2E5; border-top:0px; padding: 0px 15px 15px 15px; width: 300px; overflow: auto; color: #000; z-index: 9999;}
+header .gnb_menu_navi .gnb_menu_box { position: absolute; top: 25px; background-color: rgb(102 84 54); border: 2px solid #DEE2E5; border-top:0px; padding: 0px 15px 15px 15px; width: 300px; overflow: auto; color: #000; z-index: 9999;}
 header .gnb_menu_navi .gnb_menu_box > ul > li{line-height:1.4em;}
 header .gnb_menu_navi .gnb_menu_box > ul > li[isFolder="false"] { font-weight: normal; cursor: pointer; margin: 7px 0px;}
 header .gnb_menu_navi .gnb_menu_box > ul > li[isFolder="false"]:hover { font-weight: 900;}
