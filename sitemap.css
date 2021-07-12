@@ -19,10 +19,10 @@ a:hover{text-decoration:underline}
 
  /* 20200906 SiteMap */
 .sitemap_wrap .row{overflow:hidden;}
-.sitemap_wrap .row .col {border-top:1px solid #ddd; margin-right:13px;}
-.sitemap_wrap h5{display:inline-block;width:20%;color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
-.sitemap_wrap ul{display:inline-block;width:80%;}
-.sitemap_wrap ul li {display:inline-block;width:25%; line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
+.sitemap_wrap .row .col {display:flex;border-top:1px solid #ddd; margin-right:13px;}
+.sitemap_wrap h5{width:20%;color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
+.sitemap_wrap ul{width:80%;}
+.sitemap_wrap ul li {display:inline-block;vertical-align:top;width:25%; line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
 .sitemap_wrap ul li ul {margin-bottom:5px;}
 .sitemap_wrap ul li ul li {display:inherit;width:inherit;line-height:30px;font-size:14px;font-weight:400;}
 .sitemap_wrap ul li ul li:last-child {}
