@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%; ">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="datamanage-excel.css?v=20210707001"/>
+</head>
+<body style="width: 100%; height: 98%;">
+	<div class="datamanageHeader">
+		<p>데이터 관리 - Excel Upload</p>
+	</div>
+	<div class="datamanageBody">
+		<div class="excelSearchWrapper">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<span class="searchTypeSpan">템플릿명</span>
+							<select id="selectTemplateNm">
+								<option value="전국카지노 실적 업로드" templateid="UPL_CM_CMPY_0101"> 전국카지노 실적 업로드 </option>
+								<option value="CSO(기획) 매출 실적 업로드" templateid="UPL_CT_SALE_0101"> CSO(기획) 매출 실적 업로드 </option>
+								<option value="CSO(기획) 비용 실적 업로드" templateid="UPL_CT_COST_0101"> CSO(기획) 비용 실적 업로드 </option>
+								<option value="고객 설문 내역 업로드" templateid="UPL_ET_SURV_0101"> 고객 설문 내역 업로드 </option>
+							</select>
+						</td>
+						<td>
+							<span class="searchTypeSpan">담당자</span>
+							<input type="text" id="excelCharger" value="TEST"> 
+						</td>
+						<td><span class="searchExcelBtn">조회</span></td>
+					</tr>
+					<tr>
+						<td><span class="searchTypeSpan">주기항목</span><input type="text" id="excelCycle" value="월"></td>
+						<td><span class="searchTypeSpan">버전</span><input type="text" id="excelVersion"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="searchTypeSpan">상세</span><input type="text" id="excelDesc" value="전국카지노 실적 업로드"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="excelBtnWrapper">
+			<span id="excelDownloadBtn">양식다운로드</span>	
+			<input type="file" id="excelFile" name="excelFile">		
+			<span id="excelUploadBtn">엑셀업로드</span>
+		</div>
+		<div class="excelTemplateResultWrapper">
+			<table id="excelTemplateTbl" style="width: 1838.76px;"> 
+				<thead id="templateThead">
+					<th class="templateHead" style="width:130px;">Create Version</th>
+					<th class="templateAttrHead">매출년월</th>
+					<th class="templateAttrHead">전국카지노회사명</th>
+					<th class="templateAttrHead">전국카지노회사코드</th>
+					<th class="templateValueHead">순매출금액</th>
+					<th class="templateValueHead">입장고객수</th>
+				</thead> 
+				<tbody id="templateTbody">
+					<tr id="templateRow1">
+						<td>1</td><td>202001</td><td>워커힐</td><td>610</td><td>23106000000</td><td>44155</td>
+					</tr>
+					<tr id="templateRow2">
+						<td>1</td><td>202001</td><td>부 산</td><td>630</td><td>5014000000</td><td>11546</td>
+					</tr>
+					<tr id="templateRow3">
+						<td>1</td><td>202001</td><td>파라다이스시티</td><td>620</td><td>37838000000</td><td>32327</td>
+					</tr>
+					<tr id="templateRow4">
+						<td>1</td><td>202001</td><td>세븐럭강남</td><td>810</td><td>26088000000</td><td>37877</td>
+					</tr>
+					<tr id="templateRow5">
+						<td>1</td><td>202001</td><td>세븐럭힐튼</td><td>820</td><td>21689000000</td><td>62985</td>
+					</tr>
+					<tr id="templateRow6">
+						<td>1</td><td>202001</td><td>세븐럭롯데</td><td>830</td><td>6804000000</td><td>19806</td>
+					</tr>
+					<tr id="templateRow7">
+						<td>1</td><td>202001</td><td>알펜시아</td><td>ALP</td><td>22000000</td><td>844</td>
+					</tr>
+					<tr id="templateRow8">
+						<td>1</td><td>202001</td><td>인터불고(대구)</td><td>INT</td><td>2187000000</td><td>8029</td>
+					</tr>
+					<tr id="templateRow9">
+						<td>1</td><td>202001</td><td>공즈(제주라마다)</td><td>GNZ</td><td>1773000000</td><td>2517</td>
+					</tr>
+					<tr id="templateRow10">
+						<td>1</td><td>202001</td><td>제주(그랜드)</td><td>640</td><td>5487000000</td><td>16517</td>
+					</tr>
+					<tr id="templateRow11">
+						<td>1</td><td>202001</td><td>아람만</td><td>ARM</td><td>-846000000</td><td>3004</td>
+					</tr>
+					<tr id="templateRow12">
+						<td>1</td><td>202001</td><td>로얄팔레스(제주오리엔탈)</td><td>RYL</td><td>731000000</td><td>2279</td>
+					</tr>
+					<tr id="templateRow13">
+						<td>1</td><td>202001</td><td>엘티(제주롯데)</td><td>LOT</td><td>599000000</td><td>549</td>
+					</tr>
+					<tr id="templateRow5">
+						<td>1</td><td>202001</td><td>세븐럭힐튼</td><td>820</td><td>21689000000</td><td>62985</td>
+					</tr>
+					<tr id="templateRow6">
+						<td>1</td><td>202001</td><td>세븐럭롯데</td><td>830</td><td>6804000000</td><td>19806</td>
+					</tr>
+					<tr id="templateRow7">
+						<td>1</td><td>202001</td><td>알펜시아</td><td>ALP</td><td>22000000</td><td>844</td>
+					</tr>
+					<tr id="templateRow8">
+						<td>1</td><td>202001</td><td>인터불고(대구)</td><td>INT</td><td>2187000000</td><td>8029</td>
+					</tr>
+					<tr id="templateRow9">
+						<td>1</td><td>202001</td><td>공즈(제주라마다)</td><td>GNZ</td><td>1773000000</td><td>2517</td>
+					</tr>
+					<tr id="templateRow10">
+						<td>1</td><td>202001</td><td>제주(그랜드)</td><td>640</td><td>5487000000</td><td>16517</td>
+					</tr>
+					<tr id="templateRow11">
+						<td>1</td><td>202001</td><td>아람만</td><td>ARM</td><td>-846000000</td><td>3004</td>
+					</tr>
+					<tr id="templateRow12">
+						<td>1</td><td>202001</td><td>로얄팔레스(제주오리엔탈)</td><td>RYL</td><td>731000000</td><td>2279</td>
+					</tr>
+					<tr id="templateRow13">
+						<td>1</td><td>202001</td><td>엘티(제주롯데)</td><td>LOT</td><td>599000000</td><td>549</td>
+					</tr>
+					<tr id="templateRow5">
+						<td>1</td><td>202001</td><td>세븐럭힐튼</td><td>820</td><td>21689000000</td><td>62985</td>
+					</tr>
+					<tr id="templateRow6">
+						<td>1</td><td>202001</td><td>세븐럭롯데</td><td>830</td><td>6804000000</td><td>19806</td>
+					</tr>
+					<tr id="templateRow7">
+						<td>1</td><td>202001</td><td>알펜시아</td><td>ALP</td><td>22000000</td><td>844</td>
+					</tr>
+					<tr id="templateRow8">
+						<td>1</td><td>202001</td><td>인터불고(대구)</td><td>INT</td><td>2187000000</td><td>8029</td>
+					</tr>
+					<tr id="templateRow9">
+						<td>1</td><td>202001</td><td>공즈(제주라마다)</td><td>GNZ</td><td>1773000000</td><td>2517</td>
+					</tr>
+					<tr id="templateRow10">
+						<td>1</td><td>202001</td><td>제주(그랜드)</td><td>640</td><td>5487000000</td><td>16517</td>
+					</tr>
+					<tr id="templateRow11">
+						<td>1</td><td>202001</td><td>아람만</td><td>ARM</td><td>-846000000</td><td>3004</td>
+					</tr>
+					<tr id="templateRow12">
+						<td>1</td><td>202001</td><td>로얄팔레스(제주오리엔탈)</td><td>RYL</td><td>731000000</td><td>2279</td>
+					</tr>
+					<tr id="templateRow13">
+						<td>1</td><td>202001</td><td>엘티(제주롯데)</td><td>LOT</td><td>599000000</td><td>549</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

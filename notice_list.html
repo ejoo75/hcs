@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%; ">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="notice.css?v=20210707001"/>
+</head>
+<body style="width: 100%; height: 100%; margin: 0px;">
+	<div class="noticeHeader">
+		<p style="margin: 0px;">공지사항</p>
+	</div>
+	
+	<div class="writeBtnWrapper">
+		<select name="type" id="searchTypeSelect">
+			<option value="T">제목</option>
+			<option value="C">내용</option>
+			<option value="W">작성자</option>
+		</select>
+		<input type="text" name="keyword" id="searchNotice" value=""><img id="searchBtnIcon" src="images/icon-btn-search-16.png">
+	<span id="writeBtn">글쓰기</span></div>
+
+	<div class="noticeListWrapper">
+		<table>
+			<thead>
+				<tr>
+					<th style="width: 65px;">NO</th><th>제목</th><th width="150px;">등록일</th><th width="140px;">작성자</th>
+				</tr>
+			</thead>
+				<tbody><tr notice-id="2021-07-08-00002" notice-pagenum="1" notice-amount="15">
+					<td style="text-align: center;">2 </td>
+					<td>공지사항 확인</td>
+					<td style="text-align: center;">2021-07-08</td>
+					<td style="text-align: center;">
+							paradise
+					</td>
+				</tr>
+			
+				<tr notice-id="2021-07-07-00001" notice-pagenum="1" notice-amount="15">
+					<td style="text-align: center;">1 </td>
+					<td>공지 테스트</td>
+					<td style="text-align: center;">2021-07-07</td>
+					<td style="text-align: center;">
+							paradise		
+					</td>
+				</tr>
+			
+		</tbody></table>
+	</div>
+	
+	<div class="pagingWrapper">
+		<ul class="pagination">
+				<li class="pageNumBtn active"><a href="1">1</a></li>				
+		</ul>
+	</div>
+
+</body>
+</html>

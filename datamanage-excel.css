@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face{ 
+	font-family:'NotoSans'; 
+	src: url('font/NotoSans-Regular.ttf') format('truetype');
+	font-weight: normal; font-style: normal;
+}
+body { background: #FAFAFA; font-family: 'NotoSans' !important;}
+
+.datamanageHeader { background: #7B6D5D; border: 2px solid #7B6D5D; width: 99%;}
+.datamanageHeader p {margin: 0px; padding: 10px 30px; color: #fff; font-weight: bold; font-size: 18px;}
+.datamanageBody {width: 99%; height: 93%; border: 2px solid #858E96; border-top: 0px;}
+
+.excelSearchWrapper { padding: 20px;}
+.excelSearchWrapper table { width: 100%; height: 130px; font-size: 13px; background: #DEE2E5; padding: 10px; }
+.excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center;}
+.excelSearchWrapper table > tbody > tr > td:first-child { width: 60%;}
+.excelSearchWrapper table > tbody > tr > td:nth-child(2) { width: 30%;}
+.excelSearchWrapper table > tbody > tr > td > .searchTypeSpan {display: inline-block; width: 55px; text-align: right; margin-right: 6px;}
+.excelSearchWrapper table > tbody > tr > td > #selectTemplateNm { width: 80%; height: 22px; padding-left: 10px; }
+.excelSearchWrapper table > tbody > tr > td > input[type='text'] { padding-left: 10px; }
+.excelSearchWrapper table > tbody > tr > td > #excelCharger {width: 50%; }
+.excelSearchWrapper table > tbody > tr > td > #excelCycle { width: 50%; }
+.excelSearchWrapper table > tbody > tr > td > #excelVersion { width: 10%; }
+.excelSearchWrapper table > tbody > tr > td > #excelDesc {width: 80%; }
+.searchExcelBtn {display: inline-block; width: 60px; height: 20px; background: #21201E; color: #fff; text-align: center; padding: 5px 0px; border-radius: 5px; cursor: pointer; }
+
+.excelBtnWrapper { font-size: 13px; padding: 0px 20px; text-align: right;}
+.excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; text-align: center; padding: 3px 0px; border: 1px solid #858E96; border-radius: 5px; cursor: pointer; float: left;}
+.excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; text-align: center; padding: 3px 0px; border: 1px solid #858E96; border-radius: 5px; cursor: pointer;}
+
+.excelTemplateResultWrapper { width : 97%; height: 68%; overflow : auto; margin-top: 10px; padding: 0px 20px;}
+.excelTemplateResultWrapper > #excelTemplateTbl { border: 1px solid #DEE2E5; border-collapse: collapse; }
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > th { border: 1px solid #DEE2E5; height: 25px; white-space: nowrap;}
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateHead { background: orange; }
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateAttrHead { background: red; }
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateValueHead { background: red; }
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateTbody > tr > td {border: 1px solid #DEE2E5; text-align: center;}
+#emptyDiv { text-align: center; font-weight: bold;}
