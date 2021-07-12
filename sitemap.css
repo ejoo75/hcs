@@ -29,8 +29,8 @@ a:hover{text-decoration:underline}
 .row .col {float:left; width:calc(14.28% - 12px); margin-right:13px;}
 .row .col.float_right {float:right; width:calc(14.28% - 10px); margin-right:0;}
 .sitemap_wrap .row .col {width:calc(25% - 13px);border-top:1px solid #ddd;}
-.sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;padding-left:15px;}
-.sitemap_wrap ul li {line-height:35px;font-size:16px;font-weight:400;padding-left:15px;border-bottom:1px solid #eee;}
+.sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
+.sitemap_wrap ul li {line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
 .sitemap_wrap ul li ul {margin-bottom:5px;}
 .sitemap_wrap ul li ul li {line-height:30px;font-size:14px;font-weight:400;}
 .sitemap_wrap ul li ul li:last-child {}
