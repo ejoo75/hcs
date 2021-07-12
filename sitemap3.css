@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 html, body{height:100%;min-height:800px;margin:0px; font-family:'Open Sans', Arial, tahoma}
-body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'Open Sans', Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
+body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{box-sizing:border-box;font-family:'Open Sans', Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 h3 {font-family:'Open Sans', Arial, tahoma;color:#445fe6;font-size:24px;font-weight:400;line-height:1.4em;}
 img{border:0px;}
 td img, td input, td select, td .button{vertical-align:middle}
@@ -20,7 +20,7 @@ a:hover{text-decoration:underline}
  /* 20200906 SiteMap */
 .sitemap_wrap .row{overflow:hidden;margin-bottom:30px;}
 .sitemap_wrap .row .col {float:left;width:calc(25% - 13px); border-left:1px solid #445fe6; margin-right:13px;}
-.sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;padding-left:15px;border-bottom:1px solid #eee;}
+.sitemap_wrap h5{color:#222;line-height:50px;font-size:18px;margin-left:15px;border-bottom:1px solid #ddd;}
 .sitemap_wrap ul li {line-height:35px;font-size:16px;font-weight:400;padding-left:15px;}
 .sitemap_wrap ul li ul {margin-bottom:5px;}
 .sitemap_wrap ul li ul li {line-height:30px;font-size:14px;font-weight:400;}
