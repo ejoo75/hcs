@@ -4,8 +4,8 @@
 
 /* Site Layout Style */
 
-header .header_bg{height: 42px; width: 100%; background: #21201E;}
-header .header_menu{height: 34px; width: 100%; background: #7c6c5d;}
+header .header_bg{height: 42px; width: 100%; background: rgb(27 0 0);}
+header .header_menu{height: 34px; width: 100%; background: rgb(55 31 0);}
 header h1{position: absolute; top: 0px; left:25px; margin: 8px 0px 0px 0px; z-index:999}
 
 header ul {list-style:none; padding-left:0px;}
