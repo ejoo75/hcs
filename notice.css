@@ -44,7 +44,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeListWrapper > table > tbody > tr > td:last-child { border-right: 0px; }
 .noticeListWrapper > table > tbody > tr > td:nth-child(2) { padding-left: 20px;}
 .noticeListWrapper .emptyList {text-align: center; border: none;}
-.writeBtnWrapper { margin: 10px 20px 10px; text-align: right;}
+.writeBtnWrapper { margin: 14px 20px 10px; text-align: right;}
 .writeBtnWrapper span { cursor: pointer; color:#fff; display: inline-block; width: 65px; height: 30px; background: #888; text-align: center;
     font-size: 13px; line-height: 30px; font-weight: bold; border-radius: 3px;}
 #cudResultWrapper {position: absolute; top: 80px; left: 574px;}
