@@ -7,9 +7,9 @@ input:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-co
 input:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
-select {padding-left:7px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../images/ic_dropdown.png) no-repeat right center}
-select:hover {background-image:url(../images/ic_dropdown_hover.png)}
-select:focus, select:active {background-image:url(../images/ic_dropdown_active.png)}
+select {padding-left:7px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(images/ic_dropdown.png) no-repeat right center}
+select:hover {background-image:url(images/ic_dropdown_hover.png)}
+select:focus, select:active {background-image:url(images/ic_dropdown_active.png)}
 select::-ms-expand {display:none;}
 select, input, button, textarea {font-size:12px;outline: none;}
 select:focus, input:focus, textarea:focus {border-color:#e5e5e5;}
