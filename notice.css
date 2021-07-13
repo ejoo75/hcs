@@ -44,7 +44,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeListWrapper > table > tbody > tr > td:nth-child(2) { padding-left: 20px;}
 .noticeListWrapper .emptyList {text-align: center; border: none;}
 .writeBtnWrapper { margin: 40px 180px 10px; text-align: right;}
-.writeBtnWrapper span { cursor: pointer; color:#fff; display: inline-block; width: 65px; height: 30px; border: 1px solid #DEE2E5; background: #888; text-align: center;
+.writeBtnWrapper span { cursor: pointer; color:#fff; display: inline-block; width: 65px; height: 30px; background: #888; text-align: center;
     font-size: 13px; line-height: 30px; font-weight: bold; border-radius: 3px;}
 #cudResultWrapper {position: absolute; top: 80px; left: 574px;}
 #result_status { background-color: rgb(176,166,153); border: 1px solid rgb(176,166,153); border-radius: 10px; padding: 5px 10px 7px;
@@ -91,5 +91,5 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .pagingWrapper .nextPageBtn:hover > a {color: #7B6D5D; font-weight: bold;}
 
 #searchTypeSelect { float: left; width: 80px; height: 26px; border-radius:0; border:1px solid #cbcbcb; padding-left: 5px; margin-right:5px;}
-#searchNotice { float: left; height: 22px; width: 170px; border-radius:0; border:1px solid #cbcbcb; padding: 0px 30px 0px 10px;}
+#searchNotice { float: left; height: 24px; width: 170px; border-radius:0; border:1px solid #cbcbcb; padding: 0px 30px 0px 10px;}
 #searchBtnIcon {float: left; cursor:pointer; position: relative; top: 5px; right: 22px;}
