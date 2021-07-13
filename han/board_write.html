@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  $(function(){
+		$('.upload_text').val('미리보여줄 텍스트.');
+		$('.input_file').change(function(){
+			var i = $(this).val();
+			$('.upload_text').val(i);
+		});
+	});
+  </script>
+</head>
+
+<body>
+<div>
+
+	<!-- Content -->
+	<div class="content_wrap">
+		<!-- title -->
+		<div class="title_wrap">
+			<h3>FAQ</h3>
+			<div class="btn_wrap">
+				<button type="submit" class="btn_common" onclick="show_layer('edit')">등록</button>
+				<button type="submit" class="btn_normal" onclick="show_layer('del')">삭제</button>
+			</div>
+		</div>
+		<!--// title -->
+		<!-- Form -->
+		<div class="forms_wrap">
+			<!-- form1 -->
+			<dl class="forms">
+				<dt class="mdt">팝업공지여부</dt>
+				<dd><input type="checkbox" name="">로그인&nbsp;&nbsp;&nbsp;<input type="checkbox" name="">메인</dd>
+				<dt class="mdt">찾기</dt>
+				<dd><input type="text" name="" class="form_date" value="0000-00-00"> ~ <input type="text" name="" class="form_date" value="0000-00-00"></dd>
+				<dt class="mdt">제목</dt>
+				<dd class="mergedtdd"><input type="text" name="" class="form_text" value="시스템 점검 안내"></dd>
+				<dt class="mdt">선택</dt>
+				<dd class="mergedtdd">
+					<select name="" class="form_select">
+						<option value="" selected="">전체</option>
+						<option value="">Option2</option>
+						<option value="">Option3</option>
+						<option value="">Option4</option>
+					</select>
+				</dd>
+				<dt style="height:211px">내용</dt>
+				<dd class="mergedtdd" style="height:211px"><textarea name="" rows="" cols=""></textarea></dd>
+				<dt class="bordernone">첨부파일</dt>
+				<dd class="mergedtdd bordernone">
+					<div class="float_left">
+						<!--input box-->
+						<input type="text" class="upload_text" readonly="readonly">
+						<!--button-->
+						<div class="upload-btn_wrap">
+						  <button type="button" title="파일찾기">
+						   <span>파일찾기</span>  
+						  </button>
+						  <input type="file" class="input_file" title="파일찾기">
+						</div>
+					</div>
+					<div class="float_right"><button type="submit" class="btn_common" onclick="">저장</button> <button type="submit" class="btn_normal" onclick="">취소</button></div>
+					<table class="list_v">
+						<colgroup>
+							<col style="width:50px">
+							<col style="">
+							<col style="width:100px">
+						</colgroup>
+						<thead>
+						<tr>
+							<th></th>
+							<th>파일명</th>
+							<th>크기</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="center"><input type="checkbox" name=""></td>
+							<td><i class="ic_file"></i> 첨부파일.pptx</td>
+							<td class="right">30KB</td>
+						</tr>
+						<tr>
+							<td class="center"><input type="checkbox" name=""></td>
+							<td><i class="ic_file"></i> 첨부파일.pptx</td>
+							<td class="right">30KB</td>
+						</tr>
+					</table>
+				</dd>
+			</dl>
+			<!--// form1 -->
+		</div>
+		<!-- //Form -->
+		<!-- button --><div class="btn_wrap"><button type="submit" class="btn_common" onclick="">저장</button> <button type="submit" class="btn_normal" onclick="">취소</button></div><!--// button -->
+	</div>
+	<!-- //Content -->
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+
+<body>
+<div>
+
+	<!-- Content -->
+	<div class="content_wrap">
+		<!-- tab -->
+		<div class="tab_wrap">
+			<ul>
+				<li><a href="#">CB Report4</a></li>
+				<li><a href="#">CB Report4</a></li>
+				<li class="active"><a href="#">CB Report4</a><i class="ic_close" style=""></i></li>
+			</ul>
+		</div>
+		<!-- //tab -->
+		<div class="title_wrap">
+			<h3>FAQ</h3>
+			<div class="btn_wrap">
+				<button type="submit" class="btn_common" onclick="show_layer('edit')">등록</button>
+				<button type="submit" class="btn_normal" onclick="show_layer('del')">삭제</button>
+			</div>
+		</div>
+		<!-- Filter -->
+		<div class="filter_wrap">
+			<!-- form1 -->
+			<dl class="forms">
+				<dt>제목</dt>
+				<dd><input type="text" name="" class="form_text" value=""></dd>
+				<dt>등록일</dt>
+				<dd class="mergedt"><input type="text" id="datepicker" class="form_date"> ~ <input type="text" name="" class="form_date" value="0000-00-00"></dd>
+				<dd class="btn_wrap">
+					<button type="submit" class="btn_reset" onclick="">Reset</button>
+					<button type="submit" class="btn_search" onclick="">조회</button>
+				</dd>
+			</dl>
+			<!--// form1 -->
+		</div>
+		<!-- //Filter -->
+		<!-- List -->
+		<div class="list_wrap">
+			<table class="list_v">
+				<colgroup>
+					<col style="width:50px">
+					<col style="width:50px">
+					<col style="width:100px">
+					<col style="">
+					<col style="width:150px">
+					<col style="width:100px">
+					<col style="width:100px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th>No</th>
+					<th></th>
+					<th>ID</th>
+					<th>제목</th>
+					<th>등록일시</th>
+					<th>등록사용자</th>
+					<th>첨부파일</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="center">1</td>
+					<td class="center"><input id="checkbox1" type="checkbox"></td>
+					<td>0000001</td>
+					<td><a href="#">교육자료 배포</a></td>
+					<td class="center">2019-05-15</td>
+					<td class="center">홍길동</td>
+					<td class="center"><i class="ic_file" onclick="show_layer('attch_file')"></i></td>
+				</tr>
+				<tr>
+					<td class="center">2</td>
+					<td class="center"><input id="checkbox1" type="checkbox"></td>
+					<td>0000001</td>
+					<td><a href="#">교육자료 배포</a></td>
+					<td class="center">2019-05-15</td>
+					<td class="center">홍길동</td>
+					<td class="center"><i class="ic_file"></i></td>
+				</tr>
+				<tr>
+					<td class="center">3</td>
+					<td class="center"><input id="checkbox1" type="checkbox"></td>
+					<td>0000001</td>
+					<td><a href="#">교육자료 배포</a></td>
+					<td class="center">2019-05-15</td>
+					<td class="center">홍길동</td>
+					<td class="center"><i class="ic_file"></i></td>
+				</tr>
+				<tr>
+					<td class="center">4</td>
+					<td class="center"><input id="checkbox1" type="checkbox"></td>
+					<td>0000001</td>
+					<td><a href="#">교육자료 배포</a></td>
+					<td class="center">2019-05-15</td>
+					<td class="center">홍길동</td>
+					<td class="center"><i class="ic_file"></i></td>
+				</tr>
+				<tr>
+					<td class="center">5</td>
+					<td class="center"><input id="checkbox1" type="checkbox"></td>
+					<td>0000001</td>
+					<td><a href="#">교육자료 배포</a></td>
+					<td class="center">2019-05-15</td>
+					<td class="center">홍길동</td>
+					<td class="center"><i class="ic_file"></i></td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<span class="first"></span>
+				<span class="prev"></span>
+				<b>1</b>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<span class="next"></span>
+				<span class="last"></span>
+			</div>
+		</div>
+		<!-- //List -->
+	</div>
+	<!-- //Content -->
+<!-- popup atttch -->
+<div class="popup_wrap attch" id="attch_file" style="display:none;">
+	<div class="content_wrap">
+		<!-- title -->
+		<div class="title_wrap">
+			<h3>첨부파일</h3>
+			<button type="submit" class="btn_close" onclick="hidden_layer('attch_file')">Close</button>
+		</div>
+		<!--// title -->
+		<!-- Form -->
+		<div class="body_wrap">
+			<table class="list_v">
+				<colgroup>
+					<col style="width:50px">
+					<col style="">
+					<col style="width:100px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th></th>
+					<th>파일명</th>
+					<th>크기</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="center"><input type="checkbox" name=""></td>
+					<td><i class="ic_file"></i> 첨부파일.pptx</td>
+					<td class="right">30KB</td>
+				</tr>
+				<tr>
+					<td class="center"><input type="checkbox" name=""></td>
+					<td><i class="ic_file"></i> 첨부파일.pptx</td>
+					<td class="right">30KB</td>
+				</tr>
+			</table>
+		</div>
+		<!-- //Form -->
+		<!-- button --><div class="btn_wrap"><button type="submit" class="btn_common" onclick="">저장</button> <button type="submit" class="btn_normal" onclick="">취소</button></div><!--// button -->
+	</div>
+</div>
+<!--// popup atttch -->
+</div>
+</body>
+
+</html>

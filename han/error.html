@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Menu Example</title>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+</head>
+
+<body>
+<div id="wrap">
+	<!-- Mstr -->
+	<div class="error_wrap">
+		<img src="images/kview_bi_l.png" width="300" height="33" border="0" alt="">
+		<div class="error">
+			<!-- message -->
+			<div class="msg_wrap">
+				<h3>404 Error</h3>
+				페이지를 찾을 수 없습니다.
+			</div>
+			<!--// message -->
+		</div>
+	</div>
+	<!-- //Mstr -->
+</div>
+
+</body>
+
+</html>

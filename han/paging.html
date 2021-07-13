@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+
+<body>
+<div>
+Dashboard
+<!-- Paging1 -->
+	<div class="paging ds_nav">
+		<span class="first"></span>
+		<span class="prev"></span>
+		<a href="" class="active">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<span class="next"></span>
+		<span class="last"></span>
+		<span class="stop"></span>
+		<span class="play"></span>
+	</div>
+</div>
+<!-- //Paging1 -->
+</div>
+</body>
+
+</html>

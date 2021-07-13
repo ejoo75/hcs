@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+</head>
+
+<body>
+<div>
+
+	<!-- Content -->
+	<div class="content_wrap">
+		<div class="title_wrap">
+			<h3>Sitemap</h3>
+		</div>
+		<!-- tab -->
+		<div class="tab_wrap">
+			<ul>
+				<li class="active"><a href="#">K-View Portal</a></li>
+				<li><a href="#">부점 리포트</a></li>
+				<li><a href="#">주제별분석</a><i class="ic_close" style=""></i></li>
+			</ul>
+		</div>
+		<!-- //tab -->
+		<!-- List -->
+		<div class="sitemap_wrap">
+			<div class="row">
+				<div class="col_7">
+					<h5>즐겨찾기</h5>
+					<ul>
+						<li><a href="#">즐겨찾기</a></li>
+						<li><a href="#">내가 만든 보고서</a></li>
+						<li><a href="#">사용내역목록</a></li>
+						<li><a href="#">내가 만든 개체</a></li>
+					</ul>
+				</div>
+				<div class="col_7">
+					<h5>Kview보고서</h5>
+					<ul>
+						<li>
+							<a href="#" id="open1"><i class="ic_open"></i>공통보고서</a>
+							<ul>
+								<li>
+									<a href="#" id="open11"><i class="ic_close"></i>마케팅MIS</a>
+									<ul id="map11">
+										<li><a href="#"><i class="ic_report"></i>01.Monthly Product Review</a></li>
+										<li><a href="#"><i class="ic_none"></i>02.Monthly Customer Review</a></li>
+										<li><a href="#"><i class="ic_none"></i>03.상품별 Vintage (카드별)</a></li>
+										<li><a href="#"><i class="ic_none"></i>04.상품별 Vintage (회원별)</a></li>
+										<li><a href="#"><i class="ic_none"></i>05.상품별 Vintage (업체별)</a></li>
+										<li><a href="#"><i class="ic_none"></i>06.채널별 Vintage (카드별)</a></li>
+										<li><a href="#"><i class="ic_none"></i>07.업종별 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>08.해외이용 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>09.할인 서비스 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>10.무이자 할부 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>11.신용카드 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>12.체크카드 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>13.이탈고객 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>14.알파원카드 마케팅 체크리스트</a></li>
+										<li><a href="#"><i class="ic_none"></i>15.Monthly Customer Review (지주사기준)</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>전사대시보드</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 전사</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="ic_open"></i>모바일</a>
+							<ul>
+								<li>
+									<a href="#"><i class="ic_close"></i>전사</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 전사</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>영업본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 영업본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>마케팅본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 마케팅본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>데이터전략본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 데이터전략본부</a></li>
+										<li><a href="#"><i class="ic_report"></i>(모바일) 국내승인현황</a></li>
+										<li><a href="#"><i class="ic_report"></i>(모바일) 해외승인현황</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>금융서비스본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 금융서비스본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>디지털본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 디지털본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>영업지원본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 영업지원본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>리스크관리본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 리스크관리본부</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="ic_open"></i>(준)실시간</a>
+							<ul>
+								<li><a href="#"><i class="ic_report"></i>국내 승인현황</a></li>
+								<li><a href="#"><i class="ic_report"></i>해외 승인현황</a></li>
+								<li><a href="#"><i class="ic_report"></i>카드론 실시간 실적 현황</a></li>
+								<li><a href="#"><i class="ic_report"></i>CA 실시간 실적 현황</a></li>
+								<li><a href="#"><i class="ic_report"></i>리볼빙 실적 현황</a></li>
+								<li><a href="#"><i class="ic_report"></i>지하철 이용 현황</a></li>
+								<li><a href="#"><i class="ic_none"></i>카드발급현황</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="ic_open"></i>모바일</a>
+							<ul>
+								<li>
+									<a href="#"><i class="ic_close"></i>전사</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 전사</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>영업본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 영업본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>마케팅본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 마케팅본부</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="ic_close"></i>데이터전략본부</a>
+									<ul>
+										<li><a href="#"><i class="ic_report"></i>(모바일대시보드) 데이터전략본부</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col_7">
+					<h5>새로만들기</h5>
+					<ul>
+						<li><a href="#">새로운 시각화</a></li>
+						<li><a href="#">새로운 데이터</a></li>
+						<li><a href="#">사용자정의 그룹</a></li>
+						<li><a href="#">사용자 필터</a></li>
+						<li>
+							<a href="#">프로프트 만들기</a>
+							<ul>
+								<li><a href="#">계증 제한 프롬프트</a></li>
+								<li><a href="#">애트리뷰트 제한 프롬프트</a></li>
+								<li><a href="#">애트리뷰트 구성요소 리스트</a></li>
+								<li><a href="#">매트릭 제한 프롬프트</a></li>
+								<li><a href="#">개체 프롬프트</a></li>
+								<li><a href="#">값 프롬프트</a></li>
+							</ul>
+						</li>
+						<li><a href="#">새로운 지계수</a></li>
+					</ul>
+				</div>
+				<div class="col_7">
+					<h5>부서공유 콘텐츠</h5>
+					<ul>
+						<li><a href="#">IT서비스기획본부</a></li>
+						<li><a href="#">경영기획본부</a></li>
+						<li><a href="#">경영지원본부</a></li>
+						<li><a href="#">금융서비스본부</a></li>
+						<li><a href="#">데이터전략본부</a></li>
+						<li><a href="#">디지털본부</a></li>
+						<li><a href="#">리스크관리본부</a></li>
+						<li><a href="#">마케팅본부</a></li>
+						<li><a href="#">소비자보호본부</a></li>
+						<li><a href="#">영업본부</a></li>
+						<li><a href="#">영업지원본부</a></li>
+						<li><a href="#">정보보호본부</a></li>
+					</ul>
+				</div>
+				<div class="col_7">
+					<h5>묻고답하기</h5>
+				</div>
+				<div class="col_7">
+					<h5>How to</h5>
+					<ul>
+						<li><a href="#">활용가이드</a></li>
+						<li><a href="#">에러 대응 방안</a></li>
+						<li><a href="#">보고서 메타</a></li>
+					</ul>
+				</div>
+				<div class="col_7 float_right">
+					<h5>타시스템링크</h5>
+					<ul>
+						<li><a href="#">KB금융그룹 BI포털</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //List -->
+	</div>
+	<!-- //Content -->
+</div>
+</body>
+
+</html>

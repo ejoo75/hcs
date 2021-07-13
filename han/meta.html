@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K-View Potal</title>
+  <link href="./jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <script src="./jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+  <script src="./jquery-ui-1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript"> 
+	function show_layer(layer_name)
+	{
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='block'")
+	}
+	function hidden_layer(layer_name){
+		if (layer_name == '') return;
+		eval(layer_name+".style.display='none'")
+	}
+	
+  </script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+
+<body>
+<div>
+
+	<!-- Content -->
+	<div class="content_wrap">
+		<div class="title_wrap">
+			<h3>보고서 메타</h3>
+			<div class="btn_wrap">
+				<!-- Button
+				<button type="submit" class="btn_common" onclick="show_layer('edit')">등록</button>
+				<button type="submit" class="btn_normal" onclick="show_layer('del')">삭제</button>
+				-->
+			</div>
+		</div>
+		<!-- Filter -->
+		<div class="header_wrap">
+			<!-- form1 -->
+			<div class="float_left">
+				<label>검색 구분</label>
+				<select name="" class="form_select" style="width:100px">
+					<option value="" selected="">보고서</option>
+					<option value="">페이지</option>
+					<option value="">주요지표</option>
+				</select>
+				<input type="text" name="" class="form_text" value="">
+				<button type="submit" class="btn_search" onclick="">조회</button>
+			</div>
+			<div class="float_right">
+				<button type="submit" class="btn_normal ic_excel" onclick="">엑셀 다운로드</button>
+			</div>
+			<!--// form1 -->
+		</div>
+		<!-- //Filter -->
+		<!-- List -->
+		<div class="list_wrap">
+			<table class="list_v">
+				<colgroup>
+					<col style="width:200px">
+					<col style="width:150px">
+					<col style="width:180px">
+					<col style="">
+					<col style="width:100px">
+					<col style="width:120px">
+					<col style="width:100px">
+					<col style="width:100px">
+					<col style="width:100px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th>보고서</th>
+					<th>페이지</th>
+					<th>주요지표</th>
+					<th>보고서 설명</th>
+					<th>생명주기</th>
+					<th>담당부서</th>
+					<th>현업사용자</th>
+					<th>최종변경일</th>
+					<th>사용여부</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="center">Monthly Product Review</td>
+					<td class="center">Product 총괄</td>
+					<td>개인신용카드 실적 추이</td>
+					<td><a href="#">개인신용 카드 충계, 상품유형별(범용/제휴/...)특정 상품 기준</a></td>
+					<td class="center">월</td>
+					<td class="center">데이터혁신부</td>
+					<td class="center">정응용</td>
+					<td class="center">20200720</td>
+					<td class="center">여</td>
+				</tr>
+				<tr>
+					<td class="center">Monthly Product Review</td>
+					<td class="center">Product 총괄</td>
+					<td>개인신용카드 실적 추이</td>
+					<td><a href="#">개인신용 카드 충계, 상품유형별(범용/제휴/...)특정 상품 기준</a></td>
+					<td class="center">월</td>
+					<td class="center">데이터혁신부</td>
+					<td class="center">정응용</td>
+					<td class="center">20200720</td>
+					<td class="center">여</td>
+				</tr>
+				<tr>
+					<td class="center">Monthly Product Review</td>
+					<td class="center">Product 총괄</td>
+					<td>개인신용카드 실적 추이</td>
+					<td><a href="#">개인신용 카드 충계, 상품유형별(범용/제휴/...)특정 상품 기준</a></td>
+					<td class="center">월</td>
+					<td class="center">데이터혁신부</td>
+					<td class="center">정응용</td>
+					<td class="center">20200720</td>
+					<td class="center">여</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<span class="first"></span>
+				<span class="prev"></span>
+				<b>1</b>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<span class="next"></span>
+				<span class="last"></span>
+			</div>
+		</div>
+		<!-- //List -->
+		<div class="row">
+			<div class="col_3">
+				<h4>속성/지계수</h4>
+				<table class="list_v">
+					<colgroup>
+						<col style="width:150px">
+						<col style="width:150px">
+						<col style="">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>구분</th>
+						<th>명칭</th>
+						<th>비고</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="center">속성</td>
+						<td class="center">...</td>
+						<td class="center">...</td>
+					</tr>
+					<tr>
+						<td class="center">지계수</td>
+						<td class="center">...</td>
+						<td class="center">...</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col_3">
+				<h4>사용 테이블</h4>
+				<table class="list_v">
+					<colgroup>
+						<col style="width:150px">
+						<col style="width:150px">
+						<col style="">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>테이블ID</th>
+						<th>테이블명</th>
+						<th>원천</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="center"><a href="#none" onclick="show_layer('attch_file')">...</a></td>
+						<td class="center">...</td>
+						<td class="center"><a href="#">TMDAA3E16</a></td>
+					</tr>
+					<tr>
+						<td class="center">...</td>
+						<td class="center">...</td>
+						<td class="center"><a href="#">TMDAA3E16</a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col_3 float_right">
+				<h4>사용 SQL</h4>
+				<textarea name="" style="height:72px"></textarea>
+			</div>
+		</div>
+	</div>
+	<!-- //Content -->
+<!-- popup atttch -->
+<div class="popup_wrap attch" id="attch_file" style="display:none;">
+	<div class="content_wrap">
+		<!-- title -->
+		<div class="title_wrap">
+			<h3>테이블ID</h3>
+			<button type="submit" class="btn_close" onclick="hidden_layer('attch_file')">Close</button>
+		</div>
+		<!--// title -->
+		<!-- Form -->
+		<div class="body_wrap">
+			<table class="list_v">
+				<colgroup>
+					<col style="width:50px">
+					<col style="">
+					<col style="width:120px">
+					<col style="width:90px">
+				</colgroup>
+				<thead>
+				<tr>
+					<th>No</th>
+					<th>컬럼명</th>
+					<th>컬럼타입</th>
+					<th>길이</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="center">1</td>
+					<td class="center">...</td>
+					<td class="center">VACHAR</td>
+					<td class="right">100</td>
+				</tr>
+				<tr>
+					<td class="center">2</td>
+					<td class="center">...</td>
+					<td class="center">VACHAR</td>
+					<td class="right">100</td>
+				</tr>
+				<tr>
+					<td class="center">3</td>
+					<td class="center">...</td>
+					<td class="center">VACHAR</td>
+					<td class="right">100</td>
+				</tr>
+				<tr>
+					<td class="center">4</td>
+					<td class="center">...</td>
+					<td class="center">VACHAR</td>
+					<td class="right">100</td>
+				</tr>
+			</table>
+		</div>
+		<!-- //Form -->
+		<!-- button --><div class="btn_wrap"><button type="submit" class="btn_common" onclick="">저장</button> <button type="submit" class="btn_normal" onclick="">취소</button></div><!--// button -->
+	</div>
+</div>
+<!--// popup atttch -->
+</div>
+</body>
+
+</html>
