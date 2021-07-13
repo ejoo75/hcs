@@ -60,7 +60,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeInfoWrapper > table > tbody > tr > td:first-child { border-left: 0px; }
 .noticeInfoWrapper > table > tbody > tr > td:last-child { border-right: 0px; }
 .noticeInfoWrapper > table #attachFileListDiv { height: 95%; overflow: auto;}
-.noticeInfoWrapper > table #attachFileListDiv > ul {margin: 0px; padding: 0px; padding-left: 15px; font-size: 13px;}
+.noticeInfoWrapper > table #attachFileListDiv > ul {margin: 0px; padding: 0px; font-size: 13px;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li {list-style: none; margin-bottom: 3px; cursor: pointer;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li:hover {font-weight: bold;}
 .noticeInfoWrapper #quillEditor { border: 0px !important;}
