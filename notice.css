@@ -13,8 +13,8 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeWrapper > table > tbody > tr > td:first-child {width: 110px; font-size:14px; font-weight: bold; background: #FAFAFA;}
 .noticeWrapper > table > tbody > tr:last-child td{border-bottom:1px solid #c5c5c5!important}
 .noticeWrapper > table > tbody > tr:first-child > td {border-top: 1px solid #333;}
-.noticeWrapper > table .ql-toolbar { width: 70%;}
-.noticeWrapper > table #quillEditor {width: 70%; height: 70%;}
+.noticeWrapper > table .ql-toolbar { width: 100%;}
+.noticeWrapper > table #quillEditor { width: 100%; height: 70%;}
 .noticeWrapper #uploadListDiv { width: calc(100% - 60px); height: 85px; overflow-y: auto; border: 1px solid #DEE2E5; margin-top:5px;}
 .noticeWrapper #uploadListDiv > ul {padding:0px; margin: 0px; padding:5px 10px; }
 .noticeWrapper #uploadListDiv > ul > li { list-style: none; }
