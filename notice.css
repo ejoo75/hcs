@@ -5,6 +5,23 @@
 	font-weight: normal; font-style: normal;
 }
 body { background: #FAFAFA; font-family: 'NotoSans' !important;}
+input{vertical-align:middle}
+input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
+select {padding-left:7px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../images/ic_dropdown.png) no-repeat right center}
+select:hover {background-image:url(../images/ic_dropdown_hover.png)}
+select:focus, select:active {background-image:url(../images/ic_dropdown_active.png)}
+select::-ms-expand {display:none;}
+select, input, button, textarea {font-size:12px;outline: none;}
+select:focus, input:focus, textarea:focus {border-color:#e5e5e5;}
+select, input, textarea {color:#444;border:1px solid #ccd1eb;background-color: #fff;}
+select option, select optgroup {font-size:100%}
+textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #e5e5e5;padding:5px 10px}
+
 .noticeHeader { height:40px; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
 
 .noticeWrapper { height: 75%; margin: 15px 20px; background: #fff;}
