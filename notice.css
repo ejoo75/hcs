@@ -8,25 +8,25 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeHeader { padding: 30px 0px 0px 0px; text-align: center; font-size: 30px;}
 
 .noticeWrapper { height: 75%; margin: 30px 180px 10px; background: #fff;}
-.noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #DEE2E5; border-collapse: collapse;}
-.noticeWrapper > table td {border: 1px solid #DEE2E5; padding-left: 30px;}
-.noticeWrapper > table > tbody > tr > td:first-child {width: 110px; font-weight: bold; background: #FAFAFA;}
-.noticeWrapper > table > tbody > tr:first-child > td {border-top: 2px solid #7B6D5D;}
+.noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #e8e8e8; border-collapse: collapse;}
+.noticeWrapper > table td {font-size:13px; border: 1px solid #e8e8e8; padding-left: 30px;}
+.noticeWrapper > table > tbody > tr > td:first-child {width: 110px; font-size:14px; font-weight: bold; background: #FAFAFA;}
+.noticeWrapper > table > tbody > tr:first-child > td {border-top: 1px solid #333;}
 .noticeWrapper > table .ql-toolbar { width: 70%;}
 .noticeWrapper > table #quillEditor {width: 70%; height: 70%;}
 .noticeWrapper #uploadListDiv { width: 95%; height: 85px; overflow-y: auto; border: 2px solid #DEE2E5;}
-.noticeWrapper #uploadListDiv > ul {padding:0px; margin: 0px; padding-left: 10px;}
-.noticeWrapper #uploadListDiv > ul > li { list-style: none;}
+.noticeWrapper #uploadListDiv > ul {padding:0px; margin: 0px; padding:5px 10px; }
+.noticeWrapper #uploadListDiv > ul > li { list-style: none; }
 .noticeWrapper #uploadListDiv > ul > li > span { font-size: 13px; display: inline-block; width: 65%; }
-.noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; cursor: pointer; width: 40px; height: 19px; border: 1px solid #858E96;
+.noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; cursor: pointer; width: 40px; height: 19px; border: 1px solid #93928f;
 														margin-left: 25px; font-size: 11px; border-radius: 3px; line-height: 19px; text-align: center;}
 #noticeTitle { width: 65%; border: 1px solid #DEE2E5; height: 40%; padding: 0px 15px;}
 .btnWrapper { margin: 0px 180px; float: right;}
-.btnWrapper #addNoticeBtn, .btnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #7B6D5D; color: #fff;
+.btnWrapper #addNoticeBtn, .btnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #888; color: #fff;
 														 text-align: center; font-size: 13px; border-radius: 3px; }
 .btnWrapper #cancleModifyBtn {margin-right: 5px;}
 .btnWrapper #getNoticeListBtn, .btnWrapper #cancleModifyBtn, .btnWrapper #cancleAddBtn {
-	display: inline-block; width: 65px; height: 30px; border: 1px solid #DEE2E5; background: #fff; text-align: center; font-size: 13px; line-height: 30px;
+	display: inline-block; width: 65px; height: 30px; border: 1px solid #93928f; background: #fff; text-align: center; font-size: 13px; line-height: 30px;
 	border-radius: 3px; cursor: pointer;}
 #addNoticeBtn, #getNoticeListBtn, #cancleModifyBtn { cursor: pointer;}
 
