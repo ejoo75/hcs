@@ -4,6 +4,21 @@
 	src: url('font/NotoSans-Regular.ttf') format('truetype');
 	font-weight: normal; font-style: normal;
 }
+html, body{height:100%;min-height:800px;margin:0px; font-family:'NotoSans', sans-serif;}
+body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'NotoSans', sans-serif;font-size:14px;color:#666;}
+td {color:#666;line-height:1.5em;}
+h2 {font-size:20px;line-height:1.6em;}
+h3 {font-size:18px;line-height:1.6em;}
+body, th, td {font-size:14px}
+img{border:0px;}
+td img, td input, td select, td .button{vertical-align:middle}
+td{list-style-type:none;margin:0;padding:0}
+ul, dl, li, ol, h1, h2, h3, h4, h5, h6, dd, dt, p, div{list-style-type:none;margin:0;padding:0}
+em, address{font-style:normal}
+form{margin:0;padding:0}
+a{color:#000;text-decoration:none}
+a:hover{text-decoration:underline}
+
 body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 input{vertical-align:middle}
 input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
