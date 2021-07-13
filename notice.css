@@ -74,7 +74,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .pagingWrapper { text-align: center; padding-bottom: 10px;}
 .pagingWrapper .pagination {font-size: 0px;} 
 .pagingWrapper .pageNumBtn {list-style: none; display: inline-block; width: 25px; height: 25px; text-align: center; border: 1px solid #DFE2E5; background: #fff;
-							font-size: 16px; cursor: pointer;}
+							font-size: 14px; line-height:1.7; cursor: pointer;}
 .pagingWrapper .pageNumBtn:hover {border: 1px solid #7B6D5D;}
 .pagingWrapper .pageNumBtn:hover > a {color: #7B6D5D; font-weight: bold;}
 .pagingWrapper .pageNumBtn.active > a { color: #7B6D5D; font-weight: bold; }
