@@ -23,7 +23,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; float: right; cursor: pointer; width: 40px; height: 19px; border: 1px solid #93928f;
 .noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn:before {content:'&times';}
 														margin-left: 25px; font-size: 11px; border-radius: 3px; line-height: 19px; text-align: center;}
-#noticeTitle { width: calc(100% - 40px); height: 30px; border: 1px solid #DEE2E5; height: 40%; padding: 0px 15px;}
+#noticeTitle { width: calc(100% - 40px); height: 30px!important; border: 1px solid #DEE2E5; height: 40%; padding: 0px 15px;}
 .btnWrapper { margin: 0px 20px; float: right;}
 .btnWrapper #addNoticeBtn, .btnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #888; color: #fff;
 														 text-align: center; font-size: 13px; border-radius: 3px; }
