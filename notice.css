@@ -86,7 +86,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .pagingWrapper .prevPageBtn:hover > a {color: #7B6D5D; font-weight: bold;}
 .pagingWrapper .nextPageBtn {list-style: none; display: inline-block; width: 25px; height: 25px; text-align: center; border: 1px solid #DFE2E5; background: #fff;
 							font-size: 16px; cursor: pointer;}
-.pagingWrapper .nextPageBtn a { text-decoration: none; color: #858E96;}
+.pagingWrapper .nextPageBtn a { text-decoration: none; color: #858E96; font-size:13px;}
 .pagingWrapper .nextPageBtn:hover {border: 1px solid #7B6D5D;}
 .pagingWrapper .nextPageBtn:hover > a {color: #7B6D5D; font-weight: bold;}
 
