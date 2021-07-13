@@ -62,7 +62,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeInfoWrapper > table #attachFileListDiv { height: 95%; overflow: auto;}
 .noticeInfoWrapper > table #attachFileListDiv > ul {margin: 0px; padding: 0px; font-size: 13px;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li {list-style: none; margin-bottom: 3px; cursor: pointer;}
-.noticeInfoWrapper > table #attachFileListDiv > ul > li:hover {font-weight: bold;}
+.noticeInfoWrapper > table #attachFileListDiv > ul > li:hover {font-color: #9c836a;}
 .noticeInfoWrapper #quillEditor { border: 0px !important;}
 .noticeInfoBtnWrapper { margin: 0px 20px; float: right;}
 .noticeInfoBtnWrapper #getListBtn {display: inline-block; width: 65px; height: 30px; border: 1px solid #93928f; background: #fff; text-align: center; 
