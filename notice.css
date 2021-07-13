@@ -14,7 +14,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeWrapper > table > tbody > tr:first-child > td {border-top: 1px solid #333;}
 .noticeWrapper > table .ql-toolbar { width: 70%;}
 .noticeWrapper > table #quillEditor {width: 70%; height: 70%;}
-.noticeWrapper #uploadListDiv { width: 95%; height: 85px; overflow-y: auto; border: 2px solid #DEE2E5;}
+.noticeWrapper #uploadListDiv { width: calc(100% - 60px); height: 85px; overflow-y: auto; border: 1px solid #DEE2E5; margin-top:5px;}
 .noticeWrapper #uploadListDiv > ul {padding:0px; margin: 0px; padding:5px 10px; }
 .noticeWrapper #uploadListDiv > ul > li { list-style: none; }
 .noticeWrapper #uploadListDiv > ul > li > span { font-size: 13px; display: inline-block; width: 65%; }
