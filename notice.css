@@ -5,7 +5,7 @@
 	font-weight: normal; font-style: normal;
 }
 body { background: #FAFAFA; font-family: 'NotoSans' !important;}
-.noticeHeader { padding: 30px 0px 0px 0px; text-align: center; font-size: 30px;}
+.noticeHeader { height:55px; color:#9c836a; padding: 0 20px; text-align: left; font-size: 20px;}
 
 .noticeWrapper { height: 75%; margin: 30px 180px 10px; background: #fff;}
 .noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #e8e8e8; border-collapse: collapse;}
@@ -31,7 +31,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 	border-radius: 3px; cursor: pointer;}
 #addNoticeBtn, #getNoticeListBtn, #cancleModifyBtn { cursor: pointer;}
 
-.noticeListWrapper { height: 500px; margin: 10px 180px 10px; background: #fff; border-top:1px solid #333 !important; border-bottom:1px solid #c5c5c5!important; border: 1px solid #e8e8e8;}
+.noticeListWrapper { height: 500px; margin: 10px 20px 10px; background: #fff; border-top:1px solid #333 !important; border-bottom:1px solid #c5c5c5!important; border: 1px solid #e8e8e8;}
 .noticeListWrapper > table {width: 100%; border-collapse: collapse;}
 .noticeListWrapper > table > thead {height: 35px; background: #FAFAFA;}
 .noticeListWrapper > table > thead > tr th {font-size:14px; border: 1px solid #e8e8e8; border-top: 0px;}
@@ -44,7 +44,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeListWrapper > table > tbody > tr > td:last-child { border-right: 0px; }
 .noticeListWrapper > table > tbody > tr > td:nth-child(2) { padding-left: 20px;}
 .noticeListWrapper .emptyList {text-align: center; border: none;}
-.writeBtnWrapper { margin: 40px 180px 10px; text-align: right;}
+.writeBtnWrapper { margin: 40px 20px 10px; text-align: right;}
 .writeBtnWrapper span { cursor: pointer; color:#fff; display: inline-block; width: 65px; height: 30px; background: #888; text-align: center;
     font-size: 13px; line-height: 30px; font-weight: bold; border-radius: 3px;}
 #cudResultWrapper {position: absolute; top: 80px; left: 574px;}
@@ -78,7 +78,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 							font-size: 14px; line-height:1.7; cursor: pointer;}
 .pagingWrapper .pageNumBtn:hover {border: 1px solid #7B6D5D;}
 .pagingWrapper .pageNumBtn:hover > a {color: #7B6D5D; font-weight: bold;}
-.pagingWrapper .pageNumBtn.active > a { color: #7B6D5D; font-weight: bold; }
+.pagingWrapper .pageNumBtn.active > a { color: #7B6D5D; font-weight: bold; font-size: 13px; }
 .pagingWrapper .pageNumBtn a { text-decoration: none; color: #858E96;}
 .pagingWrapper .prevPageBtn {list-style: none; display: inline-block; width: 25px; height: 25px; text-align: center; border: 1px solid #DFE2E5; background: #fff;
 							font-size: 16px; cursor: pointer;}
