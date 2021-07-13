@@ -64,9 +64,9 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li:hover {font-weight: bold;}
 .noticeInfoWrapper #quillEditor { border: 0px !important;}
 .noticeInfoBtnWrapper { margin: 0px 20px; float: right;}
-.noticeInfoBtnWrapper #getListBtn {display: inline-block; width: 65px; height: 30px; border: 1px solid #DEE2E5; background: #fff; text-align: center; 
+.noticeInfoBtnWrapper #getListBtn {display: inline-block; width: 65px; height: 30px; border: 1px solid #93928f; background: #fff; text-align: center; 
 									font-size: 13px; line-height: 30px; border-radius: 3px;}
-.noticeInfoBtnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #7B6D5D; color: #fff; text-align: center;
+.noticeInfoBtnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #888; color: #fff; text-align: center;
 										 font-size: 13px; border-radius: 3px; }
 .noticeInfoBtnWrapper #removeNoticeBtn {display: inline-block; width: 65px; height: 30px; background: #ADB5BD; text-align: center; color: #fff;
 										font-size: 13px; line-height: 30px; border-radius: 3px; margin-right: 5px; }
