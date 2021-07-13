@@ -107,8 +107,8 @@ section #MainLayer .noticeContainer #noticeListBtn{text-align: right; height:34p
 section #MainLayer .noticeContainer #noticeListBtn:hover { color: #7c6c5d; text-decoration:underline; }
 
 section #ReportLayer {height: 100%; background-color: #fff;}
-section .reportInfo {width:calc(100% - (4px + 4px)); height:30px; text-align: left; margin:4px 4px 4px 4px; display:table-cell; vertical-align:middle; padding-left:20px;}
-section .reportInfo #reportInfoWrapper {display:inline-block; margin-top:inherit;}
+section .reportInfo {width:calc(100% - (4px + 4px)); text-align: left; margin-top:15px; vertical-align:middle; padding-left:20px;}
+section .reportInfo #reportInfoWrapper {display:inline-block;}
 section .reportInfo #reportInfoWrapper #report_title { font-size: 16px; font-weight: bold; margin-right: 10px;}
 section .reportInfo #reportInfoWrapper #report_path { font-size: 11px; margin-top: 5px;}
 section .reportInfo #reportInfoWrapper #report_radio { margin-top: 10px; font-size: 13px;}
@@ -116,7 +116,7 @@ section .reportInfo #reportInfoWrapper #report_radio > input[type='radio'] {widt
 section .reportInfo #reportInfoWrapper #report_radio > input[type='radio']:first-child {margin-left: 0px !important;}
 section .reportInfo #btnReportBookmark_default {vertical-align:bottom; cursor: pointer;}
 section .reportInfo #btnReportBookmark_active {vertical-align:bottom; cursor: pointer;}
-section .promptArea {width:calc(100% - 30px); height:auto; text-align: left; margin:8px 4px 0px 4px; font-size : 12px;
+section .promptArea {width:calc(100% - 30px); height:auto; text-align: left; margin:15px 4px 0px 4px; font-size : 12px;
 					border: 1px solid #f4f2ef; padding: 10px; background: #f9f9f9; border-radius: 5px;}
 section .elemWrapper { width: 100%; }
 section .elemWrapper tr {height: 38px;}
