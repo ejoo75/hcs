@@ -9,7 +9,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 
 .noticeWrapper { height: 75%; margin: 30px 180px 10px; background: #fff;}
 .noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #e8e8e8; border-collapse: collapse;}
-.noticeWrapper > table td {font-size:13px; border: 1px solid #e8e8e8; padding-left: 30px;}
+.noticeWrapper > table td {font-size:13px; border: 1px solid #e8e8e8; padding-left: 10px;}
 .noticeWrapper > table > tbody > tr > td:first-child {width: 110px; font-size:14px; font-weight: bold; background: #FAFAFA;}
 .noticeWrapper > table > tbody > tr:first-child > td {border-top: 1px solid #333;}
 .noticeWrapper > table .ql-toolbar { width: 70%;}
@@ -18,7 +18,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeWrapper #uploadListDiv > ul {padding:0px; margin: 0px; padding:5px 10px; }
 .noticeWrapper #uploadListDiv > ul > li { list-style: none; }
 .noticeWrapper #uploadListDiv > ul > li > span { font-size: 13px; display: inline-block; width: 65%; }
-.noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; cursor: pointer; width: 40px; height: 19px; border: 1px solid #93928f;
+.noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; float: right; cursor: pointer; width: 40px; height: 19px; border: 1px solid #93928f;
 														margin-left: 25px; font-size: 11px; border-radius: 3px; line-height: 19px; text-align: center;}
 #noticeTitle { width: 65%; border: 1px solid #DEE2E5; height: 40%; padding: 0px 15px;}
 .btnWrapper { margin: 0px 180px; float: right;}
