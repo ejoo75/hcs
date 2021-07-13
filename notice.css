@@ -18,7 +18,7 @@ select:focus, select:active {background-image:url(../images/ic_dropdown_active.p
 select::-ms-expand {display:none;}
 select, input, button, textarea {font-size:12px;outline: none;}
 select:focus, input:focus, textarea:focus {border-color:#e5e5e5;}
-select, input, textarea {color:#444;border:1px solid #ccd1eb;background-color: #fff;}
+select, input, textarea {color:#444;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%}
 textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #e5e5e5;padding:5px 10px}
 
