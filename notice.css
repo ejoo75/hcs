@@ -20,6 +20,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeWrapper #uploadListDiv > ul > li { list-style: none; }
 .noticeWrapper #uploadListDiv > ul > li > span { font-size: 13px; display: inline-block; width: 65%; }
 .noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn {display: inline-block; float: right; cursor: pointer; width: 40px; height: 19px; border: 1px solid #93928f;
+.noticeWrapper #uploadListDiv > ul > li > #fileRemoveBtn:before {content:'&times';}
 														margin-left: 25px; font-size: 11px; border-radius: 3px; line-height: 19px; text-align: center;}
 #noticeTitle { width: calc(100% - 40px); height: 30px; border: 1px solid #DEE2E5; height: 40%; padding: 0px 15px;}
 .btnWrapper { margin: 0px 20px; float: right;}
