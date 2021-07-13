@@ -7,7 +7,7 @@
 body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeHeader { height:40px; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
 
-.noticeWrapper { height: 75%; margin: 10px 20px; background: #fff;}
+.noticeWrapper { height: 75%; margin: 15px 20px; background: #fff;}
 .noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #e8e8e8; border-collapse: collapse;}
 .noticeWrapper > table td {font-size:13px; border: 1px solid #e8e8e8; padding-left: 10px;}
 .noticeWrapper > table > tbody > tr > td:first-child {width: 110px; font-size:14px; font-weight: bold; background: #FAFAFA;}
@@ -51,7 +51,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 #result_status { background-color: rgb(176,166,153); border: 1px solid rgb(176,166,153); border-radius: 10px; padding: 5px 10px 7px;
 							 color: #fff; font-weight: bold; font-size: 13px; z-index: 1001; }
 
-.noticeInfoWrapper { height: 75%; margin: 32px 180px 10px; background: #fff; border-top:2px solid #7B6D5D !important; border: 1px solid #DEE2E5;}
+.noticeInfoWrapper { height: 75%; margin: 15px 20px; background: #fff; border-top:2px solid #7B6D5D !important; border: 1px solid #DEE2E5;}
 .noticeInfoWrapper > table {width: 100%; height:100%; border-collapse: collapse;}
 .noticeInfoWrapper > table td {border: 1px solid #DEE2E5; }
 .noticeInfoWrapper > table > tbody > tr:first-child > td {border-top: 0px;}
@@ -63,7 +63,7 @@ body { background: #FAFAFA; font-family: 'NotoSans' !important;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li {list-style: none; margin-bottom: 3px; cursor: pointer;}
 .noticeInfoWrapper > table #attachFileListDiv > ul > li:hover {font-weight: bold;}
 .noticeInfoWrapper #quillEditor { border: 0px !important;}
-.noticeInfoBtnWrapper { margin: 0px 180px; float: right;}
+.noticeInfoBtnWrapper { margin: 0px 20px; float: right;}
 .noticeInfoBtnWrapper #getListBtn {display: inline-block; width: 65px; height: 30px; border: 1px solid #DEE2E5; background: #fff; text-align: center; 
 									font-size: 13px; line-height: 30px; border-radius: 3px;}
 .noticeInfoBtnWrapper #modifyNoticeBtn {display: inline-block; width: 65px; height: 30px; line-height: 30px; background: #7B6D5D; color: #fff; text-align: center;
