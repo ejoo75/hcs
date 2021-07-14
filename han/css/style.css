@@ -34,6 +34,7 @@ select:focus, input[type='text']:focus, textarea:focus {border-color:#9c836a;}
 select, input[type='text'], textarea {color:#666;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%;}
 textarea {overflow:auto;font-size:100%;white-wrapㄹㄹ:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px;}
+button {border:none;}
 
  /* Layout */
 #wrap {height:100%;min-width:1600px;}
