@@ -15,7 +15,7 @@
 .excelSearchWrapper table > tbody > tr > td > #excelCharger {width: 50%; }
 .excelSearchWrapper table > tbody > tr > td > #excelCycle { width: 50%; }
 .excelSearchWrapper table > tbody > tr > td > #excelVersion { width: 10%; }
-.excelSearchWrapper table > tbody > tr > td > #excelDesc {width: 80%; }
+.excelSearchWrapper table > tbody > tr > td > #excelDesc {width: calc(80% - 18px); }
 .searchExcelBtn {display: inline-block; width: 40px; height: 20px; background: #fff; color: #9c836a; border:1px solid #9c836a; text-align: center; padding: 5px 10px; border-radius: 0; cursor: pointer; }
 .searchExcelBtn:hover {color:#fff; background-color:#8a7057;}
 
