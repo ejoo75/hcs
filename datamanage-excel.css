@@ -6,9 +6,9 @@
 
 .excelSearchWrapper {border: 1px solid #e6e3df; background: #f9f9f9; padding: 15px 15px 0; margin-bottom:10px;}
 .excelSearchWrapper table { width: 100%; height: 130px; font-size: 13px;  }
-.excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center;}
-.excelSearchWrapper table > tbody > tr > td { width: calc(50% - 31px);}
-.excelSearchWrapper table > tbody > tr > td:nth-child(3) { width: fit-content; text-align:right;}
+.excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center; padding-right:10px;}
+.excelSearchWrapper table > tbody > tr > td { width: calc(50% - 41px);}
+.excelSearchWrapper table > tbody > tr > td:nth-child(3) { width: fit-content; text-align:right; padding-right:0;}
 .excelSearchWrapper table > tbody > tr > td > .searchTypeSpan {display: inline-block; width: 20%; color: #9c936a; text-align: right; margin-right: 6px;}
 .excelSearchWrapper table > tbody > tr > td > #selectTemplateNm { width: 80%; padding-left: 10px; }
 .excelSearchWrapper table > tbody > tr > td > input[type='text'] { padding-left: 10px; }
