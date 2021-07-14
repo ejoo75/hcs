@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@font-face{ 
-	font-family:'NotoSans'; 
-	src: url('font/NotoSans-Regular.ttf') format('truetype');
-	font-weight: normal; font-style: normal;
-}
 
 .noticeHeader p{ height:40px; line-height:normal; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
 
