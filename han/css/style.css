@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 @charset "utf-8";
 
-html, body{height:100%;min-height:800px;margin:0px; font-family:'Noto Sans', Arial, tahoma}
-body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'Nanum Gothic', Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
+* {box-sizing:border-box;}
+html, body {height:100%;min-height:800px;margin:0px; font-family:'Malgun Gothic', '맑은 고딕', dotum, '돋움', AppleGothic, sans-serif, 'Noto Sans';font-size:12px;color:%23484848;line-height:1.5em;}
+body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button {}
 td {font-family:'Nanum Gothic', Arial, tahoma;color:#484848;line-height:1.5em;}
 h2 {font-family:'Nanum Gothic', Arial, tahoma;font-size:30px;line-height:1.6em;}
 h3 {font-family:'Nanum Gothic', Arial, tahoma;font-size:18px;line-height:1.4em;}
