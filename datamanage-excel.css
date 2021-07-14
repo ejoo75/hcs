@@ -7,16 +7,16 @@
 .excelSearchWrapper {border: 1px solid #e6e3df; background: #f9f9f9; padding: 10px;}
 .excelSearchWrapper table { width: 100%; height: 130px; font-size: 13px;  }
 .excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center;}
-.excelSearchWrapper table > tbody > tr > td:first-child { width: 60%;}
-.excelSearchWrapper table > tbody > tr > td:nth-child(2) { width: 30%;}
-.excelSearchWrapper table > tbody > tr > td > .searchTypeSpan {display: inline-block; width: 55px; color: #9c936a; text-align: right; margin-right: 6px;}
+.excelSearchWrapper table > tbody > tr > td:first-child { width: 40%;}
+.excelSearchWrapper table > tbody > tr > td:nth-child(2) { width: 40%;}
+.excelSearchWrapper table > tbody > tr > td > .searchTypeSpan {display: inline-block; width: 20%; color: #9c936a; text-align: right; margin-right: 6px;}
 .excelSearchWrapper table > tbody > tr > td > #selectTemplateNm { width: 80%; padding-left: 10px; }
 .excelSearchWrapper table > tbody > tr > td > input[type='text'] { padding-left: 10px; }
 .excelSearchWrapper table > tbody > tr > td > #excelCharger {width: 50%; }
 .excelSearchWrapper table > tbody > tr > td > #excelCycle { width: 50%; }
 .excelSearchWrapper table > tbody > tr > td > #excelVersion { width: 10%; }
 .excelSearchWrapper table > tbody > tr > td > #excelDesc {width: 80%; }
-.searchExcelBtn {display: inline-block; width: 60px; height: 20px; background: #21201E; color: #fff; text-align: center; padding: 5px 0px; border-radius: 5px; cursor: pointer; }
+.searchExcelBtn {display: inline-block; width: 40px; height: 20px; background: #fff; color: #9c836a; text-align: center; padding: 5px 10px; border-radius: 0; cursor: pointer; }
 
 .excelBtnWrapper { font-size: 13px; padding: 0px 20px; text-align: right;}
 .excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; text-align: center; padding: 3px 0px; border: 1px solid #858E96; border-radius: 5px; cursor: pointer; float: left;}
