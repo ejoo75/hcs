@@ -4,38 +4,6 @@
 	src: url('font/NotoSans-Regular.ttf') format('truetype');
 	font-weight: normal; font-style: normal;
 }
-html, body{height:100%;min-height:800px;margin:0px; font-family:'NotoSans', sans-serif;}
-body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:'NotoSans', sans-serif;font-size:14px;color:#666;}
-td {color:#666;line-height:1.5em;}
-h2 {font-size:20px;line-height:1.6em;}
-h3 {font-size:18px;line-height:1.6em;}
-body, th, td {font-size:14px}
-img{border:0px;}
-td img, td input, td select, td .button{vertical-align:middle}
-td{list-style-type:none;margin:0;padding:0}
-ul, dl, li, ol, h1, h2, h3, h4, h5, h6, dd, dt, p, div{list-style-type:none;margin:0;padding:0}
-em, address{font-style:normal}
-form{margin:0;padding:0}
-a{color:#000;text-decoration:none}
-a:hover{text-decoration:underline}
-
-body { background: #FAFAFA; font-family: 'NotoSans' !important;}
-input{vertical-align:middle}
-input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
-select {padding-left:7px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(images/ic_dropdown.png) no-repeat right center}
-select:hover {background-image:url(images/ic_dropdown_hover.png)}
-select:focus, select:active {background-image:url(images/ic_dropdown_active.png)}
-select::-ms-expand {display:none;}
-select, input, button, textarea {font-size:12px;outline: none;}
-select:focus, input:focus, textarea:focus {border-color:#e5e5e5;}
-select, input, textarea {color:#444;border:1px solid #cbcbcb;background-color: #fff;}
-select option, select optgroup {font-size:100%}
-textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #e5e5e5;padding:5px 10px}
 
 .noticeHeader { height:40px; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
 
