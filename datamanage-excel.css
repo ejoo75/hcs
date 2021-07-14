@@ -23,7 +23,7 @@
 .excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; height:30px; line-height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer; float: left;}
 .excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; height:30px; line-height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer;}
 
-.excelTemplateResultWrapper { height: calc(100% - 200px); overflow : auto; margin-top: 10px; border-top:1px solid #333; border-bottom:#c5c5c5;}
+.excelTemplateResultWrapper { height: calc(100% - 200px); overflow : auto; margin-top: 10px; border-top:1px solid #333; border-bottom:1px solid #c5c5c5;}
 .excelTemplateResultWrapper > #excelTemplateTbl { border: 1px solid #DEE2E5; border-collapse: collapse; }
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead th { border: 1px solid #e8e8e8; background:#fafafa; height: 35px; white-space: nowrap;}
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateHead { background: orange; }
