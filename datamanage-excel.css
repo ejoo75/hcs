@@ -7,7 +7,7 @@
 .excelSearchWrapper {border: 1px solid #e6e3df; background: #f9f9f9; padding: 15px; margin-bottom:10px;}
 .excelSearchWrapper table { width: 100%; height: 130px; font-size: 13px;  }
 .excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center;}
-.excelSearchWrapper table > tbody > tr > td:first-child { width: calc(50% - 25px);}
+.excelSearchWrapper table > tbody > tr > td { width: calc(50% - 25px);}
 .excelSearchWrapper table > tbody > tr > td:nth-child(3) { text-align:right;}
 .excelSearchWrapper table > tbody > tr > td > .searchTypeSpan {display: inline-block; width: 20%; color: #9c936a; text-align: right; margin-right: 6px;}
 .excelSearchWrapper table > tbody > tr > td > #selectTemplateNm { width: 80%; padding-left: 10px; }
