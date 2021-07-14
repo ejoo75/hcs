@@ -180,8 +180,8 @@ button {border:none;}
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #b7c4dc;background-color:#eef1f5;}
-.filter_wrap table {border-collapse:separate;border-spacing:10px;width:calc(100% - 200px);}
-.filter_wrap .btn_wrap {align-self:center;width:100px;border-left:1px solid #ccc;margin-let:20px;padding-left:20px;}
+.filter_wrap table {border-collapse:separate;border-spacing:10px;width:calc(100% - 140px);}
+.filter_wrap .btn_wrap {align-self:center;width:100px;border-left:1px solid #ccc;margin-left:20px;padding:10px 10px 10px 20px;}
 
  /* Error Page */
 .error_wrap{width:400px;margin:auto}
