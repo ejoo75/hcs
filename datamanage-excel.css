@@ -19,8 +19,8 @@
 .searchExcelBtn {display: inline-block; width: 40px; height: 20px; background: #fff; color: #9c836a; border:1px solid #9c836a; text-align: center; padding: 5px 10px; border-radius: 0; cursor: pointer; }
 
 .excelBtnWrapper { font-size: 13px; padding: 0px 20px; text-align: right;}
-.excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; text-align: center; padding: 3px 0px; border: 1px solid #858E96; border-radius: 5px; cursor: pointer; float: left;}
-.excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; text-align: center; padding: 3px 0px; border: 1px solid #858E96; border-radius: 5px; cursor: pointer;}
+.excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer; float: left;}
+.excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer;}
 
 .excelTemplateResultWrapper { width : 97%; height: 68%; overflow : auto; margin-top: 10px; padding: 0px 20px;}
 .excelTemplateResultWrapper > #excelTemplateTbl { border: 1px solid #DEE2E5; border-collapse: collapse; }
