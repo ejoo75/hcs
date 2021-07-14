@@ -19,14 +19,14 @@
 .searchExcelBtn {display: inline-block; width: 40px; height: 20px; background: #fff; color: #9c836a; border:1px solid #9c836a; text-align: center; padding: 5px 10px; border-radius: 0; cursor: pointer; }
 
 .excelBtnWrapper { font-size: 13px; padding: 0px 20px; text-align: right;}
-.excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer; float: left;}
-.excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer;}
+.excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; height:30px; line-height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer; float: left;}
+.excelBtnWrapper > #excelUploadBtn { display: inline-block; width: 95px; height:30px; line-height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer;}
 
-.excelTemplateResultWrapper { width : 97%; height: 68%; overflow : auto; margin-top: 10px; padding: 0px 20px;}
+.excelTemplateResultWrapper { height: calc(100% - 400px); overflow : auto; margin-top: 10px; border-top:1px solid #333; border-bottom:#c5c5c5;}
 .excelTemplateResultWrapper > #excelTemplateTbl { border: 1px solid #DEE2E5; border-collapse: collapse; }
-.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > th { border: 1px solid #DEE2E5; height: 25px; white-space: nowrap;}
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > th { border: 1px solid #e8e8e8; background:#fafafa; height: 35px; white-space: nowrap;}
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateHead { background: orange; }
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateAttrHead { background: red; }
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateValueHead { background: red; }
-.excelTemplateResultWrapper > #excelTemplateTbl > #templateTbody > tr > td {border: 1px solid #DEE2E5; text-align: center;}
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateTbody > tr > td {border: 1px solid #e8e8e8; text-align: center;}
 #emptyDiv { text-align: center; font-weight: bold;}
