@@ -123,7 +123,7 @@ section .elemWrapper tr {height: 38px;}
 section .elemWrapper .elemLabel { margin-right: 10px; }
 section .elemWrapper .elemLabel > span { width: 100px; display: inline-block; color:#9c936a; text-align: center;}
 section .promptArea #run-wrapper { text-align: center; vertical-align: middle; }
-section .promptArea #run-wrapper #report-run { cursor: pointer; display: inline-block; padding: 5px 10px; background: #fff; border-radius: 0; border: 1px solid #9c836a;
+section .promptArea #run-wrapper #report-run { width:40px; height:20px; cursor: pointer; display: inline-block; padding: 5px 10px; background: #fff; border-radius: 0; border: 1px solid #9c836a;
     									color: #9c836a; }
 section .promptArea #run-wrapper #report-run:hover {color: #fff; background-color: #8a7057;}
 section .promptToggleBtn {width:calc(100% - (4px + 4px)); height:16px; text-align: center; margin:0px 4px 4px 4px; }
