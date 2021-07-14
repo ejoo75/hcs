@@ -25,7 +25,7 @@
 
 .excelTemplateResultWrapper { height: calc(100% - 230px); overflow : auto; margin-top: 10px; border-top:1px solid #333; border-bottom:#c5c5c5;}
 .excelTemplateResultWrapper > #excelTemplateTbl { border: 1px solid #DEE2E5; border-collapse: collapse; }
-.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > th { border: 1px solid #e8e8e8; background:#fafafa; height: 35px; white-space: nowrap;}
+.excelTemplateResultWrapper > #excelTemplateTbl > #templateThead th { border: 1px solid #e8e8e8; background:#fafafa; height: 35px; white-space: nowrap;}
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateHead { background: orange; }
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateAttrHead { background: red; }
 .excelTemplateResultWrapper > #excelTemplateTbl > #templateThead > .templateValueHead { background: red; }
