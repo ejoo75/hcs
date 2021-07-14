@@ -66,7 +66,7 @@ input[readonly], select[readonly], textarea[readonly]{color:#929292;background-c
 input:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#9c836a;}
 input:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
 select {height:28px;padding-left:10px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(images/ic_dropdown.png) no-repeat right center}
 select:hover {background-image:url(images/ic_dropdown_hover.png)}
