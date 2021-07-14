@@ -4,7 +4,7 @@
 .datamanageHeader p {margin: 0px; padding: 10px 15px; color: #fff; font-weight: bold; font-size: 18px;}
 .datamanageBody {height: calc(100% - 72px); border: 1px solid #7c6c5d; border-top: 0px; padding:15px;}
 
-.excelSearchWrapper {border: 1px solid #e6e3df; background: #f9f9f9; padding: 15px; margin-bottom:10px;}
+.excelSearchWrapper {border: 1px solid #e6e3df; background: #f9f9f9; padding: 15px 15px 0; margin-bottom:10px;}
 .excelSearchWrapper table { width: 100%; height: 130px; font-size: 13px;  }
 .excelSearchWrapper table > tbody > tr > td { display: inline-flex; height: 32px; align-items: center;}
 .excelSearchWrapper table > tbody > tr > td { width: calc(50% - 31px);}
