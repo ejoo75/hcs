@@ -326,7 +326,6 @@ span.form_multi + ul li:after {display:none;}
 .btn_excel {text-indent:-9999px;font-size:0;border:1px solid #422973;background:#fff url(../images/icons.png) no-repeat center -57px;padding:0 14px;}
 .btn_reset {width:30px;height:30px;color:#fff;text-align:center;background-color:#44464a;}
 
-
 /* File Atttch */
 input.upload_text {float:left;width:230px;height:21px;line-height:21px;padding:0 3px;border:1px solid #ccd1eb;}
 div.upload-btn_wrap input.input_file {position:absolute;top:0;right:0;cursor:pointer;opacity:0;filter:alpha(opacity=0);-ms-filter:"alpha(opacity=0)";-moz-opacity:0;}
