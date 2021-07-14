@@ -76,7 +76,7 @@ select, input[type=text], button, textarea {font-size:12px;outline: none;}
 select:focus, input:focus, textarea:focus {border-color:#9c836a;}
 select, input, textarea {color:#444;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%}
-textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #e5e5e5;padding:5px 10px}
+textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
