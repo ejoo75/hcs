@@ -199,7 +199,7 @@ button {height:27px;text-align:center;border:none;border-radius:3px;}
  /* List */
 .list_wrap {border-top:1px solid #404348;border-bottom:1px solid #c5c5c5;}
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.list_v thead tr{background-color:#f9f9f9}
+table.list_v thead tr{background-color:#eaeff5;}
 table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f9fbfc}
 table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;white-space:nowrap;}
