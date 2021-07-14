@@ -122,7 +122,6 @@ section .elemWrapper { width: 100%; }
 section .elemWrapper tr {height: 38px;}
 section .elemWrapper .elemLabel { margin-right: 10px; }
 section .elemWrapper .elemLabel > span { width: 100px; display: inline-block; color:#9c936a; text-align: center;}
-section .elemWrapper input {border:1px solid #e6e3df;}
 section .promptArea #run-wrapper { text-align: center; vertical-align: middle; }
 section .promptArea #run-wrapper #report-run { cursor: pointer; display: inline-block; padding: 5px 10px; background: #fff; border-radius: 0; border: 1px solid #9c836a;
     									color: #9c836a; }
