@@ -17,6 +17,7 @@
 .excelSearchWrapper table > tbody > tr > td > #excelVersion { width: 10%; }
 .excelSearchWrapper table > tbody > tr > td > #excelDesc {width: 80%; }
 .searchExcelBtn {display: inline-block; width: 40px; height: 20px; background: #fff; color: #9c836a; border:1px solid #9c836a; text-align: center; padding: 5px 10px; border-radius: 0; cursor: pointer; }
+.searchExcelBtn:hover {color:#fff; background-color:#8a7057;}
 
 .excelBtnWrapper { font-size: 13px; padding: 0px 20px; text-align: right;}
 .excelBtnWrapper > #excelDownloadBtn { display: inline-block; width: 95px; height:30px; line-height:30px; text-align: center; border: 1px solid #93928f; border-radius: 3px; cursor: pointer; float: left;}
