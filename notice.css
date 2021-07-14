@@ -5,7 +5,7 @@
 	font-weight: normal; font-style: normal;
 }
 
-.noticeHeader { height:40px; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
+.noticeHeader p{ height:40px; line-height:normal; color:#9c836a; padding: 15px 20px 0; text-align: left; font-size: 20px; border-bottom:1px solid #e6e3df;}
 
 .noticeWrapper { height: 75%; margin: 15px 20px; background: #fff;}
 .noticeWrapper > table {width: 100%; height: 100%; border: 1px solid #e8e8e8; border-collapse: collapse;}
