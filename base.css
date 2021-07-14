@@ -66,7 +66,7 @@ input[readonly], select[readonly], textarea[readonly]{color:#929292;background-c
 input[type='text']:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input[type='text']:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input[type='text']:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input[type='text']:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#9c836a;}
+input[type='text']:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#666;background-color:#fcfcfc;border-color:#9c836a;}
 input[type='text']:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
 select {height:28px;padding-left:10px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(images/ic_dropdown.png) no-repeat right center}
 select:hover {background-image:url(images/ic_dropdown_hover.png)}
@@ -74,9 +74,9 @@ select:focus, select:active {background-image:url(images/ic_dropdown_active.png)
 select::-ms-expand {display:none;}
 select, input[type='text'], button, textarea {font-size:12px;outline: none;}
 select:focus, input[type='text']:focus, textarea:focus {border-color:#9c836a;}
-select, input[type='text'], textarea {color:#444;border:1px solid #cbcbcb;background-color: #fff;}
+select, input[type='text'], textarea {color:#666;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%}
-textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px}
+textarea {overflow:auto;font-size:100%;white-wrapㄹㄹ:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
