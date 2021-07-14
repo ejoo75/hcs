@@ -19,24 +19,22 @@ form{margin:0;padding:0}
 a{color:#242d33;text-decoration:none}
 a:hover{text-decoration:underline}
 input{vertical-align:middle}
+input[type='text']{height:24px;padding-left:10px;}
 input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
-input:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
-select {padding-left:7px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../images/ic_dropdown.png) no-repeat right center}
-select:hover {background-image:url(../images/ic_dropdown_hover.png)}
-select:focus, select:active {background-image:url(../images/ic_dropdown_active.png)}
+input[type='text']:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input[type='text']:read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input[type='text']:focus:-moz-read-only {color:#929292;background-color:#fcfcfc;border-color:#dedede;}
+input[type='text']:focus:read-only, select:focus:read-only , textarea:focus:read-only  {color:#666;background-color:#fcfcfc;border-color:#9c836a;}
+input[type='text']:disabled {color:#c9c9c9;background-color:#f6f6f6;border-color:#eaeaea;}
+select {height:28px;padding-left:10px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(images/ic_dropdown.png) no-repeat right center}
+select:hover {background-image:url(images/ic_dropdown_hover.png)}
+select:focus, select:active {background-image:url(images/ic_dropdown_active.png)}
 select::-ms-expand {display:none;}
-select, input, button, textarea {font-size:12px;outline: none;}
-select:focus, input:focus, textarea:focus {border-color:#e5e5e5;}
-select, input, textarea {color:#444;border:1px solid #ccd1eb;background-color: #fff;}
+select, input[type='text'], button, textarea {font-size:12px;outline: none;}
+select:focus, input[type='text']:focus, textarea:focus {border-color:#9c836a;}
+select, input[type='text'], textarea {color:#666;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%}
-textarea {overflow:auto;font-size:100%;white-wrap:pre-wrap;width:98%;border:1px solid #e5e5e5;padding:5px 10px}
-button {cursor:pointer;height:25px;color:#53535d;vertical-align:top;background-color:#fff;border:1px solid #bbc0d7;border-radius:3px;padding:0 15px;}
-button:hover {border:1px solid #64687d;}
-button:disabled {color:#a0a0a3;background-color:#bdbdbd}
+textarea {overflow:auto;font-size:100%;white-wrapㄹㄹ:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px}
 
  /* Layout */
 #wrap {height:100%;min-width:1600px;}
