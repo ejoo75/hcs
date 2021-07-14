@@ -181,7 +181,7 @@ button {border:none;}
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #b7c4dc;background-color:#eef1f5;}
 .filter_wrap table {border-collapse:separate;border-spacing:10px;width:calc(100% - 128px);}
-.filter_wrap .btn_wrap {display:flex;align-self:center;width:128px;border-left:1px solid #dcdcdc;margin-left:20px;padding:10px 10px 10px 20px;}
+.filter_wrap .btn_wrap {display:flex;align-self:center;width:128px;border-left:1px solid #dcdcdc;margin:0 10px 0 20px;padding:0 10px 0 20px;}
 
  /* Error Page */
 .error_wrap{width:400px;margin:auto}
@@ -324,7 +324,7 @@ span.form_multi + ul li:after {display:none;}
 .btn_find:hover{background-color:unset;background-position:center -27px;}
 .btn_acrobat {text-indent:-9999px;font-size:0;border:1px solid #422973;background:#fff url(../images/icons.png) no-repeat center -26px;padding:0 14px;}
 .btn_excel {text-indent:-9999px;font-size:0;border:1px solid #422973;background:#fff url(../images/icons.png) no-repeat center -57px;padding:0 14px;}
-.btn_reset {width:30px;height:30px;color:#fff;padding:3px 0 0 0;background-color:#a39a95;}
+.btn_reset {width:30px;height:30px;color:#fff;padding:3px 0 0 0;background-color:#a39a95;margin-right:4px;}
 
 /* File Atttch */
 input.upload_text {float:left;width:230px;height:21px;line-height:21px;padding:0 3px;border:1px solid #ccd1eb;}
