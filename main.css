@@ -116,7 +116,7 @@ section .reportInfo #reportInfoWrapper #report_radio > input[type='radio'] {widt
 section .reportInfo #reportInfoWrapper #report_radio > input[type='radio']:first-child {margin-left: 0px !important;}
 section .reportInfo #btnReportBookmark_default {vertical-align:bottom; cursor: pointer;}
 section .reportInfo #btnReportBookmark_active {vertical-align:bottom; cursor: pointer;}
-section .promptArea {width:calc(100% - 30px); height:auto; text-align: left; margin:15px 4px 0px 4px; font-size : 12px;
+section .promptArea {height:auto; text-align: left; margin:15px 20px 0px 20px; font-size : 12px;
 					border: 1px solid #e6e3df; padding: 10px; background: #f9f9f9; border-radius: 5px;}
 section .elemWrapper { width: 100%; }
 section .elemWrapper tr {height: 38px;}
