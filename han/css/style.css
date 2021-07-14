@@ -1,15 +1,14 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?kit=E213_dr5iuXOlR8OOFd4O0YzGuq3ctKBgpDZ7gXuZE0iaf6L9bUG1z3JBQ')');
+@import url('https://fonts.googleapis.com/css?kit=E213_dr5iuXOlR8OOFd4O0YzGuq3ctKBgpDZ7gXuZE0iaf6L9bUG1z3JBQ');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 @charset "utf-8";
 
 * {box-sizing:border-box;}
-html, body {height:100%;min-height:800px;margin:0px; font-family:'Malgun Gothic', '맑은 고딕', dotum, '돋움', AppleGothic, sans-serif, 'Noto Sans';font-size:12px;color:%23484848;line-height:1.5em;}
+html, body {height:100%;min-height:800px;margin:0px; font-family:'Malgun Gothic', '맑은 고딕', dotum, '돋움', AppleGothic, sans-serif, 'Noto Sans';font-size:12px;color:#222;line-height:1.5em;}
 body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button {}
-td {font-family:'Nanum Gothic', Arial, tahoma;color:#484848;line-height:1.5em;}
-h2 {font-family:'Nanum Gothic', Arial, tahoma;font-size:30px;line-height:1.6em;}
-h3 {font-family:'Nanum Gothic', Arial, tahoma;font-size:18px;line-height:1.4em;}
-th {font-size:11px}
+h2 {font-size:30px;line-height:1.6em;}
+h3 {line-height:1.4em;}
+th {font-size:13px;}
 img{border:0px;}
 td img, td input, td select, td .button{vertical-align:middle}
 td{list-style-type:none;margin:0;padding:0}
