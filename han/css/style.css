@@ -197,13 +197,13 @@ button {height:27px;text-align:center;border:none;border-radius:3px;}
 .btn_wrap {clear:both;text-align:right;}
 
  /* List */
-.list_wrap {background-color:#fff;border-top:none;}
+.list_wrap {border-top:1px solid #f9f9f9;border-bottom:1px solid #c5c5c5;}
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;border:1px solid #b7c4dc;}
-table.list_v thead tr{background-color:#eef1f5}
+table.list_v thead tr{background-color:#f9f9f9}
 table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f7f7f7}
-table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #b7c4dc;border-bottom:1px solid #b7c4dc;white-space:nowrap;}
-table.list_v td {position:relative;padding:4px 10px;border-top:1px solid #dde3ea;border-right:1px solid #dde3ea;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;white-space:nowrap;}
+table.list_v td {position:relative;padding:4px 10px;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
 table.list_v td:last-child {border-right:none}
 table.list_v .over {background:#fafafa!important;}
 table.list_v .select {background:#f7f7f7;}
