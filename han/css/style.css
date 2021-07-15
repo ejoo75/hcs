@@ -197,7 +197,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .btn_wrap {clear:both;text-align:right;}
 
  /* List */
-.list_wrap {border-top:1px solid #404348;border-bottom:1px solid #c5c5c5;}
+.list_wrap {border-top:1px solid #404348;border-bottom:1px solid #c5c5c5;margin-bottom:10px;}
 table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;}
 table.list_v thead tr{background-color:#eaeff5;}
 table.list_v tr {background-color:#fff}
