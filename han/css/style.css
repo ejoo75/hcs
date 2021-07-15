@@ -9,15 +9,14 @@ body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button {}
 h2 {font-size:20px;line-height:1.6em;}
 h3 {font-size:18px;line-height:1.4em;}
 th {font-size:13px;}
-img {border:0px;}
-td img, td input, td select, td .button {vertical-align:middle;}
+img {border:0px;vertical-align:middle;}
+input, select, button {vertical-align:middle;}
 td {list-style-type:none;margin:0;padding:0;}
 ul, dl, li, ol, h1, h2, h3, h4, h5, h6, dd, dt, p, div {list-style-type:none;margin:0;padding:0;}
 em, address {font-style:normal;}
 form {margin:0;padding:0;}
 a {color:#222;text-decoration:none;}
 a:hover {text-decoration:underline;}
-input, select, button {vertical-align:middle}
 input[type='text']{height:27px;padding-left:10px;}
 input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input[type='text']:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
