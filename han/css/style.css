@@ -316,7 +316,7 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
 select.error, input.error {color:#ee392f;border:1px solid #ee392f;}
 .error_msg {color:#ee392f;margin-left:10px;}
 
-.mdt:after {content:'*';color:#e83e3e;font-size:18px;margin-right:5px;}
+.mdt:after {content:'*';color:#f37321;font-size:18px;margin-right:5px;}
 input.form_date {cursor:pointer;width:105px!important;background:#fff url(../images/ic_cal.png) no-repeat 83px 4px;padding-right:30px}
 input.form_date:focus{border:1px solid #e5e5e5}
 span.form_multi {display:inline-block;width:188px;height:30px;border: 1px solid #e5e5e5;background:url(../images/ic_dropdown.png) no-repeat right center;padding-left:10px;}
