@@ -224,7 +224,7 @@ table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top
 
  /* Write */
 table.write_table {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.write_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;font-weight:bold;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
+table.write_table th {position:relative;width:100px;padding:14px 10px 0;vertical-align:top;overflow:hidden;background-color:#eaeff5;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
 table.write_table td {position:relative;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 table.write_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
 table.write_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
