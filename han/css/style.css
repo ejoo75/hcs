@@ -224,8 +224,8 @@ table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top
 
  /* Write */
 table.write_table {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.write_table th {position:relative;width:100px;text-align:left;padding:4px 10px;vertical-align:top;overflow:hidden;background-color:#f9f9f9;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
-table.write_table td {position:relative;min-height:35px;padding:4px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+table.write_table th {position:relative;width:100px;height:35px;text-align:left;padding:8px 10px;vertical-align:top;overflow:hidden;background-color:#f9f9f9;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
+table.write_table td {position:relative;padding:4px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 table.write_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
 
  /* Header */
