@@ -220,7 +220,7 @@ table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold
 table.faq_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
 table.faq_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
 table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
-.faq_a th, .faq_a td {border-bottom:1px solid #f1f1f1;}
+.faq_a th, .faq_a td {border-bottom:1px solid #c5c5c5;}
 
  /* Header */
 .list_header {overflow:hidden;margin-bottom:10px;}
