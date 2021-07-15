@@ -179,7 +179,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #f1eeec;background-color:#f9f8f8;}
-.filter_wrap table {width:calc(100% - 128px);}
+.filter_wrap .table_wrap {width:calc(100% - 128px);}
 .filter_wrap table {border-collapse:separate;border-spacing:10px;}
 .filter_wrap table th {text-align:left;padding-right:10px;}
 .filter_wrap table td {padding-right:30px;}
@@ -214,17 +214,16 @@ table.list_v .select {background:#f7f7f7;}
 table.list_v td select {width:100%;font-size:14px;height:30px;}
 
  /* FAQ */
-.table_wrap {border-top:1px solid #404348;border-bottom:1px solid #c5c5c5;margin-bottom:10px;}
 table.faq_table {border-collapse:collapse;width:100%;table-layout: fixed;}
 table.faq_table th {position:relative;color:#f37f21;font-size:18px:font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #dcdfe2;border-bottom:1px solid #dcdfe2;white-space:nowrap;}
 table.faq_table td {position:relative;color:#555;padding:4px 10px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
 table.faq_table tr:hover td {background-color:#f9f9f9;}
 
  /* Header */
-.table_header {overflow:hidden;margin-bottom:10px;}
-.table_header .search_wrap {float:right;display:flex;}
-.table_header .search_wrap input[type='text'] {height:30px;border-color:#a39a95;border-radius:3px 0 0 3px;}
-.table_header .search_wrap .btn_search {border-radius:0 3px 3px 0;}
+.list_header {overflow:hidden;margin-bottom:10px;}
+.list_header .search_wrap {float:right;display:flex;}
+.list_header .search_wrap input[type='text'] {height:30px;border-color:#a39a95;border-radius:3px 0 0 3px;}
+.list_header .search_wrap .btn_search {border-radius:0 3px 3px 0;}
 
 td .notice {color:#fff;font-size:10px;background-color:#2d1264;border-radius:9px;padding:3px 7px;}
 td .faq {color:#fff;font-size:10px;background-color:#ec008c;border-radius:9px;padding:3px 7px;}
