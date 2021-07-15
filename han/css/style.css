@@ -17,7 +17,7 @@ em, address {font-style:normal;}
 form {margin:0;padding:0;}
 a {color:#242d33;text-decoration:none;}
 a:hover {text-decoration:underline;}
-input{vertical-align:middle}
+input, select, button {vertical-align:middle}
 input[type='text']{height:27px;padding-left:10px;}
 input[readonly], select[readonly], textarea[readonly]{color:#929292;background-color:#fcfcfc;border-color:#dedede;}
 input[type='text']:-moz-read-only {cursor:default;color:#929292;background-color:#fcfcfc;border-color:#dedede;}
@@ -181,7 +181,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #f1eeec;background-color:#f9f8f8;}
 .filter_wrap table {border-collapse:separate;border-spacing:10px;width:calc(100% - 128px);}
-.filter_wrap .btn_wrap {display:flex;align-self:center;width:128px;border-left:1px solid #dcdcdc;margin:0 10px 0 20px;padding:0 10px 0 20px;}
+.filter_wrap .btn_wrap {vertical-align:middle;align-self:center;width:128px;border-left:1px solid #dcdcdc;margin:0 20px;padding-right:20px;}
 
  /* Error Page */
 .error_wrap{width:400px;margin:auto}
