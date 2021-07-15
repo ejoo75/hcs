@@ -204,6 +204,7 @@ table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f9fbfc}
 table.list_v th {position:relative;color:#53535d;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #dcdfe2;border-bottom:1px solid #dcdfe2;white-space:nowrap;}
 table.list_v td {position:relative;padding:4px 10px;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+table.list_v tr:hover td {background-color:#f9f9f9;}
 table.list_v td:last-child {border-right:none}
 table.list_v .over {background:#fafafa!important;}
 table.list_v .select {background:#f7f7f7;}
