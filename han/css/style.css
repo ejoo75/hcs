@@ -224,12 +224,9 @@ table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top
 
  /* Write */
 table.write_table {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.write_table th {position:relative;width:100px;text-align:left;padding:14px 10px 0;vertical-align:top;overflow:hidden;background-color:#eaeff5;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
+table.write_table th {position:relative;width:100px;text-align:left;padding:14px 10px 0;vertical-align:top;overflow:hidden;background-color:#f9f9f9;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
 table.write_table td {position:relative;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-table.write_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
-table.write_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
 table.write_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
-.faq_a th, .faq_a td {border-bottom:1px solid #c5c5c5;}
 
  /* Header */
 .list_header {overflow:hidden;margin-bottom:10px;}
