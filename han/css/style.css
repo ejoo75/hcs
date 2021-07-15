@@ -6,8 +6,8 @@
 * {box-sizing:border-box;}
 html, body {height:100%;min-height:800px;margin:0px; font-family:'Malgun Gothic', '맑은 고딕', dotum, '돋움', AppleGothic, sans-serif, 'Noto Sans';font-size:12px;color:#222;line-height:1.5em;}
 body, th, body, ul, li, dl, dd, dt, p, div, input, select, textarea, button {}
-h2 {font-size:30px;line-height:1.6em;}
-h3 {line-height:1.4em;}
+h2 {font-size:20px;line-height:1.6em;}
+h3 {font-size:18px;line-height:1.4em;}
 th {font-size:13px;}
 img {border:0px;}
 td img, td input, td select, td .button {vertical-align:middle;}
@@ -190,7 +190,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .error_wrap .error .msg_wrap {margin:30px auto 0;padding:100px 120px;background:url(../images/ic_error.png) no-repeat center 20px;}
 .error_wrap .error .msg_wrap h3{color:#e29600;margin-bottom:10px}
 
-.title_wrap {overflow:hidden;padding:0 0 10px 0;} /* 20200906 - paddingLeft */
+.title_wrap {overflow:hidden;margin-bottom:10px;} /* 20200906 - paddingLeft */
 .title_wrap h3 {float:left;}
 .title_wrap .btn_wrap {float:right;clear:none;}
 
@@ -219,7 +219,7 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
 .scroll .list_v{border-top:none;border-bottom:none;}
 
  /* Paging */
-.paging {text-align:center;padding:10px 0;}
+.paging {text-align:center;margin-bottom:10px;}
 .paging button {width:27px;padding:0;}
 .paging span {color:#999;font-size:18px;}
 
