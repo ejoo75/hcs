@@ -30,8 +30,8 @@ select:hover {background-image:url(images/ic_dropdown_hover.png);}
 select:focus, select:active {background-image:url(images/ic_dropdown_active.png);}
 select::-ms-expand {display:none;}
 select, input[type='text'], button, textarea {font-size:12px;outline:none;}
-select:focus, input[type='text']:focus, textarea:focus {border-color:#9c836a;}
-select, input[type='text'], textarea {color:#666;border:1px solid #cbcbcb;background-color: #fff;}
+select:focus, input[type='text']:focus, textarea:focus {border-color:#101010;}
+select, input[type='text'], textarea {border:1px solid #d9d9d9;background-color: #fff;}
 select option, select optgroup {font-size:100%;}
 textarea {overflow:auto;font-size:100%;white-wrapㄹㄹ:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px;}
 button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;border-radius:3px;padding:0 15px;}
