@@ -205,8 +205,8 @@ table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;}
 table.list_v thead tr{background-color:#eaeff5;}
 table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f9fbfc}
-table.list_v th {position:relative;color:#222;font-weight:bold;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #dcdfe2;border-bottom:1px solid #dcdfe2;white-space:nowrap;}
-table.list_v td {position:relative;color:#555;padding:4px 10px;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+table.list_v th {position:relative;height:30px;padding:6px 10px;min-width:100px;overflow:hidden;text-overflow:ellipsis;border-right:1px solid #dcdfe2;border-bottom:1px solid #dcdfe2;white-space:nowrap;}
+table.list_v td {position:relative;height:27px;padding:4px 10px;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
 table.list_v tr:hover td {background-color:#f9f9f9;}
 table.list_v td:last-child {border-right:none}
 table.list_v .over {background:#fafafa!important;}
@@ -215,11 +215,20 @@ table.list_v td select {width:100%;font-size:14px;height:30px;}
 
  /* FAQ */
 table.faq_table {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.faq_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;font-weight:bold;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
+table.faq_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
 table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 table.faq_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
 table.faq_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
 table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
+.faq_a th, .faq_a td {border-bottom:1px solid #c5c5c5;}
+
+ /* Write */
+table.write_table {border-collapse:collapse;width:100%;table-layout: fixed;}
+table.write_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;font-weight:bold;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
+table.write_table td {position:relative;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+table.write_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
+table.write_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
+table.write_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
 .faq_a th, .faq_a td {border-bottom:1px solid #c5c5c5;}
 
  /* Header */
