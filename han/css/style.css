@@ -179,7 +179,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #f1eeec;background-color:#f9f8f8;}
-.filter_wrap .table_wrap {width:calc(100% - 128px);}
+.filter_wrap table {width:calc(100% - 128px);}
 .filter_wrap table {border-collapse:separate;border-spacing:10px;}
 .filter_wrap table th {text-align:left;padding-right:10px;}
 .filter_wrap table td {padding-right:30px;}
@@ -223,9 +223,8 @@ table.faq_table tr:hover td {background-color:#f9f9f9;}
  /* Header */
 .table_header {overflow:hidden;margin-bottom:10px;}
 .table_header .search_wrap {float:right;display:flex;}
-.table_header .search_wrap input[type='text'] {height:30px;border-color:#f37321;border-radius:3px 0 0 3px;}
-.table_header .search_wrap .btn_search {padding:3px 0 0 0;border-radius:0 3px 3px 0;}
-.table_header .search_wrap .btn_search span {color:#fff;}
+.table_header .search_wrap input[type='text'] {height:30px;border-color:#a39a95;border-radius:3px 0 0 3px;}
+.table_header .search_wrap .btn_search {border-radius:0 3px 3px 0;}
 
 td .notice {color:#fff;font-size:10px;background-color:#2d1264;border-radius:9px;padding:3px 7px;}
 td .faq {color:#fff;font-size:10px;background-color:#ec008c;border-radius:9px;padding:3px 7px;}
@@ -331,8 +330,8 @@ span.form_multi + ul li:after {display:none;}
 .btn_normal:hover {background-color:#eaeaea;border:1px solid #c5c5c5;}
 .btn_common {color:#fff;background-color:#7d7f82;}
 .btn_common:hover {background-color:#44464a;}
-.btn_search {width:60px;height:30px;line-height:31px;color:#fff;font-size:13px;background-color:#f37321;padding:0;}
-.btn_search:hover {background-color:#eb6242;}
+.btn_apply {width:60px;height:30px;line-height:31px;color:#fff;font-size:13px;background-color:#f37321;padding:0;}
+.btn_apply:hover {background-color:#eb6242;}
 .btn_delete {display:none;position:absolute;top:10px;left:400px;text-indent:-9999px;width:16px;height:16px;margin-left:-40px;border:none;background:url(../images/ic_close.png) no-repeat center 0;padding:0;}
 .btn_delete:hover {background:none;background-image:url(../images/ic_close.png);background-repeat:no-repeat;background-position:center -16px;}
 .btn_date {width:20px;height:27px;text-indent:-9999px;font-size:0;background:url(../images/ic_cal.png) no-repeat 0 3px;padding:0;margin-left:5px;border:none}
@@ -343,6 +342,8 @@ span.form_multi + ul li:after {display:none;}
 .btn_excel {text-indent:-9999px;font-size:0;border:1px solid #422973;background:#fff url(../images/icons.png) no-repeat center -57px;padding:0 14px;}
 .btn_reset {width:30px;height:30px;color:#fff;padding:3px 0 0 0;background-color:#a39a95;}
 .btn_reset:hover {background-color:#937b6e;}
+.btn_search {width:30px;height:30px;color:#fff;padding:3px 0 0 0;background-color:#a39a95;}
+.btn_search:hover {background-color:#937b6e;}
 
 /* File Atttch */
 input.upload_text {float:left;width:230px;height:21px;line-height:21px;padding:0 3px;border:1px solid #ccd1eb;}
