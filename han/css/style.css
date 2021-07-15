@@ -219,6 +219,7 @@ table.faq_table th {position:relative;width:100px;height:50px;color:#f37f21;font
 table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold;padding:4px 10px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
 table.faq_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
 table.faq_table tr:hover td {background-color:#f9f9f9;}
+.faq_q {}
 
  /* Header */
 .list_header {overflow:hidden;margin-bottom:10px;}
