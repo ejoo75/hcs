@@ -180,7 +180,8 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .content_wrap {padding:10px 20px;} /* 20200906 - paddingLeftRight */
 .content_wrap .tab {margin:0}
 .filter_wrap {display:flex;margin-bottom:10px;border:1px solid #f1eeec;background-color:#f9f8f8;}
-.filter_wrap table {border-collapse:separate;border-spacing:10px;width:calc(100% - 128px);}
+.filter_wrap .table_wrap {width:calc(100% - 128px);}
+.filter_wrap table {border-collapse:separate;border-spacing:10px;}
 .filter_wrap table th {width:120px;text-align:left;padding-right:10px;}
 .filter_wrap table td {box-sizing:content-box;padding-right:30px;}
 .filter_wrap table td input[type='text'] {width:170px;}
