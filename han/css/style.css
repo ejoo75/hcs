@@ -216,11 +216,11 @@ table.list_v td select {width:100%;font-size:14px;height:30px;}
  /* FAQ */
 table.faq_table {border-collapse:collapse;width:100%;table-layout: fixed;}
 table.faq_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;font-weight:bold;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #dcdfe2;white-space:nowrap;}
-table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold;padding:4px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 table.faq_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
-table.faq_table tr:hover td {background-color:#f9f9f9;}
-table.faq_table tr:first-child td {border-top:none;}
-.faq_a div {border-bottom:1px solid #f1f1f1;}
+table.faq_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
+table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top:none;}
+.faq_a th, .faq_a td {border-bottom:1px solid #f1f1f1;}
 
  /* Header */
 .list_header {overflow:hidden;margin-bottom:10px;}
