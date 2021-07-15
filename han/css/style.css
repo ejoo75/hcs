@@ -225,7 +225,7 @@ table.faq_table tr:first-child th, table.faq_table tr:first-child td {border-top
  /* Header */
 .list_header {overflow:hidden;margin-bottom:10px;}
 .list_header .search_wrap {float:right;display:flex;}
-.list_header .search_wrap input[type='text'] {height:30px;border-color:#a39a95;border-radius:3px 0 0 3px;}
+.list_header .search_wrap input[type='text'] {width:200px;height:30px;border-color:#a39a95;border-radius:3px 0 0 3px;}
 .list_header .search_wrap .btn_search {border-radius:0 3px 3px 0;}
 
 td .notice {color:#fff;font-size:10px;background-color:#2d1264;border-radius:9px;padding:3px 7px;}
@@ -238,7 +238,7 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
  /* Paging */
 .paging {text-align:center;margin-bottom:10px;}
 .paging button {width:27px;padding:0;}
-.paging span {color:#999;font-size:18px;}
+.paging span {color:#999;font-size:18px;margin-top:2px;}
 
 /* Margin */
 .mt_5 {margin-top:5px;}
