@@ -220,6 +220,8 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
 
  /* Paging */
 .paging {text-align:center;padding:10px 0;}
+.paging button {width:27px;padding:0;}
+
 .paging a{padding:5px 10px;color:#888;font-weight:bold;vertical-align:middle}
 .paging a:hover, .paging span:hover {color:#53535d;}
 .paging span {cursor:pointer;display:inline-block;width:20px;height:28px;background:url(../images/ic_paging.png) no-repeat;vertical-align:middle}
@@ -233,10 +235,24 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
 .paging .last:hover {background-position:center -206px}
 .paging b {display:inline-block;width:20px;height:20px;color:#2986bc;vertical-align:middle}
 
- /* Forms */
- .tag span {display:inline-block;font-size:13px;font-weight:bold;background-color:#e3e5ea;margin-right:4px;margin-bottom: 4px;padding:2px 6px;border-radius:2px}
+/* Margin */
+.mt_5 {margin-top:5px;}
+.mt_10 {margin-top:10px;}
+.mt_15 {margin-top:15px;}
+.mr_4 {margin-right:4px;}
+.mr_5 {margin-right:5px;}
+.mr_10 {margin-right:10px;}
+.mr_15 {margin-right:15px;}
+.mb_5 {margin-bottom:5px;}
+.mb_10 {margin-bottom:10px;}
+.mb_15 {margin-bottom:15px;}
+.ml_4 {margin-left:4px;}
+.ml_5 {margin-left:5px;}
+.ml_10 {margin-left:10px;}
+.ml_15 {margin-left:15px;}
 
  /* Forms */
+.tag span {display:inline-block;font-size:13px;font-weight:bold;background-color:#e3e5ea;margin-right:4px;margin-bottom: 4px;padding:2px 6px;border-radius:2px}
 .forms_wrap {background-color:#fff;border:1px solid #b7c4dc;border-right:none;margin-bottom:10px}
 .forms_wrap .forms {background:#eef1f5;}
 .forms_wrap .forms dt{width:calc(15% - 30px);text-align:left;border-bottom:1px solid #b7c4dc;padding-top:10px;padding-left:10px}
