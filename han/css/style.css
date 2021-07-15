@@ -34,7 +34,7 @@ select:focus, input[type='text']:focus, textarea:focus {border-color:#9c836a;}
 select, input[type='text'], textarea {color:#666;border:1px solid #cbcbcb;background-color: #fff;}
 select option, select optgroup {font-size:100%;}
 textarea {overflow:auto;font-size:100%;white-wrapㄹㄹ:pre-wrap;width:98%;border:1px solid #cbcbcb;padding:5px 10px;}
-button {height:27px;text-align:center;border:none;border-radius:3px;padding:0 15px;}
+button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;border-radius:3px;padding:0 15px;}
 
  /* Layout */
 #wrap {height:100%;min-width:1600px;}
@@ -306,11 +306,11 @@ span.form_multi + ul li:after {display:none;}
 .violet{color:#745fa0}
 
 /* Button */
-.btn_normal {border:1px solid #e5e5e5;}
+.btn_normal {color:#222;background-color:#fff;border:1px solid #e5e5e5;}
 .btn_normal:hover {background-color:#eaeaea;}
 .btn_common {color:#fff;background-color:#7d7f82;}
 .btn_common:hover {background-color:#44464a;}
-.btn_search {width:60px;height:30px;color:#fff;font-size:13px;background-color:#f37321;padding:0;}
+.btn_search {width:60px;height:30px;line-height:31px;color:#fff;font-size:13px;background-color:#f37321;padding:0;}
 .btn_search:hover {background-color:#eb6242;}
 .btn_delete {display:none;position:absolute;top:10px;left:400px;text-indent:-9999px;width:16px;height:16px;margin-left:-40px;border:none;background:url(../images/ic_close.png) no-repeat center 0;padding:0;}
 .btn_delete:hover {background:none;background-image:url(../images/ic_close.png);background-repeat:no-repeat;background-position:center -16px;}
