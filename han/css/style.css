@@ -252,7 +252,8 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
 .forms_wrap .forms dd .float_right{margin-bottom:5px}
 .bordernone{border-bottom:none!important}
 
-.ic_file {cursor:pointer;display:inline-block;width:15px;height:15px;background:url(../images/icons.png) no-repeat -1px -123px;}
+.ic_file {width:15px;height:15px;}
+.ic_file span {color:#999;font-size:15px;}
 .ic_edit {cursor:pointer;display:inline-block;width:20px;height:20px;background:url(../images/ic_edit.png) no-repeat center 1px;}
 .ic_deact {cursor:pointer;display:inline-block;width:20px;height:20px;background:url(../images/ic_deact.png) no-repeat center 1px;}
 .ic_password {cursor:pointer;display:inline-block;width:20px;height:20px;background:url(../images/ic_password.png) no-repeat center 1px;}
