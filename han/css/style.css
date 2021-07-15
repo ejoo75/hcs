@@ -221,7 +221,7 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
  /* Paging */
 .paging {text-align:center;padding:10px 0;}
 .paging button {width:27px;padding:0;}
-.paging span {color:#999;}
+.paging span {color:#999;font-size:18px;}
 
 /* Margin */
 .mt_5 {margin-top:5px;}
