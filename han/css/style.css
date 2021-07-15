@@ -221,19 +221,7 @@ td .data {color:#fff;font-size:10px;background-color:#0087d4;border-radius:9px;p
  /* Paging */
 .paging {text-align:center;padding:10px 0;}
 .paging button {width:27px;padding:0;}
-
-.paging a{padding:5px 10px;color:#888;font-weight:bold;vertical-align:middle}
-.paging a:hover, .paging span:hover {color:#53535d;}
-.paging span {cursor:pointer;display:inline-block;width:20px;height:28px;background:url(../images/ic_paging.png) no-repeat;vertical-align:middle}
-.paging .first {background-position:center 4px}
-.paging .first:hover {background-position:center -26px}
-.paging .prev {background-position:center -56px;margin-right:20px;}
-.paging .prev:hover {background-position:center -86px}
-.paging .next {background-position:center -116px;margin-left:20px;}
-.paging .next:hover {background-position:center -146px}
-.paging .last {background-position:center -176px;}
-.paging .last:hover {background-position:center -206px}
-.paging b {display:inline-block;width:20px;height:20px;color:#2986bc;vertical-align:middle}
+.paging span {color:#999;}
 
 /* Margin */
 .mt_5 {margin-top:5px;}
