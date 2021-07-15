@@ -311,7 +311,7 @@ span.form_multi + ul li:after {display:none;}
 
 /* Button */
 .btn_normal {color:#222;background-color:#fff;border:1px solid #e5e5e5;}
-.btn_normal:hover {background-color:#eaeaea;border:1px solid #555;}
+.btn_normal:hover {background-color:#eaeaea;border:1px solid #c5c5c5;}
 .btn_common {color:#fff;background-color:#7d7f82;}
 .btn_common:hover {background-color:#44464a;}
 .btn_search {width:60px;height:30px;line-height:31px;color:#fff;font-size:13px;background-color:#f37321;padding:0;}
