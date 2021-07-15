@@ -194,7 +194,7 @@ button {cursor:pointer;height:27px;line-height:1;text-align:center;border:none;b
 .error_wrap .error .msg_wrap h3{color:#e29600;margin-bottom:10px}
 
 .title_wrap {overflow:hidden;margin-bottom:10px;} /* 20200906 - paddingLeft */
-.title_wrap h3 {float:left;}
+.title_wrap h2 {float:left;}
 .title_wrap .btn_wrap {float:right;clear:none;}
 
 .btn_wrap {clear:both;text-align:right;}
@@ -295,7 +295,7 @@ select.error, input.error {color:#ee392f;border:1px solid #ee392f;}
 .error_msg {color:#ee392f;margin-left:10px;}
 
 .mdt:after {content:'*';color:#e83e3e;font-size:18px;margin-right:5px;}
-input.form_date {cursor:pointer;width:105px;background:#fff url(../images/ic_cal.png) no-repeat 83px 4px;padding-right:30px}
+input.form_date {cursor:pointer;width:105px!important;background:#fff url(../images/ic_cal.png) no-repeat 83px 4px;padding-right:30px}
 input.form_date:focus{border:1px solid #e5e5e5}
 span.form_multi {display:inline-block;width:188px;height:30px;border: 1px solid #e5e5e5;background:url(../images/ic_dropdown.png) no-repeat right center;padding-left:10px;}
 span.form_multi:hover {height:30px;background:url(../images/ic_dropdown_hover.png) no-repeat right center;padding-left:10px;}
