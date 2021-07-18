@@ -212,9 +212,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
  /* Error Page */
 .error_wrap{width:400px;margin:auto}
 .error_wrap img {margin:30% 0 5px;}
-.error_wrap .error {height:250px;background-color:#fff;border:1px solid #645b4c;border-top:3px solid #645b4c;text-align:center}
+.error_wrap .error {height:250px;background-color:#fff;border:1px solid #e3e3e3;border-top:1px solid #404348;border-bottom:1px solid #c5c5c5;text-align:center}
 .error_wrap .error .msg_wrap {margin:30px auto 0;padding:100px 120px;background:url(../images/ic_error.png) no-repeat center 20px;}
-.error_wrap .error .msg_wrap h3{color:#e29600;margin-bottom:10px}
+.error_wrap .error .msg_wrap h3{color:#f37321;margin-bottom:10px}
 
 .title_wrap {overflow:hidden;margin-bottom:10px;} /* 20200906 - paddingLeft */
 .title_wrap h2 {float:left;}
