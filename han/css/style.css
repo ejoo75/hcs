@@ -115,24 +115,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul li.report .menu_sub > li:first-child {border-top:1px solid #cecfd1;}
 #menu ul li.report .menu_sub > li:last-child {border-bottom: 1px solid #cecfd1;}
 #menu ul li.report .menu_sub .menu_sub > li:last-child {border-bottom:none;}
-#menu ul > li {position:relative;font-family:'Nanum Gothic', Arial, tahoma;font-size:13px;border-bottom:1px solid #e5e5e5;}
-#menu ul > li > a {display:table-cell;width:60px;height:30px;font-size:11px;line-height:12px;vertical-align:middle;text-align:center;color:#53535d;font-weight:bold;padding:40px 0 2px 0;background:url(../images/ic_menu.png) no-repeat;}
-#menu ul > li > a.menu_01 {background-position:14px 10px}
-#menu ul > li > a.menu_02 {background-position:-35px 10px}
-#menu ul > li > a.menu_03 {background-position:-96px 10px}
-#menu ul > li > a.menu_04 {background-position:-154px 10px}
-#menu ul > li > a.menu_05 {background-position:-215px 10px}
-#menu ul > li > a.menu_06 {background-position:-275px 10px}
-#menu ul > li > a.menu_07 {background-position:-335px 10px}
-#menu ul > li > a.menu_08 {background-position:-395px 10px}
-#menu ul > li > a.menu_01:hover, #menu ul > li.active > a.menu_01 {background-color:#fdb913;background-position:14px -80px}
-#menu ul > li > a.menu_02:hover, #menu ul > li.active > a.menu_02 {background-color:#fdb913;background-position:-35px -80px}
-#menu ul > li > a.menu_03:hover, #menu ul > li.active > a.menu_03 {background-color:#fdb913;background-position:-96px -80px}
-#menu ul > li > a.menu_04:hover, #menu ul > li.active > a.menu_04 {background-color:#fdb913;background-position:-154px -80px}
-#menu ul > li > a.menu_05:hover, #menu ul > li.active > a.menu_05 {background-color:#fdb913;background-position:-215px -80px}
-#menu ul > li > a.menu_06:hover, #menu ul > li.active > a.menu_06 {background-color:#fdb913;background-position:-275px -80px}
-#menu ul > li > a.menu_07:hover, #menu ul > li.active > a.menu_07 {background-color:#fdb913;background-position:-335px -80px}
-#menu ul > li > a.menu_08:hover, #menu ul > li.active > a.menu_08 {background-color:#fdb913;background-position:-395px -80px}
+#menu ul > li {height:40px;}
+#menu ul > li > a {font-size:13px;color:#fff;padding:40px 0 2px 0;background:url(../images/ic_menu.png) no-repeat;}
+#menu ul > li > a i {color:rgba(255, 255, 255, 0.5);font-size:12px;}
 #menu ul > li:hover > a, #menu ul > li.active > a {color:#53535d;}
 #menu ul > li.active ul {background-color:#f9fafb;border:1px solid #999}
 #menu ul > li.active ul ul {border:none}
