@@ -116,8 +116,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul li.report .menu_sub > li:last-child {border-bottom: 1px solid #cecfd1;}
 #menu ul li.report .menu_sub .menu_sub > li:last-child {border-bottom:none;}
 #menu ul > li {height:40px;}
-#menu ul > li > a {font-size:13px;color:#fff;padding:40px 0 2px 0;background:url(../images/ic_menu.png) no-repeat;}
-#menu ul > li > a i {color:rgba(255, 255, 255, 0.5);font-size:12px;}
+#menu ul > li > a {font-size:13px;color:#fff;padding:0 10px;}
+#menu ul > li > a i {color:rgba(255, 255, 255, 0.5);font-size:18px;}
 #menu ul > li:hover > a, #menu ul > li.active > a {color:#53535d;}
 #menu ul > li.active ul {background-color:#f9fafb;border:1px solid #999}
 #menu ul > li.active ul ul {border:none}
