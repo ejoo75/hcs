@@ -121,7 +121,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul > li:hover > a, #menu ul > li.active > a {color:#53535d;}
 #menu ul > li.active ul {background-color:#f9fafb;border:1px solid #999}
 #menu ul > li.active ul ul {border:none}
-#menu ul li > a > i {float:right;width:20px;height:20px;margin-top:3px;margin-right:5px;background:url(../images/ic_arrow.png) no-repeat}
+#menu ul li > a > i.ic_arrow {float:right;width:20px;height:20px;margin-top:3px;margin-right:5px;background:url(../images/ic_arrow.png) no-repeat}
 #menu ul li.active > .menu_sub {display:block;}
 #menu ul .menu_sub {overflow-y:auto;position:absolute;z-index:1;top:0;left:60px;min-width:180px;display:none;list-style:none;}
 #menu ul .menu_sub li.active > a {color:#53535d;background-color:#e6dfcd}
