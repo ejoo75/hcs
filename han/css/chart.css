@@ -3,7 +3,7 @@ body {padding:5px;background-color:#f8f8f8;}
 body, ul, li, dl, dd, dt, p, div, input, select, textarea, button{font-family:"Malgun Gothic", Arial, tahoma;font-size:12px;color:#484848;line-height:1.5em}
 h1 {height:40px;font-size:18px;line-height:40px;color:#fff;margin:5px;padding:0 10px 0 15px;background-color:#9199a9;}
 h1 div {float:right;color:#fff;font-size:12px;font-weight:normal;text-align:right;line-height:15px;margin-top:5px}
-h2 {position:relative;clear:both;height:100%;font-size:16px;margin:5px;}
+h2 {position:relative;clear:both;font-size:20px;}
 h2 span {float:right;font-size:12px;font-weight:normal}
 h3 {height:32px;font-size:14px;line-height:32px;color:#444444;;margin:0;padding:0 15px;border-bottom:1px solid #e3e5ea;}
 h3 span {float:right;font-size:12px;font-weight:normal}
