@@ -168,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul .menu_sub .menu_sub .menu_sub .menu_sub .menu_sub a {width:calc(100% - 10px);height:auto;min-height:24px;line-height:18px;padding-top:6px;padding-right:0;}
 
  /* Content */
-#content {height:calc(100% - 45px;border-left:1px solid #f0f1f3;}
+#content {height:calc(100% - 45px);border-left:1px solid #f0f1f3;}
 #content iframe {min-width:1270px;height:calc(100% - 32px);}
  /* IE Hack */
 @media screen and (min-width:0\0){
