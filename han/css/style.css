@@ -152,6 +152,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul .menu_sub .menu_sub .menu_sub .menu_sub a {width: calc(100% - 30px);height:auto;line-height:20px;font-size:11px;padding-right: 20px;padding-top:4px;}
 #menu ul .menu_sub .menu_sub .menu_sub .menu_sub .menu_sub li {border-top:none;}
 #menu ul .menu_sub .menu_sub .menu_sub .menu_sub .menu_sub a {width:calc(100% - 10px);height:auto;min-height:24px;line-height:18px;padding-top:6px;padding-right:0;}
+#menu .short_cut {color:#fff;border:1px solid rgba(255, 255, 255, 0.5);padding:10px 10px 5px;}
+#menu .short_cut span {display:block;color:#f37321;}
+
 
  /* Content */
 #content {height:calc(100% - 45px);border-left:1px solid #f0f1f3;}
@@ -224,7 +227,7 @@ table.list_v td select {width:100%;font-size:14px;height:30px;}
 
  /* FAQ */
 table.faq_table {border-collapse:collapse;width:100%;table-layout: fixed;}
-table.faq_table th {position:relative;width:100px;height:50px;color:#f37f21;font-size:24px;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #e3e3e3;white-space:nowrap;}
+table.faq_table th {position:relative;width:100px;height:50px;color:#f37321;font-size:24px;padding:14px 10px 0;vertical-align:top;overflow:hidden;text-overflow:ellipsis;border-top:1px solid #e3e3e3;white-space:nowrap;}
 table.faq_table td {position:relative;color:#555;font-size:14px;font-weight:bold;padding:14px 10px;border-top:1px solid #e3e3e3;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 table.faq_table td div {font-size:13px;font-weight:normal;padding-top:10px;}
 table.faq_table tr:hover th, table.faq_table tr:hover td {background-color:#f9f9f9;}
