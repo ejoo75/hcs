@@ -81,9 +81,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 .login .popup_wrap .content_wrap {margin:7% auto 0;}
 
  /* Header */
-#header {height:45px;background-color:#716f6f;}
-#header span.path {display:inline-block;color:#cfccc8;padding:19px 0 0 320px;background:url(../images/ic_path.png) no-repeat 300px 21px;}
-#header span.path a {color:#fff;}
+#header {height:45px;color:#fff;background-color:#716f6f;}
+
+#header
+
 #header .util_wrap {position:absolute;top:0;right:0;padding-top:5px;} /* 20200906 - User Icon */
 #header .util_wrap li {float:left;display:inline-block;margin-right:10px;}
 #header .util_wrap li a {text-decoration:none;color:#555}
