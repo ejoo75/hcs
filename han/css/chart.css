@@ -69,8 +69,8 @@ table.list_v {border-collapse:collapse;width:100%;table-layout: fixed;border-top
 table.list_v thead tr{background-color:#eaeff5}
 table.list_v tr {background-color:#fff}
 table.list_v tr:nth-child(2n) {background-color:#f9fbfc}
-table.list_v th {position:relative;font-weight:bold;padding:11px 10px;border-right:1px solid #b7c4dc;border-bottom:1px solid #b7c4dc;}
-table.list_v td {position:relative;padding:10px 10px;border-top:1px solid #cdd3d8;border-right:1px solid #cdd3d8;text-align:right}
+table.list_v th {position:relative;font-weight:bold;padding:11px 10px;border-right:1px solid #cdd3d8;border-bottom:1px solid #cdd3d8;}
+table.list_v td {position:relative;padding:10px 10px;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;text-align:right}
 table.list_v td:last-child {border-right:none}
 table.list_v td.left {text-align:left;}
 table.list_v td .up {position:relative;color:#eb7311}
