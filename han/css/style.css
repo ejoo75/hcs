@@ -81,7 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 .login .popup_wrap .content_wrap {margin:7% auto 0;}
 
  /* Header */
-#header {position:relative;height:45px;background-coor:#716f6f;}
+#header {position:relative;height:45px;background-color:#716f6f;}
 #header span.path {display:inline-block;color:#cfccc8;padding:19px 0 0 320px;background:url(../images/ic_path.png) no-repeat 300px 21px;}
 #header span.path a {color:#fff;}
 #header .util_wrap {position:absolute;top:0;right:0;padding-top:5px;} /* 20200906 - User Icon */
@@ -101,10 +101,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #gnb ul li a:hover {text-decoration:none;}
 
  /* Layout */
-#container {position:relative;overflow:hidden;width:calc(100% - 240px);height:100%;}
+#container {position:relative;z-index:1;left:240px;overflow:hidden;width:calc(100% - 240px);height:100%;}
 
  /* Menu */
-#menu {position:absolute;z-index:1;top:0;left:0;width:240px;height:100%;background-color:#fff;}
+#menu {position:relative;z-index:1;top:0;left:0;width:240px;height:100%;background-color:#3f3e3e;}
 #menu a.logo {position:absolute;top:0;left:0;font-size: 0;width:310px;height:45px;background:url(../images/logo_dnaportal.png) no-repeat 15px 11px;text-indent:-9999px;}
 #menu ul {list-style:none;margin:0;padding:0;}
 #menu ul a {text-decoration:none;}
