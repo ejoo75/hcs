@@ -101,10 +101,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #gnb ul li a:hover {text-decoration:none;}
 
  /* Layout */
-#container {position:relative;z-index:1;left:240px;overflow:hidden;width:calc(100% - 240px);height:100%;min-height:849px;}
+#container {position:absolute;z-index:0;top:0;left:240px;overflow:hidden;width:calc(100% - 240px);height:100%;min-height:849px;}
 
  /* Menu */
-#menu {position:relative;z-index:1;top:0;left:0;width:240px;height:100%;background-color:#3f3e3e;}
+#menu {position:absolute;z-index:0;top:0;left:0;width:240px;height:100%;background-color:#3f3e3e;}
 #menu a.logo {position:absolute;top:0;left:0;font-size: 0;width:310px;height:45px;background:url(../images/logo_dnaportal.png) no-repeat 15px 11px;text-indent:-9999px;}
 #menu ul {list-style:none;margin:0;padding:0;}
 #menu ul a {text-decoration:none;}
