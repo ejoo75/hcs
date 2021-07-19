@@ -81,7 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 .login .popup_wrap .content_wrap {margin:7% auto 0;}
 
  /* Header */
-#header {position:relative;height:45px;background-color:#716f6f;}
+#header {height:45px;background-color:#716f6f;}
 #header span.path {display:inline-block;color:#cfccc8;padding:19px 0 0 320px;background:url(../images/ic_path.png) no-repeat 300px 21px;}
 #header span.path a {color:#fff;}
 #header .util_wrap {position:absolute;top:0;right:0;padding-top:5px;} /* 20200906 - User Icon */
@@ -101,7 +101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #gnb ul li a:hover {text-decoration:none;}
 
  /* Layout */
-#container {position:relative;z-index:1;left:240px;overflow:hidden;width:calc(100% - 240px);height:100%;}
+#container {position:relative;z-index:1;left:240px;overflow:hidden;width:calc(100% - 240px);height:100%;min-height:849px;}
 
  /* Menu */
 #menu {position:relative;z-index:1;top:0;left:0;width:240px;height:100%;background-color:#3f3e3e;}
@@ -168,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f6', end
 #menu ul .menu_sub .menu_sub .menu_sub .menu_sub .menu_sub a {width:calc(100% - 10px);height:auto;min-height:24px;line-height:18px;padding-top:6px;padding-right:0;}
 
  /* Content */
-#content {position:absolute;z-index:0;top:0;left:60px;width: calc(100% - 60px);min-height:959px;height:100%;border-left:1px solid #f0f1f3;}
+#content {height:calc(100% - 45px;border-left:1px solid #f0f1f3;}
 #content iframe {min-width:1270px;height:calc(100% - 32px);}
  /* IE Hack */
 @media screen and (min-width:0\0){
